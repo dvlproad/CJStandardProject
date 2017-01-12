@@ -7,6 +7,7 @@
 //
 
 #import "PrivateSetting.h"
+#import "ColorUtil.h"
 
 #define PRO_W6 @"HiraKakuProN-W6"
 #define PRO_W3 @"HiraKakuProN-W3"
@@ -19,11 +20,11 @@
 
 + (void)customNavigationBarAppearance{
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
-        [[UINavigationBar appearance] setBarTintColor:Color(0xf0, 0xf0, 0xf0, 0xff)];
+        [[UINavigationBar appearance] setBarTintColor:RGBACOLOR(0xf0, 0xf0, 0xf0, 0xff)];
     }else{
-        [[UINavigationBar appearance] setTintColor:Color(0xf0, 0xf0, 0xf0, 0xff)];
+        [[UINavigationBar appearance] setTintColor:RGBACOLOR(0xf0, 0xf0, 0xf0, 0xff)];
     }
-    [[UINavigationBar appearance] setTintColor:Color_Red];
+//    [[UINavigationBar appearance] setTintColor:Color_Red];
     
 //    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:Color_Red forKey:NSForegroundColorAttributeName]];
     /*
@@ -36,11 +37,12 @@
 }
 
 + (void)customizeAppearanceForMenuBar:(UINavigationBar *)navBar{
-    if (SYSTEM_VERSION >= 7){
-        [navBar setBackgroundImage:[UIImage imageNamed:@"menuNav_BG64"] forBarMetrics:UIBarMetricsDefault];
-    }else {
-        [navBar setBackgroundImage:[UIImage imageNamed:@"menuNav_BG"] forBarMetrics:UIBarMetricsDefault];
-    }
+    
+//    if (SYSTEM_VERSION >= 7){
+//        [navBar setBackgroundImage:[UIImage imageNamed:@"menuNav_BG64"] forBarMetrics:UIBarMetricsDefault];
+//    }else {
+//        [navBar setBackgroundImage:[UIImage imageNamed:@"menuNav_BG"] forBarMetrics:UIBarMetricsDefault];
+//    }
     //lightGrayColor
     
     //为导航栏设置标题文本样式
