@@ -14,7 +14,7 @@
 - (NSString *)imageTobase64{
     NSData *_data = UIImageJPEGRepresentation(self, 1.0f);
     
-    NSString *_encodedImageStr = [_data base64Encoding];
+    NSString *_encodedImageStr = [_data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     
     //NSLog(@"===Encoded image:\n%@", _encodedImageStr);
     return _encodedImageStr;

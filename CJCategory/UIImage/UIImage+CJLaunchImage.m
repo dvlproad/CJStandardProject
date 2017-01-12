@@ -2,7 +2,7 @@
 //  UIImage+CJLaunchImage.m
 //  LibraryAndUtilDemo
 //
-//  Created by 李超前 on 2016/12/14.
+//  Created by lichq on 2016/12/14.
 //  Copyright © 2016年 ciyouzen. All rights reserved.
 //
 

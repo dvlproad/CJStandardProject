@@ -8,8 +8,6 @@
 
 #import "UIImage+Save.h"
 
-#import "NSString+MD5.h"
-
 @implementation UIImage (Save)
 
 - (NSString *)getImageCachePath{
@@ -20,7 +18,7 @@
 
 
 //将照片保存到程序应用中的Documents目录下
-- (NSString *)saveToCachesByName:(NSString *)name{
+- (NSString *)saveToCachesByName:(NSString *)name {
     
     UIImage *image = self;
     
@@ -64,7 +62,7 @@
     }
     
     
-    NSString *localPath = [diskCachePath stringByAppendingPathComponent:[name MD5]];
+    NSString *localPath = [diskCachePath stringByAppendingPathComponent:name];
     NSData *localData = UIImageJPEGRepresentation(image, 1.0f);
     
     if ([localData length] <= 1) {

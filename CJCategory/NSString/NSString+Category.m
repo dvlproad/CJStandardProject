@@ -20,7 +20,7 @@
 
 #pragma mark - base64转成UIImage
 - (UIImage *)base64ToImage{
-    NSData *_decodedImageData = [[NSData alloc] initWithBase64Encoding:self];
+    NSData *_decodedImageData = [[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
     UIImage *_decodedImage    = [UIImage imageWithData:_decodedImageData];
     NSLog(@"===Decoded image size: %@", NSStringFromCGSize(_decodedImage.size));
     return _decodedImage;

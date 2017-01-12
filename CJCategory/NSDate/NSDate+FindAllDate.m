@@ -14,7 +14,7 @@
     NSDate *endDate = self;
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSCalendarUnit calendarUnit = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSCalendarUnit calendarUnit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
     
     
     NSDateComponents *dCom0 = [calendar components:calendarUnit fromDate:startDate];
@@ -30,7 +30,7 @@
     NSMutableArray *contentArray = [[NSMutableArray alloc]init];
     NSUInteger dayIndex = 0;
     
-    for (int value_Y = year0; value_Y <= year1; value_Y++) {
+    for (NSInteger value_Y = year0; value_Y <= year1; value_Y++) {
         NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
         
         [dateComponents setYear:year0 + value_Y];
@@ -48,7 +48,7 @@
             end_M = month1;
         }
         
-        for (int value_M = start_M; value_M <= end_M; value_M++) {
+        for (NSInteger value_M = start_M; value_M <= end_M; value_M++) {
             [dateComponents setMonth:value_M];
             [dateComponents setDay:1];
             
@@ -78,19 +78,19 @@
                 BOOL isFirstMonth = value_M == 1;
                 [contentArray addObject:
                  @{ @"x"         :xVal,
-                    @"value_D"   :[NSNumber numberWithInt:value_D],
+                    @"value_D"   :[NSNumber numberWithInteger:value_D],
                     @"isFirstDay":[NSNumber numberWithBool:isFirstDay],
                     @"isMiddleDayInMonth":[NSNumber numberWithBool:isMiddleDayInMonth],
-                    @"value_M"   :[NSNumber numberWithInt:value_M],
+                    @"value_M"   :[NSNumber numberWithInteger:value_M],
                     @"isFirstMonth":[NSNumber numberWithBool:isFirstMonth],
-                    @"value_Y"   :[NSNumber numberWithInt:value_Y]}];
+                    @"value_Y"   :[NSNumber numberWithInteger:value_Y]}];
                 
                 
                 dayIndex += 1;
             }
         }
     }
-    NSLog(@"现在总共有%d天", dayIndex);
+    NSLog(@"现在总共有%zd天", dayIndex);
     
     return contentArray;
 }

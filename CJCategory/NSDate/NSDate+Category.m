@@ -21,9 +21,9 @@
 #pragma mark - 星期几
 - (NSString *)weekday{
     //日期转换 年月日
-    NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     //NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSCalendarUnit calendarUnit = NSWeekdayCalendarUnit; //这边要改成weekday
+    NSCalendarUnit calendarUnit = NSCalendarUnitWeekday; //这边要改成weekday
     NSDateComponents *dateComponents = [calendar components:calendarUnit fromDate:self];
     NSInteger weekday = [dateComponents weekday];
     
@@ -74,9 +74,9 @@
 #pragma mark - 获取距离当前日期N天的日期
 - (NSDate *)dateDistances:(NSInteger )num type:(NSInteger)type{
     //日期转换 年月日
-    NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     //NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSCalendarUnit calendarUnit = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+    NSCalendarUnit calendarUnit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
     NSDateComponents *dateComponents = [calendar components:calendarUnit fromDate:self];
     NSInteger year  = [dateComponents year];
     NSInteger month = [dateComponents month];
@@ -106,13 +106,13 @@
 #pragma mark - 计算年龄,设计到月份(周岁计算)
 - (NSInteger)age{
     // 出生日期转换 年月日
-    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:self];
+    NSDateComponents *components1 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:self];
     NSInteger brithDateYear  = [components1 year];
     NSInteger brithDateDay   = [components1 day];
     NSInteger brithDateMonth = [components1 month];
     
     // 获取系统当前 年月日
-    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *components2 = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:[NSDate date]];
     NSInteger currentDateYear  = [components2 year];
     NSInteger currentDateDay   = [components2 day];
     NSInteger currentDateMonth = [components2 month];
@@ -130,10 +130,10 @@
 #pragma mark - 计算两个时间的天数差
 - (NSInteger)dayDistanceFromDate:(NSDate *)fromDate{
 //    /* //方法①：
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    unsigned int unitFlag = NSDayCalendarUnit;
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSUInteger unitFlag = NSCalendarUnitDay;
     NSDateComponents *components = [calendar components:unitFlag fromDate:fromDate toDate:self options:0];//beginDate
-    int count = [components day] + 1;
+    NSInteger count = [components day] + 1;
 //    */
     
     /* //方法②：
