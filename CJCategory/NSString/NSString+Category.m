@@ -14,6 +14,8 @@
 - (NSDate *)standDate{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]]; //解决NSString转NSDate差8小时的问题
+    
     NSDate *date = [dateFormatter dateFromString:self];
     return date;
 }
