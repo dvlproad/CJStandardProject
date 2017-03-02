@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "CJCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "NSObject和UIView的类目"
-  s.homepage     = "https://github.com/dvlproad/CJCommonUtilAndLibrary"
+  s.homepage     = "https://github.com/dvlproad/CJFoundation"
   s.license      = "MIT"
   s.author             = "dvlproad"
   # s.social_media_url   = "http://twitter.com/dvlproad"
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJCommonUtilAndLibrary.git", :tag => "CJCategory_0.0.1" }
+  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "CJCategory_0.0.2" }
   # s.source_files  = "CJCategory/**/*.{h,m}"
   # s.resources = "RadioButtons/**/*.{png,xib}"
   s.frameworks = 'UIKit'
