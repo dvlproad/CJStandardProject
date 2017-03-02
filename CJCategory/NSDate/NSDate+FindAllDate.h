@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CJDate.h"
 
 @interface NSDate (FindAllDate)
 
-- (NSMutableArray *)findAllDateFromDate:(NSDate *)startDate;
+- (NSMutableArray<CJDate *> *)findAllDateFromDate:(NSDate *)startDate;
 
 @end

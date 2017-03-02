@@ -25,6 +25,7 @@
 		7817FA2C1E01327F00889DD5 /* AppLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7817FA2B1E01327F00889DD5 /* AppLog.m */; };
 		7817FA2F1E0135C400889DD5 /* CJAppVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7817FA2E1E0135C400889DD5 /* CJAppVersionUtil.m */; };
 		7817FA321E01364700889DD5 /* CJAppHaveLaunchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7817FA311E01364700889DD5 /* CJAppHaveLaunchUtil.m */; };
+		785DF2B21E681F2E00DC9C64 /* CJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DF2B11E681F2E00DC9C64 /* CJDate.m */; };
 		78D36BCD1E27586600F51567 /* NSData+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D36BA71E27586600F51567 /* NSData+Convert.m */; };
 		78D36BCE1E27586600F51567 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D36BAA1E27586600F51567 /* NSDate+Category.m */; };
 		78D36BCF1E27586600F51567 /* NSDate+FindAllDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D36BAC1E27586600F51567 /* NSDate+FindAllDate.m */; };
@@ -100,6 +101,8 @@
 		7817FA301E01364700889DD5 /* CJAppHaveLaunchUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAppHaveLaunchUtil.h; sourceTree = "<group>"; };
 		7817FA311E01364700889DD5 /* CJAppHaveLaunchUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAppHaveLaunchUtil.m; sourceTree = "<group>"; };
 		7817FA331E01380700889DD5 /* CJCommonUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJCommonUtil.h; sourceTree = "<group>"; };
+		785DF2B01E681F2E00DC9C64 /* CJDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDate.h; sourceTree = "<group>"; };
+		785DF2B11E681F2E00DC9C64 /* CJDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDate.m; sourceTree = "<group>"; };
 		78D36BA61E27586600F51567 /* NSData+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Convert.h"; sourceTree = "<group>"; };
 		78D36BA71E27586600F51567 /* NSData+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Convert.m"; sourceTree = "<group>"; };
 		78D36BA91E27586600F51567 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				78D36BAA1E27586600F51567 /* NSDate+Category.m */,
 				78D36BAB1E27586600F51567 /* NSDate+FindAllDate.h */,
 				78D36BAC1E27586600F51567 /* NSDate+FindAllDate.m */,
+				785DF2B01E681F2E00DC9C64 /* CJDate.h */,
+				785DF2B11E681F2E00DC9C64 /* CJDate.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				7817FA221E0131B500889DD5 /* SBJsonStreamParserState.m in Sources */,
 				7817FA2F1E0135C400889DD5 /* CJAppVersionUtil.m in Sources */,
 				78D36BCE1E27586600F51567 /* NSDate+Category.m in Sources */,
+				785DF2B21E681F2E00DC9C64 /* CJDate.m in Sources */,
 				78D36BD71E27586600F51567 /* UIImage+Category.m in Sources */,
 				7817FA1E1E0131B500889DD5 /* SBJsonParser.m in Sources */,
 				7817FA201E0131B500889DD5 /* SBJsonStreamParserAccumulator.m in Sources */,
