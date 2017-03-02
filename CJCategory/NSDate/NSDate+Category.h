@@ -27,7 +27,13 @@ typedef enum DateDistanceType{
 - (NSDate *)tomorrow;
 - (NSDate *)dateDistances:(NSInteger )num type:(NSInteger)type;
 
-
+/**
+ *  计算从fromDate到当前时间的两个时间的天数差
+ *
+ *  @param fromDate    计算的开始时间
+ *
+ *  return 返回相差有多少天(如果是计算总共有多少天则需要加1)
+ */
 - (NSInteger)dayDistanceFromDate:(NSDate *)fromDate;
 
 @end

@@ -17,11 +17,13 @@
     NSCalendarUnit calendarUnit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
     
     NSDateComponents *dateComponentsBegin = [calendar components:calendarUnit fromDate:dateBegin];
+
     NSInteger dateBeginYear  = [dateComponentsBegin year];
     NSInteger dateBeginMonth = [dateComponentsBegin month];
     NSInteger dateBeginDay = [dateComponentsBegin day];
     
     NSDateComponents *dateComponentsEnd = [calendar components:calendarUnit fromDate:dateEnd];
+    
     NSInteger dateEndYear  = [dateComponentsEnd year];
     NSInteger dateEndMonth = [dateComponentsEnd month];
     NSInteger dateEndDay = [dateComponentsEnd day];
@@ -32,7 +34,7 @@
     for (NSInteger value_Y = dateBeginYear; value_Y <= dateEndYear; value_Y++) {
         NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
         
-        [dateComponents setYear:dateBeginYear + value_Y];
+        [dateComponents setYear:value_Y];
         
         NSInteger start_M = 1;
         NSInteger end_M = 12;

@@ -95,6 +95,9 @@
     [dateComponents setYear:year];
     [dateComponents setMonth:month];
     [dateComponents setDay:day];
+    
+    [dateComponents setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    
     NSDate *newDate = [calendar dateFromComponents:dateComponents];
     
     
@@ -127,13 +130,13 @@
 }
 
 
-#pragma mark - 计算两个时间的天数差
+/** 完整的描述请参见文件头部 */
 - (NSInteger)dayDistanceFromDate:(NSDate *)fromDate{
 //    /* //方法①：
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSUInteger unitFlag = NSCalendarUnitDay;
     NSDateComponents *components = [calendar components:unitFlag fromDate:fromDate toDate:self options:0];//beginDate
-    NSInteger count = [components day] + 1;
+    NSInteger count = [components day];
 //    */
     
     /* //方法②：
