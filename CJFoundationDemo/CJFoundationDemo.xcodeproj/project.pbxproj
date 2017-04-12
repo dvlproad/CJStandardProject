@@ -24,7 +24,7 @@
 		782709CA1E87112400E21433 /* NSDictionary+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709A81E87112400E21433 /* NSDictionary+Convert.m */; };
 		782709CB1E87112400E21433 /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709AB1E87112400E21433 /* NSString+Attributed.m */; };
 		782709CC1E87112400E21433 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709AD1E87112400E21433 /* NSString+Category.m */; };
-		782709CD1E87112400E21433 /* NSString+CJCalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709AF1E87112400E21433 /* NSString+CJCalculateSize.m */; };
+		782709CD1E87112400E21433 /* NSString+CJTextSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709AF1E87112400E21433 /* NSString+CJTextSize.m */; };
 		782709CE1E87112400E21433 /* NSString+CJEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B11E87112400E21433 /* NSString+CJEncoding.m */; };
 		782709CF1E87112400E21433 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B31E87112400E21433 /* NSString+MD5.m */; };
 		782709D01E87112400E21433 /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B51E87112400E21433 /* NSString+Validate.m */; };
@@ -81,8 +81,8 @@
 		782709AB1E87112400E21433 /* NSString+Attributed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Attributed.m"; sourceTree = "<group>"; };
 		782709AC1E87112400E21433 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
 		782709AD1E87112400E21433 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
-		782709AE1E87112400E21433 /* NSString+CJCalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CJCalculateSize.h"; sourceTree = "<group>"; };
-		782709AF1E87112400E21433 /* NSString+CJCalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJCalculateSize.m"; sourceTree = "<group>"; };
+		782709AE1E87112400E21433 /* NSString+CJTextSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CJTextSize.h"; sourceTree = "<group>"; };
+		782709AF1E87112400E21433 /* NSString+CJTextSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJTextSize.m"; sourceTree = "<group>"; };
 		782709B01E87112400E21433 /* NSString+CJEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CJEncoding.h"; sourceTree = "<group>"; };
 		782709B11E87112400E21433 /* NSString+CJEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJEncoding.m"; sourceTree = "<group>"; };
 		782709B21E87112400E21433 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
@@ -248,8 +248,8 @@
 				782709AB1E87112400E21433 /* NSString+Attributed.m */,
 				782709AC1E87112400E21433 /* NSString+Category.h */,
 				782709AD1E87112400E21433 /* NSString+Category.m */,
-				782709AE1E87112400E21433 /* NSString+CJCalculateSize.h */,
-				782709AF1E87112400E21433 /* NSString+CJCalculateSize.m */,
+				782709AE1E87112400E21433 /* NSString+CJTextSize.h */,
+				782709AF1E87112400E21433 /* NSString+CJTextSize.m */,
 				782709B01E87112400E21433 /* NSString+CJEncoding.h */,
 				782709B11E87112400E21433 /* NSString+CJEncoding.m */,
 				782709B21E87112400E21433 /* NSString+MD5.h */,
@@ -407,7 +407,7 @@
 				782709291E870B5A00E21433 /* AppDelegate.m in Sources */,
 				782709CC1E87112400E21433 /* NSString+Category.m in Sources */,
 				782709261E870B5A00E21433 /* main.m in Sources */,
-				782709CD1E87112400E21433 /* NSString+CJCalculateSize.m in Sources */,
+				782709CD1E87112400E21433 /* NSString+CJTextSize.m in Sources */,
 				782709CB1E87112400E21433 /* NSString+Attributed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +642,7 @@
 				782709501E870B5A00E21433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		782709511E870B5A00E21433 /* Build configuration list for PBXNativeTarget "CJFoundationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +651,7 @@
 				782709531E870B5A00E21433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		782709541E870B5A00E21433 /* Build configuration list for PBXNativeTarget "CJFoundationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -658,6 +660,7 @@
 				782709561E870B5A00E21433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

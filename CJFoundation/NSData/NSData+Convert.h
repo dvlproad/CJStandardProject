@@ -1,6 +1,6 @@
 //
 //  NSData+Convert.h
-//  CommonAFNUtilDemo
+//  CJFoundationDemo
 //
 //  Created by lichq on 7/31/15.
 //  Copyright (c) 2015 ciyouzen. All rights reserved.
