@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5757FEF654720B33BA0D90 /* libPods-CJFoundationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4A3FAF1346889F3CE86E89 /* libPods-CJFoundationDemo.a */; };
 		782709261E870B5A00E21433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709251E870B5A00E21433 /* main.m */; };
 		782709291E870B5A00E21433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709281E870B5A00E21433 /* AppDelegate.m */; };
 		7827092C1E870B5A00E21433 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827092B1E870B5A00E21433 /* ViewController.m */; };
@@ -18,9 +19,7 @@
 		782709991E870C3800E21433 /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709971E870C3800E21433 /* StringViewController.m */; };
 		7827099A1E870C3800E21433 /* StringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782709981E870C3800E21433 /* StringViewController.xib */; };
 		782709C61E87112400E21433 /* NSData+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7827099E1E87112400E21433 /* NSData+Convert.m */; };
-		782709C71E87112400E21433 /* CJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709A11E87112400E21433 /* CJDate.m */; };
-		782709C81E87112400E21433 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709A31E87112400E21433 /* NSDate+Category.m */; };
-		782709C91E87112400E21433 /* NSDate+FindAllDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709A51E87112400E21433 /* NSDate+FindAllDate.m */; };
+		782709C81E87112400E21433 /* NSDate+CJDateValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709A31E87112400E21433 /* NSDate+CJDateValue.m */; };
 		782709CA1E87112400E21433 /* NSDictionary+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709A81E87112400E21433 /* NSDictionary+Convert.m */; };
 		782709CB1E87112400E21433 /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709AB1E87112400E21433 /* NSString+Attributed.m */; };
 		782709CC1E87112400E21433 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709AD1E87112400E21433 /* NSString+Category.m */; };
@@ -28,6 +27,13 @@
 		782709CE1E87112400E21433 /* NSString+CJEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B11E87112400E21433 /* NSString+CJEncoding.m */; };
 		782709CF1E87112400E21433 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B31E87112400E21433 /* NSString+MD5.m */; };
 		782709D01E87112400E21433 /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B51E87112400E21433 /* NSString+Validate.m */; };
+		78E2F8B81EA4B01200892D86 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E2F8B61EA4B01200892D86 /* DateViewController.m */; };
+		78E2F8B91EA4B01200892D86 /* DateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E2F8B71EA4B01200892D86 /* DateViewController.xib */; };
+		78E2F8BC1EA4B2C000892D86 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E2F8BB1EA4B2C000892D86 /* plus@2x.png */; };
+		78E2F8BF1EA4B5FF00892D86 /* NSDate+CJDateDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E2F8BE1EA4B5FF00892D86 /* NSDate+CJDateDistance.m */; };
+		78E2F8C81EA4C20B00892D86 /* CJDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E2F8C51EA4C20B00892D86 /* CJDateModel.m */; };
+		78E2F8C91EA4C20B00892D86 /* CJDateModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E2F8C71EA4C20B00892D86 /* CJDateModelUtil.m */; };
+		AA89AB6D85539FA7659B18BF /* libPods-CJFoundationDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A9F0016F325FDAF58DA52A /* libPods-CJFoundationDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13DAF053F4223FFCBD8FDF3C /* Pods-CJFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFoundationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJFoundationDemo/Pods-CJFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1E8B5E5AFFDD989E23BB2686 /* Pods-CJFoundationDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFoundationDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJFoundationDemoTests/Pods-CJFoundationDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2402B9773363D6D8C022E579 /* Pods-CJFoundationDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFoundationDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJFoundationDemoTests/Pods-CJFoundationDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		39A9F0016F325FDAF58DA52A /* libPods-CJFoundationDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJFoundationDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		782709211E870B5A00E21433 /* CJFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782709251E870B5A00E21433 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		782709271E870B5A00E21433 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,12 +79,8 @@
 		782709981E870C3800E21433 /* StringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringViewController.xib; sourceTree = "<group>"; };
 		7827099D1E87112400E21433 /* NSData+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Convert.h"; sourceTree = "<group>"; };
 		7827099E1E87112400E21433 /* NSData+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Convert.m"; sourceTree = "<group>"; };
-		782709A01E87112400E21433 /* CJDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDate.h; sourceTree = "<group>"; };
-		782709A11E87112400E21433 /* CJDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDate.m; sourceTree = "<group>"; };
-		782709A21E87112400E21433 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
-		782709A31E87112400E21433 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
-		782709A41E87112400E21433 /* NSDate+FindAllDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FindAllDate.h"; sourceTree = "<group>"; };
-		782709A51E87112400E21433 /* NSDate+FindAllDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FindAllDate.m"; sourceTree = "<group>"; };
+		782709A21E87112400E21433 /* NSDate+CJDateValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CJDateValue.h"; sourceTree = "<group>"; };
+		782709A31E87112400E21433 /* NSDate+CJDateValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CJDateValue.m"; sourceTree = "<group>"; };
 		782709A71E87112400E21433 /* NSDictionary+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Convert.h"; sourceTree = "<group>"; };
 		782709A81E87112400E21433 /* NSDictionary+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Convert.m"; sourceTree = "<group>"; };
 		782709AA1E87112400E21433 /* NSString+Attributed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Attributed.h"; sourceTree = "<group>"; };
@@ -89,6 +95,18 @@
 		782709B31E87112400E21433 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		782709B41E87112400E21433 /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
 		782709B51E87112400E21433 /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
+		78E2F8B51EA4B01200892D86 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		78E2F8B61EA4B01200892D86 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		78E2F8B71EA4B01200892D86 /* DateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateViewController.xib; sourceTree = "<group>"; };
+		78E2F8BB1EA4B2C000892D86 /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
+		78E2F8BD1EA4B5FF00892D86 /* NSDate+CJDateDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CJDateDistance.h"; sourceTree = "<group>"; };
+		78E2F8BE1EA4B5FF00892D86 /* NSDate+CJDateDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CJDateDistance.m"; sourceTree = "<group>"; };
+		78E2F8C41EA4C20B00892D86 /* CJDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDateModel.h; sourceTree = "<group>"; };
+		78E2F8C51EA4C20B00892D86 /* CJDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDateModel.m; sourceTree = "<group>"; };
+		78E2F8C61EA4C20B00892D86 /* CJDateModelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDateModelUtil.h; sourceTree = "<group>"; };
+		78E2F8C71EA4C20B00892D86 /* CJDateModelUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDateModelUtil.m; sourceTree = "<group>"; };
+		79BBF4C64F889729460774F4 /* Pods-CJFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFoundationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJFoundationDemo/Pods-CJFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CF4A3FAF1346889F3CE86E89 /* libPods-CJFoundationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJFoundationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5757FEF654720B33BA0D90 /* libPods-CJFoundationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA89AB6D85539FA7659B18BF /* libPods-CJFoundationDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +136,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B20EA1CF5B80FB9C29566E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13DAF053F4223FFCBD8FDF3C /* Pods-CJFoundationDemo.debug.xcconfig */,
+				79BBF4C64F889729460774F4 /* Pods-CJFoundationDemo.release.xcconfig */,
+				1E8B5E5AFFDD989E23BB2686 /* Pods-CJFoundationDemoTests.debug.xcconfig */,
+				2402B9773363D6D8C022E579 /* Pods-CJFoundationDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		782709181E870B5A00E21433 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +154,8 @@
 				7827093D1E870B5A00E21433 /* CJFoundationDemoTests */,
 				782709481E870B5A00E21433 /* CJFoundationDemoUITests */,
 				782709221E870B5A00E21433 /* Products */,
+				5B20EA1CF5B80FB9C29566E9 /* Pods */,
+				F16AA7E9C11EF2B54A4BF3B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +178,7 @@
 				782709941E870C0E00E21433 /* Demos */,
 				7827092A1E870B5A00E21433 /* ViewController.h */,
 				7827092B1E870B5A00E21433 /* ViewController.m */,
+				78E2F8BA1EA4B2C000892D86 /* Resources */,
 				7827092D1E870B5A00E21433 /* Main.storyboard */,
 				782709301E870B5A00E21433 /* Assets.xcassets */,
 				782709321E870B5A00E21433 /* LaunchScreen.storyboard */,
@@ -183,6 +217,7 @@
 		782709941E870C0E00E21433 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				78E2F8B41EA4B00000892D86 /* NSDateDemo */,
 				782709951E870C0E00E21433 /* NSStringDemo */,
 			);
 			path = Demos;
@@ -222,12 +257,11 @@
 		7827099F1E87112400E21433 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				782709A01E87112400E21433 /* CJDate.h */,
-				782709A11E87112400E21433 /* CJDate.m */,
-				782709A21E87112400E21433 /* NSDate+Category.h */,
-				782709A31E87112400E21433 /* NSDate+Category.m */,
-				782709A41E87112400E21433 /* NSDate+FindAllDate.h */,
-				782709A51E87112400E21433 /* NSDate+FindAllDate.m */,
+				78E2F8C31EA4C20B00892D86 /* CJDate */,
+				782709A21E87112400E21433 /* NSDate+CJDateValue.h */,
+				782709A31E87112400E21433 /* NSDate+CJDateValue.m */,
+				78E2F8BD1EA4B5FF00892D86 /* NSDate+CJDateDistance.h */,
+				78E2F8BE1EA4B5FF00892D86 /* NSDate+CJDateDistance.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -260,6 +294,44 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		78E2F8B41EA4B00000892D86 /* NSDateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				78E2F8B51EA4B01200892D86 /* DateViewController.h */,
+				78E2F8B61EA4B01200892D86 /* DateViewController.m */,
+				78E2F8B71EA4B01200892D86 /* DateViewController.xib */,
+			);
+			path = NSDateDemo;
+			sourceTree = "<group>";
+		};
+		78E2F8BA1EA4B2C000892D86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78E2F8BB1EA4B2C000892D86 /* plus@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78E2F8C31EA4C20B00892D86 /* CJDate */ = {
+			isa = PBXGroup;
+			children = (
+				78E2F8C41EA4C20B00892D86 /* CJDateModel.h */,
+				78E2F8C51EA4C20B00892D86 /* CJDateModel.m */,
+				78E2F8C61EA4C20B00892D86 /* CJDateModelUtil.h */,
+				78E2F8C71EA4C20B00892D86 /* CJDateModelUtil.m */,
+			);
+			path = CJDate;
+			sourceTree = "<group>";
+		};
+		F16AA7E9C11EF2B54A4BF3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A3FAF1346889F3CE86E89 /* libPods-CJFoundationDemo.a */,
+				39A9F0016F325FDAF58DA52A /* libPods-CJFoundationDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,9 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7827094E1E870B5A00E21433 /* Build configuration list for PBXNativeTarget "CJFoundationDemo" */;
 			buildPhases = (
+				00CCB066E105952CFBF0B96C /* [CP] Check Pods Manifest.lock */,
 				7827091D1E870B5A00E21433 /* Sources */,
 				7827091E1E870B5A00E21433 /* Frameworks */,
 				7827091F1E870B5A00E21433 /* Resources */,
+				4FD14A1ADB544A3748D4FE84 /* [CP] Embed Pods Frameworks */,
+				F7DB66FE07EA58DB7DBB9420 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,9 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 782709511E870B5A00E21433 /* Build configuration list for PBXNativeTarget "CJFoundationDemoTests" */;
 			buildPhases = (
+				7DF9C43C6C8AD27E22F396BC /* [CP] Check Pods Manifest.lock */,
 				782709361E870B5A00E21433 /* Sources */,
 				782709371E870B5A00E21433 /* Frameworks */,
 				782709381E870B5A00E21433 /* Resources */,
+				462339DC16334B1B9EAA134E /* [CP] Embed Pods Frameworks */,
+				FE1BA9E7AE8A5297D0A6460F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,8 +446,10 @@
 			files = (
 				782709341E870B5A00E21433 /* LaunchScreen.storyboard in Resources */,
 				782709311E870B5A00E21433 /* Assets.xcassets in Resources */,
+				78E2F8BC1EA4B2C000892D86 /* plus@2x.png in Resources */,
 				7827092F1E870B5A00E21433 /* Main.storyboard in Resources */,
 				7827099A1E870C3800E21433 /* StringViewController.xib in Resources */,
+				78E2F8B91EA4B01200892D86 /* DateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +469,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00CCB066E105952CFBF0B96C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		462339DC16334B1B9EAA134E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJFoundationDemoTests/Pods-CJFoundationDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FD14A1ADB544A3748D4FE84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJFoundationDemo/Pods-CJFoundationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF9C43C6C8AD27E22F396BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DB66FE07EA58DB7DBB9420 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJFoundationDemo/Pods-CJFoundationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1BA9E7AE8A5297D0A6460F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJFoundationDemoTests/Pods-CJFoundationDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7827091D1E870B5A00E21433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -397,15 +570,17 @@
 				782709C61E87112400E21433 /* NSData+Convert.m in Sources */,
 				782709CE1E87112400E21433 /* NSString+CJEncoding.m in Sources */,
 				782709CA1E87112400E21433 /* NSDictionary+Convert.m in Sources */,
-				782709C91E87112400E21433 /* NSDate+FindAllDate.m in Sources */,
 				7827092C1E870B5A00E21433 /* ViewController.m in Sources */,
-				782709C81E87112400E21433 /* NSDate+Category.m in Sources */,
+				78E2F8C81EA4C20B00892D86 /* CJDateModel.m in Sources */,
+				78E2F8C91EA4C20B00892D86 /* CJDateModelUtil.m in Sources */,
+				78E2F8BF1EA4B5FF00892D86 /* NSDate+CJDateDistance.m in Sources */,
+				782709C81E87112400E21433 /* NSDate+CJDateValue.m in Sources */,
 				782709D01E87112400E21433 /* NSString+Validate.m in Sources */,
 				782709CF1E87112400E21433 /* NSString+MD5.m in Sources */,
-				782709C71E87112400E21433 /* CJDate.m in Sources */,
 				782709991E870C3800E21433 /* StringViewController.m in Sources */,
 				782709291E870B5A00E21433 /* AppDelegate.m in Sources */,
 				782709CC1E87112400E21433 /* NSString+Category.m in Sources */,
+				78E2F8B81EA4B01200892D86 /* DateViewController.m in Sources */,
 				782709261E870B5A00E21433 /* main.m in Sources */,
 				782709CD1E87112400E21433 /* NSString+CJTextSize.m in Sources */,
 				782709CB1E87112400E21433 /* NSString+Attributed.m in Sources */,
@@ -555,6 +730,7 @@
 		};
 		7827094F1E870B5A00E21433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DAF053F4223FFCBD8FDF3C /* Pods-CJFoundationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CJFoundationDemo/Info.plist;
@@ -567,6 +743,7 @@
 		};
 		782709501E870B5A00E21433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BBF4C64F889729460774F4 /* Pods-CJFoundationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CJFoundationDemo/Info.plist;
@@ -579,6 +756,7 @@
 		};
 		782709521E870B5A00E21433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8B5E5AFFDD989E23BB2686 /* Pods-CJFoundationDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CJFoundationDemoTests/Info.plist;
@@ -591,6 +769,7 @@
 		};
 		782709531E870B5A00E21433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2402B9773363D6D8C022E579 /* Pods-CJFoundationDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CJFoundationDemoTests/Info.plist;

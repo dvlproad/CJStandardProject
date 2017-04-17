@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CJFoundation"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "系统Foundation的扩展"
   s.homepage     = "https://github.com/dvlproad/CJFoundation"
   s.license      = "MIT"
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "CJFoundation_0.0.1" }
+  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "NSDate_0.0.2" }
   # s.source_files  = "CJFoundation/**/*.{h,m}"
   # s.resources     = "CJFoundation/**/*.{png,xib}"
   s.frameworks = 'UIKit'
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 
 
   s.subspec 'NSDate' do |ss|
-    ss.source_files = "CJFoundation/NSDate/*.{h,m}"
+    ss.source_files = "CJFoundation/NSDate/**/*.{h,m}"
   end
 
 end

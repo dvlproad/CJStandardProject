@@ -1,23 +1,24 @@
 //
-//  NSDate+FindAllDate.m
+//  CJDateModelUtil.m
 //  CJFoundationDemo
 //
 //  Created by lichq on 15/4/9.
 //  Copyright (c) 2015年 lichq. All rights reserved.
 //
 
-#import "NSDate+FindAllDate.h"
+#import "CJDateModelUtil.h"
 
-@implementation NSDate (FindAllDate)
+@implementation CJDateModelUtil
 
-- (NSMutableArray<CJDate *> *)findAllDateFromDate:(NSDate *)dateBegin {
-    NSDate *dateEnd = self;
+/** 完整的描述请参见文件头部 */
+- (NSMutableArray<CJDateModel *> *)findAllCJDateModelFromDate:(NSDate *)dateBegin toDate:(NSDate *)toDate {
+    NSDate *dateEnd = toDate;
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSCalendarUnit calendarUnit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
     
     NSDateComponents *dateComponentsBegin = [calendar components:calendarUnit fromDate:dateBegin];
-
+    
     NSInteger dateBeginYear  = [dateComponentsBegin year];
     NSInteger dateBeginMonth = [dateComponentsBegin month];
     NSInteger dateBeginDay = [dateComponentsBegin day];
@@ -75,7 +76,7 @@
                 BOOL isMiddleDayInMonth = value_D == (range.length - 0)/2;
                 BOOL isFirstMonth = value_M == 1;
                 
-                CJDate *myDate = [[CJDate alloc] init];
+                CJDateModel *myDate = [[CJDateModel alloc] init];
                 myDate.index = dayIndex;
                 myDate.year = value_Y;
                 myDate.month = value_M;
@@ -94,8 +95,5 @@
     
     return dateArray;
 }
-
-
-
 
 @end

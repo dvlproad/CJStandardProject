@@ -8,9 +8,11 @@
 
 #import "ViewController.h"
 #import "StringViewController.h"
+#import "DateViewController.h"
 
 typedef NS_ENUM(NSUInteger, TabelIndexType) {
     TabelIndexTypeNSString,
+    TabelIndexTypeNSDate,
 };
 
 
@@ -48,6 +50,11 @@ typedef NS_ENUM(NSUInteger, TabelIndexType) {
             cell.textLabel.text = @"NSString";
             break;
         }
+        case TabelIndexTypeNSDate:
+        {
+            cell.textLabel.text = @"NSDate";
+            break;
+        }
         default:
         {
             break;
@@ -65,6 +72,13 @@ typedef NS_ENUM(NSUInteger, TabelIndexType) {
         {
             StringViewController *viewController = [[StringViewController alloc] initWithNibName:@"StringViewController" bundle:nil];
             viewController.title = NSLocalizedString(@"NSString", nil);
+            [self.navigationController pushViewController:viewController animated:YES];
+            break;
+        }
+        case TabelIndexTypeNSDate:
+        {
+            DateViewController *viewController = [[DateViewController alloc] initWithNibName:@"DateViewController" bundle:nil];
+            viewController.title = NSLocalizedString(@"NSDate", nil);
             [self.navigationController pushViewController:viewController animated:YES];
             break;
         }

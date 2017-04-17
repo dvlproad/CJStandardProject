@@ -1,5 +1,5 @@
 //
-//  CJDate.h
+//  CJDateModel.h
 //  ChartDemo
 //
 //  Created by lichq on 16/8/16.
@@ -10,7 +10,7 @@
 
 //以后可以参考 NSDateComponents 来进一步改进
 
-@interface CJDate : NSObject
+@interface CJDateModel : NSObject
 
 @property (nonatomic, assign) NSInteger index;  /**< 该天的索引 */
 

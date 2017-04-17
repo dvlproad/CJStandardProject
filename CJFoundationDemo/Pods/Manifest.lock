@@ -1,0 +1,20 @@
+PODS:
+  - CJBaseUIKit/CJTextField (0.0.10)
+  - CJPicker (1.2.0):
+    - CJPicker/CJToolbar (= 1.2.0)
+  - CJPicker/CJToolbar (1.2.0)
+  - CJPopupAction (1.4.2)
+
+DEPENDENCIES:
+  - CJBaseUIKit/CJTextField (= 0.0.10)
+  - CJPicker (~> 1.2.0)
+  - CJPopupAction (~> 1.4.2)
+
+SPEC CHECKSUMS:
+  CJBaseUIKit: 835f6dfebc6e15bb4b8e1de96829fb34eba1da25
+  CJPicker: 50aac45bc2cf1e2e4e39a6a799a624ef993a80ef
+  CJPopupAction: e491b5f3fdb9d50dddedf450eeb94e36cc61b749
+
+PODFILE CHECKSUM: 07f4be1beaa8d882ef1da5aa0a4b7b6d338be8e7
+
+COCOAPODS: 1.1.0.rc.2
