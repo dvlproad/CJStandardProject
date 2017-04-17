@@ -28,18 +28,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.currentDate = [NSDate date];
+    [self setupChooseDatePicker];
     
-    [self setupChooseDateView];
+    self.currentDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    self.dateTextField.text = [dateFormatter stringFromDate:self.currentDate];
 }
 
 
-- (void)setupChooseDateView {
+- (void)setupChooseDatePicker {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd";
     
-    self.dateTextField = [[CJAddSubtractTextField alloc] initWithFrame:CGRectMake(30, 100, 200, 30)];
-    self.dateTextField.text = [dateFormatter stringFromDate:self.currentDate];
+    self.dateTextField = [[CJAddSubtractTextField alloc] initWithFrame:CGRectZero];
     self.dateTextField.hideCursor = YES;
     self.dateTextField.hideMenuController = YES;
     
@@ -60,7 +62,6 @@
         
         weakSelf.currentDate = date;
     }];
-    [self.view addSubview:self.dateTextField];
     
     
     CJDefaultDatePicker *datePicker = [[CJDefaultDatePicker alloc] init];
@@ -84,6 +85,13 @@
     }];
     */
     self.dateTextField.inputView = datePicker;
+    
+    [self.dateTextField setFrame:CGRectMake(30, 100, 200, 30)];
+    [self.view addSubview:self.dateTextField];
+}
+
+- (void)hideDateChoosePicker {
+    [self.dateTextField endEditing:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -91,11 +99,6 @@
     
     [self hideDateChoosePicker];
 }
-
-- (void)hideDateChoosePicker {
-    [self.dateTextField endEditing:YES];
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

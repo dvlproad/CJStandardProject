@@ -23,7 +23,7 @@
     //日期转换 年月日
     NSCalendar *calendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     //NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSCalendarUnit calendarUnit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
+    NSCalendarUnit calendarUnit = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     NSDateComponents *dateComponents = [calendar components:calendarUnit fromDate:self];
     NSInteger year = [dateComponents year];
     NSInteger month = [dateComponents month];
@@ -66,9 +66,9 @@
     [dateComponents setYear:year];
     [dateComponents setMonth:month];
     [dateComponents setDay:day];
-    [dateComponents setDay:hour];
-    [dateComponents setDay:minute];
-    [dateComponents setDay:second];
+    [dateComponents setHour:hour];
+    [dateComponents setMinute:minute];
+    [dateComponents setSecond:second];
     
     [dateComponents setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
