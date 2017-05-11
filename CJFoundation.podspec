@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "CJFoundation"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "系统Foundation的扩展"
   s.homepage     = "https://github.com/dvlproad/CJFoundation"
   s.license      = "MIT"
   s.author             = "dvlproad"
   # s.social_media_url   = "http://twitter.com/dvlproad"
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "NSDate_0.0.3" }
+  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "NSString_0.0.4" }
   # s.source_files  = "CJFoundation/**/*.{h,m}"
   # s.resources     = "CJFoundation/**/*.{png,xib}"
   s.frameworks = 'UIKit'

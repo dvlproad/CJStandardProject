@@ -8,6 +8,8 @@
 
 #import "StringViewController.h"
 
+#import "NSString+CJEncryption.h"
+
 @interface StringViewController ()
 
 @end
@@ -21,6 +23,14 @@
     NSString *string = @"这是一串比较长的字符串，用来富文本化的文字";
     
     self.attributedLabel.attributedText = nil;
+    
+    
+    NSString *encryptionString = @"得到";
+    NSString *base64String = [NSString cj_base64StringFromText:encryptionString];
+    NSLog(@"base64String = %@", base64String);
+    
+    NSString *text = [NSString cj_textFromBase64String:base64String];
+    NSLog(@"text = %@", text);
 }
 
 - (void)didReceiveMemoryWarning {

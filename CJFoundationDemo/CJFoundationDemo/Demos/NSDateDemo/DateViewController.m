@@ -20,6 +20,14 @@
 @property (nonatomic, strong) CJAddSubtractTextField *dateTextField;
 @property (nonatomic) NSDate *currentDate;
 
+@property (nonatomic, weak) IBOutlet UILabel *originCurrentTime1;
+@property (nonatomic, weak) IBOutlet UISwitch *correctConvertSwitch1;
+@property (nonatomic, weak) IBOutlet UILabel *resultCurrentTime1;
+
+@property (nonatomic, weak) IBOutlet UILabel *originCurrentTime2;
+@property (nonatomic, weak) IBOutlet UISwitch *correctConvertSwitch2;
+@property (nonatomic, weak) IBOutlet UILabel *resultCurrentTime2;
+
 @end
 
 @implementation DateViewController
@@ -32,14 +40,46 @@
     
     self.currentDate = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     self.dateTextField.text = [dateFormatter stringFromDate:self.currentDate];
+    
 }
 
+//参考：http://blog.sina.com.cn/s/blog_708663ad0102wf1z.html
+- (IBAction)getStringFromDate1:(id)sender {
+    NSLog(@"-------------------------------------------");
+    NSString *currentTime = self.originCurrentTime1.text; //2017-04-17 20:20:08
+    NSLog(@"originDateString       = %@", currentTime);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    if (self.correctConvertSwitch1.isOn) {
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]]; //解决NSString转NSDate差8小时的问题
+    }
+    
+    //①string转换为date少了8个小时，加上UTC后，正常
+    NSDate *date = [dateFormatter dateFromString:currentTime];
+    NSLog(@"after convert to date  = %@", date);//错误时候为2017-04-17 12:20:08 +0000，即少了8个小时
+    
+    self.resultCurrentTime1.text = [dateFormatter stringFromDate:date];
+    
+    //②date转换为string又多了8个小时
+    NSDateFormatter *dateFormatter2 = [[NSDateFormatter alloc]init];
+    [dateFormatter2 setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [dateFormatter2 setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    NSString *dateString = [dateFormatter stringFromDate:self.currentDate];
+//    self.resultCurrentTime1.text = [dateFormatter stringFromDate:date];
+    NSLog(@"date convert to string = %@", dateString);
+}
+
+- (IBAction)getStringFromDate2:(id)sender {
+    
+}
 
 - (void)setupChooseDatePicker {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"yyyy-MM-dd";
+    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     
     self.dateTextField = [[CJAddSubtractTextField alloc] initWithFrame:CGRectZero];
     self.dateTextField.hideCursor = YES;
@@ -86,7 +126,7 @@
     */
     self.dateTextField.inputView = datePicker;
     
-    [self.dateTextField setFrame:CGRectMake(30, 100, 200, 30)];
+    [self.dateTextField setFrame:CGRectMake(20, 100, 280, 30)];
     [self.view addSubview:self.dateTextField];
 }
 

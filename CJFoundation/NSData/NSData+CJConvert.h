@@ -1,5 +1,5 @@
 //
-//  NSData+Convert.h
+//  NSData+CJConvert.h
 //  CJFoundationDemo
 //
 //  Created by lichq on 7/31/15.
@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (Convert)
+@interface NSData (CJConvert)
 
-- (NSDictionary *)convertToDictionary;
+/**
+ *  将data转为dictionary
+ *
+ *  return 返回新的
+ */
+- (NSDictionary *)cj_convertToDictionary;
 
 @end

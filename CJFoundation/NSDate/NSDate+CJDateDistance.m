@@ -70,12 +70,10 @@
     [dateComponents setMinute:minute];
     [dateComponents setSecond:second];
     
-    [dateComponents setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-    
+    //NSLog(@"------------------------------------");
+    //NSLog(@"originDate    = %@", self);
     NSDate *newDate = [calendar dateFromComponents:dateComponents];
-    
-    
-    //NSLog(@"newDate = %@",[self standString]);
+    //NSLog(@"计算后newDate  = %@", newDate);
     
     return newDate;
 }
