@@ -2,8 +2,8 @@
 //  NSDate+CJDateValue.m
 //  CJFoundationDemo
 //
-//  Created by lichq on 14-12-16.
-//  Copyright (c) 2014年 lichq. All rights reserved.
+//  Created by ciyouzen on 16/12/14.
+//  Copyright (c) 2014年 dvlproad. All rights reserved.
 //
 
 #import "NSDate+CJDateValue.h"
@@ -13,7 +13,7 @@
 /** 完整的描述请参见文件头部 */
 - (NSString *)cj_standString {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *string = [dateFormatter stringFromDate:self];
     return string;
 }

@@ -2,7 +2,7 @@
 //  CJDateModel.h
 //  ChartDemo
 //
-//  Created by lichq on 16/8/16.
+//  Created by ciyouzen on 16/8/16.
 //  Copyright © 2016年 ciyouzen. All rights reserved.
 //
 

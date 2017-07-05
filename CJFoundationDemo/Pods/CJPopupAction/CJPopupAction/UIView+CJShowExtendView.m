@@ -2,7 +2,7 @@
 //  UIView+CJShowExtendView.m
 //  CJPopupViewDemo
 //
-//  Created by lichq on 15/11/12.
+//  Created by ciyouzen on 15/11/12.
 //  Copyright (c) 2015年 ciyouzen. All rights reserved.
 //
 

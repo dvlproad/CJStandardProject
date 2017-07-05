@@ -2,7 +2,7 @@
 //  CJComponentDataModelUtil.h
 //  CJPDropDownViewDemo
 //
-//  Created by lichq on 9/7/15.
+//  Created by ciyouzen on 9/7/15.
 //  Copyright (c) 2015 ciyouzen. All rights reserved.
 //
 

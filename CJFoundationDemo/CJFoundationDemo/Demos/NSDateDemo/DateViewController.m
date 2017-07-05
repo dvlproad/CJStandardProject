@@ -12,7 +12,7 @@
 #import <CJPicker/CJDefaultDatePicker.h>
 #import <CJPopupAction/UIView+CJShowExtendView.h>
 
-#import "NSDate+CJDateDistance.h"
+#import "NSDate+CJCategory.h"
 
 @interface DateViewController () {
     
@@ -42,6 +42,11 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     self.dateTextField.text = [dateFormatter stringFromDate:self.currentDate];
+    
+    NSDate *birthdayDate = [dateFormatter dateFromString:@"1989-12-27 01:10:22"];
+    NSInteger yearInterval = [NSDate cj_dateIntervalFromDate:birthdayDate toDate:[NSDate date] inCalculateUnit:NSCalendarUnitYear];
+    NSInteger age = [NSDate cj_ageIntervalFromDate:birthdayDate toDate:[NSDate date]];
+    NSLog(@"今年周岁为：%ld, %ld", yearInterval, age);
     
 }
 

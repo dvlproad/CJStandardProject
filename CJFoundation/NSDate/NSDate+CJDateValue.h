@@ -2,8 +2,8 @@
 //  NSDate+CJDateValue.h
 //  CJFoundationDemo
 //
-//  Created by lichq on 14-12-16.
-//  Copyright (c) 2014年 lichq. All rights reserved.
+//  Created by ciyouzen on 16/12/14.
+//  Copyright (c) 2014年 dvlproad. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,8 +2,8 @@
 //  CJDateModelUtil.m
 //  CJFoundationDemo
 //
-//  Created by lichq on 15/4/9.
-//  Copyright (c) 2015年 lichq. All rights reserved.
+//  Created by ciyouzen on 15/4/9.
+//  Copyright (c) 2015年 dvlproad. All rights reserved.
 //
 
 #import "CJDateModelUtil.h"
