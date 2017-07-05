@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+#use_frameworks!
+
+target 'CJBaseUtilDemo' do
+    pod 'PinYin4Objc', '~> 1.1.1' #CJSortedAndSearchUtil需要依赖的库
+end
+
+target 'CJBaseUtilDemoTests' do
+    
+end

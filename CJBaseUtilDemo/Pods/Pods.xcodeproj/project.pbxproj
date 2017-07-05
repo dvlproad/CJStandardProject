@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10701F5CB466D70CC08FC7EF2A550678 /* HanyuPinyinOutputFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6FBA4BA04400206A17E111C5F54DCC /* HanyuPinyinOutputFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B22E052277943F15A572D929613BF88 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 862151976CB1DE71E0611C25CB67D5EC /* ChineseToPinyinResource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		522E604676925EBF986C1F155886D6F9 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 711384D75874211781DA82432A8C421D /* PinyinHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5970A781C7A16FB5584BC096A9DE729B /* Pods-CJBaseUtilDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E27DABFECA63500588F6C39777B2B946 /* Pods-CJBaseUtilDemoTests-dummy.m */; };
+		5A125264CCF2DFA3342E447C4C63656B /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D929098495C91DBE20146F7B071C26B3 /* PinyinFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		65A7FB542281CEA7C40A8D80F904F31D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6911347660612B792F2CB9A557B31B3F /* PinyinFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 931A9CA47AB50A5F731EF849ECB91AF9 /* PinyinFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		715BC2A419BE54881F5F3C904706EC60 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = ED417901A814A2A717896F21F994B192 /* NSString+PinYin4Cocoa.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		74764394547D383465642E1A886EC1DE /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E8093A163AF6A5476EB58E74FBB432 /* HanyuPinyinOutputFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		840153AF6B0513039B1296DF143F03C5 /* Pods-CJBaseUtilDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD46B18D6075C76213B8A5EAF163B4 /* Pods-CJBaseUtilDemo-dummy.m */; };
+		92D04E5BC8BC9B1219F91C0AD2687E15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		ABB13EFAA742373E895EDA1725067FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B3D2AAA3042060515160003EB018F7B9 /* PinyinHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 56E57A852192AF94CFCBF0E7008E6186 /* PinyinHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD0C267E8AC27CBCF4D91F5C76A512E /* PinYin4Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = 39D2E0D5DE4853C159692E20942D7167 /* PinYin4Objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2C5EFCE67B595968B77E0AEDF27142 /* PinYin4Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DF9C61097880DB59E97500FC3054FB /* PinYin4Objc-dummy.m */; };
+		E5A84C07F229DA77DCBBD501729A5538 /* NSString+PinYin4Cocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 336AEF4AAA7DC5833AAEA8C8528F6EB8 /* NSString+PinYin4Cocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF0AF4413AE1610DBAC7B7C95DFFEC5C /* ChineseToPinyinResource.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B1D2FC37E5797455FCE883488E74D1 /* ChineseToPinyinResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		391F3304131347E2F4C7F2A5DC038670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58827DC52D6210C2F30AB6EE362BAE73;
+			remoteInfo = PinYin4Objc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184733698E22A206F68A09CE5E4C41F9 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = unicode_to_hanyu_pinyin.txt; path = PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		336AEF4AAA7DC5833AAEA8C8528F6EB8 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+PinYin4Cocoa.h"; path = "PinYin4Objc/Classes/NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		39D2E0D5DE4853C159692E20942D7167 /* PinYin4Objc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinYin4Objc.h; path = PinYin4Objc/Classes/PinYin4Objc.h; sourceTree = "<group>"; };
+		3A1E53A841D0AAD7F9AF1A25EA015397 /* Pods-CJBaseUtilDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CJBaseUtilDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B6FBA4BA04400206A17E111C5F54DCC /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HanyuPinyinOutputFormat.h; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		3DA5774C33EF95EDEE4FC6A134AA3A5B /* Pods-CJBaseUtilDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJBaseUtilDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		56E57A852192AF94CFCBF0E7008E6186 /* PinyinHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinHelper.h; path = PinYin4Objc/Classes/PinyinHelper.h; sourceTree = "<group>"; };
+		5AFD46B18D6075C76213B8A5EAF163B4 /* Pods-CJBaseUtilDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CJBaseUtilDemo-dummy.m"; sourceTree = "<group>"; };
+		5C4CDD9F35292A96B64DD21EF02A32C4 /* PinYin4Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinYin4Objc.xcconfig; sourceTree = "<group>"; };
+		5CBF1AA8C1296C9C4488F95148FE6577 /* Pods-CJBaseUtilDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJBaseUtilDemoTests-resources.sh"; sourceTree = "<group>"; };
+		60ACE77483518AB9CA62FB5865AFB0F4 /* Pods-CJBaseUtilDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJBaseUtilDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66B28C580B528F18E321247C90F61DD3 /* Pods-CJBaseUtilDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CJBaseUtilDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B16CFAE59C182EA9AA59AC5190B986E /* Pods-CJBaseUtilDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CJBaseUtilDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		711384D75874211781DA82432A8C421D /* PinyinHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinHelper.m; path = PinYin4Objc/Classes/PinyinHelper.m; sourceTree = "<group>"; };
+		7929F0915F4DCE1482A6D9FDC53D4529 /* Pods-CJBaseUtilDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJBaseUtilDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		862151976CB1DE71E0611C25CB67D5EC /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChineseToPinyinResource.m; path = PinYin4Objc/Classes/ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		8E8F573E972EB4C88FB5381AC2A2DB3A /* libPinYin4Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPinYin4Objc.a; path = libPinYin4Objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		931A9CA47AB50A5F731EF849ECB91AF9 /* PinyinFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PinyinFormatter.h; path = PinYin4Objc/Classes/PinyinFormatter.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97E4AA91E6A9FC8733E7BB4E482634A4 /* Pods-CJBaseUtilDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJBaseUtilDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2E8093A163AF6A5476EB58E74FBB432 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HanyuPinyinOutputFormat.m; path = PinYin4Objc/Classes/HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		C2FCAC813851DC581EC7BF19981FC4B1 /* Pods-CJBaseUtilDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CJBaseUtilDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4255154866BD930F92680579C4803BD /* PinYin4Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinYin4Objc-prefix.pch"; sourceTree = "<group>"; };
+		C92BE39DA49AEFA47D206BE9B16A9041 /* libPods-CJBaseUtilDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CJBaseUtilDemoTests.a"; path = "libPods-CJBaseUtilDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF52ACE249321DCEA8446DBFC259E268 /* Pods-CJBaseUtilDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJBaseUtilDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D1DF9C61097880DB59E97500FC3054FB /* PinYin4Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinYin4Objc-dummy.m"; sourceTree = "<group>"; };
+		D929098495C91DBE20146F7B071C26B3 /* PinyinFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PinyinFormatter.m; path = PinYin4Objc/Classes/PinyinFormatter.m; sourceTree = "<group>"; };
+		E27DABFECA63500588F6C39777B2B946 /* Pods-CJBaseUtilDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CJBaseUtilDemoTests-dummy.m"; sourceTree = "<group>"; };
+		E8B1D2FC37E5797455FCE883488E74D1 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChineseToPinyinResource.h; path = PinYin4Objc/Classes/ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		ED3A0FCA7EF49C4A0075075E4C16B630 /* Pods-CJBaseUtilDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJBaseUtilDemo-resources.sh"; sourceTree = "<group>"; };
+		ED417901A814A2A717896F21F994B192 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+PinYin4Cocoa.m"; path = "PinYin4Objc/Classes/NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		FCA8738B0A0D7D54D6F69DC38C3E317B /* Pods-CJBaseUtilDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJBaseUtilDemo-frameworks.sh"; sourceTree = "<group>"; };
+		FFB4FDAEB96C483A253B4CDDE583126C /* libPods-CJBaseUtilDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CJBaseUtilDemo.a"; path = "libPods-CJBaseUtilDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14FC48C19A14EA1A7FCE42A32283438E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92D04E5BC8BC9B1219F91C0AD2687E15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A3A33E17DCB67C05C6089888DEB8ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB13EFAA742373E895EDA1725067FCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB133E757158C81443426225044E24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A7FB542281CEA7C40A8D80F904F31D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056FCD1AC19174E2132280C70993A6CE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				779630D158C1D2EA692D5D591FB88889 /* Pods-CJBaseUtilDemo */,
+				988376E39F4871980533B683C1CAEFF9 /* Pods-CJBaseUtilDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		16AFCD1E3D51D82684BA5325B419ECB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63D9B46067869FD335A88DE3C33C3191 /* PinYin4Objc */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63D9B46067869FD335A88DE3C33C3191 /* PinYin4Objc */ = {
+			isa = PBXGroup;
+			children = (
+				E8B1D2FC37E5797455FCE883488E74D1 /* ChineseToPinyinResource.h */,
+				862151976CB1DE71E0611C25CB67D5EC /* ChineseToPinyinResource.m */,
+				3B6FBA4BA04400206A17E111C5F54DCC /* HanyuPinyinOutputFormat.h */,
+				A2E8093A163AF6A5476EB58E74FBB432 /* HanyuPinyinOutputFormat.m */,
+				336AEF4AAA7DC5833AAEA8C8528F6EB8 /* NSString+PinYin4Cocoa.h */,
+				ED417901A814A2A717896F21F994B192 /* NSString+PinYin4Cocoa.m */,
+				39D2E0D5DE4853C159692E20942D7167 /* PinYin4Objc.h */,
+				931A9CA47AB50A5F731EF849ECB91AF9 /* PinyinFormatter.h */,
+				D929098495C91DBE20146F7B071C26B3 /* PinyinFormatter.m */,
+				56E57A852192AF94CFCBF0E7008E6186 /* PinyinHelper.h */,
+				711384D75874211781DA82432A8C421D /* PinyinHelper.m */,
+				9C1F202FBDA886A2185C679357B62CF0 /* Resources */,
+				83BFC27F401773DF7440362D94999DEC /* Support Files */,
+			);
+			name = PinYin4Objc;
+			path = PinYin4Objc;
+			sourceTree = "<group>";
+		};
+		779630D158C1D2EA692D5D591FB88889 /* Pods-CJBaseUtilDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3A1E53A841D0AAD7F9AF1A25EA015397 /* Pods-CJBaseUtilDemo-acknowledgements.markdown */,
+				66B28C580B528F18E321247C90F61DD3 /* Pods-CJBaseUtilDemo-acknowledgements.plist */,
+				5AFD46B18D6075C76213B8A5EAF163B4 /* Pods-CJBaseUtilDemo-dummy.m */,
+				FCA8738B0A0D7D54D6F69DC38C3E317B /* Pods-CJBaseUtilDemo-frameworks.sh */,
+				ED3A0FCA7EF49C4A0075075E4C16B630 /* Pods-CJBaseUtilDemo-resources.sh */,
+				3DA5774C33EF95EDEE4FC6A134AA3A5B /* Pods-CJBaseUtilDemo.debug.xcconfig */,
+				CF52ACE249321DCEA8446DBFC259E268 /* Pods-CJBaseUtilDemo.release.xcconfig */,
+			);
+			name = "Pods-CJBaseUtilDemo";
+			path = "Target Support Files/Pods-CJBaseUtilDemo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				16AFCD1E3D51D82684BA5325B419ECB6 /* Pods */,
+				BFDAFEE054AF8F6B39B5DE47861B6E3F /* Products */,
+				056FCD1AC19174E2132280C70993A6CE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		83BFC27F401773DF7440362D94999DEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C4CDD9F35292A96B64DD21EF02A32C4 /* PinYin4Objc.xcconfig */,
+				D1DF9C61097880DB59E97500FC3054FB /* PinYin4Objc-dummy.m */,
+				C4255154866BD930F92680579C4803BD /* PinYin4Objc-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PinYin4Objc";
+			sourceTree = "<group>";
+		};
+		988376E39F4871980533B683C1CAEFF9 /* Pods-CJBaseUtilDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B16CFAE59C182EA9AA59AC5190B986E /* Pods-CJBaseUtilDemoTests-acknowledgements.markdown */,
+				C2FCAC813851DC581EC7BF19981FC4B1 /* Pods-CJBaseUtilDemoTests-acknowledgements.plist */,
+				E27DABFECA63500588F6C39777B2B946 /* Pods-CJBaseUtilDemoTests-dummy.m */,
+				7929F0915F4DCE1482A6D9FDC53D4529 /* Pods-CJBaseUtilDemoTests-frameworks.sh */,
+				5CBF1AA8C1296C9C4488F95148FE6577 /* Pods-CJBaseUtilDemoTests-resources.sh */,
+				97E4AA91E6A9FC8733E7BB4E482634A4 /* Pods-CJBaseUtilDemoTests.debug.xcconfig */,
+				60ACE77483518AB9CA62FB5865AFB0F4 /* Pods-CJBaseUtilDemoTests.release.xcconfig */,
+			);
+			name = "Pods-CJBaseUtilDemoTests";
+			path = "Target Support Files/Pods-CJBaseUtilDemoTests";
+			sourceTree = "<group>";
+		};
+		9C1F202FBDA886A2185C679357B62CF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				184733698E22A206F68A09CE5E4C41F9 /* unicode_to_hanyu_pinyin.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFDAFEE054AF8F6B39B5DE47861B6E3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8F573E972EB4C88FB5381AC2A2DB3A /* libPinYin4Objc.a */,
+				FFB4FDAEB96C483A253B4CDDE583126C /* libPods-CJBaseUtilDemo.a */,
+				C92BE39DA49AEFA47D206BE9B16A9041 /* libPods-CJBaseUtilDemoTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		809106BE71FE3A39409E7E614F86D779 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0AF4413AE1610DBAC7B7C95DFFEC5C /* ChineseToPinyinResource.h in Headers */,
+				10701F5CB466D70CC08FC7EF2A550678 /* HanyuPinyinOutputFormat.h in Headers */,
+				E5A84C07F229DA77DCBBD501729A5538 /* NSString+PinYin4Cocoa.h in Headers */,
+				BAD0C267E8AC27CBCF4D91F5C76A512E /* PinYin4Objc.h in Headers */,
+				6911347660612B792F2CB9A557B31B3F /* PinyinFormatter.h in Headers */,
+				B3D2AAA3042060515160003EB018F7B9 /* PinyinHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		58827DC52D6210C2F30AB6EE362BAE73 /* PinYin4Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870BA591FA934F53D97F49DD80FFBD27 /* Build configuration list for PBXNativeTarget "PinYin4Objc" */;
+			buildPhases = (
+				153BCB5B5ADA6D06D1D5AD95DF2B02B6 /* Sources */,
+				14FC48C19A14EA1A7FCE42A32283438E /* Frameworks */,
+				809106BE71FE3A39409E7E614F86D779 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinYin4Objc;
+			productName = PinYin4Objc;
+			productReference = 8E8F573E972EB4C88FB5381AC2A2DB3A /* libPinYin4Objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8674652271BA810C5DF3CD2E0CE3DEFA /* Pods-CJBaseUtilDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1BC584905F30B257B155DCBB7FB7D6D /* Build configuration list for PBXNativeTarget "Pods-CJBaseUtilDemoTests" */;
+			buildPhases = (
+				B9F7805C78873A22CD593F791CFB4C7A /* Sources */,
+				4A3A33E17DCB67C05C6089888DEB8ACC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CJBaseUtilDemoTests";
+			productName = "Pods-CJBaseUtilDemoTests";
+			productReference = C92BE39DA49AEFA47D206BE9B16A9041 /* libPods-CJBaseUtilDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C9DBDA9CA8849111F4E552D8BF88CAB6 /* Pods-CJBaseUtilDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848F92F834AE9E03800473965BE8F46C /* Build configuration list for PBXNativeTarget "Pods-CJBaseUtilDemo" */;
+			buildPhases = (
+				893D8607D6EBC33D509F032CFD15E70B /* Sources */,
+				AEB133E757158C81443426225044E24E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0432CC901F72F03A51ACF15C9501522 /* PBXTargetDependency */,
+			);
+			name = "Pods-CJBaseUtilDemo";
+			productName = "Pods-CJBaseUtilDemo";
+			productReference = FFB4FDAEB96C483A253B4CDDE583126C /* libPods-CJBaseUtilDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BFDAFEE054AF8F6B39B5DE47861B6E3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58827DC52D6210C2F30AB6EE362BAE73 /* PinYin4Objc */,
+				C9DBDA9CA8849111F4E552D8BF88CAB6 /* Pods-CJBaseUtilDemo */,
+				8674652271BA810C5DF3CD2E0CE3DEFA /* Pods-CJBaseUtilDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153BCB5B5ADA6D06D1D5AD95DF2B02B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B22E052277943F15A572D929613BF88 /* ChineseToPinyinResource.m in Sources */,
+				74764394547D383465642E1A886EC1DE /* HanyuPinyinOutputFormat.m in Sources */,
+				715BC2A419BE54881F5F3C904706EC60 /* NSString+PinYin4Cocoa.m in Sources */,
+				DD2C5EFCE67B595968B77E0AEDF27142 /* PinYin4Objc-dummy.m in Sources */,
+				5A125264CCF2DFA3342E447C4C63656B /* PinyinFormatter.m in Sources */,
+				522E604676925EBF986C1F155886D6F9 /* PinyinHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		893D8607D6EBC33D509F032CFD15E70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840153AF6B0513039B1296DF143F03C5 /* Pods-CJBaseUtilDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F7805C78873A22CD593F791CFB4C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5970A781C7A16FB5584BC096A9DE729B /* Pods-CJBaseUtilDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0432CC901F72F03A51ACF15C9501522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinYin4Objc;
+			target = 58827DC52D6210C2F30AB6EE362BAE73 /* PinYin4Objc */;
+			targetProxy = 391F3304131347E2F4C7F2A5DC038670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37D0CADE8C57DD7F2B7BFFD95567D8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4CDD9F35292A96B64DD21EF02A32C4 /* PinYin4Objc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinYin4Objc/PinYin4Objc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		5A794282582D6033A98771BC8D161204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4CDD9F35292A96B64DD21EF02A32C4 /* PinYin4Objc.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinYin4Objc/PinYin4Objc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		7EB31511E7BCC33A5A0EE2242CEE2F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E4AA91E6A9FC8733E7BB4E482634A4 /* Pods-CJBaseUtilDemoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8826525463D7272C726471690C135805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60ACE77483518AB9CA62FB5865AFB0F4 /* Pods-CJBaseUtilDemoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		88CB3672426F72D8B40022CBBDBF8661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA5774C33EF95EDEE4FC6A134AA3A5B /* Pods-CJBaseUtilDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EFC3B4BD84A06F9A97A9769879E18603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF52ACE249321DCEA8446DBFC259E268 /* Pods-CJBaseUtilDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848F92F834AE9E03800473965BE8F46C /* Build configuration list for PBXNativeTarget "Pods-CJBaseUtilDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CB3672426F72D8B40022CBBDBF8661 /* Debug */,
+				EFC3B4BD84A06F9A97A9769879E18603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870BA591FA934F53D97F49DD80FFBD27 /* Build configuration list for PBXNativeTarget "PinYin4Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A794282582D6033A98771BC8D161204 /* Debug */,
+				37D0CADE8C57DD7F2B7BFFD95567D8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1BC584905F30B257B155DCBB7FB7D6D /* Build configuration list for PBXNativeTarget "Pods-CJBaseUtilDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB31511E7BCC33A5A0EE2242CEE2F03 /* Debug */,
+				8826525463D7272C726471690C135805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

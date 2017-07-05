@@ -37,7 +37,6 @@
 		78F1BE951F0C819700333FE9 /* TypeConvertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F1BE931F0C819700333FE9 /* TypeConvertViewController.xib */; };
 		78F1BE981F0C836E00333FE9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BE971F0C836E00333FE9 /* HomeViewController.m */; };
 		78F1BE9C1F0C83A300333FE9 /* ModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BE9B1F0C83A300333FE9 /* ModuleModel.m */; };
-		78F1BEA71F0C937100333FE9 /* CJLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BEA51F0C937100333FE9 /* CJLogUtil.m */; };
 		78F1BEAD1F0C953800333FE9 /* NSArray+CJConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BEAA1F0C953800333FE9 /* NSArray+CJConsoleLog.m */; };
 		78F1BEAE1F0C953800333FE9 /* NSDictionary+CJConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BEAC1F0C953800333FE9 /* NSDictionary+CJConsoleLog.m */; };
 		AA89AB6D85539FA7659B18BF /* libPods-CJFoundationDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A9F0016F325FDAF58DA52A /* libPods-CJFoundationDemoTests.a */; };
@@ -122,9 +121,6 @@
 		78F1BE9A1F0C83A300333FE9 /* ModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleModel.h; sourceTree = "<group>"; };
 		78F1BE9B1F0C83A300333FE9 /* ModuleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleModel.m; sourceTree = "<group>"; };
 		78F1BEA21F0C912F00333FE9 /* NSString+CJCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CJCategory.h"; sourceTree = "<group>"; };
-		78F1BEA41F0C937100333FE9 /* CJLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJLogUtil.h; sourceTree = "<group>"; };
-		78F1BEA51F0C937100333FE9 /* CJLogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJLogUtil.m; sourceTree = "<group>"; };
-		78F1BEA61F0C937100333FE9 /* CJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUtil.h; sourceTree = "<group>"; };
 		78F1BEA91F0C953800333FE9 /* NSArray+CJConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CJConsoleLog.h"; sourceTree = "<group>"; };
 		78F1BEAA1F0C953800333FE9 /* NSArray+CJConsoleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CJConsoleLog.m"; sourceTree = "<group>"; };
 		78F1BEAB1F0C953800333FE9 /* NSDictionary+CJConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CJConsoleLog.h"; sourceTree = "<group>"; };
@@ -198,7 +194,6 @@
 			children = (
 				782709271E870B5A00E21433 /* AppDelegate.h */,
 				782709281E870B5A00E21433 /* AppDelegate.m */,
-				78F1BEA31F0C937100333FE9 /* CJBaseUtil */,
 				7827099B1E87112400E21433 /* CJFoundation */,
 				78F1BE991F0C83A300333FE9 /* Models */,
 				782709941E870C0E00E21433 /* Demos */,
@@ -375,17 +370,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		78F1BEA31F0C937100333FE9 /* CJBaseUtil */ = {
-			isa = PBXGroup;
-			children = (
-				78F1BEA41F0C937100333FE9 /* CJLogUtil.h */,
-				78F1BEA51F0C937100333FE9 /* CJLogUtil.m */,
-				78F1BEA61F0C937100333FE9 /* CJUtil.h */,
-			);
-			name = CJBaseUtil;
-			path = ../../CJBaseUtil;
-			sourceTree = "<group>";
-		};
 		78F1BEA81F0C953800333FE9 /* CJConsoleLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,13 +535,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CJFoundationDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		462339DC16334B1B9EAA134E /* [CP] Embed Pods Frameworks */ = {
@@ -596,13 +583,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CJFoundationDemoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7DB66FE07EA58DB7DBB9420 /* [CP] Copy Pods Resources */ = {
@@ -611,9 +601,15 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CJFoundationDemo/Pods-CJFoundationDemo-resources.sh",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/area.plist",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/city.plist",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar.png",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar@2x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -658,7 +654,6 @@
 				782709991E870C3800E21433 /* StringViewController.m in Sources */,
 				78F1BE941F0C819700333FE9 /* TypeConvertViewController.m in Sources */,
 				782709291E870B5A00E21433 /* AppDelegate.m in Sources */,
-				78F1BEA71F0C937100333FE9 /* CJLogUtil.m in Sources */,
 				78F1BEAD1F0C953800333FE9 /* NSArray+CJConsoleLog.m in Sources */,
 				78E2F8B81EA4B01200892D86 /* DateViewController.m in Sources */,
 				782709261E870B5A00E21433 /* main.m in Sources */,
