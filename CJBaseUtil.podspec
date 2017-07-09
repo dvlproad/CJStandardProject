@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CJBaseUtil"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "自定义的基础工具类"
   s.homepage     = "https://github.com/dvlproad/CJFoundation"
   s.license      = "MIT"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "CJBaseUtil_0.0.2" }
+  s.source       = { :git => "https://github.com/dvlproad/CJFoundation.git", :tag => "CJBaseUtil_0.0.3" }
   # s.source_files  = "CJFoundation/*.{h,m}"
   # s.resources = "CJFoundation/**/*.{png}"
   s.frameworks = 'UIKit'
@@ -35,10 +35,10 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   # 搜索工具
-  # s.subspec 'CJSortedAndSearchUtil' do |ss|
-  #  ss.source_files = "CJBaseUtil/CJSortedAndSearchUtil/**/*.{h,m}"
-  #  ss.dependency 'PinYin4Objc', '~> 1.1.1'
-  # end
+  s.subspec 'CJSortedAndSearchUtil' do |ss|
+   ss.source_files = "CJBaseUtil/CJSortedAndSearchUtil/**/*.{h,m}"
+   ss.dependency 'PinYin4Objc', '~> 1.1.1'
+  end
 
   s.subspec 'CJApp' do |ss|
     ss.source_files = "CJBaseUtil/CJApp/**/*.{h,m}"
