@@ -3,7 +3,7 @@
 //  CJFoundationDemo
 //
 //  Created by ciyouzen on 7/31/15.
-//  Copyright (c) 2015 ciyouzen. All rights reserved.
+//  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
 #import "NSDictionary+CJConvert.h"

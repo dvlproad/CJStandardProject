@@ -2,7 +2,7 @@
 //  NSDate+CJDateInterval.m
 //  CJFoundationDemo
 //
-//  Created by lichaoqian on 2017/7/4.
+//  Created by ciyouzen on 2017/7/4.
 //  Copyright © 2017年 dvlproad. All rights reserved.
 //
 

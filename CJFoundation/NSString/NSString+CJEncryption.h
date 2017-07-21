@@ -3,7 +3,7 @@
 //  CJFoundationDemo
 //
 //  Created by dvlproad on 16/12/14.
-//  Copyright (c) 2014年 ciyouzen. All rights reserved.
+//  Copyright (c) 2014年 dvlproad. All rights reserved.
 //
 
 ///iOS里常见的几种信息编码、加密方法 http://www.cnblogs.com/dsxniubility/p/4264777.html
