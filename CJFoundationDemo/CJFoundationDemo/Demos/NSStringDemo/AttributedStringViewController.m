@@ -54,6 +54,10 @@
     [self setBorderForYYLabel];
 }
 
+- (IBAction)buttonAction:(id)sender {
+    [self setBorderForYYLabel];
+}
+
 - (void)setBorderForYYLabel {
     
     NSMutableAttributedString *allAttributedString = [NSMutableAttributedString new];
@@ -103,12 +107,15 @@
     
     self.sytemLabel.attributedText = allAttributedString;
     
-    
-    self.yyLabel.textAlignment = NSTextAlignmentCenter;
-    self.yyLabel.textVerticalAlignment = YYTextVerticalAlignmentTop;
-    self.yyLabel.numberOfLines = 0;
+#pragma mark - 注意:对于YYLabel的textAlignment的设置必须在attributedText之后，否则无效，即否则会变成默认的NSTextAlignmentLeft
+    //self.yyLabel.textAlignment = NSTextAlignmentCenter;  //错误，写在attributedText设置之前是无效的
     self.yyLabel.attributedText = allAttributedString;
+    self.yyLabel.textAlignment = NSTextAlignmentCenter;  //注意:对于YYLabel的textAlignment的设置必须在attributedText之后，否则无效，即否则会变成默认的NSTextAlignmentLeft
+    self.yyLabel.textVerticalAlignment = YYTextVerticalAlignmentCenter;
+    self.yyLabel.numberOfLines = 0;
 }
+
+
 
 - (NSAttributedString *)padding {
     NSMutableAttributedString *pad = [[NSMutableAttributedString alloc] initWithString:@"\n\n"];
