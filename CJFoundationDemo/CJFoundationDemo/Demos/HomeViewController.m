@@ -11,6 +11,8 @@
 #import "ModuleModel.h"
 
 #import "StringViewController.h"
+#import "AttributedStringViewController.h"
+
 #import "DateViewController.h"
 #import "TypeConvertViewController.h"
 
@@ -39,6 +41,13 @@
     NSStringModule.title = @"NSString";
     NSStringModule.classEntry = [StringViewController class];
     [self.datas addObject:NSStringModule];
+    
+    
+    ModuleModel *NSAttributedStringModule = [[ModuleModel alloc] init];
+    NSAttributedStringModule.title = @"NSAttributedString";
+    NSAttributedStringModule.classEntry = [AttributedStringViewController class];
+    [self.datas addObject:NSAttributedStringModule];
+    
     
     ModuleModel *NSDateModule = [[ModuleModel alloc] init];
     NSDateModule.title = @"NSDate";

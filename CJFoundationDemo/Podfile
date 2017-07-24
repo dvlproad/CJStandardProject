@@ -2,7 +2,9 @@ platform :ios, '8.0'
 #use_frameworks!
 
 target 'CJFoundationDemo' do
-    pod 'CJBaseUIKit/CJTextField', '0.0.10'
+    pod 'CJBaseUIKit/CJTextField', '~> 0.0.10'
+    pod 'CJBaseUIKit/UIColor+CJCategory', '~> 0.0.10'
+    
 	pod 'CJPicker', '~> 1.2.0'
 	pod 'CJPopupAction', '~> 1.4.2'
 end
