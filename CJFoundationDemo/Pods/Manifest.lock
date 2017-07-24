@@ -5,18 +5,21 @@ PODS:
     - CJPicker/CJToolbar (= 1.2.0)
   - CJPicker/CJToolbar (1.2.0)
   - CJPopupAction (1.4.2)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - CJBaseUIKit/CJTextField (~> 0.0.10)
   - CJBaseUIKit/UIColor+CJCategory (~> 0.0.10)
   - CJPicker (~> 1.2.0)
   - CJPopupAction (~> 1.4.2)
+  - YYText (~> 1.0.7)
 
 SPEC CHECKSUMS:
   CJBaseUIKit: 835f6dfebc6e15bb4b8e1de96829fb34eba1da25
   CJPicker: 50aac45bc2cf1e2e4e39a6a799a624ef993a80ef
   CJPopupAction: e491b5f3fdb9d50dddedf450eeb94e36cc61b749
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: c13ef6f3aa447f3ddf7eb5d504979a80bad1897e
+PODFILE CHECKSUM: 0b4c874030272ae9480a35a88f58bdf939cf90e8
 
 COCOAPODS: 1.3.0.beta.2

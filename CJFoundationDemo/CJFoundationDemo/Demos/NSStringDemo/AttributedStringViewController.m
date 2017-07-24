@@ -49,8 +49,73 @@
     NSRange range = [string rangeOfString:@"NSParagraphStyleAttributeName"];
     [attributedString addAttributes:attributes range:range];
     
-    self.textView.attributedText = attributedString;
+    self.textView1.attributedText = attributedString;
+    
+    [self setBorderForYYLabel];
 }
+
+- (void)setBorderForYYLabel {
+    
+    NSMutableAttributedString *allAttributedString = [NSMutableAttributedString new];
+    
+    {
+        NSString *string = @"名牌服饰：1000元\n0.8折";
+        NSRange normalRange = [string rangeOfString:@"名牌服饰：1000元"];
+        NSRange redRange = [string rangeOfString:@"0.8折"];
+        
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string];
+        [attributedString yy_setFont:[UIFont boldSystemFontOfSize:18] range:normalRange];
+        [attributedString yy_setColor:[UIColor lightGrayColor] range:normalRange];
+        [attributedString yy_setFont:[UIFont boldSystemFontOfSize:12] range:redRange];
+        [attributedString yy_setColor:[UIColor redColor] range:redRange];
+        
+        YYTextBorder *redBorder = [YYTextBorder new];
+        redBorder.fillColor = [UIColor greenColor];
+        
+        redBorder.cornerRadius = 30;
+        redBorder.strokeWidth = 5;
+        redBorder.strokeColor = [UIColor yellowColor];
+        
+        redBorder.insets = UIEdgeInsetsMake(0, -10, 0, -10);
+        redBorder.lineStyle = YYTextLineStyleSingle;
+        [attributedString yy_setTextBackgroundBorder:redBorder range:redRange]; //正确
+        //[attributedString yy_setTextBorder:redBorder range:redRange]; //错误
+        
+        YYTextBorder *highlightBorder = redBorder.copy;
+        highlightBorder.strokeWidth = 0;
+        highlightBorder.strokeColor = attributedString.yy_color;
+        highlightBorder.fillColor = attributedString.yy_color;
+        
+        YYTextHighlight *highlight = [YYTextHighlight new];
+        [highlight setColor:[UIColor whiteColor]];
+        [highlight setBackgroundBorder:highlightBorder];
+        highlight.tapAction = ^(UIView *containerView, NSAttributedString *text, NSRange range, CGRect rect) {
+//            [_self showMessage:[NSString stringWithFormat:@"Tap: %@",[text.string substringWithRange:range]]];
+        };
+        //[one yy_setTextHighlight:highlight range:one.yy_rangeOfAll];
+        [attributedString yy_setTextHighlight:highlight range:redRange];
+        
+        [allAttributedString appendAttributedString:attributedString];
+        //[allAttributedString appendAttributedString:[self padding]];
+    }
+    
+    self.textView2.attributedText = allAttributedString;
+    
+    self.sytemLabel.attributedText = allAttributedString;
+    
+    
+    self.yyLabel.textAlignment = NSTextAlignmentCenter;
+    self.yyLabel.textVerticalAlignment = YYTextVerticalAlignmentTop;
+    self.yyLabel.numberOfLines = 0;
+    self.yyLabel.attributedText = allAttributedString;
+}
+
+- (NSAttributedString *)padding {
+    NSMutableAttributedString *pad = [[NSMutableAttributedString alloc] initWithString:@"\n\n"];
+    pad.yy_font = [UIFont systemFontOfSize:4];
+    return pad;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

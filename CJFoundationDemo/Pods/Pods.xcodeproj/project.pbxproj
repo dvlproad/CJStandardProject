@@ -7,139 +7,261 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0361F327D0DB69BFC037D99DD3A4E4D7 /* CJPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF295754639AC7337152D1698C05D6 /* CJPicker-dummy.m */; };
-		04D8BE3CD524FB2620254AA42E0EE87F /* CJIndependentPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DB7DE92C099622B8B4EC6BE958C9B2 /* CJIndependentPickerView.m */; };
-		088969226197702EA08E7D359159D736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		08B16EF38A4E5F63F44A673DC08947D7 /* CJRelatedPickerRichView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CF5BF880331338E55314DB9F4E49F2 /* CJRelatedPickerRichView.m */; };
-		08D1BCB0FC24F5C640ADC63441313361 /* CJDefaultDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC73CBB948F3BB09AF436AB0B1273E3E /* CJDefaultDatePicker.m */; };
-		0A1BACE0ABFD6019EE80D4DB29388B5C /* CJPopupAction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 864D598367B310F8171296330047F909 /* CJPopupAction-dummy.m */; };
-		0C6D15BA9A2F4DE062B294D634266850 /* CJTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD8DD18FA4B658059F2262DA2018D1F /* CJTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1185454EDC4D9C7252203731382AF466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		0361F327D0DB69BFC037D99DD3A4E4D7 /* CJPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E35EC305AAA7C5EF45AED0C6D4A9CA /* CJPicker-dummy.m */; };
+		04D8BE3CD524FB2620254AA42E0EE87F /* CJIndependentPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61952BB474C97A337C6EE6765B6B0486 /* CJIndependentPickerView.m */; };
+		06B551270D9E483075D3076B13F9FC1B /* NSParagraphStyle+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 1938309E9F4603F7BD98C6711F454AEE /* NSParagraphStyle+YYText.m */; };
+		088969226197702EA08E7D359159D736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */; };
+		08B16EF38A4E5F63F44A673DC08947D7 /* CJRelatedPickerRichView.m in Sources */ = {isa = PBXBuildFile; fileRef = C72B60838D6BFE2AFB517E2B745E2809 /* CJRelatedPickerRichView.m */; };
+		08D1BCB0FC24F5C640ADC63441313361 /* CJDefaultDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC21EAD6485D3C761DE738381DE5B17 /* CJDefaultDatePicker.m */; };
+		095D1EBB6C8DD56CEA3608ACABF33D10 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A697C56B93860A1735867FE931FA9271 /* MobileCoreServices.framework */; };
+		09D6A1CDAE9134FEA199828AA5AA1B78 /* YYTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDCE175D11952687304EB84479A43F9 /* YYTextInput.m */; };
+		0A1BACE0ABFD6019EE80D4DB29388B5C /* CJPopupAction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B57F433B62791B961F29868A25FC13 /* CJPopupAction-dummy.m */; };
+		0A3A2D4B6072A0AE98541616848D8130 /* YYTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE95E2ED62A30AE642A344A0EBDCB /* YYTextLayout.m */; };
+		0C6D15BA9A2F4DE062B294D634266850 /* CJTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFCAA359BC86C5A7A7F56D04C60FBBE /* CJTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D03F51C66A6E81B8E37795EF04D2CE7 /* YYTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E56A91FC408717F5425FB7AC8634F4 /* YYTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D312DB6C0C01E1AB861408259427CD2 /* YYTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = E52F6B49388F79D40631F451349C0471 /* YYTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DDE2072EAC28B903653D72469F60BD6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985DBD70FB245138EC45B091E7D1B704 /* CoreText.framework */; };
+		1185454EDC4D9C7252203731382AF466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552350B0C2360B478A721EB17E853ED5 /* UIKit.framework */; };
+		1AED0DC34B7E426E10BA67030BC964F5 /* YYTextDebugOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4453C42F6037ABC33948510AEFD82E /* YYTextDebugOption.m */; };
 		1B58BE592C2A645DEB8856168567669C /* Pods-CJFoundationDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6414EE062AECAE5A805D8F22CBD2BC4E /* Pods-CJFoundationDemoTests-dummy.m */; };
-		2434EDD93CD71C5C84567D6215E7E690 /* CJRelatedPickerRichView.h in Headers */ = {isa = PBXBuildFile; fileRef = A398F932CE1AA9DD70C44F7860048322 /* CJRelatedPickerRichView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24BD72E0E9788E03D183D9D36A2C7737 /* CJAddSubtractTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCA546BBE5FAC6F179BE3879B356968 /* CJAddSubtractTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A130708BC233EB16FEC62AC25F38104 /* Pods-CJFoundationDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AECEE15F08BA77BBA5606C9BFD96843 /* Pods-CJFoundationDemo-dummy.m */; };
-		3E05C547D40F51ECF69B1FF9E8F05041 /* CJPopupViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E34843AEC187B9CE363D2367D5904A8 /* CJPopupViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E3ABEA3E61204B430A653191E53D8AF /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 46847095F76E1D2442FE662C8E50FEAE /* CJTextField.m */; };
-		4FBDEDE79DCCBA4357083CE72ED128AC /* CJComponentDataModelUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A03B3552E4D8D8104FFE3E29087BAF2 /* CJComponentDataModelUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5205D8B16DFE9624361117ECB89256C3 /* CJComponentDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B176A82BFF619F32151AE3CDE1401349 /* CJComponentDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EC18DD84A0439EC84C60D638AFC78A0 /* UIColor+CJHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F880BF1FA5DAD1BB6A4A27A78FE268 /* UIColor+CJHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EEB294A217EB344811389709EC18B4D /* UIView+CJPopupInView.m in Sources */ = {isa = PBXBuildFile; fileRef = F15595F1765C39C6E0E0CB185A26DCC5 /* UIView+CJPopupInView.m */; };
-		63DF455590689A4674B2375D7D77B436 /* UIView+CJShowExtendView.h in Headers */ = {isa = PBXBuildFile; fileRef = 34CD665853749A61384C5101A0834654 /* UIView+CJShowExtendView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		691B2F05461EF26216C589D6EAE7C982 /* CJDataModelSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D5E8E9198BF0B13C622EB933B0DBF1 /* CJDataModelSample.m */; };
-		6DFE4A4877FA97125B917551FAD300D1 /* CJComponentDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D509E035B530D985E066B4D52908DA90 /* CJComponentDataModel.m */; };
-		74F623F95744E9339CDED27B8C5A2C6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		76E61AB392CDFDC2A07B96A833D9BCE7 /* CJDefaultDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E5924770231B90D6931E851F5668D0 /* CJDefaultDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CFE6775C8CCB6870AA686A06521CA34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		81F202F785969C7E01B64602A23FCD69 /* UIView+CJShowExtendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7549FE1F8DF54D46AD9662F7E2B121ED /* UIView+CJShowExtendView.m */; };
-		89941CB47E4A5638204A30CBC0AFEA6E /* CJDataModelSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 6261D5B8FFFD0BD67DA765D388847C4F /* CJDataModelSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89D0A30987EFB5F8E76E4D5A3E0F6125 /* CJDefaultToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 074459031F0DBA5EEF0FD0936C5F955A /* CJDefaultToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A0CDC017D8CB6C14673DF7ADFB9ABBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		9681FA4FDDE24A59F87527AB8246E3E0 /* CJIndependentPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B0B65E28627C344027338AFE4BA1C3 /* CJIndependentPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A36D10C9C379A4268A8D6B571C618653 /* CJBaseUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 281A0E995B35FBF7694CFD57BA528B3F /* CJBaseUIKit-dummy.m */; };
-		A4D1F2A0DF5FF866BE8D23BCA360B52B /* UIColor+CJHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7AAA8E0EF6B4ACAFF38CA5613AFD75 /* UIColor+CJHex.m */; };
-		B1437B2B09E618237A9B5967E940E6AC /* UIView+CJPopupInView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AED4117F06811D0FA6868661216D909 /* UIView+CJPopupInView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6837AC5D0828E0EA78654646F219CEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		B880842C9D6BBF1B4C31A796B0FDACEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		CAF4DFE4E2B1D08F0E83DFBAC8E800E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		D83C47181E3129027E5049B1CEA68EBE /* CJAddSubtractTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BC34314DC9302972D6999D606ABD5A /* CJAddSubtractTextField.m */; };
-		F190C1818F6115333388A074542F23CA /* CJDefaultToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6125BD9EE975D7F9A2DA4D22970A1D5 /* CJDefaultToolbar.m */; };
-		FC95658B41EA9A675C06446F967EF225 /* CJComponentDataModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA92F3B3BACA55A8467AE0B1BA112BA /* CJComponentDataModelUtil.m */; };
+		2434EDD93CD71C5C84567D6215E7E690 /* CJRelatedPickerRichView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCF320B0E4C91DF78C4E6F5E8F9B96B /* CJRelatedPickerRichView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24BD72E0E9788E03D183D9D36A2C7737 /* CJAddSubtractTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E11D698841AAC09BB6F9A86B3A8E15 /* CJAddSubtractTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		334C5C678AEC10F470423C5D4B2DAE36 /* YYTextSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D247FC1F6652D009645AE0BE258025B /* YYTextSelectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33828245CD5754C405FA75CC9AC1AA8D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA15695F87CFC4A9494DF27112E5DE1 /* QuartzCore.framework */; };
+		35B2ABDC4415AB0CC9809F6B92C01E85 /* YYTextArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 140D8A160C3B47C2596BC22F3FC597A5 /* YYTextArchiver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3755B915530C32D807A09A73F18AD078 /* YYTextKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E4425049DA5F0C26D8DE6EEBF1B68 /* YYTextKeyboardManager.m */; };
+		3874636BC22C2BE813537E02D6FB93CA /* YYTextUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 138E36C805EC244954BD46FDC326FC5D /* YYTextUtilities.m */; };
+		3E05C547D40F51ECF69B1FF9E8F05041 /* CJPopupViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2414F144C651EA80860D2DAEF2A62D9C /* CJPopupViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F870C68314F17A10D1599862F5B7426 /* YYTextMagnifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 1884377397C13D1559FFA0853ED969AF /* YYTextMagnifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44136B3A03024AE916596D8CF698BB18 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC78F42E53B594EF0B02AD43AD6C7894 /* CoreFoundation.framework */; };
+		46AE099609BEEAA704CA60693C2C9A9C /* YYTextEffectWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 078DE6EC7F275E0D7DD2CE3707445549 /* YYTextEffectWindow.m */; };
+		4E3ABEA3E61204B430A653191E53D8AF /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBB56C16A0E08A92FD618D44AFDAAAD /* CJTextField.m */; };
+		4FBDEDE79DCCBA4357083CE72ED128AC /* CJComponentDataModelUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 135A1D70DC139ACE6B5264977FE4FECD /* CJComponentDataModelUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5205D8B16DFE9624361117ECB89256C3 /* CJComponentDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF6487A164BE927B3D9124C6DA7E789 /* CJComponentDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		524C6903D39CCCCA0C4E150781D7D79F /* YYTextContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D367D39BD24B4D44873B2BB820D342C /* YYTextContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56F1231A6638B8B1A25E6A59DAFC977A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */; };
+		5A8635F40E8FC93FA3E2A52C99F4CA19 /* YYTextMagnifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD43E735EE484204F43C581F7357B24 /* YYTextMagnifier.m */; };
+		5CAB77B8F8C6D5BC1A266BD73CE8F6E7 /* YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA13A2FA6DE70CA72F5DB6F6C0FC557 /* YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EC18DD84A0439EC84C60D638AFC78A0 /* UIColor+CJHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C86BD11A9998D8DDC55108780AB528 /* UIColor+CJHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EEB294A217EB344811389709EC18B4D /* UIView+CJPopupInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FD6AA6B876729DF5FFF3ABE4CE46D6 /* UIView+CJPopupInView.m */; };
+		635AD5AA0DE8B28AEC8B486C420D568F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552350B0C2360B478A721EB17E853ED5 /* UIKit.framework */; };
+		63DF455590689A4674B2375D7D77B436 /* UIView+CJShowExtendView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A286F71C4E40A21BCD3C42CE74A9DEE /* UIView+CJShowExtendView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		687224CA1DB96D905D638FD1AB511DD2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0525E07A8CAE299CB20D411AA8A1138E /* Accelerate.framework */; };
+		691B2F05461EF26216C589D6EAE7C982 /* CJDataModelSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A8CEABACDAFEAB5519D3588B9BA9CC /* CJDataModelSample.m */; };
+		6D360C16284407CA967A9E4414D84AB0 /* YYTextParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF684CE199BB799BC6AD036EE1C4A82 /* YYTextParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DFE4A4877FA97125B917551FAD300D1 /* CJComponentDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70CF4AC8792CAADFCAFCB9857FDEC4 /* CJComponentDataModel.m */; };
+		6EAE048DA36D57C44EC31C59ACEE9BAB /* Pods-CJFoundationDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AECEE15F08BA77BBA5606C9BFD96843 /* Pods-CJFoundationDemo-dummy.m */; };
+		70EEDF993CDFCBC2862F45EB31F0C2B5 /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB222D99343C25892EE463B1DE91E62 /* YYTextArchiver.m */; };
+		71FB87CEB52E42BCA0097DFAB3ECE54A /* YYTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546B145DF3B4A54838DC4BB3A14AC9E /* YYTextParser.m */; };
+		7280B3FE5B9B45B189B210ACC2A38B9D /* YYTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99162E4C7DBAB716E72C9BFB8C7987B5 /* YYTextRunDelegate.m */; };
+		74F623F95744E9339CDED27B8C5A2C6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552350B0C2360B478A721EB17E853ED5 /* UIKit.framework */; };
+		76E61AB392CDFDC2A07B96A833D9BCE7 /* CJDefaultDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F01C8FB3EA3C56E2B505568FB84FB8B /* CJDefaultDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78987B0175E0600A92BA0C2F48D02226 /* YYTextLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 9532041BA8C7ED456FCAC1BEC29DD4B1 /* YYTextLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78FAE8FC53924207C99C2A502BC6793E /* YYTextDebugOption.h in Headers */ = {isa = PBXBuildFile; fileRef = A09AEC4F639FA08D2842D7FD89331AC5 /* YYTextDebugOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79EA91503A14EA073E145391587CD90A /* YYTextAsyncLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F670AE741D0ECE013DC723C974A702FD /* YYTextAsyncLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AE9F8684C2E7661F63C7BAFCEB268DB /* YYTextUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7D0C4570BA2553580C4135D2D68159 /* YYTextUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C68BF175371981919CBE5D819419D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */; };
+		7CFE6775C8CCB6870AA686A06521CA34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */; };
+		81F202F785969C7E01B64602A23FCD69 /* UIView+CJShowExtendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36659FD10B57A0C94464CDF561F85B77 /* UIView+CJShowExtendView.m */; };
+		829BEED58C37C4CC8E70B6483C2CBCCD /* YYTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F223D95B3469A2593B8D94522977A /* YYTextRubyAnnotation.m */; };
+		89941CB47E4A5638204A30CBC0AFEA6E /* CJDataModelSample.h in Headers */ = {isa = PBXBuildFile; fileRef = F7811C293F71C732B07737851A50FFB9 /* CJDataModelSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89D0A30987EFB5F8E76E4D5A3E0F6125 /* CJDefaultToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AB46379D59D0900F1C5A1E3303902F /* CJDefaultToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A0CDC017D8CB6C14673DF7ADFB9ABBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */; };
+		8A8C59ABC95783D1B94C7736B1FF92E6 /* YYTextKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 408D30561ECB3C45965619570B5B4D5C /* YYTextKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9681FA4FDDE24A59F87527AB8246E3E0 /* CJIndependentPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 05BCFC1CC515FBD581C2C88AFD1B8660 /* CJIndependentPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98B80235878DB6FF78DDB21AE5D3C4CD /* YYTextAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8AA25F2EC04ACA4C762D6AF22F6E7B /* YYTextAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DD11213CEC958F7915D8B0B0F6E7957 /* YYTextTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE14308DC51D740FAD0AEA21AEDFFC8 /* YYTextTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A02987C18F5280DFEDCB548BA44F70EB /* UIView+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE36B0340F7DBCA434B4F3538092819 /* UIView+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2F56C2301222CAEABCF730808F38A18 /* UIPasteboard+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DEEFBD76C04262D71DEBBCEFE29F77 /* UIPasteboard+YYText.m */; };
+		A36D10C9C379A4268A8D6B571C618653 /* CJBaseUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204932FA8C90453B729E1833D2CA69D /* CJBaseUIKit-dummy.m */; };
+		A4D1F2A0DF5FF866BE8D23BCA360B52B /* UIColor+CJHex.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF8BDB06534C4D6A6E5EB1C9138D1A3 /* UIColor+CJHex.m */; };
+		AD0825F63C5B34B5EF1B92B282077F4B /* YYTextAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D80B56CE2047F2C682A202E86DB37 /* YYTextAsyncLayer.m */; };
+		B1437B2B09E618237A9B5967E940E6AC /* UIView+CJPopupInView.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A1F4A97661AD722A177404341301DA /* UIView+CJPopupInView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5DAB825883E2174463104E650B08463 /* NSParagraphStyle+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A97599D0ECA791E00A0329445DAEA6 /* NSParagraphStyle+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6837AC5D0828E0EA78654646F219CEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552350B0C2360B478A721EB17E853ED5 /* UIKit.framework */; };
+		B94A2FB6BE004C424C616E3BDA30CA30 /* YYTextLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 817EB30DF320377611800C6B864472E2 /* YYTextLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB619882FA6D3BBE13923BC3943EDF09 /* YYTextRubyAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F3920AA6031C5FFF0F9E8C1DF26DFC /* YYTextRubyAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF44D20E1A1B7A896A06B18EEDB52775 /* YYTextLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF588C912C2D451C8ED93A758F0A6AD /* YYTextLine.m */; };
+		C3B58BCAD3E1D0CC6E660A4BACE9BC5E /* UIView+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = 163609CC7F060D91AFF46839E0522C51 /* UIView+YYText.m */; };
+		C5C68891783B90BA347A5372F51610B4 /* YYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F281DA0EA3B8FAEB54701751984406 /* YYLabel.m */; };
+		CAF4DFE4E2B1D08F0E83DFBAC8E800E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */; };
+		D3099DBDDEDD7FE5110B80A008A35F94 /* YYText-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7477AFB0C9F8A71CF549F1C29A1A0D /* YYText-dummy.m */; };
+		D4BC106099E8CCAF85313D456DDFDEA9 /* UIPasteboard+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB444B081D575D6BB3B4234AA80A196 /* UIPasteboard+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D50EEA19EBB339ABA1A2B41EC1D7D1A8 /* YYTextSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E88DCABCFACA8BB5C1E5A43F6930176 /* YYTextSelectionView.m */; };
+		D7DC4B188951AC75F5A928B759FE5250 /* YYTextWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F16ACC1FE90223A80676BF8FFA4763A /* YYTextWeakProxy.m */; };
+		D83C47181E3129027E5049B1CEA68EBE /* CJAddSubtractTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C4878271C327F725BE098E2506400F /* CJAddSubtractTextField.m */; };
+		E165EF864E86F657B1AFAF9F7D3C6596 /* YYTextWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CF7BFA4202CA3236330720143F15F7 /* YYTextWeakProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64AC6DE1526B4A0A04890AC78103E40 /* NSAttributedString+YYText.h in Headers */ = {isa = PBXBuildFile; fileRef = D5925E22C70D1023DE867D766C5C22A6 /* NSAttributedString+YYText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E72477DD8FCC1BC5B4F17EE0292857B5 /* YYTextTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 523622D9426C4DFB6C59F7837F710170 /* YYTextTransaction.m */; };
+		E8135AFB834DDF1058B8270420034927 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F5AFB1301E570D2F3FBA72E07C78 /* YYTextContainerView.m */; };
+		E9807E173508F1DD5A90CAFC45DE7D26 /* YYLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E6063BF0E63D213F47F21B2B30B1C56C /* YYLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEF95D4D884477948B2BAA87A4A1D540 /* YYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 746626319A77F3B0C7972917C2A9DD99 /* YYTextView.m */; };
+		F190C1818F6115333388A074542F23CA /* CJDefaultToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C71AE6640111CF19801F83C6E5B2B873 /* CJDefaultToolbar.m */; };
+		F2994B9FCA68E9092403CB8F413F0258 /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EB249656588E2628D8254D47EDCFA /* YYTextAttribute.m */; };
+		F4FB5D219451110139D0A0AFBD471235 /* YYTextEffectWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CE136B9CEC1D40701797AC2D3F989A /* YYTextEffectWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9B7AD7EEAEF9E2DD8F27564756C2594 /* NSAttributedString+YYText.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19BFA019565B79C29D3B1F72E4EEA0 /* NSAttributedString+YYText.m */; };
+		FC95658B41EA9A675C06446F967EF225 /* CJComponentDataModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D831F7979E7FD5DA1DD21531B440FC2B /* CJComponentDataModelUtil.m */; };
+		FD265FD8BC3088E066BF56B0E7723FB4 /* YYTextRunDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B96752DAA33F988C6C97C992FB9D5BF2 /* YYTextRunDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		091A10E266709E48BF2CA7D4D44D8916 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D25B38E90215BB0E69AB7CEA8CD89B49;
-			remoteInfo = CJPicker;
-		};
-		632DC628426E228A7D9838C31DA3E963 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B62F20C8AEE3FEB4AAF6F4FA71C7BB0A;
-			remoteInfo = CJPopupAction;
-		};
-		F6C96DA933FB1F9501899F77819394F7 /* PBXContainerItemProxy */ = {
+		11D680B69D376E854B241FB9479BCC1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A3E214004AFF3864E8464D67F94A9CF2;
 			remoteInfo = CJBaseUIKit;
 		};
+		69DEADC215F4BFCA48CEA38D32397105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C81521E848235FB94600C36EFBE5B69;
+			remoteInfo = YYText;
+		};
+		72821CBB0151140A034075BA292ABCE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62F20C8AEE3FEB4AAF6F4FA71C7BB0A;
+			remoteInfo = CJPopupAction;
+		};
+		BFDE1A9D006D4D9A178BE788E664B997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25B38E90215BB0E69AB7CEA8CD89B49;
+			remoteInfo = CJPicker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		074459031F0DBA5EEF0FD0936C5F955A /* CJDefaultToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJDefaultToolbar.h; path = CJPicker/CJToolbar/CJDefaultToolbar.h; sourceTree = "<group>"; };
-		09BC34314DC9302972D6999D606ABD5A /* CJAddSubtractTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJAddSubtractTextField.m; path = CJUIKit/CJTextField/CJAddSubtractTextField.m; sourceTree = "<group>"; };
-		0E34843AEC187B9CE363D2367D5904A8 /* CJPopupViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJPopupViewDelegate.h; path = CJPopupAction/CJPopupViewDelegate.h; sourceTree = "<group>"; };
-		1A7AAA8E0EF6B4ACAFF38CA5613AFD75 /* UIColor+CJHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CJHex.m"; path = "CJUIKit/UIColor+CJCategory/UIColor+CJHex.m"; sourceTree = "<group>"; };
+		01A97599D0ECA791E00A0329445DAEA6 /* NSParagraphStyle+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSParagraphStyle+YYText.h"; path = "YYText/Utility/NSParagraphStyle+YYText.h"; sourceTree = "<group>"; };
+		0525E07A8CAE299CB20D411AA8A1138E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		05BCFC1CC515FBD581C2C88AFD1B8660 /* CJIndependentPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJIndependentPickerView.h; path = CJPicker/CJIndependentPickerView.h; sourceTree = "<group>"; };
+		05F281DA0EA3B8FAEB54701751984406 /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYText/YYLabel.m; sourceTree = "<group>"; };
+		078DE6EC7F275E0D7DD2CE3707445549 /* YYTextEffectWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextEffectWindow.m; path = YYText/Component/YYTextEffectWindow.m; sourceTree = "<group>"; };
+		0A286F71C4E40A21BCD3C42CE74A9DEE /* UIView+CJShowExtendView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CJShowExtendView.h"; path = "CJPopupAction/UIView+CJShowExtendView.h"; sourceTree = "<group>"; };
+		0D7D0C4570BA2553580C4135D2D68159 /* YYTextUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextUtilities.h; path = YYText/Utility/YYTextUtilities.h; sourceTree = "<group>"; };
+		0EC21EAD6485D3C761DE738381DE5B17 /* CJDefaultDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJDefaultDatePicker.m; path = CJPicker/CJDefaultDatePicker.m; sourceTree = "<group>"; };
+		0EF588C912C2D451C8ED93A758F0A6AD /* YYTextLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLine.m; path = YYText/Component/YYTextLine.m; sourceTree = "<group>"; };
+		0F16ACC1FE90223A80676BF8FFA4763A /* YYTextWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextWeakProxy.m; path = YYText/Utility/YYTextWeakProxy.m; sourceTree = "<group>"; };
+		1204932FA8C90453B729E1833D2CA69D /* CJBaseUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJBaseUIKit-dummy.m"; sourceTree = "<group>"; };
+		135A1D70DC139ACE6B5264977FE4FECD /* CJComponentDataModelUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJComponentDataModelUtil.h; path = CJPicker/Models/CJComponentDataModelUtil.h; sourceTree = "<group>"; };
+		138E36C805EC244954BD46FDC326FC5D /* YYTextUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextUtilities.m; path = YYText/Utility/YYTextUtilities.m; sourceTree = "<group>"; };
+		140D8A160C3B47C2596BC22F3FC597A5 /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYText/String/YYTextArchiver.h; sourceTree = "<group>"; };
+		163609CC7F060D91AFF46839E0522C51 /* UIView+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YYText.m"; path = "YYText/Utility/UIView+YYText.m"; sourceTree = "<group>"; };
+		16C4878271C327F725BE098E2506400F /* CJAddSubtractTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJAddSubtractTextField.m; path = CJUIKit/CJTextField/CJAddSubtractTextField.m; sourceTree = "<group>"; };
+		16E11D698841AAC09BB6F9A86B3A8E15 /* CJAddSubtractTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJAddSubtractTextField.h; path = CJUIKit/CJTextField/CJAddSubtractTextField.h; sourceTree = "<group>"; };
+		17A1F4A97661AD722A177404341301DA /* UIView+CJPopupInView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CJPopupInView.h"; path = "CJPopupAction/UIView+CJPopupInView.h"; sourceTree = "<group>"; };
+		1884377397C13D1559FFA0853ED969AF /* YYTextMagnifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextMagnifier.h; path = YYText/Component/YYTextMagnifier.h; sourceTree = "<group>"; };
+		1938309E9F4603F7BD98C6711F454AEE /* NSParagraphStyle+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSParagraphStyle+YYText.m"; path = "YYText/Utility/NSParagraphStyle+YYText.m"; sourceTree = "<group>"; };
 		1AECEE15F08BA77BBA5606C9BFD96843 /* Pods-CJFoundationDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CJFoundationDemo-dummy.m"; sourceTree = "<group>"; };
-		20164CFC4EAFA48A8A8B585B17B6770F /* CJPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJPicker.xcconfig; sourceTree = "<group>"; };
+		1F01C8FB3EA3C56E2B505568FB84FB8B /* CJDefaultDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJDefaultDatePicker.h; path = CJPicker/CJDefaultDatePicker.h; sourceTree = "<group>"; };
+		1F8F9F33E1B9981347F5EBCAEE0A6CCD /* CJBaseUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJBaseUIKit-prefix.pch"; sourceTree = "<group>"; };
+		224EB249656588E2628D8254D47EDCFA /* YYTextAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAttribute.m; path = YYText/String/YYTextAttribute.m; sourceTree = "<group>"; };
+		23CF7BFA4202CA3236330720143F15F7 /* YYTextWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextWeakProxy.h; path = YYText/Utility/YYTextWeakProxy.h; sourceTree = "<group>"; };
+		2414F144C651EA80860D2DAEF2A62D9C /* CJPopupViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJPopupViewDelegate.h; path = CJPopupAction/CJPopupViewDelegate.h; sourceTree = "<group>"; };
 		241621D40FB7927627920B0578C293DC /* Pods-CJFoundationDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CJFoundationDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		26FA8CB0E17F4B37100A19F8F6F8B1B5 /* line_gray_pickerToolbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "line_gray_pickerToolbar@2x.png"; path = "CJPicker/Resources/line_gray_pickerToolbar@2x.png"; sourceTree = "<group>"; };
-		281A0E995B35FBF7694CFD57BA528B3F /* CJBaseUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJBaseUIKit-dummy.m"; sourceTree = "<group>"; };
-		2AA92F3B3BACA55A8467AE0B1BA112BA /* CJComponentDataModelUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJComponentDataModelUtil.m; path = CJPicker/Models/CJComponentDataModelUtil.m; sourceTree = "<group>"; };
-		34CD665853749A61384C5101A0834654 /* UIView+CJShowExtendView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CJShowExtendView.h"; path = "CJPopupAction/UIView+CJShowExtendView.h"; sourceTree = "<group>"; };
-		44CF5BF880331338E55314DB9F4E49F2 /* CJRelatedPickerRichView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJRelatedPickerRichView.m; path = CJPicker/CJRelatedPickerRichView.m; sourceTree = "<group>"; };
-		46847095F76E1D2442FE662C8E50FEAE /* CJTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJTextField.m; path = CJUIKit/CJTextField/CJTextField.m; sourceTree = "<group>"; };
+		24C19AF6F497AB7B66FB70A77E7B669A /* CJPopupAction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJPopupAction.xcconfig; sourceTree = "<group>"; };
+		30DEEFBD76C04262D71DEBBCEFE29F77 /* UIPasteboard+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+YYText.m"; path = "YYText/Utility/UIPasteboard+YYText.m"; sourceTree = "<group>"; };
+		35CE136B9CEC1D40701797AC2D3F989A /* YYTextEffectWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextEffectWindow.h; path = YYText/Component/YYTextEffectWindow.h; sourceTree = "<group>"; };
+		36659FD10B57A0C94464CDF561F85B77 /* UIView+CJShowExtendView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CJShowExtendView.m"; path = "CJPopupAction/UIView+CJShowExtendView.m"; sourceTree = "<group>"; };
+		3DBB56C16A0E08A92FD618D44AFDAAAD /* CJTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJTextField.m; path = CJUIKit/CJTextField/CJTextField.m; sourceTree = "<group>"; };
+		3E7276FEDE2EDEC04C00BF54A70B578C /* libCJPopupAction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCJPopupAction.a; path = libCJPopupAction.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		408D30561ECB3C45965619570B5B4D5C /* YYTextKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextKeyboardManager.h; path = YYText/Component/YYTextKeyboardManager.h; sourceTree = "<group>"; };
+		45BB8E25D0C9FC608C0C20EA3E32180C /* libPods-CJFoundationDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CJFoundationDemoTests.a"; path = "libPods-CJFoundationDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B60DA29A5D493CAF59A47973A34509 /* Pods-CJFoundationDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJFoundationDemoTests-frameworks.sh"; sourceTree = "<group>"; };
-		4AFD63611E7067F8E39A6EE73157C319 /* city.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = city.plist; path = CJPicker/Resources/city.plist; sourceTree = "<group>"; };
+		4B9E4425049DA5F0C26D8DE6EEBF1B68 /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYText/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
+		4C944E4AE6F5C8DF9C8871E4950BB85D /* libCJBaseUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCJBaseUIKit.a; path = libCJBaseUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		523622D9426C4DFB6C59F7837F710170 /* YYTextTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextTransaction.m; path = YYText/Utility/YYTextTransaction.m; sourceTree = "<group>"; };
+		552350B0C2360B478A721EB17E853ED5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5546B145DF3B4A54838DC4BB3A14AC9E /* YYTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextParser.m; path = YYText/String/YYTextParser.m; sourceTree = "<group>"; };
+		55A8CEABACDAFEAB5519D3588B9BA9CC /* CJDataModelSample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJDataModelSample.m; path = CJPicker/Models/CJDataModelSample.m; sourceTree = "<group>"; };
+		56E35EC305AAA7C5EF45AED0C6D4A9CA /* CJPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJPicker-dummy.m"; sourceTree = "<group>"; };
 		57ACA586E6C5BFF9C86BDFC0838D92DA /* Pods-CJFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		59522CD33D66B241EE4BD50E021BDF75 /* Pods-CJFoundationDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJFoundationDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		5CCA546BBE5FAC6F179BE3879B356968 /* CJAddSubtractTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJAddSubtractTextField.h; path = CJUIKit/CJTextField/CJAddSubtractTextField.h; sourceTree = "<group>"; };
-		5F3E5D560B9AA1DF19326FA44160A78E /* libCJPopupAction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCJPopupAction.a; path = libCJPopupAction.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FF5ADA894A8B1BF8E747F525D5214A5 /* CJPopupAction-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJPopupAction-prefix.pch"; sourceTree = "<group>"; };
-		6261D5B8FFFD0BD67DA765D388847C4F /* CJDataModelSample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJDataModelSample.h; path = CJPicker/Models/CJDataModelSample.h; sourceTree = "<group>"; };
-		63F880BF1FA5DAD1BB6A4A27A78FE268 /* UIColor+CJHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CJHex.h"; path = "CJUIKit/UIColor+CJCategory/UIColor+CJHex.h"; sourceTree = "<group>"; };
+		5AA15695F87CFC4A9494DF27112E5DE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		5D247FC1F6652D009645AE0BE258025B /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYText/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
+		5D367D39BD24B4D44873B2BB820D342C /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYText/Component/YYTextContainerView.h; sourceTree = "<group>"; };
+		61952BB474C97A337C6EE6765B6B0486 /* CJIndependentPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJIndependentPickerView.m; path = CJPicker/CJIndependentPickerView.m; sourceTree = "<group>"; };
 		6414EE062AECAE5A805D8F22CBD2BC4E /* Pods-CJFoundationDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CJFoundationDemoTests-dummy.m"; sourceTree = "<group>"; };
-		66183DC76D25D36187BEE503C38D4EC2 /* CJPopupAction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJPopupAction.xcconfig; sourceTree = "<group>"; };
-		71D5E8E9198BF0B13C622EB933B0DBF1 /* CJDataModelSample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJDataModelSample.m; path = CJPicker/Models/CJDataModelSample.m; sourceTree = "<group>"; };
-		7244AF5165A206D8C927532DEE71FCA1 /* libPods-CJFoundationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CJFoundationDemo.a"; path = "libPods-CJFoundationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DCC2C79BE2D9CBF2C51C3F40AFFCA8 /* CJPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJPicker.xcconfig; sourceTree = "<group>"; };
+		65525FBCA507734D45FFBA7491F8F409 /* libCJPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCJPicker.a; path = libCJPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B70CF4AC8792CAADFCAFCB9857FDEC4 /* CJComponentDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJComponentDataModel.m; path = CJPicker/Models/CJComponentDataModel.m; sourceTree = "<group>"; };
+		6C3F223D95B3469A2593B8D94522977A /* YYTextRubyAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRubyAnnotation.m; path = YYText/String/YYTextRubyAnnotation.m; sourceTree = "<group>"; };
+		6CF3FBC07ADA9AA352D1185AF5BD8C03 /* YYText-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYText-prefix.pch"; sourceTree = "<group>"; };
 		73AAE6F031EBE97528A11D08A138E60F /* Pods-CJFoundationDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJFoundationDemo-frameworks.sh"; sourceTree = "<group>"; };
-		7549FE1F8DF54D46AD9662F7E2B121ED /* UIView+CJShowExtendView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CJShowExtendView.m"; path = "CJPopupAction/UIView+CJShowExtendView.m"; sourceTree = "<group>"; };
+		746626319A77F3B0C7972917C2A9DD99 /* YYTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextView.m; path = YYText/YYTextView.m; sourceTree = "<group>"; };
+		74FD6AA6B876729DF5FFF3ABE4CE46D6 /* UIView+CJPopupInView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CJPopupInView.m"; path = "CJPopupAction/UIView+CJPopupInView.m"; sourceTree = "<group>"; };
 		75C24EAE36B0198A9C66F34D03C34F4B /* Pods-CJFoundationDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJFoundationDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79F3920AA6031C5FFF0F9E8C1DF26DFC /* YYTextRubyAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRubyAnnotation.h; path = YYText/String/YYTextRubyAnnotation.h; sourceTree = "<group>"; };
+		7A4453C42F6037ABC33948510AEFD82E /* YYTextDebugOption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextDebugOption.m; path = YYText/Component/YYTextDebugOption.m; sourceTree = "<group>"; };
+		7B46F5AFB1301E570D2F3FBA72E07C78 /* YYTextContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextContainerView.m; path = YYText/Component/YYTextContainerView.m; sourceTree = "<group>"; };
+		7BF6487A164BE927B3D9124C6DA7E789 /* CJComponentDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJComponentDataModel.h; path = CJPicker/Models/CJComponentDataModel.h; sourceTree = "<group>"; };
+		7BF684CE199BB799BC6AD036EE1C4A82 /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYText/String/YYTextParser.h; sourceTree = "<group>"; };
+		7C1A3D76B77A47195891585A2D0FDE46 /* area.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = area.plist; path = CJPicker/Resources/area.plist; sourceTree = "<group>"; };
+		7CA13A2FA6DE70CA72F5DB6F6C0FC557 /* YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYText.h; path = YYText/YYText.h; sourceTree = "<group>"; };
 		7D558C22EC70E5B7C25B51C5BF3CE5D9 /* Pods-CJFoundationDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJFoundationDemoTests-resources.sh"; sourceTree = "<group>"; };
 		7FCA09352E1E60B4E1515FC793A213E9 /* Pods-CJFoundationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CJFoundationDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		864D598367B310F8171296330047F909 /* CJPopupAction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJPopupAction-dummy.m"; sourceTree = "<group>"; };
-		88C6EB43B7C4461E45E7680607BF9BEE /* area.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = area.plist; path = CJPicker/Resources/area.plist; sourceTree = "<group>"; };
-		9166DCE955F28CFD33DDCED281A4A8C2 /* libPods-CJFoundationDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CJFoundationDemoTests.a"; path = "libPods-CJFoundationDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		91BF295754639AC7337152D1698C05D6 /* CJPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJPicker-dummy.m"; sourceTree = "<group>"; };
+		80BE5F516E3DF38C28B0DE916E3EE7D9 /* CJPopupAction-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJPopupAction-prefix.pch"; sourceTree = "<group>"; };
+		817EB30DF320377611800C6B864472E2 /* YYTextLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLine.h; path = YYText/Component/YYTextLine.h; sourceTree = "<group>"; };
+		8205B36D5C285997A0FBAD28F3C76824 /* line_gray_pickerToolbar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "line_gray_pickerToolbar@2x.png"; path = "CJPicker/Resources/line_gray_pickerToolbar@2x.png"; sourceTree = "<group>"; };
+		85B57F433B62791B961F29868A25FC13 /* CJPopupAction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CJPopupAction-dummy.m"; sourceTree = "<group>"; };
+		8C2AE98AC18FBA319940A50B82331A93 /* city.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = city.plist; path = CJPicker/Resources/city.plist; sourceTree = "<group>"; };
+		8C9DE95E2ED62A30AE642A344A0EBDCB /* YYTextLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextLayout.m; path = YYText/Component/YYTextLayout.m; sourceTree = "<group>"; };
+		8DCF320B0E4C91DF78C4E6F5E8F9B96B /* CJRelatedPickerRichView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJRelatedPickerRichView.h; path = CJPicker/CJRelatedPickerRichView.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95B0B65E28627C344027338AFE4BA1C3 /* CJIndependentPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJIndependentPickerView.h; path = CJPicker/CJIndependentPickerView.h; sourceTree = "<group>"; };
-		9A03B3552E4D8D8104FFE3E29087BAF2 /* CJComponentDataModelUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJComponentDataModelUtil.h; path = CJPicker/Models/CJComponentDataModelUtil.h; sourceTree = "<group>"; };
-		9AED4117F06811D0FA6868661216D909 /* UIView+CJPopupInView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CJPopupInView.h"; path = "CJPopupAction/UIView+CJPopupInView.h"; sourceTree = "<group>"; };
+		9532041BA8C7ED456FCAC1BEC29DD4B1 /* YYTextLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextLayout.h; path = YYText/Component/YYTextLayout.h; sourceTree = "<group>"; };
+		95C86BD11A9998D8DDC55108780AB528 /* UIColor+CJHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CJHex.h"; path = "CJUIKit/UIColor+CJCategory/UIColor+CJHex.h"; sourceTree = "<group>"; };
+		985DBD70FB245138EC45B091E7D1B704 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		99162E4C7DBAB716E72C9BFB8C7987B5 /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYText/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
+		9AA3219FFF08A386267BE5B5DCCE187E /* CJBaseUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJBaseUIKit.xcconfig; sourceTree = "<group>"; };
+		9E88DCABCFACA8BB5C1E5A43F6930176 /* YYTextSelectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextSelectionView.m; path = YYText/Component/YYTextSelectionView.m; sourceTree = "<group>"; };
+		9F0D80B56CE2047F2C682A202E86DB37 /* YYTextAsyncLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAsyncLayer.m; path = YYText/Utility/YYTextAsyncLayer.m; sourceTree = "<group>"; };
 		A06F1E16455C1C0B02DC3BDD5DD0EBB8 /* Pods-CJFoundationDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CJFoundationDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A398F932CE1AA9DD70C44F7860048322 /* CJRelatedPickerRichView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJRelatedPickerRichView.h; path = CJPicker/CJRelatedPickerRichView.h; sourceTree = "<group>"; };
-		A56434D6073B1E55C975C5B81161264A /* line_gray_pickerToolbar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = line_gray_pickerToolbar.png; path = CJPicker/Resources/line_gray_pickerToolbar.png; sourceTree = "<group>"; };
+		A09AEC4F639FA08D2842D7FD89331AC5 /* YYTextDebugOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextDebugOption.h; path = YYText/Component/YYTextDebugOption.h; sourceTree = "<group>"; };
+		A697C56B93860A1735867FE931FA9271 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		A792FEB93E4C121A7D8AC8B9936DF09B /* Pods-CJFoundationDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CJFoundationDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AB740ED99B3D9E79EDFA6D2634CD8067 /* libCJBaseUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCJBaseUIKit.a; path = libCJBaseUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC0A3F0FB3301B7F28A34B65B945285C /* CJPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJPicker-prefix.pch"; sourceTree = "<group>"; };
-		B176A82BFF619F32151AE3CDE1401349 /* CJComponentDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJComponentDataModel.h; path = CJPicker/Models/CJComponentDataModel.h; sourceTree = "<group>"; };
-		B1DB7DE92C099622B8B4EC6BE958C9B2 /* CJIndependentPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJIndependentPickerView.m; path = CJPicker/CJIndependentPickerView.m; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C6E5924770231B90D6931E851F5668D0 /* CJDefaultDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJDefaultDatePicker.h; path = CJPicker/CJDefaultDatePicker.h; sourceTree = "<group>"; };
+		AC367C6132C7C5D5DCE254895D06467B /* libPods-CJFoundationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CJFoundationDemo.a"; path = "libPods-CJFoundationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96752DAA33F988C6C97C992FB9D5BF2 /* YYTextRunDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextRunDelegate.h; path = YYText/String/YYTextRunDelegate.h; sourceTree = "<group>"; };
+		BAFCAA359BC86C5A7A7F56D04C60FBBE /* CJTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJTextField.h; path = CJUIKit/CJTextField/CJTextField.h; sourceTree = "<group>"; };
+		BD19BFA019565B79C29D3B1F72E4EEA0 /* NSAttributedString+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+YYText.m"; path = "YYText/Utility/NSAttributedString+YYText.m"; sourceTree = "<group>"; };
+		BECE1911ACF97AAED49CA8F48FE01F29 /* libYYText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYText.a; path = libYYText.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C71AE6640111CF19801F83C6E5B2B873 /* CJDefaultToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJDefaultToolbar.m; path = CJPicker/CJToolbar/CJDefaultToolbar.m; sourceTree = "<group>"; };
+		C72B60838D6BFE2AFB517E2B745E2809 /* CJRelatedPickerRichView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJRelatedPickerRichView.m; path = CJPicker/CJRelatedPickerRichView.m; sourceTree = "<group>"; };
 		CDEF010A91E4DE8EA88BE3B8A3FAF6D0 /* Pods-CJFoundationDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CJFoundationDemo-resources.sh"; sourceTree = "<group>"; };
-		D20D50887CFCC02ED01652D417FCA013 /* libCJPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCJPicker.a; path = libCJPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D509E035B530D985E066B4D52908DA90 /* CJComponentDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJComponentDataModel.m; path = CJPicker/Models/CJComponentDataModel.m; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFB222D99343C25892EE463B1DE91E62 /* YYTextArchiver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextArchiver.m; path = YYText/String/YYTextArchiver.m; sourceTree = "<group>"; };
+		D5925E22C70D1023DE867D766C5C22A6 /* NSAttributedString+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+YYText.h"; path = "YYText/Utility/NSAttributedString+YYText.h"; sourceTree = "<group>"; };
+		D831F7979E7FD5DA1DD21531B440FC2B /* CJComponentDataModelUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJComponentDataModelUtil.m; path = CJPicker/Models/CJComponentDataModelUtil.m; sourceTree = "<group>"; };
+		DD56A64FBE630B19E29EFC70786A927C /* CJPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJPicker-prefix.pch"; sourceTree = "<group>"; };
 		DE203473ABF2D36AD395A2864CCF38FE /* Pods-CJFoundationDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CJFoundationDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		E6125BD9EE975D7F9A2DA4D22970A1D5 /* CJDefaultToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJDefaultToolbar.m; path = CJPicker/CJToolbar/CJDefaultToolbar.m; sourceTree = "<group>"; };
-		F15595F1765C39C6E0E0CB185A26DCC5 /* UIView+CJPopupInView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CJPopupInView.m"; path = "CJPopupAction/UIView+CJPopupInView.m"; sourceTree = "<group>"; };
-		F21C25FF5F2488F8EB71DB1B49FD6130 /* CJBaseUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CJBaseUIKit-prefix.pch"; sourceTree = "<group>"; };
-		F397DD5942BE4220A3F17C0CC2BD5513 /* CJBaseUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CJBaseUIKit.xcconfig; sourceTree = "<group>"; };
-		FAD8DD18FA4B658059F2262DA2018D1F /* CJTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJTextField.h; path = CJUIKit/CJTextField/CJTextField.h; sourceTree = "<group>"; };
-		FC73CBB948F3BB09AF436AB0B1273E3E /* CJDefaultDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CJDefaultDatePicker.m; path = CJPicker/CJDefaultDatePicker.m; sourceTree = "<group>"; };
+		DEF8BDB06534C4D6A6E5EB1C9138D1A3 /* UIColor+CJHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CJHex.m"; path = "CJUIKit/UIColor+CJCategory/UIColor+CJHex.m"; sourceTree = "<group>"; };
+		E0E56A91FC408717F5425FB7AC8634F4 /* YYTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextView.h; path = YYText/YYTextView.h; sourceTree = "<group>"; };
+		E0E6540DDBC11CD02651653EBF3C33D3 /* YYText.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYText.xcconfig; sourceTree = "<group>"; };
+		E52F6B49388F79D40631F451349C0471 /* YYTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextInput.h; path = YYText/Component/YYTextInput.h; sourceTree = "<group>"; };
+		E6063BF0E63D213F47F21B2B30B1C56C /* YYLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYLabel.h; path = YYText/YYLabel.h; sourceTree = "<group>"; };
+		E8B97A30B415C412D87DF76F773AF1CB /* line_gray_pickerToolbar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = line_gray_pickerToolbar.png; path = CJPicker/Resources/line_gray_pickerToolbar.png; sourceTree = "<group>"; };
+		EC78F42E53B594EF0B02AD43AD6C7894 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		EC8AA25F2EC04ACA4C762D6AF22F6E7B /* YYTextAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAttribute.h; path = YYText/String/YYTextAttribute.h; sourceTree = "<group>"; };
+		EEDCE175D11952687304EB84479A43F9 /* YYTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextInput.m; path = YYText/Component/YYTextInput.m; sourceTree = "<group>"; };
+		EFB444B081D575D6BB3B4234AA80A196 /* UIPasteboard+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+YYText.h"; path = "YYText/Utility/UIPasteboard+YYText.h"; sourceTree = "<group>"; };
+		F3AB46379D59D0900F1C5A1E3303902F /* CJDefaultToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJDefaultToolbar.h; path = CJPicker/CJToolbar/CJDefaultToolbar.h; sourceTree = "<group>"; };
+		F670AE741D0ECE013DC723C974A702FD /* YYTextAsyncLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextAsyncLayer.h; path = YYText/Utility/YYTextAsyncLayer.h; sourceTree = "<group>"; };
+		F7811C293F71C732B07737851A50FFB9 /* CJDataModelSample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CJDataModelSample.h; path = CJPicker/Models/CJDataModelSample.h; sourceTree = "<group>"; };
+		FBD43E735EE484204F43C581F7357B24 /* YYTextMagnifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextMagnifier.m; path = YYText/Component/YYTextMagnifier.m; sourceTree = "<group>"; };
+		FBE14308DC51D740FAD0AEA21AEDFFC8 /* YYTextTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextTransaction.h; path = YYText/Utility/YYTextTransaction.h; sourceTree = "<group>"; };
+		FD7477AFB0C9F8A71CF549F1C29A1A0D /* YYText-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYText-dummy.m"; sourceTree = "<group>"; };
+		FDE36B0340F7DBCA434B4F3538092819 /* UIView+YYText.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YYText.h"; path = "YYText/Utility/UIView+YYText.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D644855E265D7430EBB5E79DBA2BCEB /* Frameworks */ = {
+		4CC4C63140527EA553A0E5416E10B379 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B880842C9D6BBF1B4C31A796B0FDACEA /* Foundation.framework in Frameworks */,
+				56F1231A6638B8B1A25E6A59DAFC977A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,124 +300,199 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7B79582DE997C1D43C5116E15EFA993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687224CA1DB96D905D638FD1AB511DD2 /* Accelerate.framework in Frameworks */,
+				44136B3A03024AE916596D8CF698BB18 /* CoreFoundation.framework in Frameworks */,
+				0DDE2072EAC28B903653D72469F60BD6 /* CoreText.framework in Frameworks */,
+				7C68BF175371981919CBE5D819419D22 /* Foundation.framework in Frameworks */,
+				095D1EBB6C8DD56CEA3608ACABF33D10 /* MobileCoreServices.framework in Frameworks */,
+				33828245CD5754C405FA75CC9AC1AA8D /* QuartzCore.framework in Frameworks */,
+				635AD5AA0DE8B28AEC8B486C420D568F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DC4AF1ACD3A8F9023906F7A964E4E37 /* Support Files */ = {
+		0655F266FC7D38DEA0E8276BB438417E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				20164CFC4EAFA48A8A8B585B17B6770F /* CJPicker.xcconfig */,
-				91BF295754639AC7337152D1698C05D6 /* CJPicker-dummy.m */,
-				AC0A3F0FB3301B7F28A34B65B945285C /* CJPicker-prefix.pch */,
+				9AA3219FFF08A386267BE5B5DCCE187E /* CJBaseUIKit.xcconfig */,
+				1204932FA8C90453B729E1833D2CA69D /* CJBaseUIKit-dummy.m */,
+				1F8F9F33E1B9981347F5EBCAEE0A6CCD /* CJBaseUIKit-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CJPicker";
+			path = "../Target Support Files/CJBaseUIKit";
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		21D111F269D5B0E36C4BC17892B5F628 /* UIColor+CJCategory */ = {
 			isa = PBXGroup;
 			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+				95C86BD11A9998D8DDC55108780AB528 /* UIColor+CJHex.h */,
+				DEF8BDB06534C4D6A6E5EB1C9138D1A3 /* UIColor+CJHex.m */,
 			);
-			name = Frameworks;
+			name = "UIColor+CJCategory";
 			sourceTree = "<group>";
 		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+		373F4882F717E1F1F32E9528C7DAE7DC /* CJToolbar */ = {
 			isa = PBXGroup;
 			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+				F3AB46379D59D0900F1C5A1E3303902F /* CJDefaultToolbar.h */,
+				C71AE6640111CF19801F83C6E5B2B873 /* CJDefaultToolbar.m */,
 			);
-			name = iOS;
+			name = CJToolbar;
 			sourceTree = "<group>";
 		};
-		4891803163689DC6C72F2FD224D948E8 /* CJPicker */ = {
+		38C91857CEAD255CDF646EF181A7BD0A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B176A82BFF619F32151AE3CDE1401349 /* CJComponentDataModel.h */,
-				D509E035B530D985E066B4D52908DA90 /* CJComponentDataModel.m */,
-				9A03B3552E4D8D8104FFE3E29087BAF2 /* CJComponentDataModelUtil.h */,
-				2AA92F3B3BACA55A8467AE0B1BA112BA /* CJComponentDataModelUtil.m */,
-				6261D5B8FFFD0BD67DA765D388847C4F /* CJDataModelSample.h */,
-				71D5E8E9198BF0B13C622EB933B0DBF1 /* CJDataModelSample.m */,
-				C6E5924770231B90D6931E851F5668D0 /* CJDefaultDatePicker.h */,
-				FC73CBB948F3BB09AF436AB0B1273E3E /* CJDefaultDatePicker.m */,
-				95B0B65E28627C344027338AFE4BA1C3 /* CJIndependentPickerView.h */,
-				B1DB7DE92C099622B8B4EC6BE958C9B2 /* CJIndependentPickerView.m */,
-				A398F932CE1AA9DD70C44F7860048322 /* CJRelatedPickerRichView.h */,
-				44CF5BF880331338E55314DB9F4E49F2 /* CJRelatedPickerRichView.m */,
-				8ED90D91399A858D5DE36867FFE8FDE2 /* CJToolbar */,
-				85512B0A379D171877D1AE287AD6785C /* Resources */,
-				1DC4AF1ACD3A8F9023906F7A964E4E37 /* Support Files */,
+				24C19AF6F497AB7B66FB70A77E7B669A /* CJPopupAction.xcconfig */,
+				85B57F433B62791B961F29868A25FC13 /* CJPopupAction-dummy.m */,
+				80BE5F516E3DF38C28B0DE916E3EE7D9 /* CJPopupAction-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CJPopupAction";
+			sourceTree = "<group>";
+		};
+		3FCBE07CC81E7C7B517F63D1F1D9CF89 /* CJBaseUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC9D0266777D53E10BCA9DF60A78DADA /* CJTextField */,
+				0655F266FC7D38DEA0E8276BB438417E /* Support Files */,
+				21D111F269D5B0E36C4BC17892B5F628 /* UIColor+CJCategory */,
+			);
+			name = CJBaseUIKit;
+			path = CJBaseUIKit;
+			sourceTree = "<group>";
+		};
+		42D76A157E6C7DF7AB9E277ABED41D8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C944E4AE6F5C8DF9C8871E4950BB85D /* libCJBaseUIKit.a */,
+				65525FBCA507734D45FFBA7491F8F409 /* libCJPicker.a */,
+				3E7276FEDE2EDEC04C00BF54A70B578C /* libCJPopupAction.a */,
+				AC367C6132C7C5D5DCE254895D06467B /* libPods-CJFoundationDemo.a */,
+				45BB8E25D0C9FC608C0C20EA3E32180C /* libPods-CJFoundationDemoTests.a */,
+				BECE1911ACF97AAED49CA8F48FE01F29 /* libYYText.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		467C486D95294E88B612A9FD981BA0D9 /* CJPicker */ = {
+			isa = PBXGroup;
+			children = (
+				7BF6487A164BE927B3D9124C6DA7E789 /* CJComponentDataModel.h */,
+				6B70CF4AC8792CAADFCAFCB9857FDEC4 /* CJComponentDataModel.m */,
+				135A1D70DC139ACE6B5264977FE4FECD /* CJComponentDataModelUtil.h */,
+				D831F7979E7FD5DA1DD21531B440FC2B /* CJComponentDataModelUtil.m */,
+				F7811C293F71C732B07737851A50FFB9 /* CJDataModelSample.h */,
+				55A8CEABACDAFEAB5519D3588B9BA9CC /* CJDataModelSample.m */,
+				1F01C8FB3EA3C56E2B505568FB84FB8B /* CJDefaultDatePicker.h */,
+				0EC21EAD6485D3C761DE738381DE5B17 /* CJDefaultDatePicker.m */,
+				05BCFC1CC515FBD581C2C88AFD1B8660 /* CJIndependentPickerView.h */,
+				61952BB474C97A337C6EE6765B6B0486 /* CJIndependentPickerView.m */,
+				8DCF320B0E4C91DF78C4E6F5E8F9B96B /* CJRelatedPickerRichView.h */,
+				C72B60838D6BFE2AFB517E2B745E2809 /* CJRelatedPickerRichView.m */,
+				373F4882F717E1F1F32E9528C7DAE7DC /* CJToolbar */,
+				D9F42E727710861EA0071A4B7337F3F0 /* Resources */,
+				B0B4E893F17B3575182EE1BFA6A67E22 /* Support Files */,
 			);
 			name = CJPicker;
 			path = CJPicker;
 			sourceTree = "<group>";
 		};
-		6C8DE3ABB3CE215BE6D4268682F667BC /* CJPopupAction */ = {
+		5EE16F141653B65519B6AA50779B1834 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E34843AEC187B9CE363D2367D5904A8 /* CJPopupViewDelegate.h */,
-				9AED4117F06811D0FA6868661216D909 /* UIView+CJPopupInView.h */,
-				F15595F1765C39C6E0E0CB185A26DCC5 /* UIView+CJPopupInView.m */,
-				34CD665853749A61384C5101A0834654 /* UIView+CJShowExtendView.h */,
-				7549FE1F8DF54D46AD9662F7E2B121ED /* UIView+CJShowExtendView.m */,
-				E4DBBA016018C9698AF2971BE1A3CEE2 /* Support Files */,
+				E0E6540DDBC11CD02651653EBF3C33D3 /* YYText.xcconfig */,
+				FD7477AFB0C9F8A71CF549F1C29A1A0D /* YYText-dummy.m */,
+				6CF3FBC07ADA9AA352D1185AF5BD8C03 /* YYText-prefix.pch */,
 			);
-			name = CJPopupAction;
-			path = CJPopupAction;
+			name = "Support Files";
+			path = "../Target Support Files/YYText";
+			sourceTree = "<group>";
+		};
+		6357151700DD773606D273CFA870E1D3 /* YYText */ = {
+			isa = PBXGroup;
+			children = (
+				D5925E22C70D1023DE867D766C5C22A6 /* NSAttributedString+YYText.h */,
+				BD19BFA019565B79C29D3B1F72E4EEA0 /* NSAttributedString+YYText.m */,
+				01A97599D0ECA791E00A0329445DAEA6 /* NSParagraphStyle+YYText.h */,
+				1938309E9F4603F7BD98C6711F454AEE /* NSParagraphStyle+YYText.m */,
+				EFB444B081D575D6BB3B4234AA80A196 /* UIPasteboard+YYText.h */,
+				30DEEFBD76C04262D71DEBBCEFE29F77 /* UIPasteboard+YYText.m */,
+				FDE36B0340F7DBCA434B4F3538092819 /* UIView+YYText.h */,
+				163609CC7F060D91AFF46839E0522C51 /* UIView+YYText.m */,
+				E6063BF0E63D213F47F21B2B30B1C56C /* YYLabel.h */,
+				05F281DA0EA3B8FAEB54701751984406 /* YYLabel.m */,
+				7CA13A2FA6DE70CA72F5DB6F6C0FC557 /* YYText.h */,
+				140D8A160C3B47C2596BC22F3FC597A5 /* YYTextArchiver.h */,
+				CFB222D99343C25892EE463B1DE91E62 /* YYTextArchiver.m */,
+				F670AE741D0ECE013DC723C974A702FD /* YYTextAsyncLayer.h */,
+				9F0D80B56CE2047F2C682A202E86DB37 /* YYTextAsyncLayer.m */,
+				EC8AA25F2EC04ACA4C762D6AF22F6E7B /* YYTextAttribute.h */,
+				224EB249656588E2628D8254D47EDCFA /* YYTextAttribute.m */,
+				5D367D39BD24B4D44873B2BB820D342C /* YYTextContainerView.h */,
+				7B46F5AFB1301E570D2F3FBA72E07C78 /* YYTextContainerView.m */,
+				A09AEC4F639FA08D2842D7FD89331AC5 /* YYTextDebugOption.h */,
+				7A4453C42F6037ABC33948510AEFD82E /* YYTextDebugOption.m */,
+				35CE136B9CEC1D40701797AC2D3F989A /* YYTextEffectWindow.h */,
+				078DE6EC7F275E0D7DD2CE3707445549 /* YYTextEffectWindow.m */,
+				E52F6B49388F79D40631F451349C0471 /* YYTextInput.h */,
+				EEDCE175D11952687304EB84479A43F9 /* YYTextInput.m */,
+				408D30561ECB3C45965619570B5B4D5C /* YYTextKeyboardManager.h */,
+				4B9E4425049DA5F0C26D8DE6EEBF1B68 /* YYTextKeyboardManager.m */,
+				9532041BA8C7ED456FCAC1BEC29DD4B1 /* YYTextLayout.h */,
+				8C9DE95E2ED62A30AE642A344A0EBDCB /* YYTextLayout.m */,
+				817EB30DF320377611800C6B864472E2 /* YYTextLine.h */,
+				0EF588C912C2D451C8ED93A758F0A6AD /* YYTextLine.m */,
+				1884377397C13D1559FFA0853ED969AF /* YYTextMagnifier.h */,
+				FBD43E735EE484204F43C581F7357B24 /* YYTextMagnifier.m */,
+				7BF684CE199BB799BC6AD036EE1C4A82 /* YYTextParser.h */,
+				5546B145DF3B4A54838DC4BB3A14AC9E /* YYTextParser.m */,
+				79F3920AA6031C5FFF0F9E8C1DF26DFC /* YYTextRubyAnnotation.h */,
+				6C3F223D95B3469A2593B8D94522977A /* YYTextRubyAnnotation.m */,
+				B96752DAA33F988C6C97C992FB9D5BF2 /* YYTextRunDelegate.h */,
+				99162E4C7DBAB716E72C9BFB8C7987B5 /* YYTextRunDelegate.m */,
+				5D247FC1F6652D009645AE0BE258025B /* YYTextSelectionView.h */,
+				9E88DCABCFACA8BB5C1E5A43F6930176 /* YYTextSelectionView.m */,
+				FBE14308DC51D740FAD0AEA21AEDFFC8 /* YYTextTransaction.h */,
+				523622D9426C4DFB6C59F7837F710170 /* YYTextTransaction.m */,
+				0D7D0C4570BA2553580C4135D2D68159 /* YYTextUtilities.h */,
+				138E36C805EC244954BD46FDC326FC5D /* YYTextUtilities.m */,
+				E0E56A91FC408717F5425FB7AC8634F4 /* YYTextView.h */,
+				746626319A77F3B0C7972917C2A9DD99 /* YYTextView.m */,
+				23CF7BFA4202CA3236330720143F15F7 /* YYTextWeakProxy.h */,
+				0F16ACC1FE90223A80676BF8FFA4763A /* YYTextWeakProxy.m */,
+				5EE16F141653B65519B6AA50779B1834 /* Support Files */,
+			);
+			name = YYText;
+			path = YYText;
+			sourceTree = "<group>";
+		};
+		7328DBEB9D78A0848BF5777416FF5BB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FCBE07CC81E7C7B517F63D1F1D9CF89 /* CJBaseUIKit */,
+				467C486D95294E88B612A9FD981BA0D9 /* CJPicker */,
+				B759F7D497ECF46085DCDE85C1449BCB /* CJPopupAction */,
+				6357151700DD773606D273CFA870E1D3 /* YYText */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				AA73475BCAE29E50771A5A2421B6C048 /* Pods */,
-				F37F19EF276CCC7921CCEB84656D19AB /* Products */,
+				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
+				7328DBEB9D78A0848BF5777416FF5BB7 /* Pods */,
+				42D76A157E6C7DF7AB9E277ABED41D8F /* Products */,
 				AB9CAED79C99EA3969D0270A00DF5990 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		84E9D090B268D7DF67C88BAB1A2D54A5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F397DD5942BE4220A3F17C0CC2BD5513 /* CJBaseUIKit.xcconfig */,
-				281A0E995B35FBF7694CFD57BA528B3F /* CJBaseUIKit-dummy.m */,
-				F21C25FF5F2488F8EB71DB1B49FD6130 /* CJBaseUIKit-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CJBaseUIKit";
-			sourceTree = "<group>";
-		};
-		85512B0A379D171877D1AE287AD6785C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				88C6EB43B7C4461E45E7680607BF9BEE /* area.plist */,
-				4AFD63611E7067F8E39A6EE73157C319 /* city.plist */,
-				A56434D6073B1E55C975C5B81161264A /* line_gray_pickerToolbar.png */,
-				26FA8CB0E17F4B37100A19F8F6F8B1B5 /* line_gray_pickerToolbar@2x.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		8ED90D91399A858D5DE36867FFE8FDE2 /* CJToolbar */ = {
-			isa = PBXGroup;
-			children = (
-				074459031F0DBA5EEF0FD0936C5F955A /* CJDefaultToolbar.h */,
-				E6125BD9EE975D7F9A2DA4D22970A1D5 /* CJDefaultToolbar.m */,
-			);
-			name = CJToolbar;
-			sourceTree = "<group>";
-		};
-		AA73475BCAE29E50771A5A2421B6C048 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CB147E6FBA419723A45C7DB4C25FC68C /* CJBaseUIKit */,
-				4891803163689DC6C72F2FD224D948E8 /* CJPicker */,
-				6C8DE3ABB3CE215BE6D4268682F667BC /* CJPopupAction */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		AB9CAED79C99EA3969D0270A00DF5990 /* Targets Support Files */ = {
@@ -305,6 +502,31 @@
 				C5A1B4809162C94F0B0216A85D152C76 /* Pods-CJFoundationDemoTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B0B4E893F17B3575182EE1BFA6A67E22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64DCC2C79BE2D9CBF2C51C3F40AFFCA8 /* CJPicker.xcconfig */,
+				56E35EC305AAA7C5EF45AED0C6D4A9CA /* CJPicker-dummy.m */,
+				DD56A64FBE630B19E29EFC70786A927C /* CJPicker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CJPicker";
+			sourceTree = "<group>";
+		};
+		B759F7D497ECF46085DCDE85C1449BCB /* CJPopupAction */ = {
+			isa = PBXGroup;
+			children = (
+				2414F144C651EA80860D2DAEF2A62D9C /* CJPopupViewDelegate.h */,
+				17A1F4A97661AD722A177404341301DA /* UIView+CJPopupInView.h */,
+				74FD6AA6B876729DF5FFF3ABE4CE46D6 /* UIView+CJPopupInView.m */,
+				0A286F71C4E40A21BCD3C42CE74A9DEE /* UIView+CJShowExtendView.h */,
+				36659FD10B57A0C94464CDF561F85B77 /* UIView+CJShowExtendView.m */,
+				38C91857CEAD255CDF646EF181A7BD0A /* Support Files */,
+			);
+			name = CJPopupAction;
+			path = CJPopupAction;
 			sourceTree = "<group>";
 		};
 		C5A1B4809162C94F0B0216A85D152C76 /* Pods-CJFoundationDemoTests */ = {
@@ -322,46 +544,40 @@
 			path = "Target Support Files/Pods-CJFoundationDemoTests";
 			sourceTree = "<group>";
 		};
-		CB147E6FBA419723A45C7DB4C25FC68C /* CJBaseUIKit */ = {
+		CC9D0266777D53E10BCA9DF60A78DADA /* CJTextField */ = {
 			isa = PBXGroup;
 			children = (
-				D81467F5C7F522C68C8E2A5EF2B87F8F /* CJTextField */,
-				84E9D090B268D7DF67C88BAB1A2D54A5 /* Support Files */,
-				D29560385E410C20BBCB8C64265D52B7 /* UIColor+CJCategory */,
-			);
-			name = CJBaseUIKit;
-			path = CJBaseUIKit;
-			sourceTree = "<group>";
-		};
-		D29560385E410C20BBCB8C64265D52B7 /* UIColor+CJCategory */ = {
-			isa = PBXGroup;
-			children = (
-				63F880BF1FA5DAD1BB6A4A27A78FE268 /* UIColor+CJHex.h */,
-				1A7AAA8E0EF6B4ACAFF38CA5613AFD75 /* UIColor+CJHex.m */,
-			);
-			name = "UIColor+CJCategory";
-			sourceTree = "<group>";
-		};
-		D81467F5C7F522C68C8E2A5EF2B87F8F /* CJTextField */ = {
-			isa = PBXGroup;
-			children = (
-				5CCA546BBE5FAC6F179BE3879B356968 /* CJAddSubtractTextField.h */,
-				09BC34314DC9302972D6999D606ABD5A /* CJAddSubtractTextField.m */,
-				FAD8DD18FA4B658059F2262DA2018D1F /* CJTextField.h */,
-				46847095F76E1D2442FE662C8E50FEAE /* CJTextField.m */,
+				16E11D698841AAC09BB6F9A86B3A8E15 /* CJAddSubtractTextField.h */,
+				16C4878271C327F725BE098E2506400F /* CJAddSubtractTextField.m */,
+				BAFCAA359BC86C5A7A7F56D04C60FBBE /* CJTextField.h */,
+				3DBB56C16A0E08A92FD618D44AFDAAAD /* CJTextField.m */,
 			);
 			name = CJTextField;
 			sourceTree = "<group>";
 		};
-		E4DBBA016018C9698AF2971BE1A3CEE2 /* Support Files */ = {
+		D64510687103930C234CECEF8A2BEAB1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				66183DC76D25D36187BEE503C38D4EC2 /* CJPopupAction.xcconfig */,
-				864D598367B310F8171296330047F909 /* CJPopupAction-dummy.m */,
-				5FF5ADA894A8B1BF8E747F525D5214A5 /* CJPopupAction-prefix.pch */,
+				0525E07A8CAE299CB20D411AA8A1138E /* Accelerate.framework */,
+				EC78F42E53B594EF0B02AD43AD6C7894 /* CoreFoundation.framework */,
+				985DBD70FB245138EC45B091E7D1B704 /* CoreText.framework */,
+				C59B249C21FE178D4A257DE4CAF29E11 /* Foundation.framework */,
+				A697C56B93860A1735867FE931FA9271 /* MobileCoreServices.framework */,
+				5AA15695F87CFC4A9494DF27112E5DE1 /* QuartzCore.framework */,
+				552350B0C2360B478A721EB17E853ED5 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CJPopupAction";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D9F42E727710861EA0071A4B7337F3F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C1A3D76B77A47195891585A2D0FDE46 /* area.plist */,
+				8C2AE98AC18FBA319940A50B82331A93 /* city.plist */,
+				E8B97A30B415C412D87DF76F773AF1CB /* line_gray_pickerToolbar.png */,
+				8205B36D5C285997A0FBAD28F3C76824 /* line_gray_pickerToolbar@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		EAE63AA9691D7420029BB6B89F96B8AA /* Pods-CJFoundationDemo */ = {
@@ -379,21 +595,49 @@
 			path = "Target Support Files/Pods-CJFoundationDemo";
 			sourceTree = "<group>";
 		};
-		F37F19EF276CCC7921CCEB84656D19AB /* Products */ = {
+		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB740ED99B3D9E79EDFA6D2634CD8067 /* libCJBaseUIKit.a */,
-				D20D50887CFCC02ED01652D417FCA013 /* libCJPicker.a */,
-				5F3E5D560B9AA1DF19326FA44160A78E /* libCJPopupAction.a */,
-				7244AF5165A206D8C927532DEE71FCA1 /* libPods-CJFoundationDemo.a */,
-				9166DCE955F28CFD33DDCED281A4A8C2 /* libPods-CJFoundationDemoTests.a */,
+				D64510687103930C234CECEF8A2BEAB1 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		16D61EAB1C4EEC9B1A8B075C454C4207 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64AC6DE1526B4A0A04890AC78103E40 /* NSAttributedString+YYText.h in Headers */,
+				B5DAB825883E2174463104E650B08463 /* NSParagraphStyle+YYText.h in Headers */,
+				D4BC106099E8CCAF85313D456DDFDEA9 /* UIPasteboard+YYText.h in Headers */,
+				A02987C18F5280DFEDCB548BA44F70EB /* UIView+YYText.h in Headers */,
+				E9807E173508F1DD5A90CAFC45DE7D26 /* YYLabel.h in Headers */,
+				5CAB77B8F8C6D5BC1A266BD73CE8F6E7 /* YYText.h in Headers */,
+				35B2ABDC4415AB0CC9809F6B92C01E85 /* YYTextArchiver.h in Headers */,
+				79EA91503A14EA073E145391587CD90A /* YYTextAsyncLayer.h in Headers */,
+				98B80235878DB6FF78DDB21AE5D3C4CD /* YYTextAttribute.h in Headers */,
+				524C6903D39CCCCA0C4E150781D7D79F /* YYTextContainerView.h in Headers */,
+				78FAE8FC53924207C99C2A502BC6793E /* YYTextDebugOption.h in Headers */,
+				F4FB5D219451110139D0A0AFBD471235 /* YYTextEffectWindow.h in Headers */,
+				0D312DB6C0C01E1AB861408259427CD2 /* YYTextInput.h in Headers */,
+				8A8C59ABC95783D1B94C7736B1FF92E6 /* YYTextKeyboardManager.h in Headers */,
+				78987B0175E0600A92BA0C2F48D02226 /* YYTextLayout.h in Headers */,
+				B94A2FB6BE004C424C616E3BDA30CA30 /* YYTextLine.h in Headers */,
+				3F870C68314F17A10D1599862F5B7426 /* YYTextMagnifier.h in Headers */,
+				6D360C16284407CA967A9E4414D84AB0 /* YYTextParser.h in Headers */,
+				BB619882FA6D3BBE13923BC3943EDF09 /* YYTextRubyAnnotation.h in Headers */,
+				FD265FD8BC3088E066BF56B0E7723FB4 /* YYTextRunDelegate.h in Headers */,
+				334C5C678AEC10F470423C5D4B2DAE36 /* YYTextSelectionView.h in Headers */,
+				9DD11213CEC958F7915D8B0B0F6E7957 /* YYTextTransaction.h in Headers */,
+				7AE9F8684C2E7661F63C7BAFCEB268DB /* YYTextUtilities.h in Headers */,
+				0D03F51C66A6E81B8E37795EF04D2CE7 /* YYTextView.h in Headers */,
+				E165EF864E86F657B1AFAF9F7D3C6596 /* YYTextWeakProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90D71358331237527B5E03B95C2761D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,25 +675,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2CD42D50F79858242B61C439620203EB /* Pods-CJFoundationDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4543578F92A8E2E3B07788BDF7934D4A /* Build configuration list for PBXNativeTarget "Pods-CJFoundationDemo" */;
-			buildPhases = (
-				50BC03E853BB634166114F1DC7FCE210 /* Sources */,
-				0D644855E265D7430EBB5E79DBA2BCEB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D1329E284B466EC1080059976F1714AD /* PBXTargetDependency */,
-				430CFA0A1C492BA4D86F494E9A9BFB4C /* PBXTargetDependency */,
-				A4F78269D4FFCC0085FDA9E8E71AEA85 /* PBXTargetDependency */,
-			);
-			name = "Pods-CJFoundationDemo";
-			productName = "Pods-CJFoundationDemo";
-			productReference = 7244AF5165A206D8C927532DEE71FCA1 /* libPods-CJFoundationDemo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		687A7C196F571100C044D346BB38153B /* Pods-CJFoundationDemoTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C5DE66547ECF2422736B9D8A91BC6F3 /* Build configuration list for PBXNativeTarget "Pods-CJFoundationDemoTests" */;
@@ -463,7 +688,24 @@
 			);
 			name = "Pods-CJFoundationDemoTests";
 			productName = "Pods-CJFoundationDemoTests";
-			productReference = 9166DCE955F28CFD33DDCED281A4A8C2 /* libPods-CJFoundationDemoTests.a */;
+			productReference = 45BB8E25D0C9FC608C0C20EA3E32180C /* libPods-CJFoundationDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6C81521E848235FB94600C36EFBE5B69 /* YYText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816C596207FE46269EB724EF963AE158 /* Build configuration list for PBXNativeTarget "YYText" */;
+			buildPhases = (
+				57F3AA37BF792E6AA72D9EDB5D5844F4 /* Sources */,
+				E7B79582DE997C1D43C5116E15EFA993 /* Frameworks */,
+				16D61EAB1C4EEC9B1A8B075C454C4207 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYText;
+			productName = YYText;
+			productReference = BECE1911ACF97AAED49CA8F48FE01F29 /* libYYText.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A3E214004AFF3864E8464D67F94A9CF2 /* CJBaseUIKit */ = {
@@ -480,7 +722,7 @@
 			);
 			name = CJBaseUIKit;
 			productName = CJBaseUIKit;
-			productReference = AB740ED99B3D9E79EDFA6D2634CD8067 /* libCJBaseUIKit.a */;
+			productReference = 4C944E4AE6F5C8DF9C8871E4950BB85D /* libCJBaseUIKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B62F20C8AEE3FEB4AAF6F4FA71C7BB0A /* CJPopupAction */ = {
@@ -497,7 +739,27 @@
 			);
 			name = CJPopupAction;
 			productName = CJPopupAction;
-			productReference = 5F3E5D560B9AA1DF19326FA44160A78E /* libCJPopupAction.a */;
+			productReference = 3E7276FEDE2EDEC04C00BF54A70B578C /* libCJPopupAction.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C586B3459B865C876D18A4CB8F06C5E5 /* Pods-CJFoundationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F4A822F5F61852461A3CA02B76A530 /* Build configuration list for PBXNativeTarget "Pods-CJFoundationDemo" */;
+			buildPhases = (
+				74FCA8D1E19AC8D02AD55FD99C512C77 /* Sources */,
+				4CC4C63140527EA553A0E5416E10B379 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECDDCC15D427718C31CE07CB3D4DE054 /* PBXTargetDependency */,
+				C9B7F9AA29F4E928593D821334FD4D86 /* PBXTargetDependency */,
+				E58F9AEDD87F447246F6F9E776878825 /* PBXTargetDependency */,
+				19C9880EFA7EF352BD97F62225482EEB /* PBXTargetDependency */,
+			);
+			name = "Pods-CJFoundationDemo";
+			productName = "Pods-CJFoundationDemo";
+			productReference = AC367C6132C7C5D5DCE254895D06467B /* libPods-CJFoundationDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D25B38E90215BB0E69AB7CEA8CD89B49 /* CJPicker */ = {
@@ -514,7 +776,7 @@
 			);
 			name = CJPicker;
 			productName = CJPicker;
-			productReference = D20D50887CFCC02ED01652D417FCA013 /* libCJPicker.a */;
+			productReference = 65525FBCA507734D45FFBA7491F8F409 /* libCJPicker.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -534,15 +796,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F37F19EF276CCC7921CCEB84656D19AB /* Products */;
+			productRefGroup = 42D76A157E6C7DF7AB9E277ABED41D8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A3E214004AFF3864E8464D67F94A9CF2 /* CJBaseUIKit */,
 				D25B38E90215BB0E69AB7CEA8CD89B49 /* CJPicker */,
 				B62F20C8AEE3FEB4AAF6F4FA71C7BB0A /* CJPopupAction */,
-				2CD42D50F79858242B61C439620203EB /* Pods-CJFoundationDemo */,
+				C586B3459B865C876D18A4CB8F06C5E5 /* Pods-CJFoundationDemo */,
 				687A7C196F571100C044D346BB38153B /* Pods-CJFoundationDemoTests */,
+				6C81521E848235FB94600C36EFBE5B69 /* YYText */,
 			);
 		};
 /* End PBXProject section */
@@ -567,11 +830,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50BC03E853BB634166114F1DC7FCE210 /* Sources */ = {
+		57F3AA37BF792E6AA72D9EDB5D5844F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A130708BC233EB16FEC62AC25F38104 /* Pods-CJFoundationDemo-dummy.m in Sources */,
+				F9B7AD7EEAEF9E2DD8F27564756C2594 /* NSAttributedString+YYText.m in Sources */,
+				06B551270D9E483075D3076B13F9FC1B /* NSParagraphStyle+YYText.m in Sources */,
+				A2F56C2301222CAEABCF730808F38A18 /* UIPasteboard+YYText.m in Sources */,
+				C3B58BCAD3E1D0CC6E660A4BACE9BC5E /* UIView+YYText.m in Sources */,
+				C5C68891783B90BA347A5372F51610B4 /* YYLabel.m in Sources */,
+				D3099DBDDEDD7FE5110B80A008A35F94 /* YYText-dummy.m in Sources */,
+				70EEDF993CDFCBC2862F45EB31F0C2B5 /* YYTextArchiver.m in Sources */,
+				AD0825F63C5B34B5EF1B92B282077F4B /* YYTextAsyncLayer.m in Sources */,
+				F2994B9FCA68E9092403CB8F413F0258 /* YYTextAttribute.m in Sources */,
+				E8135AFB834DDF1058B8270420034927 /* YYTextContainerView.m in Sources */,
+				1AED0DC34B7E426E10BA67030BC964F5 /* YYTextDebugOption.m in Sources */,
+				46AE099609BEEAA704CA60693C2C9A9C /* YYTextEffectWindow.m in Sources */,
+				09D6A1CDAE9134FEA199828AA5AA1B78 /* YYTextInput.m in Sources */,
+				3755B915530C32D807A09A73F18AD078 /* YYTextKeyboardManager.m in Sources */,
+				0A3A2D4B6072A0AE98541616848D8130 /* YYTextLayout.m in Sources */,
+				BF44D20E1A1B7A896A06B18EEDB52775 /* YYTextLine.m in Sources */,
+				5A8635F40E8FC93FA3E2A52C99F4CA19 /* YYTextMagnifier.m in Sources */,
+				71FB87CEB52E42BCA0097DFAB3ECE54A /* YYTextParser.m in Sources */,
+				829BEED58C37C4CC8E70B6483C2CBCCD /* YYTextRubyAnnotation.m in Sources */,
+				7280B3FE5B9B45B189B210ACC2A38B9D /* YYTextRunDelegate.m in Sources */,
+				D50EEA19EBB339ABA1A2B41EC1D7D1A8 /* YYTextSelectionView.m in Sources */,
+				E72477DD8FCC1BC5B4F17EE0292857B5 /* YYTextTransaction.m in Sources */,
+				3874636BC22C2BE813537E02D6FB93CA /* YYTextUtilities.m in Sources */,
+				EEF95D4D884477948B2BAA87A4A1D540 /* YYTextView.m in Sources */,
+				D7DC4B188951AC75F5A928B759FE5250 /* YYTextWeakProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74FCA8D1E19AC8D02AD55FD99C512C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAE048DA36D57C44EC31C59ACEE9BAB /* Pods-CJFoundationDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,27 +898,57 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		430CFA0A1C492BA4D86F494E9A9BFB4C /* PBXTargetDependency */ = {
+		19C9880EFA7EF352BD97F62225482EEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYText;
+			target = 6C81521E848235FB94600C36EFBE5B69 /* YYText */;
+			targetProxy = 69DEADC215F4BFCA48CEA38D32397105 /* PBXContainerItemProxy */;
+		};
+		C9B7F9AA29F4E928593D821334FD4D86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CJPicker;
 			target = D25B38E90215BB0E69AB7CEA8CD89B49 /* CJPicker */;
-			targetProxy = 091A10E266709E48BF2CA7D4D44D8916 /* PBXContainerItemProxy */;
+			targetProxy = BFDE1A9D006D4D9A178BE788E664B997 /* PBXContainerItemProxy */;
 		};
-		A4F78269D4FFCC0085FDA9E8E71AEA85 /* PBXTargetDependency */ = {
+		E58F9AEDD87F447246F6F9E776878825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CJPopupAction;
 			target = B62F20C8AEE3FEB4AAF6F4FA71C7BB0A /* CJPopupAction */;
-			targetProxy = 632DC628426E228A7D9838C31DA3E963 /* PBXContainerItemProxy */;
+			targetProxy = 72821CBB0151140A034075BA292ABCE7 /* PBXContainerItemProxy */;
 		};
-		D1329E284B466EC1080059976F1714AD /* PBXTargetDependency */ = {
+		ECDDCC15D427718C31CE07CB3D4DE054 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CJBaseUIKit;
 			target = A3E214004AFF3864E8464D67F94A9CF2 /* CJBaseUIKit */;
-			targetProxy = F6C96DA933FB1F9501899F77819394F7 /* PBXContainerItemProxy */;
+			targetProxy = 11D680B69D376E854B241FB9479BCC1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0E096ED5760BFE18AB3157E45B1B35AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E6540DDBC11CD02651653EBF3C33D3 /* YYText.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYText/YYText-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
 		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -717,7 +1042,31 @@
 			};
 			name = Release;
 		};
-		4B5BD6C0BE4B55968D69BB50B03F582B /* Debug */ = {
+		5614350F5FEAEF18EFA418391A8872DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA3219FFF08A386267BE5B5DCCE187E /* CJBaseUIKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CJBaseUIKit/CJBaseUIKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		57055F308016680D3E2457312AEF415C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FCA09352E1E60B4E1515FC793A213E9 /* Pods-CJFoundationDemo.debug.xcconfig */;
 			buildSettings = {
@@ -740,33 +1089,9 @@
 			};
 			name = Debug;
 		};
-		5614350F5FEAEF18EFA418391A8872DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F397DD5942BE4220A3F17C0CC2BD5513 /* CJBaseUIKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CJBaseUIKit/CJBaseUIKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Debug;
-		};
 		73B2EB99A4C9D55DF7DEF28F829C2AE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66183DC76D25D36187BEE503C38D4EC2 /* CJPopupAction.xcconfig */;
+			baseConfigurationReference = 24C19AF6F497AB7B66FB70A77E7B669A /* CJPopupAction.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -787,29 +1112,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 			};
 			name = Debug;
-		};
-		8359941104AA8B2F15F2FDF0E4B17C9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57ACA586E6C5BFF9C86BDFC0838D92DA /* Pods-CJFoundationDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		87875F31B64385293F39CD86B40CE8E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -859,7 +1161,7 @@
 		};
 		967D3CF14F3D513D19FA89264E7A7557 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F397DD5942BE4220A3F17C0CC2BD5513 /* CJBaseUIKit.xcconfig */;
+			baseConfigurationReference = 9AA3219FFF08A386267BE5B5DCCE187E /* CJBaseUIKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -883,7 +1185,7 @@
 		};
 		977211014A123FA2751152737836EBDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20164CFC4EAFA48A8A8B585B17B6770F /* CJPicker.xcconfig */;
+			baseConfigurationReference = 64DCC2C79BE2D9CBF2C51C3F40AFFCA8 /* CJPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -905,9 +1207,33 @@
 			};
 			name = Debug;
 		};
+		9DBA434CCC2B6FEE87DA9EC51D0413C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E6540DDBC11CD02651653EBF3C33D3 /* YYText.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YYText/YYText-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
 		A0B5199B49DF9FB491A6B81D2713FD08 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66183DC76D25D36187BEE503C38D4EC2 /* CJPopupAction.xcconfig */;
+			baseConfigurationReference = 24C19AF6F497AB7B66FB70A77E7B669A /* CJPopupAction.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -931,7 +1257,7 @@
 		};
 		A491D71659912453B2DD9D20AA6B0F7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20164CFC4EAFA48A8A8B585B17B6770F /* CJPicker.xcconfig */;
+			baseConfigurationReference = 64DCC2C79BE2D9CBF2C51C3F40AFFCA8 /* CJPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -953,9 +1279,41 @@
 			};
 			name = Release;
 		};
+		E5DB59D120BC4409A8AA81933220BF6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57ACA586E6C5BFF9C86BDFC0838D92DA /* Pods-CJFoundationDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00F4A822F5F61852461A3CA02B76A530 /* Build configuration list for PBXNativeTarget "Pods-CJFoundationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57055F308016680D3E2457312AEF415C /* Debug */,
+				E5DB59D120BC4409A8AA81933220BF6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C5DE66547ECF2422736B9D8A91BC6F3 /* Build configuration list for PBXNativeTarget "Pods-CJFoundationDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -983,20 +1341,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4543578F92A8E2E3B07788BDF7934D4A /* Build configuration list for PBXNativeTarget "Pods-CJFoundationDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B5BD6C0BE4B55968D69BB50B03F582B /* Debug */,
-				8359941104AA8B2F15F2FDF0E4B17C9D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		63773A80128AC6A542DC2118EF87E844 /* Build configuration list for PBXNativeTarget "CJPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				977211014A123FA2751152737836EBDB /* Debug */,
 				A491D71659912453B2DD9D20AA6B0F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816C596207FE46269EB724EF963AE158 /* Build configuration list for PBXNativeTarget "YYText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBA434CCC2B6FEE87DA9EC51D0413C2 /* Debug */,
+				0E096ED5760BFE18AB3157E45B1B35AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
