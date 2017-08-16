@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B78FAE99C955763446BB3D3 /* libPods-CJBaseUtilDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21828F2FEAAC7D077EC1837C /* libPods-CJBaseUtilDemoTests.a */; };
+		782D82711F43E3340014A0E3 /* CJDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D82701F43E3340014A0E3 /* CJDeviceUtil.m */; };
+		782D82741F43F5470014A0E3 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D82731F43F5470014A0E3 /* DeviceInfo.m */; };
 		78E57E661E9DCBEA002CDB9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E57E651E9DCBEA002CDB9F /* main.m */; };
 		78E57E691E9DCBEA002CDB9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E57E681E9DCBEA002CDB9F /* AppDelegate.m */; };
 		78E57E6C1E9DCBEA002CDB9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E57E6B1E9DCBEA002CDB9F /* ViewController.m */; };
@@ -18,7 +20,6 @@
 		78E57E8A1E9DCBEA002CDB9F /* CJBaseUtilDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E57E891E9DCBEA002CDB9F /* CJBaseUtilDemoUITests.m */; };
 		78F1BF3D1F0CB6B500333FE9 /* CJAppHaveLaunchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF181F0CB6B500333FE9 /* CJAppHaveLaunchUtil.m */; };
 		78F1BF3E1F0CB6B500333FE9 /* CJAppVersionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF1A1F0CB6B500333FE9 /* CJAppVersionUtil.m */; };
-		78F1BF3F1F0CB6B500333FE9 /* IPAddressUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF1D1F0CB6B500333FE9 /* IPAddressUtil.m */; };
 		78F1BF401F0CB6B500333FE9 /* CJAppLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF201F0CB6B500333FE9 /* CJAppLog.m */; };
 		78F1BF411F0CB6B500333FE9 /* CJLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF221F0CB6B500333FE9 /* CJLogUtil.m */; };
 		78F1BF421F0CB6B500333FE9 /* CJDataModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF251F0CB6B500333FE9 /* CJDataModelUtil.m */; };
@@ -58,6 +59,10 @@
 /* Begin PBXFileReference section */
 		21828F2FEAAC7D077EC1837C /* libPods-CJBaseUtilDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJBaseUtilDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444304128373799CECAB53B1 /* Pods-CJBaseUtilDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJBaseUtilDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJBaseUtilDemoTests/Pods-CJBaseUtilDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		782D826F1F43E3340014A0E3 /* CJDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDeviceUtil.h; sourceTree = "<group>"; };
+		782D82701F43E3340014A0E3 /* CJDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDeviceUtil.m; sourceTree = "<group>"; };
+		782D82721F43F5470014A0E3 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		782D82731F43F5470014A0E3 /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		78E57E611E9DCBEA002CDB9F /* CJBaseUtilDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJBaseUtilDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E57E651E9DCBEA002CDB9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78E57E671E9DCBEA002CDB9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,8 +83,6 @@
 		78F1BF181F0CB6B500333FE9 /* CJAppHaveLaunchUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAppHaveLaunchUtil.m; sourceTree = "<group>"; };
 		78F1BF191F0CB6B500333FE9 /* CJAppVersionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAppVersionUtil.h; sourceTree = "<group>"; };
 		78F1BF1A1F0CB6B500333FE9 /* CJAppVersionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAppVersionUtil.m; sourceTree = "<group>"; };
-		78F1BF1C1F0CB6B500333FE9 /* IPAddressUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddressUtil.h; sourceTree = "<group>"; };
-		78F1BF1D1F0CB6B500333FE9 /* IPAddressUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddressUtil.m; sourceTree = "<group>"; };
 		78F1BF1F1F0CB6B500333FE9 /* CJAppLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJAppLog.h; sourceTree = "<group>"; };
 		78F1BF201F0CB6B500333FE9 /* CJAppLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJAppLog.m; sourceTree = "<group>"; };
 		78F1BF211F0CB6B500333FE9 /* CJLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJLogUtil.h; sourceTree = "<group>"; };
@@ -249,8 +252,8 @@
 		78F1BF1B1F0CB6B500333FE9 /* CJDevice */ = {
 			isa = PBXGroup;
 			children = (
-				78F1BF1C1F0CB6B500333FE9 /* IPAddressUtil.h */,
-				78F1BF1D1F0CB6B500333FE9 /* IPAddressUtil.m */,
+				782D826F1F43E3340014A0E3 /* CJDeviceUtil.h */,
+				782D82701F43E3340014A0E3 /* CJDeviceUtil.m */,
 			);
 			path = CJDevice;
 			sourceTree = "<group>";
@@ -349,6 +352,8 @@
 				78F1BF551F0CB8A900333FE9 /* DeviceInfoViewController.h */,
 				78F1BF561F0CB8A900333FE9 /* DeviceInfoViewController.m */,
 				78F1BF571F0CB8A900333FE9 /* DeviceInfoViewController.xib */,
+				782D82721F43F5470014A0E3 /* DeviceInfo.h */,
+				782D82731F43F5470014A0E3 /* DeviceInfo.m */,
 			);
 			path = DeviceInfoDemo;
 			sourceTree = "<group>";
@@ -606,8 +611,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782D82711F43E3340014A0E3 /* CJDeviceUtil.m in Sources */,
 				78E57E6C1E9DCBEA002CDB9F /* ViewController.m in Sources */,
 				78F1BF441F0CB6B500333FE9 /* CJRealtimeSearchUtil.m in Sources */,
+				782D82741F43F5470014A0E3 /* DeviceInfo.m in Sources */,
 				78F1BF4A1F0CB6B500333FE9 /* CJSortedCategoryResult.m in Sources */,
 				78F1BF531F0CB81A00333FE9 /* ModuleModel.m in Sources */,
 				78F1BF491F0CB6B500333FE9 /* NSObject+SearchProperty.m in Sources */,
@@ -626,7 +633,6 @@
 				78F1BF581F0CB8A900333FE9 /* DeviceInfoViewController.m in Sources */,
 				78F1BF421F0CB6B500333FE9 /* CJDataModelUtil.m in Sources */,
 				78F1BF521F0CB81A00333FE9 /* HomeViewController.m in Sources */,
-				78F1BF3F1F0CB6B500333FE9 /* IPAddressUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
