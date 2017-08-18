@@ -25,6 +25,7 @@
 		782709CE1E87112400E21433 /* NSString+CJEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B11E87112400E21433 /* NSString+CJEncoding.m */; };
 		782709CF1E87112400E21433 /* NSString+CJEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B31E87112400E21433 /* NSString+CJEncryption.m */; };
 		782709D01E87112400E21433 /* NSString+CJValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 782709B51E87112400E21433 /* NSString+CJValidate.m */; };
+		783EF7751F46F99500E3FADD /* CJDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EF7741F46F99500E3FADD /* CJDateUtil.m */; };
 		78914E2A1F258E1B0081A2A0 /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78914E281F258E1B0081A2A0 /* AttributedStringViewController.m */; };
 		78914E2B1F258E1B0081A2A0 /* AttributedStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78914E291F258E1B0081A2A0 /* AttributedStringViewController.xib */; };
 		78C8884C1F0B7FAA001AF7BC /* NSDate+CJDateInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C8884B1F0B7FAA001AF7BC /* NSDate+CJDateInterval.m */; };
@@ -99,6 +100,8 @@
 		782709B31E87112400E21433 /* NSString+CJEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJEncryption.m"; sourceTree = "<group>"; };
 		782709B41E87112400E21433 /* NSString+CJValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CJValidate.h"; sourceTree = "<group>"; };
 		782709B51E87112400E21433 /* NSString+CJValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJValidate.m"; sourceTree = "<group>"; };
+		783EF7731F46F99500E3FADD /* CJDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDateUtil.h; sourceTree = "<group>"; };
+		783EF7741F46F99500E3FADD /* CJDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDateUtil.m; sourceTree = "<group>"; };
 		78914E271F258E1B0081A2A0 /* AttributedStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringViewController.h; sourceTree = "<group>"; };
 		78914E281F258E1B0081A2A0 /* AttributedStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringViewController.m; sourceTree = "<group>"; };
 		78914E291F258E1B0081A2A0 /* AttributedStringViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributedStringViewController.xib; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 				782709B31E87112400E21433 /* NSString+CJEncryption.m */,
 				782709B41E87112400E21433 /* NSString+CJValidate.h */,
 				782709B51E87112400E21433 /* NSString+CJValidate.m */,
+				783EF7731F46F99500E3FADD /* CJDateUtil.h */,
+				783EF7741F46F99500E3FADD /* CJDateUtil.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -653,6 +658,7 @@
 				78C888571F0BACF0001AF7BC /* NSJSONSerialization+CJCategory.m in Sources */,
 				782709CE1E87112400E21433 /* NSString+CJEncoding.m in Sources */,
 				782709CA1E87112400E21433 /* NSDictionary+CJConvert.m in Sources */,
+				783EF7751F46F99500E3FADD /* CJDateUtil.m in Sources */,
 				78F1BE9C1F0C83A300333FE9 /* ModuleModel.m in Sources */,
 				78C8884C1F0B7FAA001AF7BC /* NSDate+CJDateInterval.m in Sources */,
 				7827092C1E870B5A00E21433 /* ViewController.m in Sources */,
