@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B78FAE99C955763446BB3D3 /* libPods-CJBaseUtilDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21828F2FEAAC7D077EC1837C /* libPods-CJBaseUtilDemoTests.a */; };
+		78102FCB1F59C7CA00A5A043 /* PrivateSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 78102FCA1F59C7CA00A5A043 /* PrivateSetting.m */; };
 		782D82711F43E3340014A0E3 /* CJDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D82701F43E3340014A0E3 /* CJDeviceUtil.m */; };
 		782D82741F43F5470014A0E3 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 782D82731F43F5470014A0E3 /* DeviceInfo.m */; };
 		78E57E661E9DCBEA002CDB9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E57E651E9DCBEA002CDB9F /* main.m */; };
@@ -31,7 +32,6 @@
 		78F1BF481F0CB6B500333FE9 /* CJSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF331F0CB6B500333FE9 /* CJSearchResult.m */; };
 		78F1BF491F0CB6B500333FE9 /* NSObject+SearchProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF351F0CB6B500333FE9 /* NSObject+SearchProperty.m */; };
 		78F1BF4A1F0CB6B500333FE9 /* CJSortedCategoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF381F0CB6B500333FE9 /* CJSortedCategoryResult.m */; };
-		78F1BF4B1F0CB6B500333FE9 /* PrivateSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF3C1F0CB6B500333FE9 /* PrivateSetting.m */; };
 		78F1BF521F0CB81A00333FE9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF4E1F0CB81A00333FE9 /* HomeViewController.m */; };
 		78F1BF531F0CB81A00333FE9 /* ModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF511F0CB81A00333FE9 /* ModuleModel.m */; };
 		78F1BF581F0CB8A900333FE9 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF561F0CB8A900333FE9 /* DeviceInfoViewController.m */; };
@@ -59,6 +59,8 @@
 /* Begin PBXFileReference section */
 		21828F2FEAAC7D077EC1837C /* libPods-CJBaseUtilDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJBaseUtilDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444304128373799CECAB53B1 /* Pods-CJBaseUtilDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJBaseUtilDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJBaseUtilDemoTests/Pods-CJBaseUtilDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78102FC91F59C7CA00A5A043 /* PrivateSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateSetting.h; sourceTree = "<group>"; };
+		78102FCA1F59C7CA00A5A043 /* PrivateSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateSetting.m; sourceTree = "<group>"; };
 		782D826F1F43E3340014A0E3 /* CJDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDeviceUtil.h; sourceTree = "<group>"; };
 		782D82701F43E3340014A0E3 /* CJDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDeviceUtil.m; sourceTree = "<group>"; };
 		782D82721F43F5470014A0E3 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
@@ -106,8 +108,6 @@
 		78F1BF371F0CB6B500333FE9 /* CJSortedCategoryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSortedCategoryResult.h; sourceTree = "<group>"; };
 		78F1BF381F0CB6B500333FE9 /* CJSortedCategoryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSortedCategoryResult.m; sourceTree = "<group>"; };
 		78F1BF391F0CB6B500333FE9 /* CJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUtil.h; sourceTree = "<group>"; };
-		78F1BF3B1F0CB6B500333FE9 /* PrivateSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateSetting.h; sourceTree = "<group>"; };
-		78F1BF3C1F0CB6B500333FE9 /* PrivateSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateSetting.m; sourceTree = "<group>"; };
 		78F1BF4D1F0CB81A00333FE9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		78F1BF4E1F0CB81A00333FE9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		78F1BF501F0CB81A00333FE9 /* ModuleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleModel.h; sourceTree = "<group>"; };
@@ -155,6 +155,37 @@
 				21828F2FEAAC7D077EC1837C /* libPods-CJBaseUtilDemoTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78102FC51F59C7CA00A5A043 /* FoundationUtil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FoundationUtil;
+			sourceTree = "<group>";
+		};
+		78102FC61F59C7CA00A5A043 /* OtherUtil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherUtil;
+			sourceTree = "<group>";
+		};
+		78102FC71F59C7CA00A5A043 /* UIUtil */ = {
+			isa = PBXGroup;
+			children = (
+				78102FC81F59C7CA00A5A043 /* PrivateSetting */,
+			);
+			path = UIUtil;
+			sourceTree = "<group>";
+		};
+		78102FC81F59C7CA00A5A043 /* PrivateSetting */ = {
+			isa = PBXGroup;
+			children = (
+				78102FC91F59C7CA00A5A043 /* PrivateSetting.h */,
+				78102FCA1F59C7CA00A5A043 /* PrivateSetting.m */,
+			);
+			path = PrivateSetting;
 			sourceTree = "<group>";
 		};
 		78E57E581E9DCBE9002CDB9F = {
@@ -228,11 +259,13 @@
 			isa = PBXGroup;
 			children = (
 				78F1BF391F0CB6B500333FE9 /* CJUtil.h */,
+				78102FC51F59C7CA00A5A043 /* FoundationUtil */,
+				78102FC61F59C7CA00A5A043 /* OtherUtil */,
+				78102FC71F59C7CA00A5A043 /* UIUtil */,
 				78F1BF161F0CB6B500333FE9 /* CJApp */,
 				78F1BF1B1F0CB6B500333FE9 /* CJDevice */,
 				78F1BF1E1F0CB6B500333FE9 /* CJLog */,
 				78F1BF231F0CB6B500333FE9 /* CJSortedAndSearchUtil */,
-				78F1BF3A1F0CB6B500333FE9 /* PrivateSetting */,
 			);
 			name = CJBaseUtil;
 			path = ../../CJBaseUtil;
@@ -316,15 +349,6 @@
 				78F1BF381F0CB6B500333FE9 /* CJSortedCategoryResult.m */,
 			);
 			path = Sorted;
-			sourceTree = "<group>";
-		};
-		78F1BF3A1F0CB6B500333FE9 /* PrivateSetting */ = {
-			isa = PBXGroup;
-			children = (
-				78F1BF3B1F0CB6B500333FE9 /* PrivateSetting.h */,
-				78F1BF3C1F0CB6B500333FE9 /* PrivateSetting.m */,
-			);
-			path = PrivateSetting;
 			sourceTree = "<group>";
 		};
 		78F1BF4C1F0CB81A00333FE9 /* Demos */ = {
@@ -615,6 +639,7 @@
 				78E57E6C1E9DCBEA002CDB9F /* ViewController.m in Sources */,
 				78F1BF441F0CB6B500333FE9 /* CJRealtimeSearchUtil.m in Sources */,
 				782D82741F43F5470014A0E3 /* DeviceInfo.m in Sources */,
+				78102FCB1F59C7CA00A5A043 /* PrivateSetting.m in Sources */,
 				78F1BF4A1F0CB6B500333FE9 /* CJSortedCategoryResult.m in Sources */,
 				78F1BF531F0CB81A00333FE9 /* ModuleModel.m in Sources */,
 				78F1BF491F0CB6B500333FE9 /* NSObject+SearchProperty.m in Sources */,
@@ -622,7 +647,6 @@
 				78E57E691E9DCBEA002CDB9F /* AppDelegate.m in Sources */,
 				78F1BF481F0CB6B500333FE9 /* CJSearchResult.m in Sources */,
 				78F1BF401F0CB6B500333FE9 /* CJAppLog.m in Sources */,
-				78F1BF4B1F0CB6B500333FE9 /* PrivateSetting.m in Sources */,
 				78F1BF461F0CB6B500333FE9 /* CJSortedUtil.m in Sources */,
 				78F1BF431F0CB6B500333FE9 /* CJPinyinHelper.m in Sources */,
 				78F1BF411F0CB6B500333FE9 /* CJLogUtil.m in Sources */,

@@ -3,7 +3,7 @@
 //  CJBaseUtilDemo
 //
 //  Created by lichq on 2016/12/14.
-//  Copyright © 2016年 ciyouzen. All rights reserved.
+//  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,7 +13,7 @@
 + (CJAppHaveLaunchUtil *)sharedInstance;
 
 /**
- *  是否已经登录过
+ *  是否已经启动过（不区分用户，只要在这台手机上曾启动过计算）
  *
  *  reurn 是否已经启动过
  */
