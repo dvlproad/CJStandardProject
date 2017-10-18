@@ -1,6 +1,6 @@
 //
 //  CJSectionDataModel.h
-//  CJBaseViewControllerDemo
+//  CJBaseUtilDemo
 //
 //  Created by ciyouzen on 2016/11/23.
 //  Copyright © 2016年 dvlproad. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CJSectionDataModel : NSObject {
+@interface CJSectionDataModel : NSObject<NSCopying, NSMutableCopying> {
     
 }
 @property (nonatomic, assign) NSInteger type;           /**< section的类型 */

@@ -2,7 +2,7 @@
 //  PrivateSetting.h
 //  CJBaseUtilDemo
 //
-//  Created by lichq on 14-11-6.
+//  Created by ciyouzen on 14-11-6.
 //  Copyright (c) 2014年 lichq. All rights reserved.
 //
 

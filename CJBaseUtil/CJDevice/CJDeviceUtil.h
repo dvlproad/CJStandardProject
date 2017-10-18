@@ -2,7 +2,7 @@
 //  CJDeviceUtil.h
 //  CJBaseUtilDemo
 //
-//  Created by lichaoqian on 2017/7/5.
+//  Created by ciyouzen on 2017/7/5.
 //  Copyright © 2017年 dvlproad. All rights reserved.
 //
 

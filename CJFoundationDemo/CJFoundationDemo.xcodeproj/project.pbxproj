@@ -42,6 +42,7 @@
 		78F1BE9C1F0C83A300333FE9 /* ModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BE9B1F0C83A300333FE9 /* ModuleModel.m */; };
 		78F1BEAD1F0C953800333FE9 /* NSArray+CJConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BEAA1F0C953800333FE9 /* NSArray+CJConsoleLog.m */; };
 		78F1BEAE1F0C953800333FE9 /* NSDictionary+CJConsoleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BEAC1F0C953800333FE9 /* NSDictionary+CJConsoleLog.m */; };
+		80E5E11B1F7B9842007B73CA /* NSDate+CJJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E5E11A1F7B9842007B73CA /* NSDate+CJJudge.m */; };
 		AA89AB6D85539FA7659B18BF /* libPods-CJFoundationDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A9F0016F325FDAF58DA52A /* libPods-CJFoundationDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,8 @@
 		78F1BEAB1F0C953800333FE9 /* NSDictionary+CJConsoleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CJConsoleLog.h"; sourceTree = "<group>"; };
 		78F1BEAC1F0C953800333FE9 /* NSDictionary+CJConsoleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CJConsoleLog.m"; sourceTree = "<group>"; };
 		79BBF4C64F889729460774F4 /* Pods-CJFoundationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFoundationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJFoundationDemo/Pods-CJFoundationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		80E5E1191F7B9842007B73CA /* NSDate+CJJudge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+CJJudge.h"; sourceTree = "<group>"; };
+		80E5E11A1F7B9842007B73CA /* NSDate+CJJudge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CJJudge.m"; sourceTree = "<group>"; };
 		CF4A3FAF1346889F3CE86E89 /* libPods-CJFoundationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJFoundationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -295,6 +298,8 @@
 				78E2F8BE1EA4B5FF00892D86 /* NSDate+CJExtendedDate.m */,
 				78C8884A1F0B7FAA001AF7BC /* NSDate+CJDateInterval.h */,
 				78C8884B1F0B7FAA001AF7BC /* NSDate+CJDateInterval.m */,
+				80E5E1191F7B9842007B73CA /* NSDate+CJJudge.h */,
+				80E5E11A1F7B9842007B73CA /* NSDate+CJJudge.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -677,6 +682,7 @@
 				782709261E870B5A00E21433 /* main.m in Sources */,
 				782709CD1E87112400E21433 /* NSString+CJTextSize.m in Sources */,
 				78F1BE981F0C836E00333FE9 /* HomeViewController.m in Sources */,
+				80E5E11B1F7B9842007B73CA /* NSDate+CJJudge.m in Sources */,
 				782709CB1E87112400E21433 /* NSString+CJAttributedString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

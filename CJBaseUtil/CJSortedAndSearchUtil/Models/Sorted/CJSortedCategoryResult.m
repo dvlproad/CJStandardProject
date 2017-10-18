@@ -1,9 +1,9 @@
 //
 //  CJSortedCategoryResult.m
-//  ijinbu
+//  CJBaseUtilDemo
 //
-//  Created by ciyouzen on 2016/12/22.
-//  Copyright © 2016年 haixiaedu. All rights reserved.
+//  Created by ciyouzen on 2016/11/23.
+//  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
 #import "CJSortedCategoryResult.h"
