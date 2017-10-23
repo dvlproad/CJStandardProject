@@ -38,6 +38,7 @@
 		802809141F9DD2EF008C73F5 /* CJSortedCategoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8028090A1F9DD2EF008C73F5 /* CJSortedCategoryResult.m */; };
 		802809171F9DD8E3008C73F5 /* CJDataUtil+SortOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 802809161F9DD8E3008C73F5 /* CJDataUtil+SortOrder.m */; };
 		8028091B1F9DFC26008C73F5 /* CJPinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8028091A1F9DFC26008C73F5 /* CJPinyinHelper.m */; };
+		802809211F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 802809201F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.m */; };
 		B5211143190D98A2F1B65857 /* libPods-CJBaseUtilDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC08AC7ADA9DFD09FBD9B79 /* libPods-CJBaseUtilDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,8 @@
 		802809161F9DD8E3008C73F5 /* CJDataUtil+SortOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CJDataUtil+SortOrder.m"; sourceTree = "<group>"; };
 		802809191F9DFC26008C73F5 /* CJPinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPinyinHelper.h; sourceTree = "<group>"; };
 		8028091A1F9DFC26008C73F5 /* CJPinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPinyinHelper.m; sourceTree = "<group>"; };
+		8028091F1F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJDataUtil+CJSectionDataModel.h"; sourceTree = "<group>"; };
+		802809201F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CJDataUtil+CJSectionDataModel.m"; sourceTree = "<group>"; };
 		8921E02AF9D00C14C9CFFFEA /* Pods-CJBaseUtilDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJBaseUtilDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJBaseUtilDemoTests/Pods-CJBaseUtilDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BC08AC7ADA9DFD09FBD9B79 /* libPods-CJBaseUtilDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJBaseUtilDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA60823C50F0DF46489814BD /* Pods-CJBaseUtilDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJBaseUtilDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJBaseUtilDemo/Pods-CJBaseUtilDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 				802808F71F9DD2EF008C73F5 /* CJDataUtil+SortCategory.m */,
 				802809151F9DD8E3008C73F5 /* CJDataUtil+SortOrder.h */,
 				802809161F9DD8E3008C73F5 /* CJDataUtil+SortOrder.m */,
+				8028091F1F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.h */,
+				802809201F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.m */,
 				802808FE1F9DD2EF008C73F5 /* CJRealtimeSearchUtil.h */,
 				802808FF1F9DD2EF008C73F5 /* CJRealtimeSearchUtil.m */,
 				802809001F9DD2EF008C73F5 /* Models */,
@@ -669,6 +674,7 @@
 				802809131F9DD2EF008C73F5 /* NSObject+SearchProperty.m in Sources */,
 				78F1BF411F0CB6B500333FE9 /* CJLogUtil.m in Sources */,
 				802809101F9DD2EF008C73F5 /* CJRealtimeSearchUtil.m in Sources */,
+				802809211F9E0346008C73F5 /* CJDataUtil+CJSectionDataModel.m in Sources */,
 				8028090C1F9DD2EF008C73F5 /* CJDataUtil+SortCategory.m in Sources */,
 				8028091B1F9DFC26008C73F5 /* CJPinyinHelper.m in Sources */,
 				802809121F9DD2EF008C73F5 /* CJSearchResult.m in Sources */,
