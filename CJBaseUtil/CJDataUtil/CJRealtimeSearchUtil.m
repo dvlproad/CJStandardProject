@@ -86,13 +86,15 @@ static CJRealtimeSearchUtil *defaultUtil = nil;
 
 - (void)searchBegin:(NSString *)string
 {
+    NSAssert(self.pinyinFromStringBlock, @"字符串转换成拼音的方法/代码块一定要设置");
     
     __weak typeof(self) weakSelf = self;
     dispatch_async(self.searchQueue, ^{
-        NSMutableArray *searchResults = [CJSearchUtil searchText:string
+        NSMutableArray *searchResults = [CJDataUtil searchText:string
                                                     inDataModels:weakSelf.source
                                          dataModelSearchSelector:weakSelf.selector
-                                                   supportPinyin:YES];
+                                                   supportPinyin:YES
+                                         pinyinFromStringBlock:self.pinyinFromStringBlock];
         
         weakSelf.resultBlock(searchResults);
     });

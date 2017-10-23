@@ -1,16 +1,16 @@
 //
-//  CJSearchUtil.m
+//  CJDataUtil+NormalSearch.m
 //  CJBaseUtilDemo
 //
 //  Created by ciyouzen on 2016/06/23.
 //  Copyright © 2016年 dvlproad. All rights reserved.
 //
 
-#import "CJSearchUtil.h"
-#import "CJDataModelUtil.h"
-#import "CJPinyinHelper.h"
+#import "CJDataUtil+NormalSearch.h"
 
-@implementation CJSearchUtil
+#import "CJDataUtil+Value.h"
+
+@implementation CJDataUtil (NormalSearch)
 
 //typedef void (^CJSearchResultsBlock)(NSArray *searchResults);
 
@@ -20,17 +20,18 @@
            inSectionDataModels:(NSArray<CJSectionDataModel *> *)sectionDataModels
        dataModelSearchSelector:(SEL)dataModelSearchSelector
                  supportPinyin:(BOOL)supportPinyin
+         pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
 {
     NSMutableArray *resultSectionDataModels = [[NSMutableArray alloc] init];
     
     for (CJSectionDataModel *sectionDataModel in sectionDataModels) {
         NSArray *dataModels = sectionDataModel.values;
         
-        NSMutableArray *resultDataModels =
-        [CJSearchUtil searchText:searchText
-                    inDataModels:dataModels
-         dataModelSearchSelector:dataModelSearchSelector
-                   supportPinyin:supportPinyin];;
+        NSMutableArray *resultDataModels = [CJDataUtil searchText:searchText
+                                                     inDataModels:dataModels
+                                          dataModelSearchSelector:dataModelSearchSelector
+                                                    supportPinyin:supportPinyin
+                                            pinyinFromStringBlock:pinyinFromStringBlock];
         if (resultDataModels.count > 0) {
             CJSectionDataModel *resultSectionDataModel = [[CJSectionDataModel alloc] init];
             resultSectionDataModel.type = sectionDataModel.type;
@@ -51,19 +52,20 @@
 andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
  dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
                  supportPinyin:(BOOL)supportPinyin
+         pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
 {
     NSMutableArray *resultSectionDataModels = [[NSMutableArray alloc] init];
     
     for (CJSectionDataModel *sectionDataModel in sectionDataModels) {
         NSArray *dataModels = sectionDataModel.values;
         
-        NSMutableArray *resultDataModels =
-        [CJSearchUtil searchText:searchText
-                    inDataModels:dataModels
-         dataModelSearchSelector:dataModelSearchSelector
- andSearchInEveryDataModelMember:dataModelMemberSelector
-   dataModelMemberSearchSelector:dataModelMemberSearchSelector
-                   supportPinyin:supportPinyin];
+        NSMutableArray *resultDataModels = [CJDataUtil searchText:searchText
+                                                     inDataModels:dataModels
+                                          dataModelSearchSelector:dataModelSearchSelector
+                                  andSearchInEveryDataModelMember:dataModelMemberSelector
+                                    dataModelMemberSearchSelector:dataModelMemberSearchSelector
+                                                    supportPinyin:supportPinyin
+                                            pinyinFromStringBlock:pinyinFromStringBlock];
         if (resultDataModels.count > 0) {
             CJSectionDataModel *resultSectionDataModel = [[CJSectionDataModel alloc] init];
             resultSectionDataModel.type = sectionDataModel.type;
@@ -84,6 +86,7 @@ andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
                   inDataModels:(NSArray *)dataModels
        dataModelSearchSelector:(SEL)dataModelSearchSelector
                  supportPinyin:(BOOL)supportPinyin
+         pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
 {
     
     NSMutableArray *searchResults = [[NSMutableArray alloc] init];
@@ -93,10 +96,11 @@ andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
     } else {
         for (id dataModel in dataModels) {
             BOOL isContainSearchText =
-            [CJSearchUtil isContainSearchText:searchText
+            [CJDataUtil isContainSearchText:searchText
                                   inDataModel:dataModel
                       dataModelSearchSelector:dataModelSearchSelector
-                                supportPinyin:supportPinyin];
+                                supportPinyin:supportPinyin
+                      pinyinFromStringBlock:pinyinFromStringBlock];
             if (isContainSearchText) {
                 [searchResults addObject:dataModel];
             }
@@ -113,16 +117,18 @@ andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
            andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
              dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
                              supportPinyin:(BOOL)supportPinyin
+                     pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
 {
     NSMutableArray *resultDataModels = [[NSMutableArray alloc] init];
     for (NSObject *dataModel in dataModels) {
         
-        NSObject *resultDataModel = [CJSearchUtil searchText:searchText
+        NSObject *resultDataModel = [CJDataUtil searchText:searchText
                                                  inDataModel:dataModel
                                      dataModelSearchSelector:dataModelSearchSelector
                              andSearchInEveryDataModelMember:dataModelMemberSelector
                                dataModelMemberSearchSelector:dataModelMemberSearchSelector
-                                               supportPinyin:supportPinyin];
+                                               supportPinyin:supportPinyin
+                                     pinyinFromStringBlock:pinyinFromStringBlock];
         if (resultDataModel) {
             [resultDataModels addObject:resultDataModel];
         }
@@ -137,13 +143,15 @@ andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
                 inDataModel:(id)dataModel
     dataModelSearchSelector:(SEL)dataModelSearchSelector
               supportPinyin:(BOOL)supportPinyin
+      pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
 {
-    NSString *dataModelSearchSelectorString = [CJDataModelUtil stringValueForDataSelector:dataModelSearchSelector inDataModel:dataModel];
+    NSString *dataModelSearchSelectorString = [CJDataUtil stringValueForDataSelector:dataModelSearchSelector inDataModel:dataModel];
     
     //搜索判断
     BOOL isContainSearchText = [self isContainSearchText:searchText
                                               fromString:dataModelSearchSelectorString
-                                           supportPinyin:supportPinyin];
+                                           supportPinyin:supportPinyin
+                                   pinyinFromStringBlock:pinyinFromStringBlock];
     
     return isContainSearchText;
 }
@@ -155,6 +163,7 @@ andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
 andSearchInEveryDataModelMember:(SEL)dataModelMemberSelector
 dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
            supportPinyin:(BOOL)supportPinyin
+   pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
 {
     
     dataModel.isSearchResult = YES;
@@ -162,21 +171,21 @@ dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
     dataModel.isContainInMembers = NO;
     
     
-    NSString *dataModelSearchSelectorString = [CJDataModelUtil stringValueForDataSelector:dataModelSearchSelector inDataModel:dataModel];
+    NSString *dataModelSearchSelectorString = [CJDataUtil stringValueForDataSelector:dataModelSearchSelector inDataModel:dataModel];
     
     //搜索判断
     BOOL isContainInSelf = [self isContainSearchText:searchText
                                           fromString:dataModelSearchSelectorString
-                                       supportPinyin:supportPinyin];
+                                       supportPinyin:supportPinyin pinyinFromStringBlock:pinyinFromStringBlock];
     dataModel.isContainInSelf = isContainInSelf;
     
     //包含:xx、xx
-    NSArray *members = [CJDataModelUtil arrayValueForDataSelector:dataModelMemberSelector inDataModel:dataModel];
-    NSMutableArray *resultMembers =
-    [CJSearchUtil searchText:searchText
-                inDataModels:members
-     dataModelSearchSelector:dataModelMemberSearchSelector
-               supportPinyin:supportPinyin];
+    NSArray *members = [CJDataUtil arrayValueForDataSelector:dataModelMemberSelector inDataModel:dataModel];
+    NSMutableArray *resultMembers = [CJDataUtil searchText:searchText
+                                              inDataModels:members
+                                   dataModelSearchSelector:dataModelMemberSearchSelector
+                                             supportPinyin:supportPinyin
+                                     pinyinFromStringBlock:pinyinFromStringBlock];
     dataModel.containMembers = resultMembers;
     dataModel.isContainInMembers = resultMembers.count ? YES : NO;
     
@@ -192,7 +201,9 @@ dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
 /** 完整的描述请参见文件头部 */
 + (BOOL)isContainSearchText:(NSString *)searchText
                  fromString:(NSString *)fromString
-              supportPinyin:(BOOL)supportPinyin {
+              supportPinyin:(BOOL)supportPinyin
+      pinyinFromStringBlock:(NSString *(^)(NSString *string))pinyinFromStringBlock
+{
     if (searchText == nil || fromString == nil) {
         return NO;
     }
@@ -215,7 +226,7 @@ dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
         isContainSearchText = YES;
     } else {
         if (supportPinyin) {
-            NSString *searchSourceStringPinyin = [CJPinyinHelper pinyinFromChineseString:searchSourceString];
+            NSString *searchSourceStringPinyin = pinyinFromStringBlock(searchSourceString);
             searchSourceStringPinyin = [searchSourceStringPinyin lowercaseString];//保证大小写一致
             //NSLog(@"pinyin = %@, searchText = %@", searchSourceStringPinyin, searchTextString);
             
@@ -249,7 +260,7 @@ dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
     NSMutableArray *userIds = [[NSMutableArray alloc] init];
     NSMutableArray *userInfos = [[NSMutableArray alloc] init];
     for (id member in allResultDataModelMembers) {
-        NSString *uniqueIdString = [CJDataModelUtil stringValueForDataSelector:dataModelMemberUniqueId inDataModel:member];
+        NSString *uniqueIdString = [CJDataUtil stringValueForDataSelector:dataModelMemberUniqueId inDataModel:member];
         
         if (![userIds containsObject:uniqueIdString]) {
             [userIds addObject:uniqueIdString];
@@ -261,9 +272,9 @@ dataModelMemberSearchSelector:(SEL)dataModelMemberSearchSelector
             
             //来自：xx、xx
             NSString *comeFrom = @"";
-            NSString *memberSelectorString = [CJDataModelUtil stringValueForDataSelector:dataModelMemberSelector inDataModel:member];
+            NSString *memberSelectorString = [CJDataUtil stringValueForDataSelector:dataModelMemberSelector inDataModel:member];
             
-            NSString *oldMemberSelectorString = [CJDataModelUtil stringValueForDataSelector:dataModelMemberSelector inDataModel:oldMember];
+            NSString *oldMemberSelectorString = [CJDataUtil stringValueForDataSelector:dataModelMemberSelector inDataModel:oldMember];
             
             NSString *appendingString = [NSString stringWithFormat:@"、%@", oldMemberSelectorString];
             memberSelectorString = [memberSelectorString stringByAppendingString:appendingString];

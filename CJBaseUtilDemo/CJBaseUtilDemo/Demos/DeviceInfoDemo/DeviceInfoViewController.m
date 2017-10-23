@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, CJFileSizeUnitType) {
         info.title = @"电池电量";
         
         CGFloat batteryQuantity = [CJDeviceUtil getBatteryQuantity];
-        info.value = [NSString stringWithFormat:@"%%%.2f", -batteryQuantity*100];
+        info.value = [NSString stringWithFormat:@"%.2f%%", -batteryQuantity*100];
         
         [array addObject:info];
     }

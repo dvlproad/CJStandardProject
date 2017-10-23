@@ -7,16 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CJSearchUtil.h"
+#import "CJDataUtil+NormalSearch.h"
 
 typedef void (^CJRealtimeSearchResultsBlock)(NSArray *searchResults);
 
-@interface CJRealtimeSearchUtil : NSObject
-
+@interface CJRealtimeSearchUtil : NSObject {
+    
+}
 /**
  *  是否连续搜索，默认YES(要搜索的字符串作为一个整体)
  */
 @property (nonatomic) BOOL asWholeSearch;
+
+//一定要设置的值
+@property (nonatomic, copy) NSString *(^pinyinFromStringBlock)(NSString *string); /**< 字符串转换成拼音的方法/代码块 */
 
 /**
  *  实时搜索单例实例化
