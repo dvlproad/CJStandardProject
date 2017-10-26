@@ -18,5 +18,6 @@
 
 #import "CJAppVersionUtil.h"
 
+#import "CJWebUtil.h"
 
 #endif /* CJUtil_h */

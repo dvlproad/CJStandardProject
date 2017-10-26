@@ -27,6 +27,7 @@
 		78F1BF531F0CB81A00333FE9 /* ModuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF511F0CB81A00333FE9 /* ModuleModel.m */; };
 		78F1BF581F0CB8A900333FE9 /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F1BF561F0CB8A900333FE9 /* DeviceInfoViewController.m */; };
 		78F1BF591F0CB8A900333FE9 /* DeviceInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F1BF571F0CB8A900333FE9 /* DeviceInfoViewController.xib */; };
+		8014A27D1FA1C80800DDDB5A /* CJWebUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8014A27C1FA1C80800DDDB5A /* CJWebUtil.m */; };
 		8028090B1F9DD2EF008C73F5 /* CJDataUtil+NormalSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 802808F51F9DD2EF008C73F5 /* CJDataUtil+NormalSearch.m */; };
 		8028090C1F9DD2EF008C73F5 /* CJDataUtil+SortCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 802808F71F9DD2EF008C73F5 /* CJDataUtil+SortCategory.m */; };
 		8028090D1F9DD2EF008C73F5 /* CJDataUtil+Value.m in Sources */ = {isa = PBXBuildFile; fileRef = 802808F91F9DD2EF008C73F5 /* CJDataUtil+Value.m */; };
@@ -100,6 +101,8 @@
 		78F1BF551F0CB8A900333FE9 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
 		78F1BF561F0CB8A900333FE9 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		78F1BF571F0CB8A900333FE9 /* DeviceInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceInfoViewController.xib; sourceTree = "<group>"; };
+		8014A27B1FA1C80800DDDB5A /* CJWebUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJWebUtil.h; sourceTree = "<group>"; };
+		8014A27C1FA1C80800DDDB5A /* CJWebUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJWebUtil.m; sourceTree = "<group>"; };
 		802808F31F9DD2EF008C73F5 /* CJDataAllUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDataAllUtil.h; sourceTree = "<group>"; };
 		802808F41F9DD2EF008C73F5 /* CJDataUtil+NormalSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJDataUtil+NormalSearch.h"; sourceTree = "<group>"; };
 		802808F51F9DD2EF008C73F5 /* CJDataUtil+NormalSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJDataUtil+NormalSearch.m"; sourceTree = "<group>"; };
@@ -270,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				78F1BF391F0CB6B500333FE9 /* CJUtil.h */,
+				8014A27A1FA1C7FA00DDDB5A /* CJWebUtil */,
 				802808F21F9DD2EF008C73F5 /* CJDataUtil */,
 				78102FC51F59C7CA00A5A043 /* FoundationUtil */,
 				78102FC61F59C7CA00A5A043 /* OtherUtil */,
@@ -342,6 +346,15 @@
 				782D82731F43F5470014A0E3 /* DeviceInfo.m */,
 			);
 			path = DeviceInfoDemo;
+			sourceTree = "<group>";
+		};
+		8014A27A1FA1C7FA00DDDB5A /* CJWebUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8014A27B1FA1C80800DDDB5A /* CJWebUtil.h */,
+				8014A27C1FA1C80800DDDB5A /* CJWebUtil.m */,
+			);
+			path = CJWebUtil;
 			sourceTree = "<group>";
 		};
 		802808F21F9DD2EF008C73F5 /* CJDataUtil */ = {
@@ -683,6 +696,7 @@
 				78F1BF3D1F0CB6B500333FE9 /* CJAppHaveLaunchUtil.m in Sources */,
 				78F1BF581F0CB8A900333FE9 /* DeviceInfoViewController.m in Sources */,
 				8028090D1F9DD2EF008C73F5 /* CJDataUtil+Value.m in Sources */,
+				8014A27D1FA1C80800DDDB5A /* CJWebUtil.m in Sources */,
 				78F1BF521F0CB81A00333FE9 /* HomeViewController.m in Sources */,
 				802809141F9DD2EF008C73F5 /* CJSortedCategoryResult.m in Sources */,
 			);
