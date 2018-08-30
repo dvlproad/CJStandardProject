@@ -46,6 +46,10 @@
     self.passwordTextField.text = password;
 }
 
+- (void)custom_login_method2 {
+    NSLog(@"custom_login_method2");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

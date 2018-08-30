@@ -22,6 +22,8 @@
 		78A6225921368469004DA046 /* LoginViewController+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6225521368469004DA046 /* LoginViewController+Event.m */; };
 		78A6225A21368469004DA046 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6225621368469004DA046 /* LoginViewController.m */; };
 		78A6225C2136D2C0004DA046 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A6225B2136D2BF004DA046 /* LoginViewController.xib */; };
+		78A622622137B881004DA046 /* confuse.sh in Resources */ = {isa = PBXBuildFile; fileRef = 78A622602137B881004DA046 /* confuse.sh */; };
+		78A622632137B881004DA046 /* func.list in Resources */ = {isa = PBXBuildFile; fileRef = 78A622612137B881004DA046 /* func.list */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		78A6225721368469004DA046 /* LoginViewController+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginViewController+Event.h"; sourceTree = "<group>"; };
 		78A6225821368469004DA046 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		78A6225B2136D2BF004DA046 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		78A6225F2137B881004DA046 /* codeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
+		78A622602137B881004DA046 /* confuse.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = confuse.sh; sourceTree = "<group>"; };
+		78A622612137B881004DA046 /* func.list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func.list; sourceTree = "<group>"; };
+		78A622642137BEC4004DA046 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7F06D823450C4605EBB53F93 /* libPods-CJStandardProjectDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJStandardProjectDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B505888AEC2E9E6DBE4AE46 /* Pods-CJStandardProjectDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJStandardProjectDemoTests/Pods-CJStandardProjectDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3A4FD4AD4DDA04640ED5095 /* Pods-CJStandardProjectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 				78A62251213683AC004DA046 /* Utils */,
 				78A6223F213682B5004DA046 /* Modules */,
 				78A6220421367D40004DA046 /* Main.storyboard */,
+				78A6225E2137B881004DA046 /* Resources */,
 				78A6220721367D42004DA046 /* Assets.xcassets */,
 				78A6220921367D42004DA046 /* LaunchScreen.storyboard */,
 				78A6220C21367D42004DA046 /* Info.plist */,
@@ -256,6 +263,17 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		78A6225E2137B881004DA046 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78A6225F2137B881004DA046 /* codeObfuscation.h */,
+				78A622602137B881004DA046 /* confuse.sh */,
+				78A622612137B881004DA046 /* func.list */,
+				78A622642137BEC4004DA046 /* PrefixHeader.pch */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FCCD9EA54E8B0CAFF2AAD401 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +297,7 @@
 				78A621F821367D40004DA046 /* Frameworks */,
 				78A621F921367D40004DA046 /* Resources */,
 				3F58FFDE778C317F300EBDA8 /* [CP] Copy Pods Resources */,
+				78A6225D2137B818004DA046 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -377,6 +396,8 @@
 				78A6220B21367D42004DA046 /* LaunchScreen.storyboard in Resources */,
 				78A6220821367D42004DA046 /* Assets.xcassets in Resources */,
 				78A6220621367D40004DA046 /* Main.storyboard in Resources */,
+				78A622622137B881004DA046 /* confuse.sh in Resources */,
+				78A622632137B881004DA046 /* func.list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +469,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		78A6225D2137B818004DA046 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = $PROJECT_DIR/CJStandardProjectDemo/Resources/confuse.sh;
 		};
 		BED8822F4A25FBFCF1F25FC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -651,6 +685,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FZ5YDHE5JZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = CJStandardProjectDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -669,6 +706,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FZ5YDHE5JZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = CJStandardProjectDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
