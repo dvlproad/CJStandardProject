@@ -46,8 +46,16 @@
     self.passwordTextField.text = password;
 }
 
-- (void)custom_login_method2 {
-    NSLog(@"custom_login_method2");
+- (void)custom_method0 {
+    NSLog(@"custom_method0");
+}
+
+- (void)custom_method1:(NSString *)s1 {
+    NSLog(@"custom_method1");
+}
+
+- (void)custom_method2:(NSString *)s1 s2:(NSString *)s2 {
+    NSLog(@"custom_method2");
 }
 
 - (void)viewDidLoad {
