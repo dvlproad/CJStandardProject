@@ -12,6 +12,14 @@
 
 #import "LoginViewModel.h"
 
+#import <AFNetworking/UIActivityIndicatorView+AFNetworking.h>
+//#import <CJDemoModel/DemoUserTableUtil.h>
+//
+//#import "RegisterViewController.h"
+//#import "FindPasdViewController.h"
+#import "TableViewController.h"
+#import "TestCodeObfuscationViewController.h"
+
 @interface LoginViewController () <UITextFieldDelegate> {
     
 }
@@ -44,18 +52,6 @@
     NSString *password = [CJAppLastUtil getKeychainPasswordForAccount:account];
     self.accountTextField.text = account;
     self.passwordTextField.text = password;
-}
-
-- (void)custom_method0 {
-    NSLog(@"custom_method0");
-}
-
-- (void)custom_method1:(NSString *)s1 {
-    NSLog(@"custom_method1");
-}
-
-- (void)custom_method2:(NSString *)s1 s2:(NSString *)s2 {
-    NSLog(@"custom_method2");
 }
 
 - (void)viewDidLoad {
@@ -136,6 +132,26 @@
     [self.viewModel setErrorBlock:^(NSError *error) {
         
     }];
+}
+
+#pragma mark - Event
+///返回
+- (IBAction)goBack:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+///进入"注册"界面
+- (IBAction)goRegisterViewController:(id)sender {
+//    RegisterViewController *viewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
+    TableViewController *viewController = [[TableViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+///进入"忘记密码"界面
+- (IBAction)goFindPasswordViewController:(id)sender {
+//    FindPasdViewController *viewController = [[FindPasdViewController alloc] initWithNibName:@"FindPasdViewController" bundle:nil];
+    TestCodeObfuscationViewController *viewController = [[TestCodeObfuscationViewController alloc] initWithNibName:@"TestCodeObfuscationViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 

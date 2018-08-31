@@ -34,18 +34,17 @@
     return navigationController;
 }
 
-- (void)custom_method0 {
-    NSLog(@"custom_method0");
+- (void)lcof_method0 {
+    NSLog(@"测试混淆方法(0个参数)");
 }
 
-- (void)custom_method1:(NSString *)s1 {
-    NSLog(@"custom_method1");
+- (void)lcof_method1:(NSString *)s1 {
+    NSLog(@"测试混淆方法(1个参数)");
 }
 
-- (void)custom_method2:(NSString *)s1 s2:(NSString *)s2 {
-    NSLog(@"custom_method2");
+- (void)lcof_method2:(NSString *)s1 s2:(NSString *)s2 {
+    NSLog(@"测试混淆方法(2个参数)");
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

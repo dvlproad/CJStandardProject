@@ -10,6 +10,7 @@ target 'CJStandardProjectDemo' do
     pod 'Masonry'
     pod 'MBProgressHUD'
     pod 'SVProgressHUD'
+    pod 'MJRefresh'
     pod 'AFNetworking'
     pod 'CocoaAsyncSocket'
     
@@ -19,6 +20,7 @@ target 'CJStandardProjectDemo' do
     pod 'CJBaseUtil', :subspecs => ['CJLog']
     
     pod 'CJDemoModel', :subspecs => ['CJDemoUser']
+    
 end
 
 target 'CJStandardProjectDemoTests' do
