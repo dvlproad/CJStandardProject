@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="emailTextField" destination="uzy-d0-c4g" id="mew-Uy-ha8"/>
+                <outlet property="passwordTextField" destination="KSb-zS-RIU" id="PFB-xi-kNf"/>
+                <outlet property="registerButton" destination="K3x-cA-JgY" id="4MZ-ho-cFy"/>
+                <outlet property="userNameTextField" destination="Lcu-rZ-dSh" id="npx-uq-3LW"/>
+                <outlet property="view" destination="6PP-Ln-oaF" id="2gy-DP-eas"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6PP-Ln-oaF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFX-Iq-qnk">
+                    <rect key="frame" x="4" y="14" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="arrow_back_red.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-6v-x3h">
+                    <rect key="frame" x="0.0" y="86" width="375" height="581"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people_logout.png" translatesAutoresizingMaskIntoConstraints="NO" id="4nZ-Xf-rkf">
+                            <rect key="frame" x="147.5" y="60" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="boH-0O-yaG"/>
+                                <constraint firstAttribute="height" constant="80" id="fY1-La-Bg8"/>
+                            </constraints>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people_Mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y9l-sf-N88">
+                            <rect key="frame" x="147.5" y="60" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="qTI-6w-eSe"/>
+                                <constraint firstAttribute="width" constant="80" id="zvJ-ox-yzk"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ijc-6x-E2r">
+                            <rect key="frame" x="52.5" y="145" width="270" height="44"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico_mail_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="OAL-E1-zXp">
+                                    <rect key="frame" x="8" y="10" width="24" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uzy-d0-c4g">
+                                    <rect key="frame" x="40" y="7" width="220" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="EhB-bZ-P9L"/>
+                                <constraint firstAttribute="width" constant="270" id="aeq-iV-7aG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYL-EV-4kO">
+                            <rect key="frame" x="52.5" y="195" width="270" height="44"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico_user_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="TQx-r5-lAL">
+                                    <rect key="frame" x="8" y="10" width="24" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-rZ-dSh">
+                                    <rect key="frame" x="40" y="7" width="220" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="next"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="270" id="4nC-xD-Cm3"/>
+                                <constraint firstAttribute="height" constant="44" id="839-Af-7sd"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wx-ha-SmB">
+                            <rect key="frame" x="52.5" y="245" width="270" height="44"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico_lock_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-B9-Mao">
+                                    <rect key="frame" x="8" y="10" width="24" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KSb-zS-RIU">
+                                    <rect key="frame" x="40" y="7" width="220" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="2o6-xl-ix4"/>
+                                <constraint firstAttribute="width" constant="270" id="bN6-IX-b8f"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3x-cA-JgY">
+                            <rect key="frame" x="52.5" y="295" width="270" height="44"/>
+                            <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Rcj-lv-2e4"/>
+                                <constraint firstAttribute="width" constant="270" id="UQc-5B-fx5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="K3x-cA-JgY" firstAttribute="top" secondItem="5wx-ha-SmB" secondAttribute="bottom" constant="6" id="FSO-vP-xzl"/>
+                        <constraint firstItem="5wx-ha-SmB" firstAttribute="top" secondItem="eYL-EV-4kO" secondAttribute="bottom" constant="6" id="Kuj-v5-4er"/>
+                        <constraint firstItem="4nZ-Xf-rkf" firstAttribute="top" secondItem="P2F-6v-x3h" secondAttribute="top" constant="60" id="Nkf-Ev-wYu"/>
+                        <constraint firstItem="Y9l-sf-N88" firstAttribute="centerX" secondItem="P2F-6v-x3h" secondAttribute="centerX" id="VvW-nJ-Rok"/>
+                        <constraint firstItem="Y9l-sf-N88" firstAttribute="top" secondItem="P2F-6v-x3h" secondAttribute="top" constant="60" id="X1z-ff-FYD"/>
+                        <constraint firstItem="4nZ-Xf-rkf" firstAttribute="centerX" secondItem="P2F-6v-x3h" secondAttribute="centerX" id="XCW-uA-C1j"/>
+                        <constraint firstItem="5wx-ha-SmB" firstAttribute="centerX" secondItem="P2F-6v-x3h" secondAttribute="centerX" id="ceu-AU-ugy"/>
+                        <constraint firstItem="eYL-EV-4kO" firstAttribute="top" secondItem="Ijc-6x-E2r" secondAttribute="bottom" constant="6" id="cey-7J-Aay"/>
+                        <constraint firstItem="Ijc-6x-E2r" firstAttribute="centerX" secondItem="P2F-6v-x3h" secondAttribute="centerX" id="dNc-6W-BpX"/>
+                        <constraint firstItem="K3x-cA-JgY" firstAttribute="centerX" secondItem="P2F-6v-x3h" secondAttribute="centerX" id="jGR-tw-dvQ"/>
+                        <constraint firstItem="eYL-EV-4kO" firstAttribute="centerX" secondItem="P2F-6v-x3h" secondAttribute="centerX" id="jjo-E6-Nq7"/>
+                        <constraint firstItem="Ijc-6x-E2r" firstAttribute="top" secondItem="4nZ-Xf-rkf" secondAttribute="bottom" constant="5" id="lQg-fp-Lcw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="P2F-6v-x3h" secondAttribute="bottom" id="1SO-Yb-ydJ"/>
+                <constraint firstItem="P2F-6v-x3h" firstAttribute="leading" secondItem="6PP-Ln-oaF" secondAttribute="leading" id="9b2-NB-rda"/>
+                <constraint firstAttribute="trailing" secondItem="P2F-6v-x3h" secondAttribute="trailing" id="JSa-1l-3OV"/>
+                <constraint firstItem="P2F-6v-x3h" firstAttribute="top" secondItem="6PP-Ln-oaF" secondAttribute="top" constant="86" id="jEq-tH-7OT"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_back_red.png" width="40" height="40"/>
+        <image name="ico_lock_white.png" width="22" height="22"/>
+        <image name="ico_mail_white.png" width="22" height="22"/>
+        <image name="ico_user_white.png" width="22" height="22"/>
+        <image name="people_Mask.png" width="108" height="108"/>
+        <image name="people_logout.png" width="80" height="80"/>
+    </resources>
+</document>

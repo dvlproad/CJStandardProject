@@ -1,5 +1,6 @@
 platform :ios, '8.0'
 #use_frameworks!
+inhibit_all_warnings!
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://gitee.com/dvlproad/dvlproadSpecs'
@@ -11,16 +12,27 @@ target 'CJStandardProjectDemo' do
     pod 'MBProgressHUD'
     pod 'SVProgressHUD'
     pod 'MJRefresh'
-    pod 'AFNetworking'
     pod 'CocoaAsyncSocket'
     
     pod 'ReactiveObjC', '~> 3.1.0'
     
-    pod 'CJBaseUIKit', :subspecs => ['UIButton', 'UITextField', 'CJToast', 'CJAlert']
+    pod 'CJBaseUIKit', :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert']
     pod 'CJBaseUtil', :subspecs => ['CJLog']
+    pod 'CJFoundation', :subspecs => ['NSString']
     
-    pod 'CJDemoModel', :subspecs => ['CJDemoUser']
+    # User 的 Model
+    pod 'CJFile/CJFileModel' #User的本地头像路径需要使用
     
+    # User 的 Network && Database
+    pod 'CJDemoNetwork',        :path => '~/Project/Gitee/CJDemoDemo’
+    pod 'CJDemoDatabase',       :path => '~/Project/Gitee/CJDemoDemo’
+    pod 'CJBaseUtil/CJAppLastUtil' # 账号密码处理等，其中包含钥匙串存取数据(SAMkeychain)
+
+    # 模块化需要依赖的库
+    pod 'CTMediator'
+    
+    
+    pod 'CJDemoModuleMain/CJDemoModuleMain_Category'
 end
 
 target 'CJStandardProjectDemoTests' do

@@ -1,0 +1,35 @@
+{
+  "name": "CJDemoNetwork",
+  "version": "0.0.3",
+  "summary": "个人Demo组件化开发 -- 网络模块",
+  "homepage": "https://gitee.com/dvlproad/CJDemoDemo.git",
+  "license": {
+    "type": "Copyright",
+    "text": "              © 2008-2016 dvlproad. All rights reserved.\n"
+  },
+  "authors": {
+    "dvlproad": ""
+  },
+  "description": "*、CJDemoNetwork：网络组件\n\n     A longer description of CJPopupAction in Markdown format.\n\n     * Think: Why did you write this? What is the focus? What does it do?\n     * CocoaPods will be using this to generate tags, and improve search results.\n     * Try to keep it short, snappy and to the point.\n     * Finally, don't worry about the indent, CocoaPods strips it!",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://gitee.com/dvlproad/CJDemoDemo.git",
+    "tag": "CJDemoNetwork_0.0.3"
+  },
+  "source_files": "CJDemoNetwork/**/*.{h,m}",
+  "frameworks": "UIKit",
+  "requires_arc": true,
+  "dependencies": {
+    "CJNetwork/AFNetworkingBaseComponent": [
+
+    ],
+    "CJBaseUtil/CJDevice": [
+
+    ],
+    "OpenUDID": [
+
+    ]
+  }
+}

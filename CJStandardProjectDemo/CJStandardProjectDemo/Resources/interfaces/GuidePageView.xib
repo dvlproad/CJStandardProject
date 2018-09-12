@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidePageView">
+            <connections>
+                <outlet property="button" destination="uC4-lK-geJ" id="EkE-KH-t1A"/>
+                <outlet property="imageView" destination="dtJ-pM-314" id="iBN-Tx-z7K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="390"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide2.png" translatesAutoresizingMaskIntoConstraints="NO" id="dtJ-pM-314">
+                    <rect key="frame" x="0.0" y="0.0" width="373" height="390"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-lK-geJ">
+                    <rect key="frame" x="41" y="150" width="292" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="3Ku-4Y-slS"/>
+                        <constraint firstAttribute="height" constant="200" id="JLm-5c-9h6"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3Ku-4Y-slS"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uC4-lK-geJ" secondAttribute="trailing" constant="40" id="5k7-53-TdS"/>
+                <constraint firstAttribute="bottom" secondItem="dtJ-pM-314" secondAttribute="bottom" id="XlO-Te-CCt"/>
+                <constraint firstAttribute="bottom" secondItem="uC4-lK-geJ" secondAttribute="bottom" constant="40" id="aIV-YA-b8a"/>
+                <constraint firstAttribute="trailing" secondItem="dtJ-pM-314" secondAttribute="trailing" id="fCG-QE-MPl"/>
+                <constraint firstItem="dtJ-pM-314" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="k5x-Tc-ybX"/>
+                <constraint firstItem="dtJ-pM-314" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uKi-Ts-OMR"/>
+                <constraint firstItem="uC4-lK-geJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zhG-mT-5nu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="39.5" y="-44"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guide2.png" width="320" height="568"/>
+    </resources>
+</document>

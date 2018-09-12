@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import "LoginViewController.h"
 
 @interface AppDelegate ()
@@ -29,9 +30,15 @@
 
 
 - (UIViewController *)getMainRootViewController {
+#ifdef CJTestLoginDealloc
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    return navigationController;
+#else
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
     return navigationController;
+#endif
 }
 
 - (void)lcof_method0 {

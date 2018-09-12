@@ -1,0 +1,84 @@
+{
+  "name": "CJDemoService",
+  "version": "0.0.1",
+  "summary": "个人Demo模块化开发--数据模型+对应网络请求+对应数据库",
+  "homepage": "https://gitee.com/dvlproad/CJDemoDemo.git",
+  "license": {
+    "type": "Copyright",
+    "text": "              © 2008-2016 dvlproad. All rights reserved.\n"
+  },
+  "authors": {
+    "dvlproad": ""
+  },
+  "description": "*、CJDemoServiceUserManager：    服务(已登录)用户的管理\n   \t\t*、BBXPServiceLineAndStation：     某点附近的站点/服务站/线路\n   \t\t*、BBXPAddress： 地址数据模型\n   \t\t*、BBXPCity：    城市数据模型\n   \t\t*、BBXPCityPack：城市包数据模型\n*、BBXPOrder：   订单数据模型\n  \t\t\t\t   \n\n         A longer description of CJDemoService in Markdown format.\n\n         * Think: Why did you write this? What is the focus? What does it do?\n         * CocoaPods will be using this to generate tags, and improve search results.\n         * Try to keep it short, snappy and to the point.\n         * Finally, don't worry about the indent, CocoaPods strips it!",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://gitee.com/dvlproad/CJDemoDemo.git",
+    "tag": "CJDemoService_0.0.1"
+  },
+  "frameworks": "UIKit",
+  "requires_arc": true,
+  "dependencies": {
+    "MJExtension": [
+
+    ],
+    "Mantle": [
+
+    ],
+    "CJFile/CJFMDBFileManager": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "CJDemoServiceUserManager",
+      "source_files": "CJDemoService/CJDemoServiceUserManager/**.{h,m}",
+      "subspecs": [
+        {
+          "name": "Models",
+          "source_files": "CJDemoService/CJDemoServiceUserManager/Models/**/**.{h,m}",
+          "dependencies": {
+            "CJFile/CJFileModel": [
+
+            ],
+            "CJFile/CJFileManager": [
+
+            ]
+          }
+        },
+        {
+          "name": "Database",
+          "source_files": "CJDemoService/CJDemoServiceUserManager/Database/**/**.{h,m}",
+          "dependencies": {
+            "CJDemoService/CJDemoServiceUserManager/Models": [
+
+            ]
+          }
+        },
+        {
+          "name": "Network",
+          "source_files": "CJDemoService/CJDemoServiceUserManager/Network/**/**.{h,m}",
+          "dependencies": {
+            "CJDemoService/CJDemoServiceUserManager/Database": [
+
+            ],
+            "CJBaseUtil/CJAppLastUtil": [
+
+            ],
+            "CJNetwork/AFNetworkingBaseComponent": [
+
+            ],
+            "CJBaseUtil/CJDevice": [
+
+            ],
+            "OpenUDID": [
+
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

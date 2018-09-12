@@ -7,18 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <CJBaseUIKit/CJTextField.h>
+#import <CJBaseUIKit/UIColor+CJHex.h>
 
-//#import "CJDemoModuleLoginResourceUtil.h"
 
 @interface LoginViewController : UIViewController {
-    MBProgressHUD *HUD;
+    
 }
-@property (nonatomic, weak) IBOutlet UIImageView *portraitImageView;    /**< 头像 */
-@property (nonatomic, weak) IBOutlet UITextField *accountTextField;     /**< 账号(记得关掉自动纠错) */
-@property (nonatomic, weak) IBOutlet UITextField *passwordTextField;    /**< 密码 */
-@property (nonatomic, weak) IBOutlet UIButton *loginButton;             /**< 登录按钮 */
-
-@property(nonatomic, weak) IBOutlet UIActivityIndicatorView *indicatorView;
+@property (nonatomic, strong) UIImageView *portraitBackgroundImageView; /**< 头像背景 */
+@property (nonatomic, strong) UIImageView *portraitImageView;   /**< 头像 */
+@property (nonatomic, strong) CJTextField *userNameTextField;   /**< 账号(记得关掉自动纠错) */
+@property (nonatomic, strong) CJTextField *passwordTextField;   /**< 密码 */
+@property (nonatomic, strong) UIButton *backButton;             /**< 返回按钮 */
+@property (nonatomic, strong) UIButton *loginButton;            /**< 登录按钮 */
+@property (nonatomic, strong) UIButton *findPasswordButton;     /**< 找回密码按钮 */
+@property (nonatomic, strong) UIButton *registerButton;         /**< 注册按钮 */
+//@property (nonatomic, strong) MBProgressHUD *loginStateHUD;     /**< 进展状态HUD */
 
 @end
