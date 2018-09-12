@@ -2,7 +2,7 @@
 //  PrefixHeader.pch
 //  CJStandardProjectDemo
 //
-//  Created by 李超前 on 2018/8/30.
+//  Created by ciyouzen on 2018/8/30.
 //  Copyright © 2018年 devlproad. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 #import <CJBaseUIKit/UIColor+CJHex.h>
 #import <CJBaseUIKit/CJToast.h>
 
+#define UseLibrary  //使用已经封装的库
 #define CJTestLoginDealloc              //测试LoginViewController的销毁/内存泄漏
 #define CJUseSimulatorServiceUserData //使用模拟网络请求数据
 

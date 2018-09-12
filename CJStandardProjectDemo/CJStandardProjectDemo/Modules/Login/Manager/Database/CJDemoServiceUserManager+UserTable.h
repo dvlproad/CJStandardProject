@@ -7,7 +7,13 @@
 //
 
 #import "CJDemoServiceUserManager.h"
+
+#ifndef UseLibrary
 #import <CJDemoDatabase/DemoFMDBFileManager.h>
+#else
+#import "DemoFMDBFileManager.h"
+#endif
+
 #import "DemoUser.h"
 
 @interface CJDemoServiceUserManager (UserTable)

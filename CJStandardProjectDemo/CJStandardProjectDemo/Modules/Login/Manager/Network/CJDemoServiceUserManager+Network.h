@@ -2,12 +2,17 @@
 //  CJDemoServiceUserManager+Network.h
 //  CJStandardProjectDemo
 //
-//  Created by 李超前 on 2018/9/6.
+//  Created by ciyouzen on 2018/9/6.
 //  Copyright © 2018年 devlproad. All rights reserved.
 //
 
 #import "CJDemoServiceUserManager.h"
+
+#ifndef UseLibrary
 #import <CJDemoNetwork/DemoNetworkClient.h>
+#else
+#import "DemoNetworkClient.h"
+#endif
 
 @interface CJDemoServiceUserManager (Network)
 

@@ -30,24 +30,18 @@ PODS:
   - CJBaseUtil/CJLog (0.3.1):
     - CJBaseUIKit/UIView/CJDragAction
     - Masonry
-  - CJDemoDatabase (0.0.1):
-    - CJFile/CJFMDBFileManager
   - CJDemoModuleMain/CJDemoModuleMain_Category (0.0.1):
     - CTMediator
-  - CJDemoNetwork (0.0.3):
-    - CJBaseUtil/CJDevice
-    - CJNetwork/AFNetworkingBaseComponent
-    - OpenUDID
   - CJFile/CJFileManager (0.0.9)
   - CJFile/CJFileModel (0.0.9)
   - CJFile/CJFMDBFileManager (0.0.9):
     - CJFile/CJFileManager
     - FMDB
   - CJFoundation/NSString (0.1.2)
-  - CJNetwork/AFNetworkingBaseComponent (0.4.0):
+  - CJNetwork/AFNetworkingBaseComponent (0.4.1):
     - AFNetworking
     - CJNetwork/CJNetworkBase
-  - CJNetwork/CJNetworkBase (0.4.0)
+  - CJNetwork/CJNetworkBase (0.4.1)
   - CocoaAsyncSocket (7.6.3)
   - CTMediator (25)
   - FMDB (2.7.2):
@@ -68,17 +62,20 @@ DEPENDENCIES:
   - CJBaseUIKit/UIColor
   - CJBaseUIKit/UITextField
   - CJBaseUtil/CJAppLastUtil
+  - CJBaseUtil/CJDevice
   - CJBaseUtil/CJLog
-  - CJDemoDatabase (from `~/Project/Gitee/CJDemoDemo`)
   - CJDemoModuleMain/CJDemoModuleMain_Category
-  - CJDemoNetwork (from `~/Project/Gitee/CJDemoDemo`)
+  - CJFile/CJFileManager
   - CJFile/CJFileModel
+  - CJFile/CJFMDBFileManager
   - CJFoundation/NSString
+  - CJNetwork/AFNetworkingBaseComponent
   - CocoaAsyncSocket
   - CTMediator
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - OpenUDID
   - ReactiveObjC (~> 3.1.0)
   - SVProgressHUD
 
@@ -103,22 +100,14 @@ SPEC REPOS:
     - SAMKeychain
     - SVProgressHUD
 
-EXTERNAL SOURCES:
-  CJDemoDatabase:
-    :path: "~/Project/Gitee/CJDemoDemo"
-  CJDemoNetwork:
-    :path: "~/Project/Gitee/CJDemoDemo"
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CJBaseUIKit: f3ca009175d9f997a438d00d550ebec6b73c89c7
   CJBaseUtil: f9c6a248b8322b7faa1b93767b344539d973c939
-  CJDemoDatabase: 235eb062a5aed98031edc66ab9f41517dcd00350
   CJDemoModuleMain: 188a70ed84939aded55df7515260e66affee42a5
-  CJDemoNetwork: 77590d42319908a0112ef722002dafc79960b399
   CJFile: 6c1e6d55b3b94e8afbaa9f413f131301d15fdc48
   CJFoundation: 2c27b7ad85ec0cc5ac24aa112867971e01ae3ea3
-  CJNetwork: aef0a5516c1172e10d11569dfda531b2bf181348
+  CJNetwork: 8cb1cae71310fdb9dc928049f3add3f15d36645f
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
@@ -130,6 +119,6 @@ SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 9e2df1d1c90c24feb738ea6b1c81f092306343af
+PODFILE CHECKSUM: fd99946b928d1f6885ecf93b6bd5d15c7ead81de
 
 COCOAPODS: 1.5.3

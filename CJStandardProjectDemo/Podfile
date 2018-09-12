@@ -17,16 +17,12 @@ target 'CJStandardProjectDemo' do
     pod 'ReactiveObjC', '~> 3.1.0'
     
     pod 'CJBaseUIKit', :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert']
-    pod 'CJBaseUtil', :subspecs => ['CJLog']
+    pod 'CJBaseUtil', :subspecs => ['CJLog', 'CJDevice']
     pod 'CJFoundation', :subspecs => ['NSString']
-    
-    # User 的 Model
-    pod 'CJFile/CJFileModel' #User的本地头像路径需要使用
-    
-    # User 的 Network && Database
-    pod 'CJDemoNetwork',        :path => '~/Project/Gitee/CJDemoDemo’
-    pod 'CJDemoDatabase',       :path => '~/Project/Gitee/CJDemoDemo’
+    pod 'CJNetwork', :subspecs => ['AFNetworkingBaseComponent']
+    pod 'OpenUDID'
     pod 'CJBaseUtil/CJAppLastUtil' # 账号密码处理等，其中包含钥匙串存取数据(SAMkeychain)
+    pod 'CJFile', :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
 
     # 模块化需要依赖的库
     pod 'CTMediator'

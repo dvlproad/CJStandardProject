@@ -30,6 +30,11 @@
 		7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */; };
 		7809CA402148A6E400FAFD93 /* ServiceUserDataSimulatorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA3E2148A6E400FAFD93 /* ServiceUserDataSimulatorUtil.m */; };
 		781495F221414ACD00D0F2BC /* CJDemoServiceOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 781495EF21414ACD00D0F2BC /* CJDemoServiceOrderManager.m */; };
+		783C420A2148AC6A005B4349 /* DemoHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42012148AC6A005B4349 /* DemoHTTPSessionManager.m */; };
+		783C420B2148AC6A005B4349 /* DemoResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42032148AC6A005B4349 /* DemoResponseModel.m */; };
+		783C420C2148AC6A005B4349 /* DemoNetworkClient+Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42052148AC6A005B4349 /* DemoNetworkClient+Order.m */; };
+		783C420D2148AC6A005B4349 /* DemoNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42062148AC6A005B4349 /* DemoNetworkClient.m */; };
+		783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */; };
 		7880E6D021385817009C9BCF /* OrderListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */; };
 		7880E6D121385817009C9BCF /* OrderListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C321385817009C9BCF /* OrderListTableViewDelegate.m */; };
 		7880E6D221385817009C9BCF /* OrderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C521385817009C9BCF /* OrderListViewModel.m */; };
@@ -105,6 +110,16 @@
 		7809CA3F2148A6E400FAFD93 /* ServiceUserDataSimulatorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceUserDataSimulatorUtil.h; sourceTree = "<group>"; };
 		781495EC21414ACD00D0F2BC /* CJDemoServiceOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoServiceOrderManager.h; sourceTree = "<group>"; };
 		781495EF21414ACD00D0F2BC /* CJDemoServiceOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoServiceOrderManager.m; sourceTree = "<group>"; };
+		783C41FD2148AC6A005B4349 /* DemoNetworkClient+Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoNetworkClient+Order.h"; sourceTree = "<group>"; };
+		783C41FE2148AC6A005B4349 /* DemoNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNetworkClient.h; sourceTree = "<group>"; };
+		783C42002148AC6A005B4349 /* DemoHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHTTPSessionManager.h; sourceTree = "<group>"; };
+		783C42012148AC6A005B4349 /* DemoHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHTTPSessionManager.m; sourceTree = "<group>"; };
+		783C42032148AC6A005B4349 /* DemoResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoResponseModel.m; sourceTree = "<group>"; };
+		783C42042148AC6A005B4349 /* DemoResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoResponseModel.h; sourceTree = "<group>"; };
+		783C42052148AC6A005B4349 /* DemoNetworkClient+Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DemoNetworkClient+Order.m"; sourceTree = "<group>"; };
+		783C42062148AC6A005B4349 /* DemoNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNetworkClient.m; sourceTree = "<group>"; };
+		783C42082148AC6A005B4349 /* DemoFMDBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFMDBFileManager.h; sourceTree = "<group>"; };
+		783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFMDBFileManager.m; sourceTree = "<group>"; };
 		7880E6C021385817009C9BCF /* OrderListTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewDelegate.h; sourceTree = "<group>"; };
 		7880E6C121385817009C9BCF /* OrderListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewDataSource.h; sourceTree = "<group>"; };
 		7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewDataSource.m; sourceTree = "<group>"; };
@@ -331,6 +346,46 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		783C41FC2148AC6A005B4349 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				783C41FD2148AC6A005B4349 /* DemoNetworkClient+Order.h */,
+				783C41FE2148AC6A005B4349 /* DemoNetworkClient.h */,
+				783C41FF2148AC6A005B4349 /* Manager */,
+				783C42022148AC6A005B4349 /* Model */,
+				783C42052148AC6A005B4349 /* DemoNetworkClient+Order.m */,
+				783C42062148AC6A005B4349 /* DemoNetworkClient.m */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		783C41FF2148AC6A005B4349 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				783C42002148AC6A005B4349 /* DemoHTTPSessionManager.h */,
+				783C42012148AC6A005B4349 /* DemoHTTPSessionManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		783C42022148AC6A005B4349 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				783C42032148AC6A005B4349 /* DemoResponseModel.m */,
+				783C42042148AC6A005B4349 /* DemoResponseModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		783C42072148AC6A005B4349 /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+				783C42082148AC6A005B4349 /* DemoFMDBFileManager.h */,
+				783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */,
+			);
+			path = Databases;
+			sourceTree = "<group>";
+		};
 		7880E6BE21385817009C9BCF /* OrderList */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +519,8 @@
 		78A62250213683AC004DA046 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				783C42072148AC6A005B4349 /* Databases */,
+				783C41FC2148AC6A005B4349 /* Networks */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -795,12 +852,16 @@
 				78A6220321367D40004DA046 /* ViewController.m in Sources */,
 				7809CA242148A67F00FAFD93 /* RegisterLogicControl.m in Sources */,
 				78C38DDE2141AC28001F35E2 /* CJDemoServiceOrderManager+Network.m in Sources */,
+				783C420A2148AC6A005B4349 /* DemoHTTPSessionManager.m in Sources */,
+				783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */,
 				7809CA212148A67E00FAFD93 /* FindPasswordLogicControl.m in Sources */,
 				7880E6D021385817009C9BCF /* OrderListTableViewDataSource.m in Sources */,
 				7809CA2A2148A67F00FAFD93 /* CJDemoServiceUserManager.m in Sources */,
 				78C38DE12141AC42001F35E2 /* CJDemoServiceOrderManager+OrderTable.m in Sources */,
 				7809CA232148A67F00FAFD93 /* LogoutLogicControl.m in Sources */,
+				783C420D2148AC6A005B4349 /* DemoNetworkClient.m in Sources */,
 				7880E6D521385817009C9BCF /* OrderCell.m in Sources */,
+				783C420B2148AC6A005B4349 /* DemoResponseModel.m in Sources */,
 				7809CA202148A67E00FAFD93 /* LoginViewControl.m in Sources */,
 				7880E6D321385817009C9BCF /* OrderListViewController.m in Sources */,
 				781495F221414ACD00D0F2BC /* CJDemoServiceOrderManager.m in Sources */,
@@ -817,6 +878,7 @@
 				78C38DD52141AB79001F35E2 /* DemoOrderModel.m in Sources */,
 				7809CA292148A67F00FAFD93 /* DemoUser.m in Sources */,
 				78A6220021367D40004DA046 /* AppDelegate.m in Sources */,
+				783C420C2148AC6A005B4349 /* DemoNetworkClient+Order.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,10 +1054,7 @@
 				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = CJStandardProjectDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1013,10 +1072,7 @@
 				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = CJStandardProjectDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1030,11 +1086,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJStandardProjectDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1049,11 +1101,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJStandardProjectDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1066,11 +1114,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJStandardProjectDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1083,11 +1127,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJStandardProjectDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
