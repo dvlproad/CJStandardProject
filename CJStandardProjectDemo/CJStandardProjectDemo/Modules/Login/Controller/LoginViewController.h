@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Masonry/Masonry.h>
+#import "CJDemoBaseViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <CJBaseUIKit/CJTextField.h>
 #import <CJBaseUIKit/UIColor+CJHex.h>

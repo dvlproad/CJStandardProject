@@ -69,9 +69,9 @@
     
 
     
-    [[CJDemoServiceUserManager sharedInstance] requestNewPasswordWithString:email success:^(id responseObject) {
+    [[CJDemoServiceUserManager sharedInstance] requestNewPasswordWithEmail:email success:^(CJDemoResponseModel *responseModel) {
         
-        NSInteger status = [responseObject[@"status"] integerValue];
+        NSInteger status = responseModel.status;
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"邮件发送失败", nil);
             if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordFailureWithMessage:)]) {
@@ -82,16 +82,16 @@
         
         //找回密码成功
         //NSDictionary *result = responseObject[@"result"];
-        NSString *loginSuccessMessage = NSLocalizedString(@"邮件发送成功", nil);
+        NSString *findFailureMessage = NSLocalizedString(@"邮件发送成功", nil);
     
         if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordSuccessWithMessage:)]) {
-            [self.delegate logic_findPasswordSuccessWithMessage:loginSuccessMessage];
+            [self.delegate logic_findPasswordSuccessWithMessage:findFailureMessage];
         }
         
-    } failure:^(NSError * _Nonnull error) {
-        NSString *loginFailureMessage = NSLocalizedString(@"邮件发送失败", nil);
+    } failure:^(NSString *errorMessage) {
+        NSString *findFailureMessage = NSLocalizedString(@"邮件发送失败", nil);
         if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordFailureWithMessage:)]) {
-            [self.delegate logic_findPasswordFailureWithMessage:loginFailureMessage];
+            [self.delegate logic_findPasswordFailureWithMessage:findFailureMessage];
         }
     }];
 }

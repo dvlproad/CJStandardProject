@@ -53,7 +53,6 @@
     
     //viewModel
     LoginViewControl *viewModel = [[LoginViewControl alloc] init];
-    viewModel.belongViewController = self;
     viewModel.userNameTextField = self.userNameTextField;
     viewModel.passwordTextField = self.passwordTextField;
     viewModel.loginButton = self.loginButton;

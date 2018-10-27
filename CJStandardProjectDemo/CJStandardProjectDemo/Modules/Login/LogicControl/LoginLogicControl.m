@@ -7,9 +7,9 @@
 //
 
 #import "LoginLogicControl.h"
+#import <CJBaseUtil/CJAppLastUtil.h>
 #import "CJDemoServiceUserManager+Network.h"
 #import "CJDemoServiceUserManager+UserTable.h"
-#import <CJBaseUtil/CJAppLastUtil.h>
 
 @interface LoginLogicControl () {
     
@@ -27,13 +27,12 @@
 
 #pragma mark - Get Default
 - (NSString *)getDefaultLoginAccount {
-    NSString *account = [CJAppLastUtil getLastLoginAccount];
-    return account;
+    CJAppLastUser *lastUser = [CJAppLastUtil getLastLoginUser];
+    return lastUser.lastLoginUserName;
 }
 
 - (NSString *)getDefaultPasswordForUserName:(NSString *)userName {
-    NSString *password = [CJAppLastUtil getKeychainPasswordForAccount:userName];
-    return password;
+    return @"";
 }
 
 
@@ -95,55 +94,13 @@
         [self.delegate logic_startLoginWithMessage:loginingText];
     }
     
-    
-    
-    
-    
-    
-    
-    [[CJDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(id responseObject) {
-        
-        NSInteger status = [responseObject[@"status"] integerValue];
-        if (status != 0) {
-            NSString *loginFailureMessage = NSLocalizedString(@"登录失败", nil);
-            if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginFailureWithMessage:)]) {
-                [self.delegate logic_loginFailureWithMessage:loginFailureMessage];
-            }
-            return;
-        }
-        
-        //登录成功
-        NSDictionary *result = responseObject[@"result"];
-        DemoUser *user = [[DemoUser alloc] initWithUserDictionary:result];
-        
-        //登录成功后，要执行的基本操作(服务器基本上回返回用户的一些基本信息)
-        //需要管理监控"服务的用户"的信息变化，所以先通过单例，放在内存中管理，同时支持数据库管理；
-        //其他，如需要管理监控"服务的订单表"的信息变化，也是一样的处理放啊。
-        [CJDemoServiceUserManager sharedInstance].serviceUser = [user copy];
-        [[CJDemoServiceUserManager sharedInstance] insertAccountInfo:user];
-        [CJAppLastUtil saveAccount:account withPassword:password];
-        
-        
+    [[CJDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(DemoUser *user) {
         NSString *loginSuccessMessage = NSLocalizedString(@"登录成功", nil);
-    
-        CJRootViewControllerType rootViewControllerType = [CJAppLastUtil getLastRootViewControllerTypeWithDistinctAppVersion:YES];
-        if (rootViewControllerType == CJRootViewControllerTypeMain) {
-            //[self.navigationController popViewControllerAnimated:YES];
-            if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginSuccessAndBackMainViewControllerWithMessage:)]) {
-                [self.delegate logic_loginSuccessAndBackMainViewControllerWithMessage:loginSuccessMessage];
-            }
-            
-        } else {
-            [CJAppLastUtil saveLastAppInfoWithRootViewControllerType:CJRootViewControllerTypeMain otherParams:nil]; //此时进入了Main
-            
-            //NSDictionary *params = nil;
-            //UIViewController *mainViewControllerWithParams = [[CTMediator sharedInstance] cjDemo_mainViewControllerWithParams:params];
-            //[UIApplication sharedApplication].delegate.window.rootViewController = mainViewControllerWithParams;
-            if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginSuccessAndGoMainViewControllerWithMessage:)]) {
-                [self.delegate logic_loginSuccessAndGoMainViewControllerWithMessage:loginSuccessMessage];
-            }
+        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginSuccessWithMessage:)]) {
+            [self.delegate logic_loginSuccessWithMessage:loginSuccessMessage];
         }
-    } failure:^(NSError * _Nonnull error) {
+        
+    } failure:^(NSString *errorMessage) {
         //NSString *loginFailureMessage = NSLocalizedString(@"登录失败", nil);
         NSString *loginFailureMessage = [NSString stringWithFormat:@"密码错误:试下通用密码%@", DemoGeneralPassword];
         if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginFailureWithMessage:)]) {

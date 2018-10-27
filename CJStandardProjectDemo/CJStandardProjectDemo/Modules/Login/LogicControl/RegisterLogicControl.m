@@ -106,7 +106,7 @@
             [self.delegate logic_registerSuccessWithMessage:loginSuccessMessage];
         }
         
-    } failure:^(NSError * _Nonnull error) {
+    } failure:^(NSString *errorMessage) {
         NSString *registerFailureMessage = NSLocalizedString(@"注册失败", nil);
         if (self.delegate && [self.delegate respondsToSelector:@selector(logic_registerFailureWithMessage:)]) {
             [self.delegate logic_registerFailureWithMessage:registerFailureMessage];

@@ -21,11 +21,13 @@
 ///开始登录时候更新视图显示提示信息
 - (void)logic_startLoginWithMessage:(NSString *)message;
 
-///登录成功需要进入主页
-- (void)logic_loginSuccessAndGoMainViewControllerWithMessage:(NSString *)message;
-
-///登录成功需要回到主页
-- (void)logic_loginSuccessAndBackMainViewControllerWithMessage:(NSString *)message;
+/////登录成功需要进入主页
+//- (void)logic_loginSuccessAndGoMainViewControllerWithMessage:(NSString *)message;
+//
+/////登录成功需要回到主页
+//- (void)logic_loginSuccessAndBackMainViewControllerWithMessage:(NSString *)message;
+///登录成功更新视图显示提示信息
+- (void)logic_loginSuccessWithMessage:(NSString *)message;
 
 ///登录失败更新视图显示提示信息
 - (void)logic_loginFailureWithMessage:(NSString *)message;

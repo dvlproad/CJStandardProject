@@ -9,9 +9,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import <CJBaseUIKit/UITextField+CJTextChangeBlock.h>
-#import <CJBaseUIKit/UIButton+CJTouchEvent.h>
-
 #import <CJBaseUIKit/CJTextField.h>
 
 #import "LoginViewController.h"
@@ -34,7 +31,6 @@
 }
 @property (nonatomic, weak) id<LoginViewModelDelegate> delegate;
 
-@property (nonatomic, weak) LoginViewController *belongViewController;  //归属的控制器
 //@property (nonatomic, strong) UIImageView *portraitBackgroundImageView; /**< 头像背景 */
 //@property (nonatomic, strong) UIImageView *portraitImageView;   /**< 头像 */
 @property (nonatomic, strong) CJTextField *userNameTextField;   /**< 账号(记得关掉自动纠错) */

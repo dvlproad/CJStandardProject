@@ -47,9 +47,8 @@
     }
     
     
-    [[CJDemoServiceUserManager sharedInstance] requestLogoutUid:uid success:^(id responseObject) {
-        
-        NSInteger status = [responseObject[@"status"] integerValue];
+    [[CJDemoServiceUserManager sharedInstance] requestLogoutWithSuccess:^(CJDemoResponseModel *responseModel) {
+        NSInteger status = responseModel.status;
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"退出失败", nil);
             if (self.delegate && [self.delegate respondsToSelector:@selector(logic_logoutFailureWithMessage:)]) {
@@ -65,15 +64,15 @@
         [CJDemoServiceUserManager sharedInstance].serviceUser = nil;
         [CJAppLastUtil deleteAccountFromKeychain:uid];
         
-        NSString *loginSuccessMessage = NSLocalizedString(@"退出成功", nil);
+        NSString *logoutSuccessMessage = NSLocalizedString(@"退出成功", nil);
         if (self.delegate && [self.delegate respondsToSelector:@selector(logic_logoutSuccessWithMessage:)]) {
-            [self.delegate logic_logoutSuccessWithMessage:loginSuccessMessage];
+            [self.delegate logic_logoutSuccessWithMessage:logoutSuccessMessage];
         }
         
-    } failure:^(NSError * _Nonnull error) {
-        NSString *loginFailureMessage = NSLocalizedString(@"退出失败", nil);
+    } failure:^(NSString *errorMessage) {
+        NSString *logoutFailureMessage = NSLocalizedString(@"退出失败", nil);
         if (self.delegate && [self.delegate respondsToSelector:@selector(logic_logoutFailureWithMessage:)]) {
-            [self.delegate logic_logoutFailureWithMessage:loginFailureMessage];
+            [self.delegate logic_logoutFailureWithMessage:logoutFailureMessage];
         }
     }];
 }

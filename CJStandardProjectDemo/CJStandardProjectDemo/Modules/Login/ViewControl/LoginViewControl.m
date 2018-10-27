@@ -153,7 +153,7 @@
 }
 ///结束视图的editing
 - (void)stopEndEditing {
-    [self.belongViewController.view endEditing:YES];
+    //[self.belongViewController.view endEditing:YES];
 }
 
 
@@ -207,7 +207,7 @@
 
 ///回到主页(游客模式下，用户已使用游客分身进入主页，则当其在点击需要登录的功能后，会进入登录，并在登录成功后回到首页)
 - (void)backMainViewController {
-    [self.belongViewController.navigationController popViewControllerAnimated:YES];
+    //[self.belongViewController.navigationController popViewControllerAnimated:YES];
 }
 
 ///进入"忘记密码"界面
@@ -219,7 +219,7 @@
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.title = NSLocalizedString(@"忘记密码", nil);
     viewController.view.backgroundColor = [UIColor whiteColor];
-    [self.belongViewController.navigationController pushViewController:viewController animated:YES];
+    //[self.belongViewController.navigationController pushViewController:viewController animated:YES];
 #endif
 }
 
@@ -232,7 +232,7 @@
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.title = NSLocalizedString(@"注册", nil);
     viewController.view.backgroundColor = [UIColor whiteColor];
-    [self.belongViewController.navigationController pushViewController:viewController animated:YES];
+    //[self.belongViewController.navigationController pushViewController:viewController animated:YES];
 #endif
 }
 
