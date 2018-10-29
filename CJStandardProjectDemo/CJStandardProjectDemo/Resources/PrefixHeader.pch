@@ -22,6 +22,7 @@
 #import <CJFoundation/NSString+CJTextSize.h>
 
 #import "CJDemoAlert.h"
+#import "CJDemoButtonFactory.h"
 
 #define UseLibrary  //使用已经封装的库
 #define CJTestLoginDealloc              //测试LoginViewController的销毁/内存泄漏

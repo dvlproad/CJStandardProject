@@ -17,6 +17,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"引导页", nil);
+    
+    UIButton *blueButton = [CJDemoButtonFactory blueButton];
+    [blueButton setTitle:NSLocalizedString(@"进入首页", nil) forState:UIControlStateNormal];
+    [blueButton addTarget:self action:@selector(readOverGuide:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:blueButton];
+    [blueButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view).mas_offset(20);
+        make.right.mas_equalTo(self.view).mas_offset(-20);
+        make.height.mas_equalTo(44);
+        make.bottom.mas_equalTo(self.view).mas_offset(-40);
+    }];
+}
+
+- (void)readOverGuide:(UIButton *)button {
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(guideViewControllerReadOver:)]) {
+        [self.delegate guideViewControllerReadOver:self];
+    }
 }
 
 /*

@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "LoginViewController.h"
+#import "AppDelegate+CJDemoView.h"
+#import "CJDemoStartUp.h"
 
 @interface AppDelegate ()
 
@@ -16,29 +16,20 @@
 
 @implementation AppDelegate
 
++ (instancetype)sharedDelegate {
+    return (AppDelegate *)UIApplication.sharedApplication.delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [self getMainRootViewController];
+    [CJDemoStartUp startUp];
+    [self viewDidFinishLaunching];
     [self.window makeKeyAndVisible];
     
     return YES;
-}
-
-
-- (UIViewController *)getMainRootViewController {
-#ifdef CJTestLoginDealloc
-    ViewController *viewController = [[ViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    return navigationController;
-#else
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    return navigationController;
-#endif
 }
 
 - (void)lcof_method0 {

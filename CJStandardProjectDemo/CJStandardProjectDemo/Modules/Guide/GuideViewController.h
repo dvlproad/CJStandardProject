@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CJDemoBaseViewController.h"
 
 @class GuideViewController;
 @protocol GuideViewControllerDelegate <NSObject>
@@ -16,7 +16,7 @@
 
 @end
 
-@interface GuideViewController : UIViewController
+@interface GuideViewController : CJDemoBaseViewController
 
 @property (nonatomic, weak) id<GuideViewControllerDelegate> delegate;
 

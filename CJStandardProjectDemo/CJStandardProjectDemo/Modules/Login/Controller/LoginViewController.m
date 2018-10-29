@@ -7,9 +7,9 @@
 //
 
 #import "LoginViewController.h"
+#import <CJBaseUIKit/UINavigationBar+CJChangeBG.h>
 #import "LoginViewControl.h"
 #import "LoginLogicControl.h"
-
 
 @interface LoginViewController () <UITextFieldDelegate, LoginViewModelDelegate, LoginLogicControlDelegate> {
     
@@ -26,8 +26,20 @@
     NSLog(@"%@ dealloc", NSStringFromClass([self class]));
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar cj_resetBackgroundColor];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.translucent = YES;
+    [self.navigationController.navigationBar cj_hideUnderline:YES];
+    [self.navigationController.navigationBar cj_setBackgroundColor:[UIColor clearColor]];
+    self.navigationItem.title = @"";
     
     //显示上次登录的账号
     NSString *userName = [self.logicControl getDefaultLoginAccount];

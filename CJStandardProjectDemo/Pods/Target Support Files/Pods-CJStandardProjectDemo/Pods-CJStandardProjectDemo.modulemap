@@ -1,6 +1,0 @@
-module Pods_CJStandardProjectDemo {
-  umbrella header "Pods-CJStandardProjectDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

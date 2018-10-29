@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Bugly (2.5.0)
   - CJBaseHelper/DeviceCJHelper (0.0.7)
   - CJBaseHelper/NSObjectCJHelper (0.0.7)
   - CJBaseUIKit/CJAlert (0.3.0):
@@ -23,6 +24,7 @@ PODS:
     - MBProgressHUD
   - CJBaseUIKit/UIButton (0.3.0)
   - CJBaseUIKit/UIColor (0.3.0)
+  - CJBaseUIKit/UINavigationBar (0.3.0)
   - CJBaseUIKit/UITextField (0.3.0)
   - CJBaseUIKit/UIView/CJDragAction (0.3.0)
   - CJBaseUIKit/UIView/CJPopupAction (0.3.0)
@@ -66,12 +68,14 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - Bugly
   - CJBaseHelper/DeviceCJHelper
   - CJBaseHelper/NSObjectCJHelper
   - CJBaseUIKit/CJAlert
   - CJBaseUIKit/CJToast
   - CJBaseUIKit/UIButton
   - CJBaseUIKit/UIColor
+  - CJBaseUIKit/UINavigationBar
   - CJBaseUIKit/UITextField
   - CJBaseUtil/CJAppLastUtil
   - CJBaseUtil/CJLog
@@ -100,6 +104,7 @@ SPEC REPOS:
     - CJDemoNetwork
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Bugly
     - CJBaseHelper
     - CJBaseUIKit
     - CJBaseUtil
@@ -121,6 +126,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   CJBaseHelper: 6acec4caa0b82c28a279101e0e9ac887a19857a8
   CJBaseUIKit: 6706574187fb6beb8adcc5c72d70f1815ec232cc
   CJBaseUtil: 9eb2c92d3e6bb9192e9d167a29b3dd1f853fc572
@@ -143,6 +149,6 @@ SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: e69972c259f5a79a7180aed8b0157a5e179cc416
+PODFILE CHECKSUM: 41cf9a5ead4996df6f74f80b7652e21f7f86f4ec
 
 COCOAPODS: 1.5.3
