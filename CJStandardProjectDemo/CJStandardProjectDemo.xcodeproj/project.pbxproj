@@ -14,12 +14,12 @@
 		7809CA222148A67E00FAFD93 /* LoginLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA062148A67E00FAFD93 /* LoginLogicControl.m */; };
 		7809CA232148A67F00FAFD93 /* LogoutLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA092148A67E00FAFD93 /* LogoutLogicControl.m */; };
 		7809CA242148A67F00FAFD93 /* RegisterLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA0C2148A67E00FAFD93 /* RegisterLogicControl.m */; };
-		7809CA252148A67F00FAFD93 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA0E2148A67E00FAFD93 /* LoginViewController.m */; };
-		7809CA262148A67F00FAFD93 /* CJDemoServiceUserManager+UserTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA122148A67E00FAFD93 /* CJDemoServiceUserManager+UserTable.m */; };
-		7809CA272148A67F00FAFD93 /* CJDemoServiceUserManager+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA152148A67E00FAFD93 /* CJDemoServiceUserManager+Network.m */; };
-		7809CA282148A67F00FAFD93 /* DemoUsePermissionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA1B2148A67E00FAFD93 /* DemoUsePermissionModel.m */; };
-		7809CA292148A67F00FAFD93 /* DemoUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA1C2148A67E00FAFD93 /* DemoUser.m */; };
-		7809CA2A2148A67F00FAFD93 /* CJDemoServiceUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA1D2148A67E00FAFD93 /* CJDemoServiceUserManager.m */; };
+		7809CA252148A67F00FAFD93 /* LMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */; };
+		7809CA262148A67F00FAFD93 /* STDemoServiceUserManager+UserTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA122148A67E00FAFD93 /* STDemoServiceUserManager+UserTable.m */; };
+		7809CA272148A67F00FAFD93 /* STDemoServiceUserManager+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA152148A67E00FAFD93 /* STDemoServiceUserManager+Network.m */; };
+		7809CA282148A67F00FAFD93 /* STDemoUsePermissionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA1B2148A67E00FAFD93 /* STDemoUsePermissionModel.m */; };
+		7809CA292148A67F00FAFD93 /* STDemoUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA1C2148A67E00FAFD93 /* STDemoUser.m */; };
+		7809CA2A2148A67F00FAFD93 /* STDemoServiceUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA1D2148A67E00FAFD93 /* STDemoServiceUserManager.m */; };
 		7809CA352148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA2B2148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets */; };
 		7809CA362148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA2D2148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m */; };
 		7809CA372148A6D100FAFD93 /* GuidePageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA2F2148A6D100FAFD93 /* GuidePageView.xib */; };
@@ -28,45 +28,55 @@
 		7809CA3A2148A6D100FAFD93 /* Login2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA322148A6D100FAFD93 /* Login2.storyboard */; };
 		7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA332148A6D100FAFD93 /* FindPasdPopupView.xib */; };
 		7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */; };
-		781495F221414ACD00D0F2BC /* CJDemoServiceOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 781495EF21414ACD00D0F2BC /* CJDemoServiceOrderManager.m */; };
+		781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */; };
 		783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */; };
-		784410532186B84100D746A7 /* CJDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410522186B84100D746A7 /* CJDemoStartUp.m */; };
+		784410532186B84100D746A7 /* STDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410522186B84100D746A7 /* STDemoStartUp.m */; };
+		784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */; };
+		784410612187407D00D746A7 /* STDemoAppDelegateListenLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844105D2187407D00D746A7 /* STDemoAppDelegateListenLogic.m */; };
+		784410642187453100D746A7 /* AppDelegate+STDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410632187453100D746A7 /* AppDelegate+STDemoStartUp.m */; };
+		78441067218746B000D746A7 /* AppDelegate+STDemoView_New.m in Sources */ = {isa = PBXBuildFile; fileRef = 78441066218746B000D746A7 /* AppDelegate+STDemoView_New.m */; };
+		7844106A2187474A00D746A7 /* AppDelegate+STDemoListen.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */; };
+		784410702187519C00D746A7 /* LoginLogicControl_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */; };
+		784410732187571C00D746A7 /* LVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410712187571C00D746A7 /* LVLoginViewController.m */; };
 		7880E6D021385817009C9BCF /* OrderListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */; };
 		7880E6D121385817009C9BCF /* OrderListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C321385817009C9BCF /* OrderListTableViewDelegate.m */; };
 		7880E6D221385817009C9BCF /* OrderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C521385817009C9BCF /* OrderListViewModel.m */; };
-		7880E6D321385817009C9BCF /* OrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C921385817009C9BCF /* OrderListViewController.m */; };
+		7880E6D321385817009C9BCF /* STDemoOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C921385817009C9BCF /* STDemoOrderListViewController.m */; };
 		7880E6D521385817009C9BCF /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6CE21385817009C9BCF /* OrderCell.m */; };
-		788D41A921846F44002BEED4 /* AppDelegate+CJDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A321846F44002BEED4 /* AppDelegate+CJDemoView.m */; };
-		788D41AA21846F44002BEED4 /* CJDemoAppDelegateLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A521846F44002BEED4 /* CJDemoAppDelegateLogicControl.m */; };
+		788D41A921846F44002BEED4 /* AppDelegate+STDemoView_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A321846F44002BEED4 /* AppDelegate+STDemoView_Old.m */; };
+		788D41AA21846F44002BEED4 /* STDemoAppDelegateLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A521846F44002BEED4 /* STDemoAppDelegateLogicControl.m */; };
 		788D41AB21846F44002BEED4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A821846F44002BEED4 /* AppDelegate.m */; };
-		788D41AF2184708C002BEED4 /* CJDemoServiceLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41AE2184708C002BEED4 /* CJDemoServiceLocationManager.m */; };
-		788D41B421847695002BEED4 /* DemoLocationCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41B121847694002BEED4 /* DemoLocationCityModel.m */; };
-		788D41B521847695002BEED4 /* DemoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41B321847694002BEED4 /* DemoLocation.m */; };
+		788D41AF2184708C002BEED4 /* STDemoServiceLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41AE2184708C002BEED4 /* STDemoServiceLocationManager.m */; };
+		788D41B421847695002BEED4 /* STDemoLocationCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41B121847694002BEED4 /* STDemoLocationCityModel.m */; };
+		788D41B521847695002BEED4 /* STDemoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41B321847694002BEED4 /* STDemoLocation.m */; };
 		788D41B9218479A9002BEED4 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41B8218479A9002BEED4 /* GuideViewController.m */; };
-		788D41BE21847B38002BEED4 /* CJDemoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41BC21847B38002BEED4 /* CJDemoAlert.m */; };
-		788D41C221847B5C002BEED4 /* CJDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41C121847B5B002BEED4 /* CJDemoBaseViewController.m */; };
-		788D41C621847BD1002BEED4 /* CJDemoButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41C421847BD1002BEED4 /* CJDemoButtonFactory.m */; };
-		788D41CB21848F16002BEED4 /* CJDemoMainVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41C921848F16002BEED4 /* CJDemoMainVCFactory.m */; };
-		788D41D121848F1F002BEED4 /* DemoLoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41CE21848F1F002BEED4 /* DemoLoginRouter.m */; };
-		788D41D221848F1F002BEED4 /* CJDemoLoginVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41D021848F1F002BEED4 /* CJDemoLoginVCFactory.m */; };
+		788D41BE21847B38002BEED4 /* STDemoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41BC21847B38002BEED4 /* STDemoAlert.m */; };
+		788D41C221847B5C002BEED4 /* STDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41C121847B5B002BEED4 /* STDemoBaseViewController.m */; };
+		788D41C621847BD1002BEED4 /* STDemoButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41C421847BD1002BEED4 /* STDemoButtonFactory.m */; };
+		788D41CB21848F16002BEED4 /* STDemoMainVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41C921848F16002BEED4 /* STDemoMainVCFactory.m */; };
+		788D41D121848F1F002BEED4 /* STDemoLoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41CE21848F1F002BEED4 /* STDemoLoginRouter.m */; };
+		788D41D221848F1F002BEED4 /* STDemoLoginVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41D021848F1F002BEED4 /* STDemoLoginVCFactory.m */; };
 		788D41D421848F5C002BEED4 /* DemoMainAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788D41D321848F5C002BEED4 /* DemoMainAssets.xcassets */; };
 		788D41D721848F64002BEED4 /* DemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41D621848F64002BEED4 /* DemoMainViewController.m */; };
-		788D41DA2184909E002BEED4 /* CJDemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41D92184909E002BEED4 /* CJDemoNavigationController.m */; };
+		788D41DA2184909E002BEED4 /* STDemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41D92184909E002BEED4 /* STDemoNavigationController.m */; };
 		788D41DD218490F9002BEED4 /* FindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41DC218490F9002BEED4 /* FindPasswordViewController.m */; };
 		788D41E02184913E002BEED4 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41DF2184913E002BEED4 /* ChangePasswordViewController.m */; };
 		788D41E32184915E002BEED4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41E22184915E002BEED4 /* RegisterViewController.m */; };
 		788D41E8218499F2002BEED4 /* DemoMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41E7218499F2002BEED4 /* DemoMineViewController.m */; };
 		788D41EB21849A0C002BEED4 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41EA21849A0C002BEED4 /* MessageViewController.m */; };
-		788D41EE21849AF1002BEED4 /* CJDemoOrderHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41ED21849AF1002BEED4 /* CJDemoOrderHomeViewController.m */; };
+		788D41EE21849AF1002BEED4 /* STDemoOrderHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */; };
 		78A6220621367D40004DA046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220421367D40004DA046 /* Main.storyboard */; };
 		78A6220821367D42004DA046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220721367D42004DA046 /* Assets.xcassets */; };
 		78A6220B21367D42004DA046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220921367D42004DA046 /* LaunchScreen.storyboard */; };
 		78A6220E21367D42004DA046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6220D21367D42004DA046 /* main.m */; };
 		78A6221821367D42004DA046 /* CJStandardProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6221721367D42004DA046 /* CJStandardProjectDemoTests.m */; };
 		78A6222321367D42004DA046 /* CJStandardProjectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */; };
+		78B90E3F2188512E00776584 /* VMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E3E2188512E00776584 /* VMLoginViewController.m */; };
+		78B90E422188516B00776584 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E412188516B00776584 /* LoginViewModel.m */; };
+		78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E442188579000776584 /* CTMediator+STDemoLogin.m */; };
 		78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD02141AB33001F35E2 /* FriendCircleManager.m */; };
-		78C38DD52141AB79001F35E2 /* DemoOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD32141AB79001F35E2 /* DemoOrderModel.m */; };
-		78C38DE12141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DE02141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.m */; };
+		78C38DD52141AB79001F35E2 /* STDemoOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD32141AB79001F35E2 /* STDemoOrderModel.m */; };
+		78C38DE12141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DE02141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,18 +109,18 @@
 		7809CA0A2148A67E00FAFD93 /* LoginLogicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginLogicControl.h; sourceTree = "<group>"; };
 		7809CA0B2148A67E00FAFD93 /* FindPasswordLogicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordLogicControl.h; sourceTree = "<group>"; };
 		7809CA0C2148A67E00FAFD93 /* RegisterLogicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterLogicControl.m; sourceTree = "<group>"; };
-		7809CA0E2148A67E00FAFD93 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		7809CA0F2148A67E00FAFD93 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		7809CA122148A67E00FAFD93 /* CJDemoServiceUserManager+UserTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJDemoServiceUserManager+UserTable.m"; sourceTree = "<group>"; };
-		7809CA132148A67E00FAFD93 /* CJDemoServiceUserManager+UserTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJDemoServiceUserManager+UserTable.h"; sourceTree = "<group>"; };
-		7809CA152148A67E00FAFD93 /* CJDemoServiceUserManager+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJDemoServiceUserManager+Network.m"; sourceTree = "<group>"; };
-		7809CA162148A67E00FAFD93 /* CJDemoServiceUserManager+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJDemoServiceUserManager+Network.h"; sourceTree = "<group>"; };
-		7809CA172148A67E00FAFD93 /* CJDemoServiceUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoServiceUserManager.h; sourceTree = "<group>"; };
-		7809CA192148A67E00FAFD93 /* DemoUsePermissionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUsePermissionModel.h; sourceTree = "<group>"; };
-		7809CA1A2148A67E00FAFD93 /* DemoUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoUser.h; sourceTree = "<group>"; };
-		7809CA1B2148A67E00FAFD93 /* DemoUsePermissionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUsePermissionModel.m; sourceTree = "<group>"; };
-		7809CA1C2148A67E00FAFD93 /* DemoUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoUser.m; sourceTree = "<group>"; };
-		7809CA1D2148A67E00FAFD93 /* CJDemoServiceUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoServiceUserManager.m; sourceTree = "<group>"; };
+		7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoginViewController.m; sourceTree = "<group>"; };
+		7809CA0F2148A67E00FAFD93 /* LMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoginViewController.h; sourceTree = "<group>"; };
+		7809CA122148A67E00FAFD93 /* STDemoServiceUserManager+UserTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STDemoServiceUserManager+UserTable.m"; sourceTree = "<group>"; };
+		7809CA132148A67E00FAFD93 /* STDemoServiceUserManager+UserTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDemoServiceUserManager+UserTable.h"; sourceTree = "<group>"; };
+		7809CA152148A67E00FAFD93 /* STDemoServiceUserManager+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STDemoServiceUserManager+Network.m"; sourceTree = "<group>"; };
+		7809CA162148A67E00FAFD93 /* STDemoServiceUserManager+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDemoServiceUserManager+Network.h"; sourceTree = "<group>"; };
+		7809CA172148A67E00FAFD93 /* STDemoServiceUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoServiceUserManager.h; sourceTree = "<group>"; };
+		7809CA192148A67E00FAFD93 /* STDemoUsePermissionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoUsePermissionModel.h; sourceTree = "<group>"; };
+		7809CA1A2148A67E00FAFD93 /* STDemoUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoUser.h; sourceTree = "<group>"; };
+		7809CA1B2148A67E00FAFD93 /* STDemoUsePermissionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoUsePermissionModel.m; sourceTree = "<group>"; };
+		7809CA1C2148A67E00FAFD93 /* STDemoUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoUser.m; sourceTree = "<group>"; };
+		7809CA1D2148A67E00FAFD93 /* STDemoServiceUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoServiceUserManager.m; sourceTree = "<group>"; };
 		7809CA2B2148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CJDemoModuleLoginAsset.xcassets; sourceTree = "<group>"; };
 		7809CA2C2148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoModuleLoginResourceUtil.h; sourceTree = "<group>"; };
 		7809CA2D2148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoModuleLoginResourceUtil.m; sourceTree = "<group>"; };
@@ -120,55 +130,72 @@
 		7809CA322148A6D100FAFD93 /* Login2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login2.storyboard; sourceTree = "<group>"; };
 		7809CA332148A6D100FAFD93 /* FindPasdPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindPasdPopupView.xib; sourceTree = "<group>"; };
 		7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindPasdViewController.xib; sourceTree = "<group>"; };
-		781495EC21414ACD00D0F2BC /* CJDemoServiceOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoServiceOrderManager.h; sourceTree = "<group>"; };
-		781495EF21414ACD00D0F2BC /* CJDemoServiceOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoServiceOrderManager.m; sourceTree = "<group>"; };
+		781495EC21414ACD00D0F2BC /* STDemoServiceOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoServiceOrderManager.h; sourceTree = "<group>"; };
+		781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoServiceOrderManager.m; sourceTree = "<group>"; };
 		783C42082148AC6A005B4349 /* DemoFMDBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFMDBFileManager.h; sourceTree = "<group>"; };
 		783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFMDBFileManager.m; sourceTree = "<group>"; };
-		784410512186B84100D746A7 /* CJDemoStartUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJDemoStartUp.h; sourceTree = "<group>"; };
-		784410522186B84100D746A7 /* CJDemoStartUp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJDemoStartUp.m; sourceTree = "<group>"; };
+		784410512186B84100D746A7 /* STDemoStartUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoStartUp.h; sourceTree = "<group>"; };
+		784410522186B84100D746A7 /* STDemoStartUp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoStartUp.m; sourceTree = "<group>"; };
 		784410572186D88900D746A7 /* autoIncreaseVersion.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autoIncreaseVersion.sh; sourceTree = "<group>"; };
 		784410592186DFF000D746A7 /* dSYMUpload.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = dSYMUpload.sh; sourceTree = "<group>"; };
+		7844105B2186FB5500D746A7 /* dSYMUpload2.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = dSYMUpload2.sh; sourceTree = "<group>"; };
+		7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoAppDelegateViewLogic.m; sourceTree = "<group>"; };
+		7844105D2187407D00D746A7 /* STDemoAppDelegateListenLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoAppDelegateListenLogic.m; sourceTree = "<group>"; };
+		7844105E2187407D00D746A7 /* STDemoAppDelegateListenLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoAppDelegateListenLogic.h; sourceTree = "<group>"; };
+		7844105F2187407D00D746A7 /* STDemoAppDelegateViewLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoAppDelegateViewLogic.h; sourceTree = "<group>"; };
+		784410622187453100D746A7 /* AppDelegate+STDemoStartUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+STDemoStartUp.h"; sourceTree = "<group>"; };
+		784410632187453100D746A7 /* AppDelegate+STDemoStartUp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+STDemoStartUp.m"; sourceTree = "<group>"; };
+		78441065218746B000D746A7 /* AppDelegate+STDemoView_New.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+STDemoView_New.h"; sourceTree = "<group>"; };
+		78441066218746B000D746A7 /* AppDelegate+STDemoView_New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+STDemoView_New.m"; sourceTree = "<group>"; };
+		784410682187474A00D746A7 /* AppDelegate+STDemoListen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+STDemoListen.h"; sourceTree = "<group>"; };
+		784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+STDemoListen.m"; sourceTree = "<group>"; };
+		7844106B218749F100D746A7 /* STDemoRootViewControllerEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoRootViewControllerEnum.h; sourceTree = "<group>"; };
+		7844106D21874BCC00D746A7 /* 规范README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "规范README.md"; sourceTree = "<group>"; };
+		7844106E2187519B00D746A7 /* LoginLogicControl_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginLogicControl_Old.h; sourceTree = "<group>"; };
+		7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginLogicControl_Old.m; sourceTree = "<group>"; };
+		784410712187571C00D746A7 /* LVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLoginViewController.m; sourceTree = "<group>"; };
+		784410722187571C00D746A7 /* LVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLoginViewController.h; sourceTree = "<group>"; };
 		7880E6C021385817009C9BCF /* OrderListTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewDelegate.h; sourceTree = "<group>"; };
 		7880E6C121385817009C9BCF /* OrderListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewDataSource.h; sourceTree = "<group>"; };
 		7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewDataSource.m; sourceTree = "<group>"; };
 		7880E6C321385817009C9BCF /* OrderListTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewDelegate.m; sourceTree = "<group>"; };
 		7880E6C521385817009C9BCF /* OrderListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListViewModel.m; sourceTree = "<group>"; };
 		7880E6C621385817009C9BCF /* OrderListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListViewModel.h; sourceTree = "<group>"; };
-		7880E6C821385817009C9BCF /* OrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListViewController.h; sourceTree = "<group>"; };
-		7880E6C921385817009C9BCF /* OrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListViewController.m; sourceTree = "<group>"; };
+		7880E6C821385817009C9BCF /* STDemoOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoOrderListViewController.h; sourceTree = "<group>"; };
+		7880E6C921385817009C9BCF /* STDemoOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderListViewController.m; sourceTree = "<group>"; };
 		7880E6CE21385817009C9BCF /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
 		7880E6CF21385817009C9BCF /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
 		788D41A221846F44002BEED4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		788D41A321846F44002BEED4 /* AppDelegate+CJDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CJDemoView.m"; sourceTree = "<group>"; };
-		788D41A521846F44002BEED4 /* CJDemoAppDelegateLogicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoAppDelegateLogicControl.m; sourceTree = "<group>"; };
-		788D41A621846F44002BEED4 /* CJDemoAppDelegateLogicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoAppDelegateLogicControl.h; sourceTree = "<group>"; };
-		788D41A721846F44002BEED4 /* AppDelegate+CJDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CJDemoView.h"; sourceTree = "<group>"; };
+		788D41A321846F44002BEED4 /* AppDelegate+STDemoView_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+STDemoView_Old.m"; sourceTree = "<group>"; };
+		788D41A521846F44002BEED4 /* STDemoAppDelegateLogicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoAppDelegateLogicControl.m; sourceTree = "<group>"; };
+		788D41A621846F44002BEED4 /* STDemoAppDelegateLogicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoAppDelegateLogicControl.h; sourceTree = "<group>"; };
+		788D41A721846F44002BEED4 /* AppDelegate+STDemoView_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+STDemoView_Old.h"; sourceTree = "<group>"; };
 		788D41A821846F44002BEED4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		788D41AD2184708C002BEED4 /* CJDemoServiceLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJDemoServiceLocationManager.h; sourceTree = "<group>"; };
-		788D41AE2184708C002BEED4 /* CJDemoServiceLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJDemoServiceLocationManager.m; sourceTree = "<group>"; };
-		788D41B021847694002BEED4 /* DemoLocationCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLocationCityModel.h; sourceTree = "<group>"; };
-		788D41B121847694002BEED4 /* DemoLocationCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLocationCityModel.m; sourceTree = "<group>"; };
-		788D41B221847694002BEED4 /* DemoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLocation.h; sourceTree = "<group>"; };
-		788D41B321847694002BEED4 /* DemoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLocation.m; sourceTree = "<group>"; };
+		788D41AD2184708C002BEED4 /* STDemoServiceLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoServiceLocationManager.h; sourceTree = "<group>"; };
+		788D41AE2184708C002BEED4 /* STDemoServiceLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoServiceLocationManager.m; sourceTree = "<group>"; };
+		788D41B021847694002BEED4 /* STDemoLocationCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoLocationCityModel.h; sourceTree = "<group>"; };
+		788D41B121847694002BEED4 /* STDemoLocationCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoLocationCityModel.m; sourceTree = "<group>"; };
+		788D41B221847694002BEED4 /* STDemoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoLocation.h; sourceTree = "<group>"; };
+		788D41B321847694002BEED4 /* STDemoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoLocation.m; sourceTree = "<group>"; };
 		788D41B7218479A9002BEED4 /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		788D41B8218479A9002BEED4 /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
-		788D41BC21847B38002BEED4 /* CJDemoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoAlert.m; sourceTree = "<group>"; };
-		788D41BD21847B38002BEED4 /* CJDemoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoAlert.h; sourceTree = "<group>"; };
-		788D41C021847B5B002BEED4 /* CJDemoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJDemoBaseViewController.h; sourceTree = "<group>"; };
-		788D41C121847B5B002BEED4 /* CJDemoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJDemoBaseViewController.m; sourceTree = "<group>"; };
-		788D41C421847BD1002BEED4 /* CJDemoButtonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoButtonFactory.m; sourceTree = "<group>"; };
-		788D41C521847BD1002BEED4 /* CJDemoButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoButtonFactory.h; sourceTree = "<group>"; };
-		788D41C921848F16002BEED4 /* CJDemoMainVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoMainVCFactory.m; sourceTree = "<group>"; };
-		788D41CA21848F16002BEED4 /* CJDemoMainVCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoMainVCFactory.h; sourceTree = "<group>"; };
-		788D41CD21848F1F002BEED4 /* CJDemoLoginVCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoLoginVCFactory.h; sourceTree = "<group>"; };
-		788D41CE21848F1F002BEED4 /* DemoLoginRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLoginRouter.m; sourceTree = "<group>"; };
-		788D41CF21848F1F002BEED4 /* DemoLoginRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLoginRouter.h; sourceTree = "<group>"; };
-		788D41D021848F1F002BEED4 /* CJDemoLoginVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoLoginVCFactory.m; sourceTree = "<group>"; };
+		788D41BC21847B38002BEED4 /* STDemoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoAlert.m; sourceTree = "<group>"; };
+		788D41BD21847B38002BEED4 /* STDemoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoAlert.h; sourceTree = "<group>"; };
+		788D41C021847B5B002BEED4 /* STDemoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoBaseViewController.h; sourceTree = "<group>"; };
+		788D41C121847B5B002BEED4 /* STDemoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoBaseViewController.m; sourceTree = "<group>"; };
+		788D41C421847BD1002BEED4 /* STDemoButtonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoButtonFactory.m; sourceTree = "<group>"; };
+		788D41C521847BD1002BEED4 /* STDemoButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoButtonFactory.h; sourceTree = "<group>"; };
+		788D41C921848F16002BEED4 /* STDemoMainVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoMainVCFactory.m; sourceTree = "<group>"; };
+		788D41CA21848F16002BEED4 /* STDemoMainVCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoMainVCFactory.h; sourceTree = "<group>"; };
+		788D41CD21848F1F002BEED4 /* STDemoLoginVCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoLoginVCFactory.h; sourceTree = "<group>"; };
+		788D41CE21848F1F002BEED4 /* STDemoLoginRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoLoginRouter.m; sourceTree = "<group>"; };
+		788D41CF21848F1F002BEED4 /* STDemoLoginRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoLoginRouter.h; sourceTree = "<group>"; };
+		788D41D021848F1F002BEED4 /* STDemoLoginVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoLoginVCFactory.m; sourceTree = "<group>"; };
 		788D41D321848F5C002BEED4 /* DemoMainAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DemoMainAssets.xcassets; sourceTree = "<group>"; };
 		788D41D521848F64002BEED4 /* DemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMainViewController.h; sourceTree = "<group>"; };
 		788D41D621848F64002BEED4 /* DemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMainViewController.m; sourceTree = "<group>"; };
-		788D41D82184909E002BEED4 /* CJDemoNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJDemoNavigationController.h; sourceTree = "<group>"; };
-		788D41D92184909E002BEED4 /* CJDemoNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJDemoNavigationController.m; sourceTree = "<group>"; };
+		788D41D82184909E002BEED4 /* STDemoNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoNavigationController.h; sourceTree = "<group>"; };
+		788D41D92184909E002BEED4 /* STDemoNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoNavigationController.m; sourceTree = "<group>"; };
 		788D41DB218490F9002BEED4 /* FindPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewController.h; sourceTree = "<group>"; };
 		788D41DC218490F9002BEED4 /* FindPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewController.m; sourceTree = "<group>"; };
 		788D41DE2184913E002BEED4 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
@@ -179,8 +206,8 @@
 		788D41E7218499F2002BEED4 /* DemoMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoMineViewController.m; sourceTree = "<group>"; };
 		788D41E921849A0C002BEED4 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		788D41EA21849A0C002BEED4 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
-		788D41EC21849AF1002BEED4 /* CJDemoOrderHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJDemoOrderHomeViewController.h; sourceTree = "<group>"; };
-		788D41ED21849AF1002BEED4 /* CJDemoOrderHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJDemoOrderHomeViewController.m; sourceTree = "<group>"; };
+		788D41EC21849AF1002BEED4 /* STDemoOrderHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoOrderHomeViewController.h; sourceTree = "<group>"; };
+		788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderHomeViewController.m; sourceTree = "<group>"; };
 		78A621FB21367D40004DA046 /* CJStandardProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJStandardProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A6220521367D40004DA046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78A6220721367D42004DA046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,13 +221,19 @@
 		78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJStandardProjectDemoUITests.m; sourceTree = "<group>"; };
 		78A6222421367D42004DA046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78A622642137BEC4004DA046 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78B90E3D2188512E00776584 /* VMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMLoginViewController.h; sourceTree = "<group>"; };
+		78B90E3E2188512E00776584 /* VMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMLoginViewController.m; sourceTree = "<group>"; };
+		78B90E402188516B00776584 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		78B90E412188516B00776584 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		78B90E432188579000776584 /* CTMediator+STDemoLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+STDemoLogin.h"; sourceTree = "<group>"; };
+		78B90E442188579000776584 /* CTMediator+STDemoLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+STDemoLogin.m"; sourceTree = "<group>"; };
 		78C38DBC2141A802001F35E2 /* codeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
 		78C38DCF2141AB33001F35E2 /* FriendCircleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendCircleManager.h; sourceTree = "<group>"; };
 		78C38DD02141AB33001F35E2 /* FriendCircleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendCircleManager.m; sourceTree = "<group>"; };
-		78C38DD32141AB79001F35E2 /* DemoOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoOrderModel.m; sourceTree = "<group>"; };
-		78C38DD42141AB79001F35E2 /* DemoOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOrderModel.h; sourceTree = "<group>"; };
-		78C38DDF2141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJDemoServiceOrderManager+OrderList.h"; sourceTree = "<group>"; };
-		78C38DE02141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CJDemoServiceOrderManager+OrderList.m"; sourceTree = "<group>"; };
+		78C38DD32141AB79001F35E2 /* STDemoOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderModel.m; sourceTree = "<group>"; };
+		78C38DD42141AB79001F35E2 /* STDemoOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoOrderModel.h; sourceTree = "<group>"; };
+		78C38DDF2141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STDemoServiceOrderManager+OrderList.h"; sourceTree = "<group>"; };
+		78C38DE02141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STDemoServiceOrderManager+OrderList.m"; sourceTree = "<group>"; };
 		AE611C34A4D1F82A7ABFC6C6 /* Pods-CJStandardProjectDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJStandardProjectDemoTests/Pods-CJStandardProjectDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE6F6B7728008CA1D8B7AFF7 /* Pods-CJStandardProjectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C26CB6AD08CE875050CF9F25 /* Pods-CJStandardProjectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +303,10 @@
 			children = (
 				7809CA0A2148A67E00FAFD93 /* LoginLogicControl.h */,
 				7809CA062148A67E00FAFD93 /* LoginLogicControl.m */,
+				7844106E2187519B00D746A7 /* LoginLogicControl_Old.h */,
+				7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */,
+				78B90E402188516B00776584 /* LoginViewModel.h */,
+				78B90E412188516B00776584 /* LoginViewModel.m */,
 				7809CA0B2148A67E00FAFD93 /* FindPasswordLogicControl.h */,
 				7809CA052148A67E00FAFD93 /* FindPasswordLogicControl.m */,
 				7809CA072148A67E00FAFD93 /* LogoutLogicControl.h */,
@@ -283,8 +320,12 @@
 		7809CA0D2148A67E00FAFD93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7809CA0F2148A67E00FAFD93 /* LoginViewController.h */,
-				7809CA0E2148A67E00FAFD93 /* LoginViewController.m */,
+				7809CA0F2148A67E00FAFD93 /* LMLoginViewController.h */,
+				7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */,
+				784410722187571C00D746A7 /* LVLoginViewController.h */,
+				784410712187571C00D746A7 /* LVLoginViewController.m */,
+				78B90E3D2188512E00776584 /* VMLoginViewController.h */,
+				78B90E3E2188512E00776584 /* VMLoginViewController.m */,
 				788D41DB218490F9002BEED4 /* FindPasswordViewController.h */,
 				788D41DC218490F9002BEED4 /* FindPasswordViewController.m */,
 				788D41DE2184913E002BEED4 /* ChangePasswordViewController.h */,
@@ -307,8 +348,8 @@
 		7809CA112148A67E00FAFD93 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				7809CA122148A67E00FAFD93 /* CJDemoServiceUserManager+UserTable.m */,
-				7809CA132148A67E00FAFD93 /* CJDemoServiceUserManager+UserTable.h */,
+				7809CA122148A67E00FAFD93 /* STDemoServiceUserManager+UserTable.m */,
+				7809CA132148A67E00FAFD93 /* STDemoServiceUserManager+UserTable.h */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -316,8 +357,8 @@
 		7809CA142148A67E00FAFD93 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				7809CA162148A67E00FAFD93 /* CJDemoServiceUserManager+Network.h */,
-				7809CA152148A67E00FAFD93 /* CJDemoServiceUserManager+Network.m */,
+				7809CA162148A67E00FAFD93 /* STDemoServiceUserManager+Network.h */,
+				7809CA152148A67E00FAFD93 /* STDemoServiceUserManager+Network.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -367,8 +408,8 @@
 		781495EB21414ACD00D0F2BC /* NDM */ = {
 			isa = PBXGroup;
 			children = (
-				78C38DDF2141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.h */,
-				78C38DE02141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.m */,
+				78C38DDF2141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.h */,
+				78C38DE02141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m */,
 			);
 			path = NDM;
 			sourceTree = "<group>";
@@ -392,8 +433,8 @@
 		784410502186B80200D746A7 /* StartUp */ = {
 			isa = PBXGroup;
 			children = (
-				784410512186B84100D746A7 /* CJDemoStartUp.h */,
-				784410522186B84100D746A7 /* CJDemoStartUp.m */,
+				784410512186B84100D746A7 /* STDemoStartUp.h */,
+				784410522186B84100D746A7 /* STDemoStartUp.m */,
 			);
 			path = StartUp;
 			sourceTree = "<group>";
@@ -403,9 +444,19 @@
 			children = (
 				784410572186D88900D746A7 /* autoIncreaseVersion.sh */,
 				784410592186DFF000D746A7 /* dSYMUpload.sh */,
+				7844105B2186FB5500D746A7 /* dSYMUpload2.sh */,
 			);
 			name = buildscript;
 			path = ../buildscript;
+			sourceTree = "<group>";
+		};
+		7844106C21874BCC00D746A7 /* README */ = {
+			isa = PBXGroup;
+			children = (
+				7844106D21874BCC00D746A7 /* 规范README.md */,
+			);
+			name = README;
+			path = ../README;
 			sourceTree = "<group>";
 		};
 		7880E6BE21385817009C9BCF /* Order */ = {
@@ -445,10 +496,10 @@
 		7880E6C721385817009C9BCF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7880E6C821385817009C9BCF /* OrderListViewController.h */,
-				7880E6C921385817009C9BCF /* OrderListViewController.m */,
-				788D41EC21849AF1002BEED4 /* CJDemoOrderHomeViewController.h */,
-				788D41ED21849AF1002BEED4 /* CJDemoOrderHomeViewController.m */,
+				7880E6C821385817009C9BCF /* STDemoOrderListViewController.h */,
+				7880E6C921385817009C9BCF /* STDemoOrderListViewController.m */,
+				788D41EC21849AF1002BEED4 /* STDemoOrderHomeViewController.h */,
+				788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -476,12 +527,12 @@
 		788D419B21845110002BEED4 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				7809CA172148A67E00FAFD93 /* CJDemoServiceUserManager.h */,
-				7809CA1D2148A67E00FAFD93 /* CJDemoServiceUserManager.m */,
-				7809CA192148A67E00FAFD93 /* DemoUsePermissionModel.h */,
-				7809CA1B2148A67E00FAFD93 /* DemoUsePermissionModel.m */,
-				7809CA1A2148A67E00FAFD93 /* DemoUser.h */,
-				7809CA1C2148A67E00FAFD93 /* DemoUser.m */,
+				7809CA172148A67E00FAFD93 /* STDemoServiceUserManager.h */,
+				7809CA1D2148A67E00FAFD93 /* STDemoServiceUserManager.m */,
+				7809CA192148A67E00FAFD93 /* STDemoUsePermissionModel.h */,
+				7809CA1B2148A67E00FAFD93 /* STDemoUsePermissionModel.m */,
+				7809CA1A2148A67E00FAFD93 /* STDemoUser.h */,
+				7809CA1C2148A67E00FAFD93 /* STDemoUser.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -489,10 +540,10 @@
 		788D419C218452AE002BEED4 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				781495EC21414ACD00D0F2BC /* CJDemoServiceOrderManager.h */,
-				781495EF21414ACD00D0F2BC /* CJDemoServiceOrderManager.m */,
-				78C38DD32141AB79001F35E2 /* DemoOrderModel.m */,
-				78C38DD42141AB79001F35E2 /* DemoOrderModel.h */,
+				781495EC21414ACD00D0F2BC /* STDemoServiceOrderManager.h */,
+				781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */,
+				78C38DD32141AB79001F35E2 /* STDemoOrderModel.m */,
+				78C38DD42141AB79001F35E2 /* STDemoOrderModel.h */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -502,8 +553,14 @@
 			children = (
 				788D41A221846F44002BEED4 /* AppDelegate.h */,
 				788D41A821846F44002BEED4 /* AppDelegate.m */,
-				788D41A721846F44002BEED4 /* AppDelegate+CJDemoView.h */,
-				788D41A321846F44002BEED4 /* AppDelegate+CJDemoView.m */,
+				788D41A721846F44002BEED4 /* AppDelegate+STDemoView_Old.h */,
+				788D41A321846F44002BEED4 /* AppDelegate+STDemoView_Old.m */,
+				78441065218746B000D746A7 /* AppDelegate+STDemoView_New.h */,
+				78441066218746B000D746A7 /* AppDelegate+STDemoView_New.m */,
+				784410682187474A00D746A7 /* AppDelegate+STDemoListen.h */,
+				784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */,
+				784410622187453100D746A7 /* AppDelegate+STDemoStartUp.h */,
+				784410632187453100D746A7 /* AppDelegate+STDemoStartUp.m */,
 				788D41A421846F44002BEED4 /* LogicControl */,
 			);
 			path = AppDelegate;
@@ -512,8 +569,13 @@
 		788D41A421846F44002BEED4 /* LogicControl */ = {
 			isa = PBXGroup;
 			children = (
-				788D41A521846F44002BEED4 /* CJDemoAppDelegateLogicControl.m */,
-				788D41A621846F44002BEED4 /* CJDemoAppDelegateLogicControl.h */,
+				788D41A621846F44002BEED4 /* STDemoAppDelegateLogicControl.h */,
+				788D41A521846F44002BEED4 /* STDemoAppDelegateLogicControl.m */,
+				7844105E2187407D00D746A7 /* STDemoAppDelegateListenLogic.h */,
+				7844105D2187407D00D746A7 /* STDemoAppDelegateListenLogic.m */,
+				7844105F2187407D00D746A7 /* STDemoAppDelegateViewLogic.h */,
+				7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */,
+				7844106B218749F100D746A7 /* STDemoRootViewControllerEnum.h */,
 			);
 			path = LogicControl;
 			sourceTree = "<group>";
@@ -521,12 +583,12 @@
 		788D41AC21847075002BEED4 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				788D41AD2184708C002BEED4 /* CJDemoServiceLocationManager.h */,
-				788D41AE2184708C002BEED4 /* CJDemoServiceLocationManager.m */,
-				788D41B021847694002BEED4 /* DemoLocationCityModel.h */,
-				788D41B121847694002BEED4 /* DemoLocationCityModel.m */,
-				788D41B221847694002BEED4 /* DemoLocation.h */,
-				788D41B321847694002BEED4 /* DemoLocation.m */,
+				788D41AD2184708C002BEED4 /* STDemoServiceLocationManager.h */,
+				788D41AE2184708C002BEED4 /* STDemoServiceLocationManager.m */,
+				788D41B021847694002BEED4 /* STDemoLocationCityModel.h */,
+				788D41B121847694002BEED4 /* STDemoLocationCityModel.m */,
+				788D41B221847694002BEED4 /* STDemoLocation.h */,
+				788D41B321847694002BEED4 /* STDemoLocation.m */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -544,39 +606,39 @@
 			isa = PBXGroup;
 			children = (
 				788D41BF21847B44002BEED4 /* Base */,
-				788D41BB21847A9F002BEED4 /* CJDemoAlert */,
-				788D41C321847BD1002BEED4 /* CJDemoButtonFactory */,
+				788D41BB21847A9F002BEED4 /* STDemoAlert */,
+				788D41C321847BD1002BEED4 /* STDemoButtonFactory */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
 		};
-		788D41BB21847A9F002BEED4 /* CJDemoAlert */ = {
+		788D41BB21847A9F002BEED4 /* STDemoAlert */ = {
 			isa = PBXGroup;
 			children = (
-				788D41BD21847B38002BEED4 /* CJDemoAlert.h */,
-				788D41BC21847B38002BEED4 /* CJDemoAlert.m */,
+				788D41BD21847B38002BEED4 /* STDemoAlert.h */,
+				788D41BC21847B38002BEED4 /* STDemoAlert.m */,
 			);
-			path = CJDemoAlert;
+			path = STDemoAlert;
 			sourceTree = "<group>";
 		};
 		788D41BF21847B44002BEED4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				788D41C021847B5B002BEED4 /* CJDemoBaseViewController.h */,
-				788D41C121847B5B002BEED4 /* CJDemoBaseViewController.m */,
-				788D41D82184909E002BEED4 /* CJDemoNavigationController.h */,
-				788D41D92184909E002BEED4 /* CJDemoNavigationController.m */,
+				788D41C021847B5B002BEED4 /* STDemoBaseViewController.h */,
+				788D41C121847B5B002BEED4 /* STDemoBaseViewController.m */,
+				788D41D82184909E002BEED4 /* STDemoNavigationController.h */,
+				788D41D92184909E002BEED4 /* STDemoNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		788D41C321847BD1002BEED4 /* CJDemoButtonFactory */ = {
+		788D41C321847BD1002BEED4 /* STDemoButtonFactory */ = {
 			isa = PBXGroup;
 			children = (
-				788D41C521847BD1002BEED4 /* CJDemoButtonFactory.h */,
-				788D41C421847BD1002BEED4 /* CJDemoButtonFactory.m */,
+				788D41C521847BD1002BEED4 /* STDemoButtonFactory.h */,
+				788D41C421847BD1002BEED4 /* STDemoButtonFactory.m */,
 			);
-			path = CJDemoButtonFactory;
+			path = STDemoButtonFactory;
 			sourceTree = "<group>";
 		};
 		788D41C721848EE9002BEED4 /* Main */ = {
@@ -593,8 +655,8 @@
 		788D41C821848F16002BEED4 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				788D41C921848F16002BEED4 /* CJDemoMainVCFactory.m */,
-				788D41CA21848F16002BEED4 /* CJDemoMainVCFactory.h */,
+				788D41C921848F16002BEED4 /* STDemoMainVCFactory.m */,
+				788D41CA21848F16002BEED4 /* STDemoMainVCFactory.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -602,10 +664,12 @@
 		788D41CC21848F1F002BEED4 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				788D41CD21848F1F002BEED4 /* CJDemoLoginVCFactory.h */,
-				788D41D021848F1F002BEED4 /* CJDemoLoginVCFactory.m */,
-				788D41CF21848F1F002BEED4 /* DemoLoginRouter.h */,
-				788D41CE21848F1F002BEED4 /* DemoLoginRouter.m */,
+				788D41CD21848F1F002BEED4 /* STDemoLoginVCFactory.h */,
+				788D41D021848F1F002BEED4 /* STDemoLoginVCFactory.m */,
+				788D41CF21848F1F002BEED4 /* STDemoLoginRouter.h */,
+				788D41CE21848F1F002BEED4 /* STDemoLoginRouter.m */,
+				78B90E432188579000776584 /* CTMediator+STDemoLogin.h */,
+				78B90E442188579000776584 /* CTMediator+STDemoLogin.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -631,6 +695,7 @@
 		78A621F221367D40004DA046 = {
 			isa = PBXGroup;
 			children = (
+				7844106C21874BCC00D746A7 /* README */,
 				784410552186D88900D746A7 /* buildscript */,
 				78A621FD21367D40004DA046 /* CJStandardProjectDemo */,
 				78A6221621367D42004DA046 /* CJStandardProjectDemoTests */,
@@ -857,7 +922,7 @@
 		78A621F321367D40004DA046 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = CJDemo;
+				CLASSPREFIX = STDemo;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = devlproad;
 				TargetAttributes = {
@@ -960,7 +1025,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# 打印脚本目录\necho ${PROJECT_DIR}/../buildscript\n# 进入脚本目录\ncd ${PROJECT_DIR}/../buildscript\n\n# 利用脚本实现build号自动加一\n./autoIncreaseVersion.sh\n\n# Bugly使用脚本自动配置支持两种上传方式,直接上传dSYM文件（默认方式 ）\n./dSYMUpload.sh\n";
+			shellScript = "# 打印脚本目录\necho ${PROJECT_DIR}/../buildscript\n# 进入脚本目录\ncd ${PROJECT_DIR}/../buildscript\n\n# 利用脚本实现build号自动加一\n#./autoIncreaseVersion.sh\n\n# Bugly使用脚本自动配置支持两种上传方式,直接上传dSYM文件（默认方式 ）\n./dSYMUpload.sh\n";
 		};
 		BED8822F4A25FBFCF1F25FC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1023,51 +1088,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7809CA272148A67F00FAFD93 /* CJDemoServiceUserManager+Network.m in Sources */,
-				788D41B421847695002BEED4 /* DemoLocationCityModel.m in Sources */,
+				7809CA272148A67F00FAFD93 /* STDemoServiceUserManager+Network.m in Sources */,
+				7844106A2187474A00D746A7 /* AppDelegate+STDemoListen.m in Sources */,
+				788D41B421847695002BEED4 /* STDemoLocationCityModel.m in Sources */,
+				784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */,
+				784410702187519C00D746A7 /* LoginLogicControl_Old.m in Sources */,
 				788D41AB21846F44002BEED4 /* AppDelegate.m in Sources */,
 				7809CA242148A67F00FAFD93 /* RegisterLogicControl.m in Sources */,
-				788D41AF2184708C002BEED4 /* CJDemoServiceLocationManager.m in Sources */,
-				788D41BE21847B38002BEED4 /* CJDemoAlert.m in Sources */,
-				788D41B521847695002BEED4 /* DemoLocation.m in Sources */,
+				788D41AF2184708C002BEED4 /* STDemoServiceLocationManager.m in Sources */,
+				788D41BE21847B38002BEED4 /* STDemoAlert.m in Sources */,
+				788D41B521847695002BEED4 /* STDemoLocation.m in Sources */,
 				783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */,
-				788D41EE21849AF1002BEED4 /* CJDemoOrderHomeViewController.m in Sources */,
+				784410612187407D00D746A7 /* STDemoAppDelegateListenLogic.m in Sources */,
+				788D41EE21849AF1002BEED4 /* STDemoOrderHomeViewController.m in Sources */,
 				7809CA212148A67E00FAFD93 /* FindPasswordLogicControl.m in Sources */,
-				788D41D221848F1F002BEED4 /* CJDemoLoginVCFactory.m in Sources */,
+				788D41D221848F1F002BEED4 /* STDemoLoginVCFactory.m in Sources */,
 				7880E6D021385817009C9BCF /* OrderListTableViewDataSource.m in Sources */,
-				7809CA2A2148A67F00FAFD93 /* CJDemoServiceUserManager.m in Sources */,
-				78C38DE12141AC42001F35E2 /* CJDemoServiceOrderManager+OrderList.m in Sources */,
+				7809CA2A2148A67F00FAFD93 /* STDemoServiceUserManager.m in Sources */,
+				78C38DE12141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m in Sources */,
 				788D41E02184913E002BEED4 /* ChangePasswordViewController.m in Sources */,
 				7809CA232148A67F00FAFD93 /* LogoutLogicControl.m in Sources */,
-				788D41D121848F1F002BEED4 /* DemoLoginRouter.m in Sources */,
+				788D41D121848F1F002BEED4 /* STDemoLoginRouter.m in Sources */,
 				7880E6D521385817009C9BCF /* OrderCell.m in Sources */,
 				7809CA202148A67E00FAFD93 /* LoginViewControl.m in Sources */,
-				7880E6D321385817009C9BCF /* OrderListViewController.m in Sources */,
-				781495F221414ACD00D0F2BC /* CJDemoServiceOrderManager.m in Sources */,
+				7880E6D321385817009C9BCF /* STDemoOrderListViewController.m in Sources */,
+				781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */,
 				7809CA362148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m in Sources */,
+				78B90E422188516B00776584 /* LoginViewModel.m in Sources */,
 				7880E6D221385817009C9BCF /* OrderListViewModel.m in Sources */,
-				7809CA252148A67F00FAFD93 /* LoginViewController.m in Sources */,
+				7809CA252148A67F00FAFD93 /* LMLoginViewController.m in Sources */,
 				78A6220E21367D42004DA046 /* main.m in Sources */,
 				788D41E32184915E002BEED4 /* RegisterViewController.m in Sources */,
-				788D41CB21848F16002BEED4 /* CJDemoMainVCFactory.m in Sources */,
+				788D41CB21848F16002BEED4 /* STDemoMainVCFactory.m in Sources */,
 				7880E6D121385817009C9BCF /* OrderListTableViewDelegate.m in Sources */,
 				788D41DD218490F9002BEED4 /* FindPasswordViewController.m in Sources */,
-				788D41DA2184909E002BEED4 /* CJDemoNavigationController.m in Sources */,
-				7809CA262148A67F00FAFD93 /* CJDemoServiceUserManager+UserTable.m in Sources */,
-				788D41C221847B5C002BEED4 /* CJDemoBaseViewController.m in Sources */,
+				788D41DA2184909E002BEED4 /* STDemoNavigationController.m in Sources */,
+				7809CA262148A67F00FAFD93 /* STDemoServiceUserManager+UserTable.m in Sources */,
+				788D41C221847B5C002BEED4 /* STDemoBaseViewController.m in Sources */,
+				78441067218746B000D746A7 /* AppDelegate+STDemoView_New.m in Sources */,
+				784410642187453100D746A7 /* AppDelegate+STDemoStartUp.m in Sources */,
 				788D41E8218499F2002BEED4 /* DemoMineViewController.m in Sources */,
-				788D41AA21846F44002BEED4 /* CJDemoAppDelegateLogicControl.m in Sources */,
+				788D41AA21846F44002BEED4 /* STDemoAppDelegateLogicControl.m in Sources */,
 				788D41EB21849A0C002BEED4 /* MessageViewController.m in Sources */,
-				7809CA282148A67F00FAFD93 /* DemoUsePermissionModel.m in Sources */,
+				7809CA282148A67F00FAFD93 /* STDemoUsePermissionModel.m in Sources */,
 				78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */,
-				788D41C621847BD1002BEED4 /* CJDemoButtonFactory.m in Sources */,
+				788D41C621847BD1002BEED4 /* STDemoButtonFactory.m in Sources */,
 				788D41B9218479A9002BEED4 /* GuideViewController.m in Sources */,
-				788D41A921846F44002BEED4 /* AppDelegate+CJDemoView.m in Sources */,
+				788D41A921846F44002BEED4 /* AppDelegate+STDemoView_Old.m in Sources */,
+				784410732187571C00D746A7 /* LVLoginViewController.m in Sources */,
 				7809CA222148A67E00FAFD93 /* LoginLogicControl.m in Sources */,
+				78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */,
 				788D41D721848F64002BEED4 /* DemoMainViewController.m in Sources */,
-				784410532186B84100D746A7 /* CJDemoStartUp.m in Sources */,
-				78C38DD52141AB79001F35E2 /* DemoOrderModel.m in Sources */,
-				7809CA292148A67F00FAFD93 /* DemoUser.m in Sources */,
+				78B90E3F2188512E00776584 /* VMLoginViewController.m in Sources */,
+				784410532186B84100D746A7 /* STDemoStartUp.m in Sources */,
+				78C38DD52141AB79001F35E2 /* STDemoOrderModel.m in Sources */,
+				7809CA292148A67F00FAFD93 /* STDemoUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1238,6 +1313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = FZ5YDHE5JZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;

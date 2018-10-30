@@ -1,14 +1,14 @@
 //
 //  FindPasswordLogicControl.m
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
 //  Copyright © 2018年 dvlproad. All rights reserved.
 //
 
 #import "FindPasswordLogicControl.h"
-#import "CJDemoServiceUserManager+Network.h"
-#import "CJDemoServiceUserManager+UserTable.h"
+#import "STDemoServiceUserManager+Network.h"
+#import "STDemoServiceUserManager+UserTable.h"
 #import <CJFoundation/NSString+CJValidate.h>
 
 @interface FindPasswordLogicControl () {
@@ -23,8 +23,8 @@
 
 #pragma mark - Get Default
 - (NSString *)getDefaultEmailForUserName:(NSString *)userName {
-    NSString *uid = [CJDemoServiceUserManager sharedInstance].serviceUser.uid;
-    DemoUser *info = [[CJDemoServiceUserManager sharedInstance] selectAccountInfoWhereUID:uid];
+    NSString *uid = [STDemoServiceUserManager sharedInstance].serviceUser.uid;
+    STDemoUser *info = [[STDemoServiceUserManager sharedInstance] selectAccountInfoWhereUID:uid];
     NSString *email = info.email;
     return email;
 }
@@ -69,7 +69,7 @@
     
 
     
-    [[CJDemoServiceUserManager sharedInstance] requestNewPasswordWithEmail:email success:^(CJDemoResponseModel *responseModel) {
+    [[STDemoServiceUserManager sharedInstance] requestNewPasswordWithEmail:email success:^(CJDemoResponseModel *responseModel) {
         
         NSInteger status = responseModel.status;
         if (status != 0) {

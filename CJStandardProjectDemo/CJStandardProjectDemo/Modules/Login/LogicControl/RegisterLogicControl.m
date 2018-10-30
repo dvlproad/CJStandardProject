@@ -1,14 +1,14 @@
 //
 //  RegisterLogicControl.m
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
 //  Copyright © 2018年 dvlproad. All rights reserved.
 //
 
 #import "RegisterLogicControl.h"
-#import "CJDemoServiceUserManager+Network.h"
-#import "CJDemoServiceUserManager+UserTable.h"
+#import "STDemoServiceUserManager+Network.h"
+#import "STDemoServiceUserManager+UserTable.h"
 #import <CJBaseUtil/CJAppLastUtil.h>
 
 @interface RegisterLogicControl () {
@@ -80,7 +80,7 @@
     
     
     
-    [[CJDemoServiceUserManager sharedInstance] requestRegisterWithAccount:account password:password email:email success:^(id  _Nullable responseObject) {
+    [[STDemoServiceUserManager sharedInstance] requestRegisterWithAccount:account password:password email:email success:^(id  _Nullable responseObject) {
         NSInteger status = [responseObject[@"status"] integerValue];
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"注册失败", nil);
@@ -92,13 +92,13 @@
         
 //        //登录成功
 //        NSDictionary *result = responseObject[@"result"];
-//        DemoUser *user = [[DemoUser alloc] initWithUserDictionary:result];
+//        STDemoUser *user = [[STDemoUser alloc] initWithUserDictionary:result];
 //
 //        //登录成功后，要执行的基本操作(服务器基本上回返回用户的一些基本信息)
 //        //需要管理监控"服务的用户"的信息变化，所以先通过单例，放在内存中管理，同时支持数据库管理；
 //        //其他，如需要管理监控"服务的订单表"的信息变化，也是一样的处理放啊。
-//        [CJDemoServiceUserManager sharedInstance].serviceUser = [user copy];
-//        [[CJDemoServiceUserManager sharedInstance] insertAccountInfo:user];
+//        [STDemoServiceUserManager sharedInstance].serviceUser = [user copy];
+//        [[STDemoServiceUserManager sharedInstance] insertAccountInfo:user];
 //        [CJAppLastUtil saveAccount:account withPassword:password];
         
         NSString *loginSuccessMessage = NSLocalizedString(@"注册成功", nil);

@@ -140,11 +140,6 @@
 ///更新登录按钮的点击状态
 - (void)updateLoginButtonEnable:(BOOL)enable {
     self.loginButton.enabled = enable;
-    if (enable) {
-        [self.loginButton setBackgroundColor:[CJColorFromHexString(@"#66cc00") colorWithAlphaComponent:1]];
-    } else {
-        [self.loginButton setBackgroundColor:[CJColorFromHexString(@"#66cc00") colorWithAlphaComponent:0.5]];
-    }
 }
 
 ///开始视图的editing
@@ -153,7 +148,7 @@
 }
 ///结束视图的editing
 - (void)stopEndEditing {
-    //[self.belongViewController.view endEditing:YES];
+    //[self.view endEditing:YES];
 }
 
 
@@ -173,20 +168,16 @@
     }
 }
 
-///“登录成功进入主页时候"更新视图
-- (void)loginSuccessAndGoMainViewControllerWithMessage:(NSString *)message {
+///“登录成功进入/回到主页时候"更新视图
+- (void)loginSuccessWithMessage:(NSString *)message isBack:(BOOL)isBack {
     [self.loginStateHUD hideAnimated:YES afterDelay:0];
     [CJToast shortShowMessage:message];
     
-    [self goMainViewController];
-}
-
-///"登录成功回到主页时候"更新视图
-- (void)loginSuccessAndBackMainViewControllerWithMessage:(NSString *)message {
-    [self.loginStateHUD hideAnimated:YES afterDelay:0];
-    [CJToast shortShowMessage:message];
-    
-    [self backMainViewController];
+    if (isBack) {
+        [self goMainViewController];    //“登录成功进入主页时候"更新视图
+    } else {
+        [self backMainViewController];  //"登录成功回到主页时候"更新视图
+    }
 }
 
 ///"登录失败时候"更新视图

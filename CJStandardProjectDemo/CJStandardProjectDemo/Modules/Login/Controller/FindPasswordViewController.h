@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import "CJDemoBaseViewController.h"
+#import "STDemoBaseViewController.h"
 
-@interface FindPasswordViewController : CJDemoBaseViewController
+@interface FindPasswordViewController : STDemoBaseViewController
 
 @end

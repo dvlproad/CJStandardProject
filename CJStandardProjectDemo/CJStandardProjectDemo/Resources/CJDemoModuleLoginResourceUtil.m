@@ -1,6 +1,6 @@
 //
-//  CJDemoModuleLoginResourceUtil.m
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginResourceUtil.m
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/4/20.
 //  Copyright © 2018年 dvlproad. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "CJDemoModuleLoginResourceUtil.h"
 
-@implementation CJDemoModuleLoginResourceUtil
+@implementation STDemoModuleLoginResourceUtil
 
 /* //参考：[SVProgressHUD](https://github.com/SVProgressHUD)
 + (UIImage *)image {
@@ -23,11 +23,11 @@
 #pragma mark - Bundle
 /* 完整的描述请参见文件头部 */
 + (NSBundle *)interfaceBundle {
-#ifdef CJDemoModuleLoginInMain  //当模块代码是直接拷贝的时候，直接使用mainBundle即可。
+#ifdef STDemoModuleLoginInMain  //当模块代码是直接拷贝的时候，直接使用mainBundle即可。
     return [NSBundle mainBundle];
 #else                           //pod的时候由于有bundle一定要使用如下
-    NSBundle *bundle = [NSBundle bundleForClass:[CJDemoModuleLoginResourceUtil class]];
-    NSURL *bundleURL = [bundle URLForResource:@"CJDemoModuleLoginResources" withExtension:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleForClass:[STDemoModuleLoginResourceUtil class]];
+    NSURL *bundleURL = [bundle URLForResource:@"STDemoModuleLoginResources" withExtension:@"bundle"];
     //NSURL *interfacesBundleURL = [bundleURL URLByAppendingPathComponent:@"interfaces"];
     NSURL *interfacesBundleURL = bundleURL;
     
@@ -38,11 +38,11 @@
 
 /* 完整的描述请参见文件头部 */
 + (NSBundle *)imageBundle {
-#ifdef CJDemoModuleLoginInMain  //当模块代码是直接拷贝的时候，直接使用mainBundle即可。
+#ifdef STDemoModuleLoginInMain  //当模块代码是直接拷贝的时候，直接使用mainBundle即可。
     return [NSBundle mainBundle];
 #else                           //pod的时候由于有bundle一定要使用如下
-    NSBundle *bundle = [NSBundle bundleForClass:[CJDemoModuleLoginResourceUtil class]];
-    NSURL *bundleURL = [bundle URLForResource:@"CJDemoModuleLoginResources" withExtension:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleForClass:[STDemoModuleLoginResourceUtil class]];
+    NSURL *bundleURL = [bundle URLForResource:@"STDemoModuleLoginResources" withExtension:@"bundle"];
     //NSURL *imageBundleURL = [bundleURL URLByAppendingPathComponent:@"images"];
     NSURL *imageBundleURL = bundleURL;
     

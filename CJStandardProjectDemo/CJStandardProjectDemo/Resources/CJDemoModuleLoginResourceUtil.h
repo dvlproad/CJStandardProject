@@ -1,6 +1,6 @@
 //
-//  CJDemoModuleLoginResourceUtil.h
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginResourceUtil.h
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/4/20.
 //  Copyright © 2018年 dvlproad. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CJDemoModuleLoginResourceUtil : NSObject
+@interface STDemoModuleLoginResourceUtil : NSObject
 
 #pragma mark - Bundle
 /**

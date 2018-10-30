@@ -10,9 +10,9 @@
 #import <LGSideMenuController/LGSideMenuController.h>
 
 #import "DemoMineViewController.h"
-#import "CJDemoOrderHomeViewController.h"
+#import "STDemoOrderHomeViewController.h"
 #import "MessageViewController.h"
-#import "CJDemoNavigationController.h"
+#import "STDemoNavigationController.h"
 
 @interface DemoMainViewController ()
 
@@ -22,8 +22,8 @@
 
 - (instancetype)init {
     self = [super initWithRootViewController:({
-        CJDemoOrderHomeViewController *home = [[CJDemoOrderHomeViewController alloc] init];
-        CJDemoNavigationController *navigation = [[CJDemoNavigationController alloc] initWithRootViewController:home];
+        STDemoOrderHomeViewController *home = [[STDemoOrderHomeViewController alloc] init];
+        STDemoNavigationController *navigation = [[STDemoNavigationController alloc] initWithRootViewController:home];
         navigation;
     }) leftViewController:({
         DemoMineViewController *mine = [[DemoMineViewController alloc] init];

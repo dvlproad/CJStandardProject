@@ -8,7 +8,7 @@
 
 #import "OrderListTableViewDataSource.h"
 #import "OrderCell.h"
-#import "DemoOrderModel.h"
+#import "STDemoOrderModel.h"
 
 @implementation OrderListTableViewDataSource
 
@@ -24,7 +24,7 @@
         cell = [[OrderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-    DemoOrderModel *dataModel = [_array objectAtIndex:indexPath.row];
+    STDemoOrderModel *dataModel = [_array objectAtIndex:indexPath.row];
     cell.titleLabel.text = dataModel.title;
     return cell;
 }

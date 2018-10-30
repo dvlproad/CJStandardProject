@@ -27,15 +27,14 @@ UPLOAD_DSYM_ONLY=1
 # CUSTOMIZED_APP_VERSION=""
 #
 
-UPLOAD_DEBUG_SYMBOLS = 1
 # # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传
-# UPLOAD_DEBUG_SYMBOLS=0
+ UPLOAD_DEBUG_SYMBOLS=1
 #
 # # 模拟器编译是否上传，1=上传 0=不上传，默认不上传
-# UPLOAD_SIMULATOR_SYMBOLS=0
+ UPLOAD_SIMULATOR_SYMBOLS=0
 #
 # #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传
-# UPLOAD_ARCHIVE_ONLY=0
+ UPLOAD_ARCHIVE_ONLY=0
 #
 # #
 # source dSYMUpload.sh
@@ -72,7 +71,7 @@ BUGLY_DSYM_UPLOAD_DOMAIN="api.bugly.qq.com"
 BUGLY_SYMBOL_JAR_PATH="dsymtool/buglySymboliOS.jar"
 # 查找添加到系统目录的jar工具
 if [ ! -f "${BUGLY_SYMBOL_JAR_PATH}" ]; then
-    BUGLY_SYMBOL_JAR_PATH="$HOME/bin/buglySymboliOS.jar"
+    BUGLY_SYMBOL_JAR_PATH="~/bin/buglySymboliOS.jar"
 fi
 
 # 打印错误信息

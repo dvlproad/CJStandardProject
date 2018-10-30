@@ -7,7 +7,7 @@
 //
 
 #import "OrderListViewModel.h"
-#import "DemoOrderModel.h"
+#import "STDemoOrderModel.h"
 @interface OrderListViewModel ()
 
 @end
@@ -34,7 +34,7 @@
                 for (int i=0; i<16; i++) {
                     int x = arc4random() % 100;
                     NSString *string=[NSString stringWithFormat:@"    (random%d)",x];
-                    DemoOrderModel *model=[[DemoOrderModel alloc] init];
+                    STDemoOrderModel *model=[[STDemoOrderModel alloc] init];
                     model.title=string;
                     [arr addObject:model];
                 }
@@ -54,7 +54,7 @@
                 for (int i=0; i<16; i++) {
                     int x = arc4random() % 100;
                     NSString *string=[NSString stringWithFormat:@"    (random%d)",x];
-                    DemoOrderModel *model=[[DemoOrderModel alloc] init];
+                    STDemoOrderModel *model=[[STDemoOrderModel alloc] init];
                     model.title=string;
                     [arr addObject:model];
                 }

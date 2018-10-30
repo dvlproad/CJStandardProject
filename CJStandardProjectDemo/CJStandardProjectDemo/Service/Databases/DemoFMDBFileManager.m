@@ -1,6 +1,6 @@
 //
 //  DemoFMDBFileManager.m
-//  CJDemoDatabaseDemo
+//  STDemoDatabaseDemo
 //
 //  Created by ciyouzen on 2016/12/21.
 //  Copyright © 2016年 dvlproad. All rights reserved.

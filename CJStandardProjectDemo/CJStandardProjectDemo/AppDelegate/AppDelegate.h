@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CJDemoAppDelegateLogicControl.h"
+#import "STDemoAppDelegateLogicControl.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "STDemoAppDelegateListenLogic.h"
+#import "STDemoAppDelegateViewLogic.h"
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, STDemoAppListenDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic, strong) CJDemoAppDelegateLogicControl *logicControl;
-@property (nonatomic, assign) CJDemoRootViewControllerType rootViewControllerType;
+@property (nonatomic, strong) STDemoAppDelegateLogicControl *logicControl;
+@property (nonatomic, assign) STDemoRootViewControllerType rootViewControllerType;
+
+@property (nonatomic, strong) STDemoAppDelegateViewLogic *viewLogic;
+@property (nonatomic, strong) STDemoAppDelegateListenLogic *listenLogic;
 
 + (instancetype)sharedDelegate;
 

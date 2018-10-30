@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+CJDemoView.h"
-#import "CJDemoStartUp.h"
+#import "AppDelegate+STDemoView_Old.h"
+#import "STDemoStartUp.h"
 
 @interface AppDelegate ()
 
@@ -25,12 +25,16 @@
     
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    [CJDemoStartUp startUp];
+    [STDemoStartUp startUp];
+    
     [self viewDidFinishLaunching];
+    
     [self.window makeKeyAndVisible];
     
     return YES;
 }
+
+
 
 - (void)lcof_method0 {
     NSLog(@"测试混淆方法(0个参数)");

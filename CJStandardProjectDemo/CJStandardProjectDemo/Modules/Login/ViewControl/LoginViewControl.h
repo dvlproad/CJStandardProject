@@ -11,7 +11,7 @@
 
 #import <CJBaseUIKit/CJTextField.h>
 
-#import "LoginViewController.h"
+#import "LMLoginViewController.h"
 
 @protocol LoginViewModelDelegate <NSObject>
 
@@ -31,6 +31,7 @@
 }
 @property (nonatomic, weak) id<LoginViewModelDelegate> delegate;
 
+@property (nonatomic, strong) UIView *view; 
 //@property (nonatomic, strong) UIImageView *portraitBackgroundImageView; /**< 头像背景 */
 //@property (nonatomic, strong) UIImageView *portraitImageView;   /**< 头像 */
 @property (nonatomic, strong) CJTextField *userNameTextField;   /**< 账号(记得关掉自动纠错) */
@@ -60,11 +61,8 @@
 ///"开始登录时候"更新视图(如显示提示信息)
 - (void)startLoginWithMessage:(NSString *)message;
 
-///“登录成功进入主页时候"更新视图
-- (void)loginSuccessAndGoMainViewControllerWithMessage:(NSString *)message;
-
-///"登录成功回到主页时候"更新视图
-- (void)loginSuccessAndBackMainViewControllerWithMessage:(NSString *)message;
+///“登录成功进入/回到主页时候"更新视图
+- (void)loginSuccessWithMessage:(NSString *)message isBack:(BOOL)isBack;
 
 ///"登录失败时候"更新视图
 - (void)loginFailureWithMessage:(NSString *)message;

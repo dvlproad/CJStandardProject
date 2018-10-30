@@ -19,17 +19,35 @@
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"引导页", nil);
     
-    UIButton *blueButton = [CJDemoButtonFactory blueButton];
-    [blueButton setTitle:NSLocalizedString(@"进入首页", nil) forState:UIControlStateNormal];
-    [blueButton addTarget:self action:@selector(readOverGuide:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:blueButton];
-    [blueButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIButton *testBuglyButton = [STDemoButtonFactory blueButton];
+    [testBuglyButton setTitle:NSLocalizedString(@"测试Bugly符号表上传的脚本", nil) forState:UIControlStateNormal];
+    [testBuglyButton addTarget:self action:@selector(testBuglyDSYMUpload) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBuglyButton];
+    [testBuglyButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view).mas_offset(20);
+        make.right.mas_equalTo(self.view).mas_offset(-20);
+        make.height.mas_equalTo(44);
+        make.top.mas_equalTo(self.view).mas_offset(140);
+    }];
+    
+    UIButton *readOverButton = [STDemoButtonFactory blueButton];
+    [readOverButton setTitle:NSLocalizedString(@"进入首页", nil) forState:UIControlStateNormal];
+    [readOverButton addTarget:self action:@selector(readOverGuide:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:readOverButton];
+    [readOverButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.view).mas_offset(20);
         make.right.mas_equalTo(self.view).mas_offset(-20);
         make.height.mas_equalTo(44);
         make.bottom.mas_equalTo(self.view).mas_offset(-40);
     }];
 }
+
+/// 测试Bugly符号表上传的脚本
+- (void)testBuglyDSYMUpload {
+    NSArray *testBuglyArray = @[@"1"];
+    NSLog(@"%@", testBuglyArray[1]);
+}
+
 
 - (void)readOverGuide:(UIButton *)button {
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];

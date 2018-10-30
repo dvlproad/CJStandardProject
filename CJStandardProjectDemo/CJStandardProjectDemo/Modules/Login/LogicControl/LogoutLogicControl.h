@@ -1,6 +1,6 @@
 //
 //  LogoutLogicControl.h
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
 //  Copyright © 2018年 dvlproad. All rights reserved.
@@ -8,7 +8,7 @@
 //  LogoutLogicControl处理逻辑
 
 #import <Foundation/Foundation.h>
-#import "CJDemoServiceUserManager.h"
+#import "STDemoServiceUserManager.h"
 
 @protocol LogoutLogicControlDelegate <NSObject>
 

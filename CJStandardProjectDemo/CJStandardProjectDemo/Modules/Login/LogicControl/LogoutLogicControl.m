@@ -1,14 +1,14 @@
 //
 //  LogoutLogicControl.m
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
 //  Copyright © 2018年 dvlproad. All rights reserved.
 //
 
 #import "LogoutLogicControl.h"
-#import "CJDemoServiceUserManager+Network.h"
-#import "CJDemoServiceUserManager+UserTable.h"
+#import "STDemoServiceUserManager+Network.h"
+#import "STDemoServiceUserManager+UserTable.h"
 #import <CJBaseUtil/CJAppLastUtil.h>
 
 @interface LogoutLogicControl () {
@@ -30,7 +30,7 @@
 ///执行退出
 - (void)logout
 {
-    NSString *uid = [CJDemoServiceUserManager sharedInstance].serviceUser.uid;
+    NSString *uid = [STDemoServiceUserManager sharedInstance].serviceUser.uid;
     
     NSString *failureMessage = [self checkLogoutConditionByUid:uid];
     if (failureMessage) {
@@ -47,7 +47,7 @@
     }
     
     
-    [[CJDemoServiceUserManager sharedInstance] requestLogoutWithSuccess:^(CJDemoResponseModel *responseModel) {
+    [[STDemoServiceUserManager sharedInstance] requestLogoutWithSuccess:^(CJDemoResponseModel *responseModel) {
         NSInteger status = responseModel.status;
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"退出失败", nil);
@@ -61,7 +61,7 @@
         //退出成功后，要执行的基本操作(服务器基本上回返回用户的一些基本信息)
         //需要管理监控"服务的用户"的信息变化，所以先通过单例，放在内存中管理，同时支持数据库管理；
         //其他，如需要管理监控"服务的订单表"的信息变化，也是一样的处理放啊。
-        [CJDemoServiceUserManager sharedInstance].serviceUser = nil;
+        [STDemoServiceUserManager sharedInstance].serviceUser = nil;
         [CJAppLastUtil deleteAccountFromKeychain:uid];
         
         NSString *logoutSuccessMessage = NSLocalizedString(@"退出成功", nil);

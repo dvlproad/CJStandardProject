@@ -11,5 +11,5 @@
 #define s2 ERdeueMsBLepjgDg
 #define bindViewModel qasKgfgYQwautQYf
 #define AppDelegate jKbmBJbCuGamsLlZ
-#define LoginViewController LPOqTPsRWAEgXsdc
+#define LMLoginViewController LPOqTPsRWAEgXsdc
 #endif

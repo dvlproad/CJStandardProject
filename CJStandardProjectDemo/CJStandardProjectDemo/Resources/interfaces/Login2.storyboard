@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="KPN-Pp-fti">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="KPN-Pp-fti">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--登录-->
         <scene sceneID="8u9-J2-cz6">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="登录" id="KPN-Pp-fti" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LMLoginViewController" title="登录" id="KPN-Pp-fti" customClass="LMLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ljz-Cs-Y2P"/>
                         <viewControllerLayoutGuide type="bottom" id="4Ic-dj-cb3"/>
@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KK-Yw-pxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="-1816"/>
+            <point key="canvasLocation" x="947.20000000000005" y="-1633.5832083958023"/>
         </scene>
         <!--找回密码-->
         <scene sceneID="vFJ-44-w9h">
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKI-jF-UaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-2153"/>
+            <point key="canvasLocation" x="1644.8" y="-1936.7316341829087"/>
         </scene>
         <!--注册-->
         <scene sceneID="Ikr-Ab-DGq">
@@ -387,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tp-o8-Nua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-1454"/>
+            <point key="canvasLocation" x="1644.8" y="-1307.9460269865069"/>
         </scene>
         <!--注册完善-->
         <scene sceneID="q5k-AH-eKM">
@@ -698,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVW-IG-GnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="-1454"/>
+            <point key="canvasLocation" x="2310.4000000000001" y="-1307.9460269865069"/>
         </scene>
     </scenes>
     <resources>

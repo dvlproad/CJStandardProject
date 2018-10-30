@@ -21,11 +21,11 @@
 #import <CJBaseHelper/NSObjectCJHelper.h>
 #import <CJFoundation/NSString+CJTextSize.h>
 
-#import "CJDemoAlert.h"
-#import "CJDemoButtonFactory.h"
+#import "STDemoAlert.h"
+#import "STDemoButtonFactory.h"
 
 #define UseLibrary  //使用已经封装的库
-#define CJTestLoginDealloc              //测试LoginViewController的销毁/内存泄漏
+#define CJTestLoginDealloc              //测试LMLoginViewController的销毁/内存泄漏
 #define CJUseSimulatorServiceUserData //使用模拟网络请求数据
 
 #endif /* PrefixHeader_pch */

@@ -1,6 +1,6 @@
 //
 //  LoginLogicControl.m
-//  CJDemoModuleLoginDemo
+//  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
 //  Copyright © 2018年 dvlproad. All rights reserved.
@@ -8,15 +8,12 @@
 
 #import "LoginLogicControl.h"
 #import <CJBaseUtil/CJAppLastUtil.h>
-#import "CJDemoServiceUserManager+Network.h"
-#import "CJDemoServiceUserManager+UserTable.h"
+#import "STDemoServiceUserManager+Network.h"
+#import "STDemoServiceUserManager+UserTable.h"
 
 @interface LoginLogicControl () {
     
 }
-
-@property (nonatomic, copy) UIViewController *vc;
-
 @property (nonatomic, copy) NSString *userName;
 @property (nonatomic, copy) NSString *password;
 
@@ -24,6 +21,16 @@
 
 
 @implementation LoginLogicControl
+
+//- (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password {
+//    self = [super init];
+//    if (self) {
+//        CJAppLastUser *lastUser = [CJAppLastUtil getLastLoginUser];
+//        self.userName = lastUser.lastLoginUserName;
+//        self.password = @"";
+//    }
+//    return self;
+//}
 
 #pragma mark - Get Default
 - (NSString *)getDefaultLoginAccount {
@@ -56,55 +63,40 @@
 
     BOOL allowClickLoginButton = loginUserNameEnable && loginPasswordEnable;
     //NSLog(@"allowClickLoginButton = %@, %@, %@", allowClickLoginButton ? @"YES" : @"NO", self.userName, self.password);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_LoginButtonEnableChange:)]) {
-        [self.delegate logic_LoginButtonEnableChange:allowClickLoginButton];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginButtonEnableChange:)]) {
+        [self.delegate logic_loginButtonEnableChange:allowClickLoginButton];
     }
 }
 
 #pragma mark - Do
-///**
-// *  登录并进入首页(有主页登录、个人中心登录等,包含是否允许进行登录，登陆成功后进入什么页面等逻辑处理)
-// *
-// *  @param account                          用户信息--用户名
-// *  @param password                         用户信息--用户密码
-// *  @param goMainViewController             进入主页
-// *  @param backMainViewController           回到主页(游客模式下会有该功能)
-// */
-//- (void)loginWithAccount:(NSString *)account
-//                password:(NSString *)password
-//    goMainViewController:(void (^)(void))goMainViewController
-//  backMainViewController:(void (^)(void))backMainViewController
 ///执行登录
-- (void)login
+- (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
+                 loginStart:(void (^)(NSString *startMessage))loginStartBlock
+               loginSuccess:(void (^)(NSString *successMessage))loginSuccess
+               loginFailure:(void (^)(NSString *errorMessage))loginFailure
 {
     NSString *account = self.userName;
     NSString *password = self.password;
     
-    NSString *failureMessage = [self checkLoginConditionByAccount:account password:password];
-    if (failureMessage) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_tryLoginFailureWithMessage:)]) {
-            [self.delegate logic_tryLoginFailureWithMessage:failureMessage];
-        }
-        
+    NSString *tryFailureMessage = [self checkLoginConditionByAccount:account password:password];
+    if (tryFailureMessage && tryFailureBlock) {
+        tryFailureBlock(tryFailureMessage);
         return;
     }
     
-    NSString *loginingText = NSLocalizedString(@"正在登录", nil);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_startLoginWithMessage:)]) {
-        [self.delegate logic_startLoginWithMessage:loginingText];
+    NSString *startMessage = NSLocalizedString(@"正在登录", nil);
+    if (loginStartBlock) {
+        loginStartBlock(startMessage);
     }
     
-    [[CJDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(DemoUser *user) {
-        NSString *loginSuccessMessage = NSLocalizedString(@"登录成功", nil);
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginSuccessWithMessage:)]) {
-            [self.delegate logic_loginSuccessWithMessage:loginSuccessMessage];
+    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(STDemoUser *user) {
+        NSString *successMessage = NSLocalizedString(@"登录成功", nil);
+        if (loginSuccess) {
+            loginSuccess(successMessage);
         }
-        
     } failure:^(NSString *errorMessage) {
-        //NSString *loginFailureMessage = NSLocalizedString(@"登录失败", nil);
-        NSString *loginFailureMessage = [NSString stringWithFormat:@"密码错误:试下通用密码%@", DemoGeneralPassword];
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginFailureWithMessage:)]) {
-            [self.delegate logic_loginFailureWithMessage:loginFailureMessage];
+        if (loginFailure) {
+            loginFailure(errorMessage);
         }
     }];
 }
