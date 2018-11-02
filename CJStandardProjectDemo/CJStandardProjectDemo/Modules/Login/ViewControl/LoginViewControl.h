@@ -8,19 +8,16 @@
 //  LoginViewControl处理界面显示变化、告知外部按钮点击等操作了(通过delegate返回)，处理界面跳转
 
 #import <Foundation/Foundation.h>
-
 #import <CJBaseUIKit/CJTextField.h>
 
-#import "LMLoginViewController.h"
+@protocol LoginViewControlDelegate <NSObject>
 
-@protocol LoginViewModelDelegate <NSObject>
+- (void)view_userNameTextFieldChange:(NSString *)userName;  /**< 用户名文本框内容改变了 */
+- (void)view_passwordTextFieldChange:(NSString *)password;  /**< 密码文本框内容改变了 */
 
-- (void)vm_userNameTextFieldChange:(NSString *)userName;  /**< 用户名文本框内容改变了 */
-- (void)vm_passwordTextFieldChange:(NSString *)password;  /**< 密码文本框内容改变了 */
-
-- (void)vm_loginButtonAction;
-- (void)vm_registerButtonAction;
-- (void)vm_findPasswordButtonAction;
+- (void)view_loginButtonAction;
+- (void)view_registerButtonAction;
+- (void)view_findPasswordButtonAction;
 
 @end
 
@@ -29,14 +26,12 @@
 @interface LoginViewControl : NSObject <UITextFieldDelegate> {
     
 }
-@property (nonatomic, weak) id<LoginViewModelDelegate> delegate;
+@property (nonatomic, weak) id<LoginViewControlDelegate> delegate;
 
-@property (nonatomic, strong) UIView *view; 
-//@property (nonatomic, strong) UIImageView *portraitBackgroundImageView; /**< 头像背景 */
+@property (nonatomic, strong) UIView *view;
 //@property (nonatomic, strong) UIImageView *portraitImageView;   /**< 头像 */
 @property (nonatomic, strong) CJTextField *userNameTextField;   /**< 账号(记得关掉自动纠错) */
 @property (nonatomic, strong) CJTextField *passwordTextField;   /**< 密码 */
-//@property (nonatomic, strong) UIButton *backButton;             /**< 返回按钮 */
 @property (nonatomic, strong) UIButton *loginButton;            /**< 登录按钮 */
 @property (nonatomic, strong) UIButton *findPasswordButton;     /**< 找回密码按钮 */
 @property (nonatomic, strong) UIButton *registerButton;         /**< 注册按钮 */
@@ -67,10 +62,4 @@
 ///"登录失败时候"更新视图
 - (void)loginFailureWithMessage:(NSString *)message;
 
-#pragma mark - 界面跳转
-///进入"忘记密码"界面
-- (void)goFindPasswordViewController;
-
-///进入"注册"界面
-- (void)goRegisterViewController;
 @end

@@ -11,7 +11,15 @@
 #import "LoginViewControl.h"
 #import "LoginLogicControl_Old.h"
 
-@interface LVLoginViewController () <UITextFieldDelegate, LoginViewModelDelegate, LoginLogicControl_OldDelegate> {
+#import <CJDemoModuleMain/CTMediator+CJDemoModuleMain.h> //需要依赖Main
+#ifdef CJTestJustLogin
+#import "RegisterViewController.h"
+#import "FindPasdViewController.h"
+#endif
+
+#import "CJDemoModuleLoginResourceUtil.h"
+
+@interface LVLoginViewController () <UITextFieldDelegate, LoginViewControlDelegate, LoginLogicControl_OldDelegate> {
     
 }
 @property (nonatomic, strong) LoginViewControl *viewModel;
@@ -79,26 +87,26 @@
     self.logicControl = logicControl;
 }
 
-#pragma mark - LoginViewModelDelegate
-- (void)vm_userNameTextFieldChange:(NSString *)userName {
+#pragma mark - LoginViewControlDelegate
+- (void)view_userNameTextFieldChange:(NSString *)userName {
     [self.logicControl updateUserName:userName];
 }
 
-- (void)vm_passwordTextFieldChange:(NSString *)password {
+- (void)view_passwordTextFieldChange:(NSString *)password {
     [self.logicControl updatePassword:password];
 }
 
-- (void)vm_loginButtonAction {
+- (void)view_loginButtonAction {
     [self.viewModel stopEndEditing];
     [self.logicControl login];
 }
 
-- (void)vm_findPasswordButtonAction {
-    [self.viewModel goFindPasswordViewController];
+- (void)view_findPasswordButtonAction {
+    [self goFindPasswordViewController];
 }
 
-- (void)vm_registerButtonAction {
-    [self.viewModel goRegisterViewController];
+- (void)view_registerButtonAction {
+    [self goRegisterViewController];
 }
 
 
@@ -127,6 +135,46 @@
 - (void)logic_loginFailureWithMessage:(NSString *)message {
     [self.viewModel loginFailureWithMessage:message];
 }
+
+#pragma mark - 界面跳转
+///进入主页(非游客模式，或游客模式下用户未使用游客分身进入主页)
+- (void)goMainViewController {
+    NSDictionary *params = nil;
+    UIViewController *mainViewControllerWithParams = [[CTMediator sharedInstance] cjDemo_mainViewControllerWithParams:params];
+    [UIApplication sharedApplication].delegate.window.rootViewController = mainViewControllerWithParams;
+}
+
+///回到主页(游客模式下，用户已使用游客分身进入主页，则当其在点击需要登录的功能后，会进入登录，并在登录成功后回到首页)
+- (void)backMainViewController {
+    //[self.belongViewController.navigationController popViewControllerAnimated:YES];
+}
+
+///进入"忘记密码"界面
+- (void)goFindPasswordViewController {
+#ifdef CJTestJustLogin
+    FindPasdViewController *viewController = [[FindPasdViewController alloc] initWithNibName:@"FindPasdViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+#else
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.title = NSLocalizedString(@"忘记密码", nil);
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    //[self.belongViewController.navigationController pushViewController:viewController animated:YES];
+#endif
+}
+
+///进入"注册"界面
+- (void)goRegisterViewController {
+#ifdef CJTestJustLogin
+    RegisterViewController *viewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+#else
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.title = NSLocalizedString(@"注册", nil);
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    //[self.belongViewController.navigationController pushViewController:viewController animated:YES];
+#endif
+}
+
 
 #pragma mark - Touch
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

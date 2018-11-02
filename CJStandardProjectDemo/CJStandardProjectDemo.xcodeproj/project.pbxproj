@@ -65,15 +65,14 @@
 		788D41E8218499F2002BEED4 /* DemoMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41E7218499F2002BEED4 /* DemoMineViewController.m */; };
 		788D41EB21849A0C002BEED4 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41EA21849A0C002BEED4 /* MessageViewController.m */; };
 		788D41EE21849AF1002BEED4 /* STDemoOrderHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */; };
-		78A6220621367D40004DA046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220421367D40004DA046 /* Main.storyboard */; };
 		78A6220821367D42004DA046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220721367D42004DA046 /* Assets.xcassets */; };
-		78A6220B21367D42004DA046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220921367D42004DA046 /* LaunchScreen.storyboard */; };
 		78A6220E21367D42004DA046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6220D21367D42004DA046 /* main.m */; };
 		78A6221821367D42004DA046 /* CJStandardProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6221721367D42004DA046 /* CJStandardProjectDemoTests.m */; };
 		78A6222321367D42004DA046 /* CJStandardProjectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */; };
 		78B90E3F2188512E00776584 /* VMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E3E2188512E00776584 /* VMLoginViewController.m */; };
 		78B90E422188516B00776584 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E412188516B00776584 /* LoginViewModel.m */; };
 		78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E442188579000776584 /* CTMediator+STDemoLogin.m */; };
+		78B90E4B2188626100776584 /* Target_STDemoLoginVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */; };
 		78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD02141AB33001F35E2 /* FriendCircleManager.m */; };
 		78C38DD52141AB79001F35E2 /* STDemoOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD32141AB79001F35E2 /* STDemoOrderModel.m */; };
 		78C38DE12141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DE02141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m */; };
@@ -209,9 +208,7 @@
 		788D41EC21849AF1002BEED4 /* STDemoOrderHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoOrderHomeViewController.h; sourceTree = "<group>"; };
 		788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderHomeViewController.m; sourceTree = "<group>"; };
 		78A621FB21367D40004DA046 /* CJStandardProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJStandardProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		78A6220521367D40004DA046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78A6220721367D42004DA046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		78A6220A21367D42004DA046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78A6220C21367D42004DA046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78A6220D21367D42004DA046 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78A6221321367D42004DA046 /* CJStandardProjectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJStandardProjectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +224,8 @@
 		78B90E412188516B00776584 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		78B90E432188579000776584 /* CTMediator+STDemoLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+STDemoLogin.h"; sourceTree = "<group>"; };
 		78B90E442188579000776584 /* CTMediator+STDemoLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+STDemoLogin.m"; sourceTree = "<group>"; };
+		78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_STDemoLoginVCFactory.m; sourceTree = "<group>"; };
+		78B90E4A2188626100776584 /* Target_STDemoLoginVCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_STDemoLoginVCFactory.h; sourceTree = "<group>"; };
 		78C38DBC2141A802001F35E2 /* codeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeObfuscation.h; sourceTree = "<group>"; };
 		78C38DCF2141AB33001F35E2 /* FriendCircleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendCircleManager.h; sourceTree = "<group>"; };
 		78C38DD02141AB33001F35E2 /* FriendCircleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendCircleManager.m; sourceTree = "<group>"; };
@@ -668,6 +667,8 @@
 				788D41D021848F1F002BEED4 /* STDemoLoginVCFactory.m */,
 				788D41CF21848F1F002BEED4 /* STDemoLoginRouter.h */,
 				788D41CE21848F1F002BEED4 /* STDemoLoginRouter.m */,
+				78B90E4A2188626100776584 /* Target_STDemoLoginVCFactory.h */,
+				78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */,
 				78B90E432188579000776584 /* CTMediator+STDemoLogin.h */,
 				78B90E442188579000776584 /* CTMediator+STDemoLogin.m */,
 			);
@@ -725,10 +726,8 @@
 				78A6224E213683AC004DA046 /* Macros */,
 				78A62251213683AC004DA046 /* Utils */,
 				78A6223F213682B5004DA046 /* Modules */,
-				78A6220421367D40004DA046 /* Main.storyboard */,
 				78A6225E2137B881004DA046 /* Resources */,
 				78A6220721367D42004DA046 /* Assets.xcassets */,
-				78A6220921367D42004DA046 /* LaunchScreen.storyboard */,
 				78A6220C21367D42004DA046 /* Info.plist */,
 				78A6220D21367D42004DA046 /* main.m */,
 			);
@@ -965,7 +964,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7809CA352148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets in Resources */,
-				78A6220B21367D42004DA046 /* LaunchScreen.storyboard in Resources */,
 				7809CA392148A6D100FAFD93 /* RegisterViewController.xib in Resources */,
 				7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */,
 				7809CA3A2148A6D100FAFD93 /* Login2.storyboard in Resources */,
@@ -974,7 +972,6 @@
 				7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */,
 				788D41D421848F5C002BEED4 /* DemoMainAssets.xcassets in Resources */,
 				7809CA382148A6D100FAFD93 /* GuideMainViewController.xib in Resources */,
-				78A6220621367D40004DA046 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1124,6 +1121,7 @@
 				788D41DD218490F9002BEED4 /* FindPasswordViewController.m in Sources */,
 				788D41DA2184909E002BEED4 /* STDemoNavigationController.m in Sources */,
 				7809CA262148A67F00FAFD93 /* STDemoServiceUserManager+UserTable.m in Sources */,
+				78B90E4B2188626100776584 /* Target_STDemoLoginVCFactory.m in Sources */,
 				788D41C221847B5C002BEED4 /* STDemoBaseViewController.m in Sources */,
 				78441067218746B000D746A7 /* AppDelegate+STDemoView_New.m in Sources */,
 				784410642187453100D746A7 /* AppDelegate+STDemoStartUp.m in Sources */,
@@ -1176,25 +1174,6 @@
 			targetProxy = 78A6221F21367D42004DA046 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		78A6220421367D40004DA046 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78A6220521367D40004DA046 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		78A6220921367D42004DA046 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78A6220A21367D42004DA046 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		78A6222521367D42004DA046 /* Debug */ = {

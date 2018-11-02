@@ -9,16 +9,6 @@
 #import "LoginViewControl.h"
 #import <CJBaseUIKit/CJToast.h>
 
-#import <CJDemoModuleMain/CTMediator+CJDemoModuleMain.h> //需要依赖Main
-#ifdef CJTestJustLogin
-#import "RegisterViewController.h"
-#import "FindPasdViewController.h"
-#endif
-
-#import "CJDemoModuleLoginResourceUtil.h"
-
-
-
 @interface LoginViewControl () {
     
 }
@@ -73,20 +63,20 @@
 
 #pragma mark - ButtonEvent
 - (void)loginButtonAction {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_loginButtonAction)]) {
-        [self.delegate vm_loginButtonAction];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(view_loginButtonAction)]) {
+        [self.delegate view_loginButtonAction];
     }
 }
 
 - (void)findPasswordButtonAction {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_findPasswordButtonAction)]) {
-        [self.delegate vm_findPasswordButtonAction];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(view_findPasswordButtonAction)]) {
+        [self.delegate view_findPasswordButtonAction];
     }
 }
 
 - (void)registerButtonAction {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_registerButtonAction)]) {
-        [self.delegate vm_registerButtonAction];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(view_registerButtonAction)]) {
+        [self.delegate view_registerButtonAction];
     }
 }
 
@@ -98,8 +88,8 @@
         return NO;
         
     } else if (textField == self.passwordTextField) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_loginButtonAction)]) {
-            [self.delegate vm_loginButtonAction];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(view_loginButtonAction)]) {
+            [self.delegate view_loginButtonAction];
         }
         return YES;
         
@@ -114,12 +104,12 @@
     NSString *newText = [textField.text stringByReplacingCharactersInRange:range withString:string];
     
     if (textField == self.userNameTextField) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_userNameTextFieldChange:)]) {
-            [self.delegate vm_userNameTextFieldChange:newText];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(view_userNameTextFieldChange:)]) {
+            [self.delegate view_userNameTextFieldChange:newText];
         }
     } else if (textField == self.passwordTextField) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_passwordTextFieldChange:)]) {
-            [self.delegate vm_passwordTextFieldChange:newText];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(view_passwordTextFieldChange:)]) {
+            [self.delegate view_passwordTextFieldChange:newText];
         }
     }
     
@@ -172,12 +162,6 @@
 - (void)loginSuccessWithMessage:(NSString *)message isBack:(BOOL)isBack {
     [self.loginStateHUD hideAnimated:YES afterDelay:0];
     [CJToast shortShowMessage:message];
-    
-    if (isBack) {
-        [self goMainViewController];    //“登录成功进入主页时候"更新视图
-    } else {
-        [self backMainViewController];  //"登录成功回到主页时候"更新视图
-    }
 }
 
 ///"登录失败时候"更新视图
@@ -186,46 +170,5 @@
     self.loginStateHUD.mode = MBProgressHUDModeText;
     [self.loginStateHUD hideAnimated:YES afterDelay:1];
 }
-
-
-#pragma mark - 界面跳转
-///进入主页(非游客模式，或游客模式下用户未使用游客分身进入主页)
-- (void)goMainViewController {
-    NSDictionary *params = nil;
-    UIViewController *mainViewControllerWithParams = [[CTMediator sharedInstance] cjDemo_mainViewControllerWithParams:params];
-    [UIApplication sharedApplication].delegate.window.rootViewController = mainViewControllerWithParams;
-}
-
-///回到主页(游客模式下，用户已使用游客分身进入主页，则当其在点击需要登录的功能后，会进入登录，并在登录成功后回到首页)
-- (void)backMainViewController {
-    //[self.belongViewController.navigationController popViewControllerAnimated:YES];
-}
-
-///进入"忘记密码"界面
-- (void)goFindPasswordViewController {
-#ifdef CJTestJustLogin
-    FindPasdViewController *viewController = [[FindPasdViewController alloc] initWithNibName:@"FindPasdViewController" bundle:nil];
-    [self.navigationController pushViewController:viewController animated:YES];
-#else
-    UIViewController *viewController = [[UIViewController alloc] init];
-    viewController.title = NSLocalizedString(@"忘记密码", nil);
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    //[self.belongViewController.navigationController pushViewController:viewController animated:YES];
-#endif
-}
-
-///进入"注册"界面
-- (void)goRegisterViewController {
-#ifdef CJTestJustLogin
-    RegisterViewController *viewController = [[RegisterViewController alloc] initWithNibName:@"RegisterViewController" bundle:nil];
-    [self.navigationController pushViewController:viewController animated:YES];
-#else
-    UIViewController *viewController = [[UIViewController alloc] init];
-    viewController.title = NSLocalizedString(@"注册", nil);
-    viewController.view.backgroundColor = [UIColor whiteColor];
-    //[self.belongViewController.navigationController pushViewController:viewController animated:YES];
-#endif
-}
-
 
 @end

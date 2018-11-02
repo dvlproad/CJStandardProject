@@ -143,3 +143,98 @@ self.viewLogic.loginButtonEnableChange = ^(BOOL enable) {
     [self.logicControl updateUserName:userName];
     [self.logicControl updatePassword:password];
 ```
+
+#### 5、业务逻辑LogicControl改造前后区别（以`LoginLogicControl.h`举例）
+改造前的`LoginLogicControl_Old.h`
+
+```
+@protocol LoginLogicControl_OldDelegate <NSObject>
+
+///登录按钮的enable发生变化需要更新按钮显示
+- (void)logic_loginButtonEnableChange:(BOOL)enable;
+
+///尝试登录时候，未满足条件时候
+- (void)logic_tryLoginFailureWithMessage:(NSString *)message;
+
+///开始登录时候更新视图显示提示信息
+- (void)logic_startLoginWithMessage:(NSString *)message;
+
+///登录成功更新视图显示提示信息
+- (void)logic_loginSuccessWithMessage:(NSString *)message;
+
+///登录失败更新视图显示提示信息
+- (void)logic_loginFailureWithMessage:(NSString *)message;
+
+@end
+
+
+
+@interface LoginLogicControl_Old : NSObject {
+    
+}
+@property (nonatomic, weak) id<LoginLogicControl_OldDelegate> delegate;
+
+#pragma mark - Get Default
+- (NSString *)getDefaultLoginAccount;
+- (NSString *)getDefaultPasswordForUserName:(NSString *)userName;
+
+#pragma mark - Update
+- (void)updateUserName:(NSString *)userName;
+- (void)updatePassword:(NSString *)password;
+
+#pragma mark - Do
+///执行登录
+- (void)login;
+
+@end
+```
+
+改造后的`LoginLogicControl`
+
+```
+@protocol LoginLogicControlDelegate <NSObject>
+
+///登录按钮的enable发生变化需要更新按钮显示
+- (void)logic_loginButtonEnableChange:(BOOL)enable;
+
+@end
+
+
+
+@interface LoginLogicControl : NSObject {
+    
+}
+@property (nonatomic, weak) id<LoginLogicControlDelegate> delegate;
+
+#pragma mark - Get Default
+- (NSString *)getDefaultLoginAccount;
+- (NSString *)getDefaultPasswordForUserName:(NSString *)userName;
+
+#pragma mark - Update
+- (void)updateUserName:(NSString *)userName;
+- (void)updatePassword:(NSString *)password;
+
+#pragma mark - Do
+///执行登录
+- (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
+                 loginStart:(void (^)(NSString *startMessage))loginStartBlock
+               loginSuccess:(void (^)(NSString *successMessage))loginSuccess
+               loginFailure:(void (^)(NSString *errorMessage))loginFailure;
+
+@end
+```
+
+不想看代码的，我就截个图吧，
+
+> **LoginLoginControl_Old.h(登录的业务逻辑)**
+> 
+> ![LoginLoginControl_Old](./Screenshots/LoginLoginControl_Old.png)
+> 
+> **LoginLoginControl_New.h(登录的业务逻辑)**
+> 
+> ![LoginLoginControl_New](./Screenshots/LoginLoginControl_New.jpeg)
+
+再给截个图直观比较下吧 
+> **LoginLoginControl_OldAndNew.h(登录的业务逻辑)**
+> 
+> ![LoginLoginControl_New](./Screenshots/LoginLoginControl_OldAndNew.png)

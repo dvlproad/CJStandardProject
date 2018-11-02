@@ -4,84 +4,55 @@
 实现清晰，目的明确的层次划分，并能在后续快速接入使用组件化开发。
 
 
-## 版本介绍/更新记录
-* 2018-08-29
-
-> 1. 添加展示规范开发的初始示例CJStandardProjectDemo；
-
-
-
-
-
-## Screenshot
-#### 1、层次图
-> ![层次图](./Screenshots/层次图.png)
-
-#### 2、模块文件结构图
-模块文件结构图示例
-> ![模块文件结构图](./Screenshots/模块文件结构图.jpg)
-
-模块文件结构图示例
-> ![模块文件结构图示例](./Screenshots/模块文件结构图示例.jpg)
-
-#### 3、pod结构
-pod结构
-> ![pod结构](./Screenshots/pod结构.png)
-
-#### 4、Demo
-Demo请查看[CJStandardProjectDemo](./CJStandardProjectDemo)
-
 ## 前言
-架构是为了良好的处理需求。
+架构是为了良好的处理需求。而架构的理解设计，最后还是得根据业务、结合设想、实际需求来处理。
 
-而架构的理解，最后结合设想/实际需求理解。
+一直在想怎么描述一个架构的问题。思来想去，后面还是放弃了由面到点的描述方式，而采用由点到面的叙述。因为框架是站在业务上，站在点上，没有最好的，只有最合适的。
 
-#### 设想需求
-先插入讲下业务逻辑常处理什么？
-> 答：如根据登录的用户Type，进入不同的首页；
+### 介绍/描述顺序
+所谓点：即每个控制器(UIViewController)应该怎么写？各种设计模式。。。
+所谓线：即各个控制器怎么交互？路由。。。。
+所谓面：即怎么整体管理这些？模块化。。。
 
+## 一、每个控制器(UIViewController)应该怎么写
+首先**我们都知道每个UIViewController有业务和视图。所以，下面将由此作为切入点，分析如何书写UIViewController。**
 
-##### 1、某个操作可能在多个模块中都需要使用
-> 
-```
-举例：登录操作在多个模块使用。
-描述：从不同页面(游客模式时候)进入登录页，登录成功后回到首页
-①、未进入首页时候，会提供登录方式来正式使用首页；
-②、已进入首页但未登录(如游客模式)，在点击需要登录才使用的功能(如个人信息、订单等)，需要提供登录方式来使用该功能
-```
+好了，既然每个UIViewController有业务和视图，那么我们就自然的将业务逻辑和视图展示分开处理，做到完全解耦吧。怎么做呢？
 
-希望至少达到的目的：
->
-```
-复用上的考虑
-①、对网络请求和DB操作：可以复用
-②、对逻辑处理：如根据登录的用户Type，进入不同的首页，这边暂不处理。
-```
+**在接下去讲之前，我们约定处理UIViewController业务逻辑的叫做LogicControl类，处理UIViewController视图展示的叫做ViewControl类**(不用着急，不用着急，不用着急，这里会从这边慢慢讲到你们熟悉的ViewModel)。
 
-
-
-## 一、文件结构解释
-首先每个UIViewController有业务和视图，将业务逻辑和视图展示完全分开，分别放置在`LogicControl文件夹`和`ViewModel文件夹`。
 
 #### 1、LogicControl
-###### ①、是否可复用上
-如果非要讨论的话：
-> `LogicControl文件夹`里的：可复用
+##### ①、处理的事情：
+> UIViewController的业务逻辑（纯业务逻辑，绝对不会有任何视图控件）
 
-###### ②、LogicControl处理的事情
-拿`LoginLogicControl.h`举例
+##### ②、常见的事情举例：
+> ①获取初始值、
+> ②更新值、
+> ③事件处理(如请求网络等)、
+> ④以及提供事件的回调(提供方式由block和delegate，至于提供方式的选择后续会在规范中讲到)。
 
-LoginLogicControl处理：
+##### ③、类代码示例(以登录的业务逻辑`LoginLogicControl.h`举例)：
 
-```
+代码如下：
+
+```objective-c
+@protocol LoginLogicControlDelegate <NSObject>
+
+///登录按钮的enable发生变化需要更新按钮显示
+- (void)logic_loginButtonEnableChange:(BOOL)enable;
+
+@end
+
+
 @interface LoginLogicControl : NSObject {
     
 }
 @property (nonatomic, weak) id<LoginLogicControlDelegate> delegate;
 
-#pragma mark - Getter
-- (NSString *)getLastLoginAccount;
-- (NSString *)getLastPasswordForUserName:(NSString *)userName;
+#pragma mark - Get Default
+- (NSString *)getDefaultLoginAccount;
+- (NSString *)getDefaultPasswordForUserName:(NSString *)userName;
 
 #pragma mark - Update
 - (void)updateUserName:(NSString *)userName;
@@ -89,61 +60,64 @@ LoginLogicControl处理：
 
 #pragma mark - Do
 ///执行登录
-- (void)login;
+- (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
+                 loginStart:(void (^)(NSString *startMessage))loginStartBlock
+               loginSuccess:(void (^)(NSString *successMessage))loginSuccess
+               loginFailure:(void (^)(NSString *errorMessage))loginFailure;
 
 @end
 ```
 
+下面是一张上面代码的截图(可略过)，其中事件处理及回调如下图所示：
+> ![LoginLoginControl_New](./README/Screenshots/LoginLoginControl_New.jpeg)
 
-LoginLogicControl处理结果
+##### ④、业务需求更改怎么办？
+但业务需求更改时候，不用去关心UIViewController.m里面的东西，只需要对控制UIViewController业务的LogicControl进行修改即可。(这里不讨论界面变化)
 
-```
-@protocol LoginLogicControlDelegate <NSObject>
+##### ⑤、是否可复用？
+看你对复用的理解了。
 
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_LoginButtonEnableChange:(BOOL)enable;
+举例：
+> 司机端的登录已经做完，现在需要做乘客端的登录，他们的业务逻辑一样，即都是获取初始值、更新值、登录事件处理等。
 
-///尝试登录时候，未满足条件时候
-- (void)logic_tryLoginFailureWithMessage:(NSString *)message;
 
-///开始登录时候更新视图显示提示信息
-- (void)logic_startLoginWithMessage:(NSString *)message;
+说完了UIViewController独立出来的`业务逻辑处理LogicControl`后，下面我们说说另一部分UIViewController的`视图展示处理ViewControl`。
 
-///登录成功需要进入主页
-- (void)logic_loginSuccessAndGoMainViewControllerWithMessage:(NSString *)message;
+#### 2、ViewControl
+##### ①、处理的事情：
+> UIViewController的视图展示（纯视图展示处理，不会有任何业务逻辑）
 
-///登录成功需要回到主页
-- (void)logic_loginSuccessAndBackMainViewControllerWithMessage:(NSString *)message;
+##### ②、常见的事情举例：
+> ①更新视图显示值、
+> ②以及提供操作视图后的视图变化回调(提供方式统一为delegate)。
 
-///登录失败更新视图显示提示信息
-- (void)logic_loginFailureWithMessage:(NSString *)message;
+##### ③、类代码示例(以登录的业务逻辑`LoginViewControl.h`举例)：
+
+代码如下：
+
+```objective-c
+@protocol LoginViewControlDelegate <NSObject>
+
+- (void)view_userNameTextFieldChange:(NSString *)userName;  /**< 用户名文本框内容改变了 */
+- (void)view_passwordTextFieldChange:(NSString *)password;  /**< 密码文本框内容改变了 */
+
+- (void)view_loginButtonAction;
+- (void)view_registerButtonAction;
+- (void)view_findPasswordButtonAction;
 
 @end
-```
 
 
-#### 2、ViewModel
-###### ①、是否可复用上
-如果非要讨论的话：
-> `ViewModel文件夹`里的：可复用
 
-###### ②、ViewModel处理的事情
-拿`LoginViewModel.h`举例
-
-LoginViewModel处理
-
-```
-@interface LoginViewModel : NSObject <UITextFieldDelegate> {
+@interface LoginViewControl : NSObject <UITextFieldDelegate> {
     
 }
-@property (nonatomic, weak) id<LoginViewModelDelegate> delegate;
+@property (nonatomic, weak) id<LoginViewControlDelegate> delegate;
 
-@property (nonatomic, weak) LoginViewController *belongViewController;  //归属的控制器
-//@property (nonatomic, strong) UIImageView *portraitBackgroundImageView; /**< 头像背景 */
+@property (nonatomic, strong) UIView *view;
 //@property (nonatomic, strong) UIImageView *portraitImageView;   /**< 头像 */
 @property (nonatomic, strong) CJTextField *userNameTextField;   /**< 账号(记得关掉自动纠错) */
 @property (nonatomic, strong) CJTextField *passwordTextField;   /**< 密码 */
-//@property (nonatomic, strong) UIButton *backButton;             /**< 返回按钮 */
 @property (nonatomic, strong) UIButton *loginButton;            /**< 登录按钮 */
 @property (nonatomic, strong) UIButton *findPasswordButton;     /**< 找回密码按钮 */
 @property (nonatomic, strong) UIButton *registerButton;         /**< 注册按钮 */
@@ -168,45 +142,23 @@ LoginViewModel处理
 ///"开始登录时候"更新视图(如显示提示信息)
 - (void)startLoginWithMessage:(NSString *)message;
 
-///“登录成功进入主页时候"更新视图
-- (void)loginSuccessAndGoMainViewControllerWithMessage:(NSString *)message;
-
-///"登录成功回到主页时候"更新视图
-- (void)loginSuccessAndBackMainViewControllerWithMessage:(NSString *)message;
+///“登录成功进入/回到主页时候"更新视图
+- (void)loginSuccessWithMessage:(NSString *)message isBack:(BOOL)isBack;
 
 ///"登录失败时候"更新视图
 - (void)loginFailureWithMessage:(NSString *)message;
 
-#pragma mark - 界面跳转
-///进入"忘记密码"界面
-- (void)goFindPasswordViewController;
-
-///进入"注册"界面
-- (void)goRegisterViewController;
 @end
 ```
 
 
-LoginViewModel处理结果
-
-```
-@protocol LoginViewModelDelegate <NSObject>
-
-- (void)vm_userNameTextFieldChange:(NSString *)userName;  /**< 用户名文本框内容改变了 */
-- (void)vm_passwordTextFieldChange:(NSString *)password;  /**< 密码文本框内容改变了 */
-
-- (void)vm_loginButtonAction;
-- (void)vm_registerButtonAction;
-- (void)vm_findPasswordButtonAction;
-
-@end
-```
+#### 3、界面跳转
+因为界面跳转既属于业务，也属于视图、即不属于业务，也不属于视图，所以界面的跳转不放到上面的业务处理类LogicControl中，也不放到上面的视图处理类ViewControl中，而是直接放在UIViewController.m中。这部分的优化后续会再说明。
 
 
-
-#### 3、Manager
+#### 4、Manager
   #import "CJDemoServiceUserManager+Network.h"
-  
+
 ```
 @interface CJDemoServiceUserManager (Network)
 
@@ -236,11 +188,11 @@ LoginViewModel处理结果
                  failure:(void (^)(NSError *error))failure;
 
 @end
-``` 
+```
 
 
  #import "CJDemoServiceUserManager+UserTable.h"
- 
+
 ```
 @interface CJDemoServiceUserManager (UserTable)
 
@@ -265,10 +217,29 @@ LoginViewModel处理结果
 
 
 
-## Author Or Contact
-* [邮箱：studyroad@qq.com](studyroad@qq.com)
-* [简书：https://www.jianshu.com/u/498d9e6a26e1](https://www.jianshu.com/u/498d9e6a26e1)
-* [码云：https://gitee.com/dvlproad](https://gitee.com/dvlproad)
+## Screenshot
+#### 1、层次图
+> ![层次图](./Screenshots/层次图.png)
 
+#### 2、模块文件结构图
+模块文件结构图示例
+> ![模块文件结构图](./Screenshots/模块文件结构图.jpg)
+
+模块文件结构图示例
+> ![模块文件结构图示例](./Screenshots/模块文件结构图示例.jpg)
+
+#### 3、pod结构
+pod结构
+> ![pod结构](./Screenshots/pod结构.png)
+
+#### 4、Demo
+Demo请查看[CJStandardProjectDemo](./CJStandardProjectDemo)
+
+
+## 版本介绍/更新记录
+* 2018-08-29
+
+> 1. 添加展示规范开发的初始示例CJStandardProjectDemo；
 
 ## 结束语
+今天，先到这，有很多东西后面再完善补充。

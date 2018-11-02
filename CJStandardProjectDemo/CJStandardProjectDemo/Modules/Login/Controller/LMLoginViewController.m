@@ -9,6 +9,7 @@
 #import "LMLoginViewController.h"
 #import <CJBaseUIKit/UINavigationBar+CJChangeBG.h>
 #import "LoginLogicControl.h"
+#import "CTMediator+STDemoLogin.h"
 
 @interface LMLoginViewController () <UITextFieldDelegate, LoginLogicControlDelegate> {
     
@@ -154,10 +155,14 @@
 
 - (void)findPasswordButtonAction {
 //    [self.viewModel goFindPasswordViewController];
+    UIViewController *viewController = [[CTMediator sharedInstance] CTMediator_STDemo_forgetPasswordViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)registerButtonAction {
 //    [self.viewModel goRegisterViewController];
+    UIViewController *viewController = [[CTMediator sharedInstance] CTMediator_STDemo_registerViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - UITextFieldDelegate

@@ -10,10 +10,10 @@
 #import <Foundation/Foundation.h>
 #import "STDemoServiceUserManager.h"
 
-@protocol LoginViewModelDelegate <NSObject>
+@protocol LoginViewControlDelegate <NSObject>
 
 ///登录按钮的enable发生变化需要更新按钮显示
-- (void)vm_loginButtonEnableChange:(BOOL)enable;
+- (void)view_loginButtonEnableChange:(BOOL)enable;
 
 @end
 
@@ -22,7 +22,7 @@
 @interface LoginViewModel : NSObject {
     
 }
-@property (nonatomic, weak) id<LoginViewModelDelegate> delegate;
+@property (nonatomic, weak) id<LoginViewControlDelegate> delegate;
 
 //- (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password;
 

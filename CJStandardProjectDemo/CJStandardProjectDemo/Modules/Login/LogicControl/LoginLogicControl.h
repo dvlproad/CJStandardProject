@@ -19,12 +19,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
 @interface LoginLogicControl : NSObject {
     
 }
 @property (nonatomic, weak) id<LoginLogicControlDelegate> delegate;
-
-//- (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password;
 
 #pragma mark - Get Default
 - (NSString *)getDefaultLoginAccount;
