@@ -8,13 +8,12 @@
 
 #import "OrderListTableViewDataSource.h"
 #import "OrderCell.h"
-#import "STDemoOrderModel.h"
 
 @implementation OrderListTableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _array.count;
+    return self.orders.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -24,7 +23,7 @@
         cell = [[OrderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-    STDemoOrderModel *dataModel = [_array objectAtIndex:indexPath.row];
+    STDemoOrderModel *dataModel = [self.orders objectAtIndex:indexPath.row];
     cell.titleLabel.text = dataModel.title;
     return cell;
 }

@@ -7,15 +7,14 @@
 //
 
 #import "OrderListTableViewDelegate.h"
-#import "STDemoOrderModel.h"
 
 @implementation OrderListTableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_array.count > 0) {
-        STDemoOrderModel *dataModel = [_array objectAtIndex:indexPath.row];
-        [CJToast shortShowMessage:dataModel.title];
+    if (self.orders.count > 0) {
+        STDemoOrderModel *orderModel = [self.orders objectAtIndex:indexPath.row];
+        [CJToast shortShowMessage:orderModel.title];
     }    
 }
 @end

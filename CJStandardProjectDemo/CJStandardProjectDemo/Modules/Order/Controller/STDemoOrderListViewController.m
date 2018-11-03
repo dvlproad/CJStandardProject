@@ -15,11 +15,13 @@
 @interface STDemoOrderListViewController () {
     
 }
-@property (nonatomic, strong) NSMutableArray *totalSource;
-@property (nonatomic, strong) OrderListViewModel *orderListViewModel;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) OrderListTableViewDataSource *tableViewDataSource;
 @property (nonatomic, strong) OrderListTableViewDelegate *tableViewDelegate;
+
+@property (nonatomic, strong) NSMutableArray<STDemoOrderModel *> *orders;
+@property (nonatomic, strong) OrderListViewModel *orderListViewModel;
+
 
 @end
 
@@ -29,11 +31,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"MVVMDemo With TableView";
-    self.view.backgroundColor=[UIColor whiteColor];
+    self.title = NSLocalizedString(@"MVVMDemo With TableView", nil);
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.orderListViewModel = [[OrderListViewModel alloc] init];
-    self.totalSource = 0;
+    self.orders = 0;
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -45,6 +47,35 @@
     
 }
 
+#pragma mark - Event
+- (void)headerRefreshAction {
+    __weak typeof(self)weakSelf = self;
+    [self.orderListViewModel headerRefreshRequestWithCompleteBlock:^(NSMutableArray<STDemoOrderModel *> *orders) {
+        weakSelf.orders = orders;
+        
+        weakSelf.tableViewDataSource.orders = weakSelf.orders;
+        weakSelf.tableViewDelegate.orders = weakSelf.orders;
+        [weakSelf.tableView.mj_header endRefreshing];
+        [weakSelf.tableView reloadData];
+    }];
+
+}
+
+- (void)footerRefreshAction {
+    __weak typeof(self)weakSelf = self;
+    [self.orderListViewModel footerRefreshRequestWithCompleteBlock:^(NSMutableArray<STDemoOrderModel *> *orders) {
+        [weakSelf.orders addObjectsFromArray:orders] ;
+        
+        weakSelf.tableViewDataSource.orders = weakSelf.orders;
+        weakSelf.tableViewDelegate.orders = weakSelf.orders;
+        [weakSelf.tableView.mj_footer endRefreshing];
+        [weakSelf.tableView reloadData];
+    }];
+  
+}
+
+
+#pragma mark - Lazy
 - (UITableView *)tableView {
     if (_tableView == nil) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -67,32 +98,6 @@
     }
     
     return _tableView;
-}
-
-- (void)headerRefreshAction
-{
-    __weak typeof(self)weakSelf = self;
-    [self.orderListViewModel headerRefreshRequestWithCallback:^(NSArray *array){
-        weakSelf.totalSource = (NSMutableArray *)array;
-        weakSelf.tableViewDataSource.array = weakSelf.totalSource;
-        weakSelf.tableViewDelegate.array = weakSelf.totalSource;
-        [weakSelf.tableView.mj_header endRefreshing];
-        [weakSelf.tableView reloadData];
-    }];
-
-}
-
-- (void)footerRefreshAction
-{
-    __weak typeof(self)weakSelf = self;
-    [self.orderListViewModel footerRefreshRequestWithCallback:^(NSArray *array){
-        [weakSelf.totalSource addObjectsFromArray:array] ;
-        weakSelf.tableViewDataSource.array = weakSelf.totalSource;
-        weakSelf.tableViewDelegate.array = weakSelf.totalSource;
-        [weakSelf.tableView.mj_footer endRefreshing];
-        [weakSelf.tableView reloadData];
-    }];
-  
 }
 
 - (void)didReceiveMemoryWarning

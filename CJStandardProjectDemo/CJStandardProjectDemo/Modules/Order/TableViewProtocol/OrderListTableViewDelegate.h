@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface OrderListTableViewDelegate : NSObject <UITableViewDelegate>
-@property (nonatomic,strong) NSArray *array;
+#import "STDemoOrderModel.h"
+
+@interface OrderListTableViewDelegate : NSObject <UITableViewDelegate> {
+    
+}
+@property (nonatomic,strong) NSArray<STDemoOrderModel *> *orders;
 @end

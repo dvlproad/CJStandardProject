@@ -29,6 +29,7 @@
 		7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA332148A6D100FAFD93 /* FindPasdPopupView.xib */; };
 		7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */; };
 		781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */; };
+		781BCDA1218D3C6E009E730C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 781BCDA0218D3C6E009E730C /* README.md */; };
 		783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */; };
 		784410532186B84100D746A7 /* STDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410522186B84100D746A7 /* STDemoStartUp.m */; };
 		784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */; };
@@ -131,6 +132,7 @@
 		7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindPasdViewController.xib; sourceTree = "<group>"; };
 		781495EC21414ACD00D0F2BC /* STDemoServiceOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoServiceOrderManager.h; sourceTree = "<group>"; };
 		781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoServiceOrderManager.m; sourceTree = "<group>"; };
+		781BCDA0218D3C6E009E730C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		783C42082148AC6A005B4349 /* DemoFMDBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFMDBFileManager.h; sourceTree = "<group>"; };
 		783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFMDBFileManager.m; sourceTree = "<group>"; };
 		784410512186B84100D746A7 /* STDemoStartUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoStartUp.h; sourceTree = "<group>"; };
@@ -149,7 +151,6 @@
 		784410682187474A00D746A7 /* AppDelegate+STDemoListen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+STDemoListen.h"; sourceTree = "<group>"; };
 		784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+STDemoListen.m"; sourceTree = "<group>"; };
 		7844106B218749F100D746A7 /* STDemoRootViewControllerEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoRootViewControllerEnum.h; sourceTree = "<group>"; };
-		7844106D21874BCC00D746A7 /* 规范README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "规范README.md"; sourceTree = "<group>"; };
 		7844106E2187519B00D746A7 /* LoginLogicControl_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginLogicControl_Old.h; sourceTree = "<group>"; };
 		7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginLogicControl_Old.m; sourceTree = "<group>"; };
 		784410712187571C00D746A7 /* LVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLoginViewController.m; sourceTree = "<group>"; };
@@ -283,18 +284,18 @@
 				7809CA042148A67E00FAFD93 /* LogicControl */,
 				7809CA102148A67E00FAFD93 /* NDM */,
 				7809CA1E2148A67E00FAFD93 /* View */,
-				7809C9FF2148A67E00FAFD93 /* ViewControl */,
+				7809C9FF2148A67E00FAFD93 /* ViewControl(演示用,后期会废弃掉) */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		7809C9FF2148A67E00FAFD93 /* ViewControl */ = {
+		7809C9FF2148A67E00FAFD93 /* ViewControl(演示用,后期会废弃掉) */ = {
 			isa = PBXGroup;
 			children = (
 				7809CA012148A67E00FAFD93 /* LoginViewControl.h */,
 				7809CA032148A67E00FAFD93 /* LoginViewControl.m */,
 			);
-			path = ViewControl;
+			path = "ViewControl(演示用,后期会废弃掉)";
 			sourceTree = "<group>";
 		};
 		7809CA042148A67E00FAFD93 /* LogicControl */ = {
@@ -319,18 +320,10 @@
 		7809CA0D2148A67E00FAFD93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7809CA0F2148A67E00FAFD93 /* LMLoginViewController.h */,
-				7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */,
-				784410722187571C00D746A7 /* LVLoginViewController.h */,
-				784410712187571C00D746A7 /* LVLoginViewController.m */,
-				78B90E3D2188512E00776584 /* VMLoginViewController.h */,
-				78B90E3E2188512E00776584 /* VMLoginViewController.m */,
-				788D41DB218490F9002BEED4 /* FindPasswordViewController.h */,
-				788D41DC218490F9002BEED4 /* FindPasswordViewController.m */,
-				788D41DE2184913E002BEED4 /* ChangePasswordViewController.h */,
-				788D41DF2184913E002BEED4 /* ChangePasswordViewController.m */,
-				788D41E12184915E002BEED4 /* RegisterViewController.h */,
-				788D41E22184915E002BEED4 /* RegisterViewController.m */,
+				781BCDA2218D406D009E730C /* 未添加设计模式 */,
+				781BCD9F218D3C03009E730C /* LogicControl+ViewControl设计模式 */,
+				781BCD9D218D3BCF009E730C /* LogicModel设计模式 */,
+				781BCD9E218D3BEE009E730C /* ViewModel设计模式 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,6 +406,46 @@
 			path = NDM;
 			sourceTree = "<group>";
 		};
+		781BCD9D218D3BCF009E730C /* LogicModel设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				7809CA0F2148A67E00FAFD93 /* LMLoginViewController.h */,
+				7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */,
+			);
+			path = "LogicModel设计模式";
+			sourceTree = "<group>";
+		};
+		781BCD9E218D3BEE009E730C /* ViewModel设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				78B90E3D2188512E00776584 /* VMLoginViewController.h */,
+				78B90E3E2188512E00776584 /* VMLoginViewController.m */,
+			);
+			path = "ViewModel设计模式";
+			sourceTree = "<group>";
+		};
+		781BCD9F218D3C03009E730C /* LogicControl+ViewControl设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				784410722187571C00D746A7 /* LVLoginViewController.h */,
+				784410712187571C00D746A7 /* LVLoginViewController.m */,
+			);
+			path = "LogicControl+ViewControl设计模式";
+			sourceTree = "<group>";
+		};
+		781BCDA2218D406D009E730C /* 未添加设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				788D41DB218490F9002BEED4 /* FindPasswordViewController.h */,
+				788D41DC218490F9002BEED4 /* FindPasswordViewController.m */,
+				788D41DE2184913E002BEED4 /* ChangePasswordViewController.h */,
+				788D41DF2184913E002BEED4 /* ChangePasswordViewController.m */,
+				788D41E12184915E002BEED4 /* RegisterViewController.h */,
+				788D41E22184915E002BEED4 /* RegisterViewController.m */,
+			);
+			path = "未添加设计模式";
+			sourceTree = "<group>";
+		};
 		783C42072148AC6A005B4349 /* Databases */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,7 +485,7 @@
 		7844106C21874BCC00D746A7 /* README */ = {
 			isa = PBXGroup;
 			children = (
-				7844106D21874BCC00D746A7 /* 规范README.md */,
+				781BCDA0218D3C6E009E730C /* README.md */,
 			);
 			name = README;
 			path = ../README;
@@ -965,6 +998,7 @@
 			files = (
 				7809CA352148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets in Resources */,
 				7809CA392148A6D100FAFD93 /* RegisterViewController.xib in Resources */,
+				781BCDA1218D3C6E009E730C /* README.md in Resources */,
 				7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */,
 				7809CA3A2148A6D100FAFD93 /* Login2.storyboard in Resources */,
 				7809CA372148A6D100FAFD93 /* GuidePageView.xib in Resources */,
