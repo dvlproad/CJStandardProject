@@ -1,46 +1,44 @@
 //
-//  STDemoOrderListViewController.m
+//  STDemoDDOrderListViewController.m
 //  CJStandardProjectDemo
 //
 //  Created by ciyouzen on 2018/8/29.
 //  Copyright © 2018年 devlproad. All rights reserved.
 //
 
-#import "STDemoOrderListViewController.h"
+#import "STDemoDDOrderListViewController.h"
 #import <MJRefresh/MJRefresh.h>
 #import "OrderListViewModel.h"
 #import "OrderListTableViewDataSource.h"
 #import "OrderListTableViewDelegate.h"
 
-@interface STDemoOrderListViewController () {
+@interface STDemoDDOrderListViewController () {
     
 }
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) OrderListViewModel *orderListViewModel;
 @property (nonatomic, strong) OrderListTableViewDataSource *tableViewDataSource;
 @property (nonatomic, strong) OrderListTableViewDelegate *tableViewDelegate;
 
-@property (nonatomic, strong) NSMutableArray<STDemoOrderModel *> *orders;
-@property (nonatomic, strong) OrderListViewModel *orderListViewModel;
 
 
 @end
 
-@implementation STDemoOrderListViewController
+@implementation STDemoDDOrderListViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = NSLocalizedString(@"订单列表", nil);
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.orderListViewModel = [[OrderListViewModel alloc] init];
-    self.orders = 0;
+    self.title = NSLocalizedString(@"订单列表(独立协议)", nil);
     
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+    
+    self.orderListViewModel = [[OrderListViewModel alloc] init];
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)setupViews {
@@ -51,10 +49,10 @@
 - (void)headerRefreshAction {
     __weak typeof(self)weakSelf = self;
     [self.orderListViewModel headerRefreshRequestWithCompleteBlock:^(NSMutableArray<STDemoOrderModel *> *orders) {
-        weakSelf.orders = orders;
         
-        weakSelf.tableViewDataSource.orders = weakSelf.orders;
-        weakSelf.tableViewDelegate.orders = weakSelf.orders;
+        weakSelf.tableViewDataSource.orders = orders;
+        weakSelf.tableViewDelegate.orders = orders;
+        
         [weakSelf.tableView.mj_header endRefreshing];
         [weakSelf.tableView reloadData];
     }];
@@ -64,10 +62,10 @@
 - (void)footerRefreshAction {
     __weak typeof(self)weakSelf = self;
     [self.orderListViewModel footerRefreshRequestWithCompleteBlock:^(NSMutableArray<STDemoOrderModel *> *orders) {
-        [weakSelf.orders addObjectsFromArray:orders] ;
         
-        weakSelf.tableViewDataSource.orders = weakSelf.orders;
-        weakSelf.tableViewDelegate.orders = weakSelf.orders;
+        weakSelf.tableViewDataSource.orders = orders;
+        weakSelf.tableViewDelegate.orders = orders;
+        
         [weakSelf.tableView.mj_footer endRefreshing];
         [weakSelf.tableView reloadData];
     }];
@@ -89,7 +87,6 @@
             __strong typeof(self) strongSelf = weakSelf;
             [strongSelf headerRefreshAction];
         }];
-        [_tableView.mj_header beginRefreshing]; //是否在进入该界面的时候就开始进入刷新状态
         
         _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
             __strong typeof(self) strongSelf = weakSelf;

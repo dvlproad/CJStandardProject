@@ -35,7 +35,7 @@ NSString *const DemoGeneralPassword = @"123456";    //为测试而增加的通�
     self = [super init];
     if (self) {
         self.uid = userDictionary[@"uid"];
-        self.name = userDictionary[@"name"];
+        self.userName = userDictionary[@"userName"];
         self.userToken = userDictionary[@"userToken"];
         self.email = userDictionary[@"email"];
         self.imageName = userDictionary[@"imageName"];
@@ -63,7 +63,7 @@ NSString *const DemoGeneralPassword = @"123456";    //为测试而增加的通�
 - (id)copyWithZone:(NSZone *)zone {
     STDemoUser *user = [[[self class] allocWithZone:zone] init];
     user.uid = self.uid;
-    user.name = self.name;
+    user.userName = self.userName;
     user.userToken = self.userToken;
     user.email = self.email;
     user.imageName = self.imageName;

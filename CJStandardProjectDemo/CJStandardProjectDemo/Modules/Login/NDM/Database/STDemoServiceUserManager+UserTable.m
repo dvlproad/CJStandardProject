@@ -15,14 +15,14 @@ static NSString *kCurrentTableName = @"STDemoUser";
 /*
 - (BOOL)createTable
 {
-    NSString *sql = @"create table if not exists ACCOUNT (uid Text PRIMARY KEY, name TEXT, email TEXT, pasd TEXT, imageName Text, imageUrl Text, imagePath Text, modified TEXT, execTypeL Text);";
+    NSString *sql = @"create table if not exists ACCOUNT (uid Text PRIMARY KEY, userName TEXT, email TEXT, pasd TEXT, imageName Text, imageUrl Text, imagePath Text, modified TEXT, execTypeL Text);";
     
     return [CommonFMDBUtil create:sql];
 }
 */
 
 - (NSString *)sqlForCreateTable {
-    NSString *sql = [NSString stringWithFormat:@"create table if not exists %@ (uid Text PRIMARY KEY, name TEXT, email TEXT, userToken TEXT, imageName Text, networkAbsoluteUrl Text, localRelativePath Text, sexType Interget, birthday Text, modified TEXT, execTypeL Text);", kCurrentTableName];
+    NSString *sql = [NSString stringWithFormat:@"create table if not exists %@ (uid Text PRIMARY KEY, userName TEXT, email TEXT, userToken TEXT, imageName Text, networkAbsoluteUrl Text, localRelativePath Text, sexType Interget, birthday Text, modified TEXT, execTypeL Text);", kCurrentTableName];
     
     return sql;
 }
@@ -44,7 +44,7 @@ static NSString *kCurrentTableName = @"STDemoUser";
     NSString *birthdayString = [birthdayDateFormatter stringFromDate:info.birthday];
     
     NSString *sql = [NSString stringWithFormat:
-                     @"INSERT OR REPLACE INTO %@ (uid, name, email, userToken, imageName, networkAbsoluteUrl, localRelativePath, sexType, birthday, modified, execTypeL) VALUES ('%@', '%@', '%@', '%@', '%@', '%@', '%@', '%zd', '%@', '%@', '%@')", kCurrentTableName, info.uid, info.name, info.email, info.userToken, info.imageName, portraitImageNetworkAbsoluteUrl, portraitImageLocalRelativePath, info.sexType, birthdayString, info.modified, info.execTypeL];//DB Error: 1 "unrecognized token: ":"" 即要求插入的字符串需加引号'，而对于表名，属性名，可以不用像原来那样添加。
+                     @"INSERT OR REPLACE INTO %@ (uid, userName, email, userToken, imageName, networkAbsoluteUrl, localRelativePath, sexType, birthday, modified, execTypeL) VALUES ('%@', '%@', '%@', '%@', '%@', '%@', '%@', '%zd', '%@', '%@', '%@')", kCurrentTableName, info.uid, info.userName, info.email, info.userToken, info.imageName, portraitImageNetworkAbsoluteUrl, portraitImageLocalRelativePath, info.sexType, birthdayString, info.modified, info.execTypeL];//DB Error: 1 "unrecognized token: ":"" 即要求插入的字符串需加引号'，而对于表名，属性名，可以不用像原来那样添加。
     return sql;
 }
 
@@ -80,8 +80,8 @@ static NSString *kCurrentTableName = @"STDemoUser";
     NSString *birthdayString = [birthdayDateFormatter stringFromDate:info.birthday];
     
     NSString *sql = [NSString stringWithFormat:
-                     @"UPDATE %@ SET name = '%@', email = '%@', userToken = '%@', imageName = '%@', networkAbsoluteUrl = '%@', localRelativePath = '%@', sexType = '%zd', birthday = '%@' WHERE uid = '%@'", kCurrentTableName,
-                     info.name, info.email, info.userToken, info.imageName, portraitImageNetworkAbsoluteUrl, portraitImageLocalRelativePath, info.sexType, birthdayString, uid];
+                     @"UPDATE %@ SET userName = '%@', email = '%@', userToken = '%@', imageName = '%@', networkAbsoluteUrl = '%@', localRelativePath = '%@', sexType = '%zd', birthday = '%@' WHERE uid = '%@'", kCurrentTableName,
+                     info.userName, info.email, info.userToken, info.imageName, portraitImageNetworkAbsoluteUrl, portraitImageLocalRelativePath, info.sexType, birthdayString, uid];
     return sql;
 }
 

@@ -23,6 +23,7 @@
 
 #import "STDemoAlert.h"
 #import "STDemoButtonFactory.h"
+#import "STDemoBarButtonItemFactory.h"
 
 #define UseLibrary  //使用已经封装的库
 #define CJTestLoginDealloc              //测试LMLoginViewController的销毁/内存泄漏

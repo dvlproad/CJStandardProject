@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "STDemoOrderModel.h"
 
-@interface OrderListViewModel : NSObject
+@interface OrderListViewModel : NSObject {
+    
+}
+@property (nonatomic, strong) NSMutableArray<STDemoOrderModel *> *orders;
 
 /// tableView头部刷新的网络请求
 - (void)headerRefreshRequestWithCompleteBlock:(void(^)(NSMutableArray<STDemoOrderModel *> *orders))completeBlock;

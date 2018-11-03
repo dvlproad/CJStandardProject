@@ -15,8 +15,8 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Bugly (2.5.0)
-  - CJBaseHelper/DeviceCJHelper (0.0.7)
-  - CJBaseHelper/NSObjectCJHelper (0.0.7)
+  - CJBaseHelper/DeviceCJHelper (0.0.8)
+  - CJBaseHelper/NSObjectCJHelper (0.0.8)
   - CJBaseUIKit/CJAlert (0.3.0):
     - CJBaseUIKit/UIView/CJPopupAction
     - Masonry
@@ -28,9 +28,10 @@ PODS:
   - CJBaseUIKit/UITextField (0.3.0)
   - CJBaseUIKit/UIView/CJDragAction (0.3.0)
   - CJBaseUIKit/UIView/CJPopupAction (0.3.0)
-  - CJBaseUtil/CJAppLastUtil (0.4.3):
+  - CJBaseUIKit/UIViewController (0.3.0)
+  - CJBaseUtil/CJAppLastUtil (0.4.4):
     - SAMKeychain
-  - CJBaseUtil/CJLog (0.4.3):
+  - CJBaseUtil/CJLog (0.4.4):
     - CJBaseUIKit/UIView/CJDragAction
     - Masonry
   - CJDemoCryptSDK (0.0.1)
@@ -52,6 +53,15 @@ PODS:
     - AFNetworking
     - CJNetwork/CJNetworkBase
   - CJNetwork/CJNetworkBase (0.5.0)
+  - CJRadio (1.3.0):
+    - CJRadio/CJCycleComposeView (= 1.3.0)
+    - CJRadio/CJRadioButtonCycleComposeView (= 1.3.0)
+    - CJRadio/CJRadioButtons (= 1.3.0)
+  - CJRadio/CJCycleComposeView (1.3.0)
+  - CJRadio/CJRadioButtonCycleComposeView (1.3.0):
+    - CJRadio/CJCycleComposeView
+    - CJRadio/CJRadioButtons
+  - CJRadio/CJRadioButtons (1.3.0)
   - CocoaAsyncSocket (7.6.3)
   - CTMediator (25)
   - FMDB (2.7.5):
@@ -77,6 +87,7 @@ DEPENDENCIES:
   - CJBaseUIKit/UIColor
   - CJBaseUIKit/UINavigationBar
   - CJBaseUIKit/UITextField
+  - CJBaseUIKit/UIViewController
   - CJBaseUtil/CJAppLastUtil
   - CJBaseUtil/CJLog
   - CJDemoModuleMain/CJDemoModuleMain_Category
@@ -86,6 +97,7 @@ DEPENDENCIES:
   - CJFile/CJFMDBFileManager
   - CJFoundation/NSString
   - CJNetwork/AFNetworkingBaseComponent
+  - CJRadio
   - CocoaAsyncSocket
   - CTMediator
   - KVOController (~> 1.2.0)
@@ -111,6 +123,7 @@ SPEC REPOS:
     - CJFile
     - CJFoundation
     - CJNetwork
+    - CJRadio
     - CocoaAsyncSocket
     - CTMediator
     - FMDB
@@ -127,15 +140,16 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
-  CJBaseHelper: 6acec4caa0b82c28a279101e0e9ac887a19857a8
+  CJBaseHelper: f39e78d52837f3d325170f1e4660f7e9e5a183cb
   CJBaseUIKit: 6706574187fb6beb8adcc5c72d70f1815ec232cc
-  CJBaseUtil: 9eb2c92d3e6bb9192e9d167a29b3dd1f853fc572
+  CJBaseUtil: 842f44965ee18787f17199677bfb78d2bf6d15df
   CJDemoCryptSDK: 22c5a26ad2937b69429306e10311f517b0d664cb
   CJDemoModuleMain: 188a70ed84939aded55df7515260e66affee42a5
   CJDemoNetwork: eec26986df31d8fd88711d4583febc8a12c07633
   CJFile: 6c1e6d55b3b94e8afbaa9f413f131301d15fdc48
   CJFoundation: 2c27b7ad85ec0cc5ac24aa112867971e01ae3ea3
   CJNetwork: a75f849e5c6ec8fc85ca7aa5027f73d6c48a4af1
+  CJRadio: 327a49306e49ef9877a3a39c630e49ccb6c9580a
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -149,6 +163,6 @@ SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 41cf9a5ead4996df6f74f80b7652e21f7f86f4ec
+PODFILE CHECKSUM: b69f2de55216b43bd3bdfa292a8b9dbd92473bba
 
 COCOAPODS: 1.5.3

@@ -30,6 +30,11 @@
 		7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */; };
 		781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */; };
 		781BCDB3218D65F9009E730C /* user:login in Resources */ = {isa = PBXBuildFile; fileRef = 781BCDB2218D65F9009E730C /* user:login */; };
+		781BCDB8218D7ECE009E730C /* STDemoDDOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781BCDB5218D7ECE009E730C /* STDemoDDOrderListViewController.m */; };
+		781BCDB9218D7ECE009E730C /* STDemoNormalOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781BCDB7218D7ECE009E730C /* STDemoNormalOrderListViewController.m */; };
+		781BCDBD218D8063009E730C /* STDemoSliderVCElementFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 781BCDBC218D8063009E730C /* STDemoSliderVCElementFactory.m */; };
+		781BCDC4218D8C2A009E730C /* OrderListLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 781BCDC2218D8C2A009E730C /* OrderListLogicControl.m */; };
+		781BCDC8218D9527009E730C /* STDemoBarButtonItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 781BCDC6218D9527009E730C /* STDemoBarButtonItemFactory.m */; };
 		783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */; };
 		784410532186B84100D746A7 /* STDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410522186B84100D746A7 /* STDemoStartUp.m */; };
 		784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */; };
@@ -42,7 +47,6 @@
 		7880E6D021385817009C9BCF /* OrderListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */; };
 		7880E6D121385817009C9BCF /* OrderListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C321385817009C9BCF /* OrderListTableViewDelegate.m */; };
 		7880E6D221385817009C9BCF /* OrderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C521385817009C9BCF /* OrderListViewModel.m */; };
-		7880E6D321385817009C9BCF /* STDemoOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C921385817009C9BCF /* STDemoOrderListViewController.m */; };
 		7880E6D521385817009C9BCF /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6CE21385817009C9BCF /* OrderCell.m */; };
 		788D41A921846F44002BEED4 /* AppDelegate+STDemoView_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A321846F44002BEED4 /* AppDelegate+STDemoView_Old.m */; };
 		788D41AA21846F44002BEED4 /* STDemoAppDelegateLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41A521846F44002BEED4 /* STDemoAppDelegateLogicControl.m */; };
@@ -135,6 +139,16 @@
 		781BCDA7218D47E0009E730C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		781BCDA8218D47E0009E730C /* READMEOld.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = READMEOld.md; path = ../READMEOld.md; sourceTree = "<group>"; };
 		781BCDB2218D65F9009E730C /* user:login */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "user:login"; sourceTree = "<group>"; };
+		781BCDB4218D7ECE009E730C /* STDemoDDOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoDDOrderListViewController.h; sourceTree = "<group>"; };
+		781BCDB5218D7ECE009E730C /* STDemoDDOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoDDOrderListViewController.m; sourceTree = "<group>"; };
+		781BCDB6218D7ECE009E730C /* STDemoNormalOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoNormalOrderListViewController.h; sourceTree = "<group>"; };
+		781BCDB7218D7ECE009E730C /* STDemoNormalOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoNormalOrderListViewController.m; sourceTree = "<group>"; };
+		781BCDBB218D8063009E730C /* STDemoSliderVCElementFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoSliderVCElementFactory.h; sourceTree = "<group>"; };
+		781BCDBC218D8063009E730C /* STDemoSliderVCElementFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoSliderVCElementFactory.m; sourceTree = "<group>"; };
+		781BCDC2218D8C2A009E730C /* OrderListLogicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListLogicControl.m; sourceTree = "<group>"; };
+		781BCDC3218D8C2A009E730C /* OrderListLogicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListLogicControl.h; sourceTree = "<group>"; };
+		781BCDC6218D9527009E730C /* STDemoBarButtonItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoBarButtonItemFactory.m; sourceTree = "<group>"; };
+		781BCDC7218D9527009E730C /* STDemoBarButtonItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoBarButtonItemFactory.h; sourceTree = "<group>"; };
 		783C42082148AC6A005B4349 /* DemoFMDBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFMDBFileManager.h; sourceTree = "<group>"; };
 		783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFMDBFileManager.m; sourceTree = "<group>"; };
 		784410512186B84100D746A7 /* STDemoStartUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoStartUp.h; sourceTree = "<group>"; };
@@ -163,8 +177,6 @@
 		7880E6C321385817009C9BCF /* OrderListTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewDelegate.m; sourceTree = "<group>"; };
 		7880E6C521385817009C9BCF /* OrderListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListViewModel.m; sourceTree = "<group>"; };
 		7880E6C621385817009C9BCF /* OrderListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListViewModel.h; sourceTree = "<group>"; };
-		7880E6C821385817009C9BCF /* STDemoOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoOrderListViewController.h; sourceTree = "<group>"; };
-		7880E6C921385817009C9BCF /* STDemoOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderListViewController.m; sourceTree = "<group>"; };
 		7880E6CE21385817009C9BCF /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
 		7880E6CF21385817009C9BCF /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
 		788D41A221846F44002BEED4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -496,6 +508,33 @@
 			path = "LogicControl(将AppDelegate的Logic各自分开)";
 			sourceTree = "<group>";
 		};
+		781BCDBA218D8053009E730C /* STDemoSliderVCElementFactory */ = {
+			isa = PBXGroup;
+			children = (
+				781BCDBB218D8063009E730C /* STDemoSliderVCElementFactory.h */,
+				781BCDBC218D8063009E730C /* STDemoSliderVCElementFactory.m */,
+			);
+			path = STDemoSliderVCElementFactory;
+			sourceTree = "<group>";
+		};
+		781BCDC1218D8C2A009E730C /* LogicControl */ = {
+			isa = PBXGroup;
+			children = (
+				781BCDC3218D8C2A009E730C /* OrderListLogicControl.h */,
+				781BCDC2218D8C2A009E730C /* OrderListLogicControl.m */,
+			);
+			path = LogicControl;
+			sourceTree = "<group>";
+		};
+		781BCDC5218D9527009E730C /* STDemoBarButtonItemFactory */ = {
+			isa = PBXGroup;
+			children = (
+				781BCDC7218D9527009E730C /* STDemoBarButtonItemFactory.h */,
+				781BCDC6218D9527009E730C /* STDemoBarButtonItemFactory.m */,
+			);
+			path = STDemoBarButtonItemFactory;
+			sourceTree = "<group>";
+		};
 		783C42072148AC6A005B4349 /* Databases */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,8 +574,8 @@
 		7880E6BE21385817009C9BCF /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				781BCDC1218D8C2A009E730C /* LogicControl */,
 				7880E6C721385817009C9BCF /* Controller */,
-				78C38DE82141AD6C001F35E2 /* LogicControl */,
 				781495EB21414ACD00D0F2BC /* NDM */,
 				78C38DE62141AD45001F35E2 /* Resources */,
 				7880E6BF21385817009C9BCF /* TableViewProtocol */,
@@ -569,8 +608,10 @@
 		7880E6C721385817009C9BCF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7880E6C821385817009C9BCF /* STDemoOrderListViewController.h */,
-				7880E6C921385817009C9BCF /* STDemoOrderListViewController.m */,
+				781BCDB4218D7ECE009E730C /* STDemoDDOrderListViewController.h */,
+				781BCDB5218D7ECE009E730C /* STDemoDDOrderListViewController.m */,
+				781BCDB6218D7ECE009E730C /* STDemoNormalOrderListViewController.h */,
+				781BCDB7218D7ECE009E730C /* STDemoNormalOrderListViewController.m */,
 				788D41EC21849AF1002BEED4 /* STDemoOrderHomeViewController.h */,
 				788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */,
 			);
@@ -665,6 +706,8 @@
 		788D41BA21847A97002BEED4 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				781BCDC5218D9527009E730C /* STDemoBarButtonItemFactory */,
+				781BCDBA218D8053009E730C /* STDemoSliderVCElementFactory */,
 				788D41BF21847B44002BEED4 /* Base */,
 				788D41BB21847A9F002BEED4 /* STDemoAlert */,
 				788D41C321847BD1002BEED4 /* STDemoButtonFactory */,
@@ -897,13 +940,6 @@
 			path = LogicControl;
 			sourceTree = "<group>";
 		};
-		78C38DE82141AD6C001F35E2 /* LogicControl */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LogicControl;
-			sourceTree = "<group>";
-		};
 		FCCD9EA54E8B0CAFF2AAD401 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1117,6 +1153,12 @@
 				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
 				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
 				"${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowDown_dark.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_gray@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_red@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_gray@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_red@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowUp_white@2x.png",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
@@ -1130,6 +1172,12 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/demofmdb.db",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowDown_dark.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_gray@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_red@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_gray@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_red@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowUp_white@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
@@ -1148,15 +1196,20 @@
 			files = (
 				7809CA272148A67F00FAFD93 /* STDemoServiceUserManager+Network.m in Sources */,
 				7844106A2187474A00D746A7 /* AppDelegate+STDemoListen.m in Sources */,
+				781BCDC8218D9527009E730C /* STDemoBarButtonItemFactory.m in Sources */,
+				781BCDB9218D7ECE009E730C /* STDemoNormalOrderListViewController.m in Sources */,
 				788D41B421847695002BEED4 /* STDemoLocationCityModel.m in Sources */,
 				784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */,
 				784410702187519C00D746A7 /* LoginLogicControl_Old.m in Sources */,
+				781BCDC4218D8C2A009E730C /* OrderListLogicControl.m in Sources */,
+				781BCDB8218D7ECE009E730C /* STDemoDDOrderListViewController.m in Sources */,
 				788D41AB21846F44002BEED4 /* AppDelegate.m in Sources */,
 				7809CA242148A67F00FAFD93 /* RegisterLogicControl.m in Sources */,
 				788D41AF2184708C002BEED4 /* STDemoServiceLocationManager.m in Sources */,
 				788D41BE21847B38002BEED4 /* STDemoAlert.m in Sources */,
 				788D41B521847695002BEED4 /* STDemoLocation.m in Sources */,
 				783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */,
+				781BCDBD218D8063009E730C /* STDemoSliderVCElementFactory.m in Sources */,
 				784410612187407D00D746A7 /* STDemoAppDelegateListenLogic.m in Sources */,
 				788D41EE21849AF1002BEED4 /* STDemoOrderHomeViewController.m in Sources */,
 				7809CA212148A67E00FAFD93 /* FindPasswordLogicControl.m in Sources */,
@@ -1169,7 +1222,6 @@
 				788D41D121848F1F002BEED4 /* STDemoLoginRouter.m in Sources */,
 				7880E6D521385817009C9BCF /* OrderCell.m in Sources */,
 				7809CA202148A67E00FAFD93 /* LoginViewControl.m in Sources */,
-				7880E6D321385817009C9BCF /* STDemoOrderListViewController.m in Sources */,
 				781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */,
 				7809CA362148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m in Sources */,
 				78B90E422188516B00776584 /* LoginViewModel.m in Sources */,

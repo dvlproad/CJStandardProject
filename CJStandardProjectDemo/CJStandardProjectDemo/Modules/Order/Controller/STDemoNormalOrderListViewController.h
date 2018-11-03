@@ -1,5 +1,5 @@
 //
-//  STDemoOrderListViewController.h
+//  STDemoNormalOrderListViewController.h
 //  CJStandardProjectDemo
 //
 //  Created by ciyouzen on 2018/8/29.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
 
-@interface STDemoOrderListViewController : UIViewController
+@interface STDemoNormalOrderListViewController : UIViewController
 
 @end

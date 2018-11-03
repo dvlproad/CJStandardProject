@@ -8,14 +8,15 @@
 
 #import "OrderListViewModel.h"
 
-@interface OrderListViewModel ()
+@interface OrderListViewModel () {
+    
+}
 
 @end
 
 @implementation OrderListViewModel
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         
@@ -27,6 +28,7 @@
 - (void)headerRefreshRequestWithCompleteBlock:(void(^)(NSMutableArray<STDemoOrderModel *> *orders))completeBlock
 {
     // 模拟网络请求
+    __weak typeof(self)weakSelf = self;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         sleep(2);
         NSMutableArray *orders =[NSMutableArray array];
@@ -37,6 +39,8 @@
             orderModel.title = string;
             [orders addObject:orderModel];
         }
+        
+        weakSelf.orders = orders;
         
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completeBlock) {
@@ -50,6 +54,7 @@
 - (void)footerRefreshRequestWithCompleteBlock:(void(^)(NSMutableArray<STDemoOrderModel *> *orders))completeBlock
 {
     // 模拟网络请求
+    __weak typeof(self)weakSelf = self;
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         sleep(2);
         NSMutableArray *orders = [NSMutableArray array];
@@ -61,9 +66,11 @@
             [orders addObject:orderModel];
         }
         
+        [weakSelf.orders addObjectsFromArray:orders];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             if (completeBlock) {
-                completeBlock(orders);
+                completeBlock(weakSelf.orders);
             }
         });
     });

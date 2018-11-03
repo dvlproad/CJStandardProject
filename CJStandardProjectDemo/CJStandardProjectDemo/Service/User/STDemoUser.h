@@ -43,7 +43,7 @@ typedef NS_ENUM(NSUInteger, DemoHPPermissionType) {
 
 @property (nonatomic, copy) NSString *uid;
 @property (nonatomic, copy) NSString *userToken;
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *userName;
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSString *imageName;
 

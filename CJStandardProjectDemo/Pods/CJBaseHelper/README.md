@@ -1,5 +1,6 @@
 <p id="目录"></p>
 ## 目录
+
 * [一、CJBaseUIKit：自定义的基础UI控件](#CJBaseUIKit)
 * [二、CJComplexUIKit：自定义的稍微复杂的UI](#CJComplexUIKit)
 * [三、CJFoundation：系统Foundation的扩展](#CJFoundation)
@@ -30,8 +31,7 @@
 - CJBaseUIKit/UIView/CJGestureRecognizer：视图手势
 >
 - CJBaseUIKit/UIWindow：窗口
-- CJBaseUIKit/UIButton：按钮
-- CJBaseUIKit/CJImageView：图片视图(包含CJBadgeImageView),用于设置imageView的title和badge
+- CJBaseUIKit/UIButton：按钮 及 CJBadgeButton
 - CJBaseUIKit/UITextField：文本视图：包含文本框类别及新的自定义文本框
 - CJBaseUIKit/CJTextView：文本视图：类似微信文本输入框实现
 - CJBaseUIKit/UIToolbar：工具栏
@@ -51,6 +51,8 @@
 - CJBaseUIKit/CJRefreshView：刷新
 - CJBaseUIKit/CJMJRefreshComponent：已包含pod 'MJRefresh'
 - CJBaseUIKit/CJToast：Toast
+- CJBaseUIKit/CJDataEmptyView：空视图(处理数据为空、网络加载失败等情况)
+待完善
 
 
 如果只想加载某个类，可以用形如`pod 'CJBaseUIKit/CJTextView', '~> 0.0.1'`来加载
@@ -80,15 +82,11 @@ UIColor+CJHex用来通过十六进制来设置颜色。 支持@“#123456”、 
 #### 5、CJBaseUIKit/UIWindow：窗口
 
 #### 6、CJBaseUIKit/UIButton：按钮
+CJBaseUIKit/UIButton：按钮 及 CJBadgeButton
 
-#### 7、CJBaseUIKit/CJImageView：图片视图(包含CJBadgeImageView),用于设置imageView的title和badge
-包含CJBadgeImageView
+#### 7、CJBaseUIKit/UITextField：文本视图：包含文本框类别及新的自定义文本框
 
-CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置badge;
-
-#### 8、CJBaseUIKit/UITextField：文本视图：包含文本框类别及新的自定义文本框
-
-#### 9、CJBaseUIKit/CJTextView：文本视图：类似微信文本输入框实现
+#### 8、CJBaseUIKit/CJTextView：文本视图：类似微信文本输入框实现
 类似微信文本输入框实现
 
 功能：
@@ -98,30 +96,31 @@ CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置
 
 
 
-#### 10、CJBaseUIKit/UIToolbar：工具栏
+#### 9、CJBaseUIKit/UIToolbar：工具栏
 
-#### 11、CJBaseUIKit/CJScrollView：滚动视图：自定义的基础滚动视图
+#### 10、CJBaseUIKit/CJScrollView：滚动视图：自定义的基础滚动视图
 
-#### 12、CJBaseUIKit/CJTableView：列表视图
+#### 11、CJBaseUIKit/CJTableView：列表视图
 ###### (1)、CJBaseUIKit/CJTableView/CJBaseTableViewCell：基础的TableViewCell
 ###### (2)、CJBaseUIKit/CJTableView/CJBaseTableViewHeaderFooterView
 
-#### 13、CJBaseUIKit/CJCollectionView：集合视图
+#### 12、CJBaseUIKit/CJCollectionView：集合视图
 ###### (1)、CJBaseUIKit/CJCollectionView/CJBaseCollectionViewCell：基础的CollectionViewCell
 ###### (2)、CJBaseUIKit/CJCollectionView/CJCollectionViewLayout
 ###### (3)、CJBaseUIKit/CJCollectionView/MyEqualCellSizeCollectionView：一个只有一个分区且分区中的每个cell大小相等的集合视图(cell的大小可通过方法①设置cell的固定大小和方法②通过设置每行最大显示的cell个数获得)
 ###### (4)、CJBaseUIKit/CJCollectionView/CJOpenCollectionView：可展开的集合视图
 
-#### 14、CJBaseUIKit/CJSlider：滑块
+#### 13、CJBaseUIKit/CJSlider：滑块
 
-#### 15、CJBaseUIKit/CJRefreshView：刷新
+#### 14、CJBaseUIKit/CJRefreshView：刷新
 
-#### 16、CJBaseUIKit/CJMJRefreshComponent：已包含pod 'MJRefresh'
+#### 15、CJBaseUIKit/CJMJRefreshComponent：已包含pod 'MJRefresh'
 
-#### 17、CJBaseUIKit/CJToast：Toast
+#### 16、CJBaseUIKit/CJToast：Toast
 
-#### 18、CJBaseUIKit/CJAlert：Alert
+#### 17、CJBaseUIKit/CJAlert：Alert
 
+#### 18、 CJBaseUIKit/CJDataEmptyView：空视图(处理数据为空、网络加载失败等情况)
 
 待完善
 
@@ -141,8 +140,6 @@ CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置
 - CJComplexUIKit/UIViewController：视图控制器相关
 - CJComplexUIKit/UIViewController/CJCategory：控制器的分类：包含对视图控制器返回按钮的操作自定义等
 - CJComplexUIKit/UIViewController/CJBaseWebViewController：基本的网页浏览器，包含了加载进度和空网页操作
->
-- CJComplexUIKit/CJDataEmptyView：数据空时候的视图
 >
 - CJComplexUIKit/CJDataScrollView：含数据
 - CJComplexUIKit/CJDataScrollView/SearchScrollView
@@ -204,6 +201,7 @@ CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置
 - CJBaseHelper/UIViewControllerCJHelper：视图控制器帮助类：包含获取当前显示的视图控制器和通过视图找到它所在的视图控制器等
 - CJBaseHelper/NSOperationQueueCJHelper：多任务处理
 - CJBaseHelper/WebCJHelper：Web工具，包含清除缓存
+- CJBaseHelper/AuthorizationCJHelper：权限判断及系统设置打开
 
 
 
@@ -237,6 +235,16 @@ CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置
 > 1. 调整项目结构
 
 #### CJBaseUIKit
+
+* 2018-10-16 V0.3.0
+
+> 1. UIView+CJPopupInView 增加设置空白区域的背景颜色blankBGColor；
+
+* 2018-10-10 V0.2.9
+
+> 1. 去除CJBadgeImageView，改为CJBadgeButton
+> 2. 添加UIViewController+CJSystemComposeView，处理添加childViewController以及转换的方法；
+
 * 2018-09-27 V0.2.6
 
 > 1. CJTextField增加添加下划线和设置支持selected的左侧图片
@@ -246,6 +254,13 @@ CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置
 > 1. 修复CJTextView自定义的placeholder无法改变字体大小的问题；
 > 2. 增加UIButton设置高亮时候的背景色方法。
 
+
+
+#### CJComplexUIKit
+* 2018-09-27 V0.2.0
+
+> 1. 转移CJDataEmptyView到CJBaseUIKit上
+
 #### CJBaseUtil
 * 2018-08-29 V0.3.1
 
@@ -254,6 +269,10 @@ CJImageView，可为ImageView设置title；而CJBadgeImageView则还可以设置
 
 
 #### CJBaseHelper
+* 2018-11-01 V0.0.7
+
+> 1. 转移CJMedia中的CJValidateAuthorizationUtil到CJBaseHelper/AuthorizationCJHelper：权限判断及系统设置打开
+
 * 2018-09-22 V0.0.6
 
 > 1. 转移CJBaseUtil中的CJDateFormatterUtil为`NSDateFormatterCJHelper`

@@ -36,7 +36,7 @@ target 'CJStandardProjectDemo' do
    pod 'ReactiveObjC', '~> 3.1.0'
    pod 'KVOController', '~> 1.2.0'
 
-   pod 'CJBaseUIKit',  :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert', 'UINavigationBar']
+   pod 'CJBaseUIKit',  :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert', 'UINavigationBar', 'UIViewController']
    pod 'CJBaseUtil',   :subspecs => ['CJLog', 'CJAppLastUtil']
    pod 'CJBaseHelper', :subspecs => ['NSObjectCJHelper', 'DeviceCJHelper']
    pod 'CJFoundation', :subspecs => ['NSString']
@@ -47,6 +47,8 @@ target 'CJStandardProjectDemo' do
    pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
 
    pod 'LGSideMenuController'
+   pod 'CJRadio'
+   pod 'SVProgressHUD'
 
    # 模块化需要依赖的库
    pod 'CTMediator'
