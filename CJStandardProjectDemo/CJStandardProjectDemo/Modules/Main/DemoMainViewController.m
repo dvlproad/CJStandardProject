@@ -14,6 +14,8 @@
 #import "MessageViewController.h"
 #import "STDemoNavigationController.h"
 
+#import "STDemoOrderListViewController.h"
+
 @interface DemoMainViewController ()
 
 @end
@@ -22,7 +24,8 @@
 
 - (instancetype)init {
     self = [super initWithRootViewController:({
-        STDemoOrderHomeViewController *home = [[STDemoOrderHomeViewController alloc] init];
+//        STDemoOrderHomeViewController *home = [[STDemoOrderHomeViewController alloc] init];
+        STDemoOrderListViewController *home = [[STDemoOrderListViewController alloc] init];
         STDemoNavigationController *navigation = [[STDemoNavigationController alloc] initWithRootViewController:home];
         navigation;
     }) leftViewController:({

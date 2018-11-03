@@ -10,6 +10,8 @@
 
 @interface AppDelegate (STDemoView_Old)
 
-- (void)viewDidFinishLaunching;
+- (void)old_viewDidFinishLaunching;
+
+- (void)old_viewWillEnterForeground;
 
 @end

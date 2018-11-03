@@ -27,7 +27,13 @@
 ///开启监听
 - (void)startListen {
     //监听User
-    // ...
+    __weak typeof(self)weakSelf = self;
+    [[STDemoServiceUserManager sharedInstance] addNotificationForUserLoginStateWithUsingBlock:^(BOOL isLogin) {
+        [weakSelf dealRootViewControllerWithLoginState:isLogin];
+        if ([weakSelf.listenDelegate respondsToSelector:@selector(appUserManagerDidUpdateLoginState:)]) {
+            [weakSelf.listenDelegate appUserManagerDidUpdateLoginState:isLogin];
+        }
+    }];
     
     //监听Location
     // ...
@@ -120,13 +126,13 @@
 
 #pragma mark - STDemoServiceUserManagerListener
 
-- (void)driverUserManager:(STDemoServiceUserManager *)driverUserManager didUpdateLoginState:(BOOL)loginState {
-    [self dealRootViewControllerWithLoginState:loginState];
-    
-    if ([self.listenDelegate respondsToSelector:@selector(appUserManagerDidUpdateLoginState:)]) {
-        [self.listenDelegate appUserManagerDidUpdateLoginState:loginState];
-    }
-}
+//- (void)driverUserManager:(STDemoServiceUserManager *)driverUserManager didUpdateLoginState:(BOOL)loginState {
+//    [self dealRootViewControllerWithLoginState:loginState];
+//
+//    if ([self.listenDelegate respondsToSelector:@selector(appUserManagerDidUpdateLoginState:)]) {
+//        [self.listenDelegate appUserManagerDidUpdateLoginState:loginState];
+//    }
+//}
 
 
 #pragma mark - STDemoServiceLocationManagerListener

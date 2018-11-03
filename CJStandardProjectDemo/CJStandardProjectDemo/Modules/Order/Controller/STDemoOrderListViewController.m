@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = NSLocalizedString(@"MVVMDemo With TableView", nil);
+    self.title = NSLocalizedString(@"订单列表", nil);
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.orderListViewModel = [[OrderListViewModel alloc] init];

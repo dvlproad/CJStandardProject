@@ -15,7 +15,7 @@
 #import "STDemoServiceUserManager.h"
 #import "STDemoServiceLocationManager.h"
 
-@interface AppDelegate () <STDemoAppDidFinishLaunchingDelegate, STDemoAppListenDelegate, GuideViewControllerDelegate> {
+@interface AppDelegate () <STDemoAppDidFinishLaunchingDelegate, STDemoAppLogicListenDelegate, GuideViewControllerDelegate> {
     
 }
 
@@ -79,17 +79,6 @@
     [STDemoAlert showLocationNoOpenAlert:NO];
     [STDemoAlert showLocationAbnormalAlert:NO];
 }
-
-
-#pragma mark - STDemoAppListenDelegate
-- (void)amapLocationManagerDidChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    
-}
-
-- (void)appUserManagerDidUpdateLoginState:(BOOL)loginState {
-    
-}
-
 
 #pragma mark - STDemoGuideViewControllerDelegate
 - (void)guideViewControllerReadOver:(GuideViewController *)guideViewController {

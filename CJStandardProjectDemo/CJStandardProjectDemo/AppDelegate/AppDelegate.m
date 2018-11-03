@@ -22,12 +22,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window = [[UIWindow alloc]init];
-    self.window.frame = [UIScreen mainScreen].bounds;
+//    UIViewController *viewController = [[UIViewController alloc] init];
+//    viewController.view.backgroundColor = [UIColor yellowColor];
+//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+//    self.window.rootViewController = navigationController;
     [STDemoStartUp startUp];
-    
-    [self viewDidFinishLaunching];
+
+    [self old_viewDidFinishLaunching];
     
     [self.window makeKeyAndVisible];
     
@@ -62,6 +65,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [self old_viewWillEnterForeground];
 }
 
 

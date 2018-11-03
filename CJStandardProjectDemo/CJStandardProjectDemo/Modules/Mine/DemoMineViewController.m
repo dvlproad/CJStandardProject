@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"我的首页", nil);
 }
 
 /*

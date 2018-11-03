@@ -42,7 +42,7 @@
             NSString *newUserId = self.serviceUser.uid;
             
             // 更新网络库配置
-            [[CJDemoNetworkClient sharedInstance].specificCommonParams setObject:user.uid forKey:@"uid"];
+            [[CJDemoNetworkClient sharedInstance].specificCommonParams setObject:user.userToken forKey:@"userToken"];
             
             // 存储用于自动登录的信息
             [CJAppLastUtil saveAccount:user.uid withAccessToken:user.userToken];
@@ -52,10 +52,10 @@
             
             //  登录状态发生改变
             if (!oldUserId && newUserId) { //登录了
-                [STDemoServiceUserManager updateLoginState:YES];
+                [self pushNotificationForUserLoginState:YES];
                 
             } else if (oldUserId && !newUserId) { //退出了
-                [STDemoServiceUserManager updateLoginState:NO];
+                [self pushNotificationForUserLoginState:NO];
             }
             
             // 发送用户数据变化的通知

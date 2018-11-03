@@ -8,6 +8,7 @@
 
 #import "STDemoAppDelegateListenLogic.h"
 #import <CJBaseUtil/CJAppLastUtil.h>
+#import "STDemoServiceUserManager.h"
 
 @interface STDemoAppDelegateListenLogic ()
 
@@ -27,20 +28,16 @@
 ///开启监听
 - (void)startListen {
     //监听User
-    // ...
+    __weak typeof(self)weakSelf = self;
+    [[STDemoServiceUserManager sharedInstance] addNotificationForUserLoginStateWithUsingBlock:^(BOOL isLogin) {
+        if ([weakSelf.listenDelegate respondsToSelector:@selector(listen_appUserManagerDidUpdateLoginState:)]) {
+            [weakSelf.listenDelegate listen_appUserManagerDidUpdateLoginState:isLogin];
+        }
+    }];
     
     //监听Location
     // ...
 }
-
-#pragma mark - STDemoServiceUserManagerListener
-
-- (void)driverUserManager:(STDemoServiceUserManager *)driverUserManager didUpdateLoginState:(BOOL)loginState {
-    if ([self.listenDelegate respondsToSelector:@selector(appUserManagerDidUpdateLoginState:)]) {
-        [self.listenDelegate appUserManagerDidUpdateLoginState:loginState];
-    }
-}
-
 
 #pragma mark - STDemoServiceLocationManagerListener
 
@@ -58,8 +55,8 @@
     }
     
     
-    if ([self.listenDelegate respondsToSelector:@selector(amapLocationManagerDidChangeAuthorizationStatus:)]) {
-        [self.listenDelegate amapLocationManagerDidChangeAuthorizationStatus:status];
+    if ([self.listenDelegate respondsToSelector:@selector(listen_amapLocationManagerDidChangeAuthorizationStatus:)]) {
+        [self.listenDelegate listen_amapLocationManagerDidChangeAuthorizationStatus:status];
     }
 }
 

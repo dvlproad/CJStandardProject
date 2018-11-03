@@ -1,0 +1,9 @@
+{
+"status": "1",
+"msg": "登录成功",
+"result": {
+    "uid":  "43o3o3253jfel",
+    "name":     "Beyond",
+    "userToken":  "9f320615-4f97-4d99-aa43-56a5638d9de91470833076419"
+    }
+}

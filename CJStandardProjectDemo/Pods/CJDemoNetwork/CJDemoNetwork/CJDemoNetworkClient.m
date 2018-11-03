@@ -150,8 +150,8 @@ static NSString * const SimulateDemoDomain = @"http://192.168.199.125/CJDemoData
     if ([apiSuffix hasPrefix:@"/"]) {
         apiSuffix = [apiSuffix substringFromIndex:1];
     }
-    NSString *jsonName = [apiSuffix stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
-    NSData *responseObject = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:jsonName ofType:@"json"]];
+    NSString *jsonName = [apiSuffix stringByReplacingOccurrencesOfString:@"/" withString:@":"];
+    NSData *responseObject = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:jsonName ofType:nil]];
     
     NSDictionary *recognizableResponseObject = nil;
     //if ([NSJSONSerialization isValidJSONObject:responseObject]) {

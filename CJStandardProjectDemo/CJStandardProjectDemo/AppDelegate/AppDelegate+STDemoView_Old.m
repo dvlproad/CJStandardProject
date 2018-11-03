@@ -15,7 +15,7 @@
 #import "STDemoServiceUserManager.h"
 #import "STDemoServiceLocationManager.h"
 
-@interface AppDelegate () <STDemoAppDidFinishLaunchingDelegate, STDemoAppListenDelegate, GuideViewControllerDelegate> {
+@interface AppDelegate () <STDemoAppDidFinishLaunchingDelegate, STDemoAppLogicListenDelegate, GuideViewControllerDelegate> {
     
 }
 
@@ -24,22 +24,22 @@
 
 @implementation AppDelegate (STDemoView_Old)
 
-- (void)viewDidFinishLaunching {
+- (void)old_viewDidFinishLaunching {
     self.logicControl = [[STDemoAppDelegateLogicControl alloc] init];
     self.logicControl.didFinishLaunchingDelegate = self;
     self.logicControl.listenDelegate = self;
     
     // 设置 rootViewController
     STDemoRootViewControllerType rootViewControllerType = [self.logicControl getDidFinishLaunchingRootViewControllerType];
-    [self setupRootViewControllerWithType:rootViewControllerType];
+    [self old_setupRootViewControllerWithType:rootViewControllerType];
 }
 
-- (void)viewWillEnterForeground {
+- (void)old_viewWillEnterForeground {
     CLAuthorizationStatus status = [STDemoServiceLocationManager sharedInstance].authorizationStatus;
     [self.logicControl dealLocationAlertWithLocationAuthorizationStatus:status];
 }
 
-- (void)setupRootViewControllerWithType:(STDemoRootViewControllerType)rootViewControllerType
+- (void)old_setupRootViewControllerWithType:(STDemoRootViewControllerType)rootViewControllerType
 {
     //如果type一样/未改变，则不处理
     if (rootViewControllerType == self.rootViewControllerType) {
@@ -63,8 +63,8 @@
 }
 
 #pragma mark - STDemoAppDelegateLogicControlDelegate
-- (void)changeRootViewControllerWithType:(STDemoRootViewControllerType)rootViewControllerType {
-    [self setupRootViewControllerWithType:rootViewControllerType];
+- (void)old_changeRootViewControllerWithType:(STDemoRootViewControllerType)rootViewControllerType {
+    [self old_setupRootViewControllerWithType:rootViewControllerType];
 }
 
 - (void)showLocationNoOpenAlert {
@@ -93,7 +93,7 @@
 
 #pragma mark - STDemoGuideViewControllerDelegate
 - (void)guideViewControllerReadOver:(GuideViewController *)guideViewController {
-    [self setupRootViewControllerWithType:STDemoRootViewControllerTypeLogin];
+    [self old_setupRootViewControllerWithType:STDemoRootViewControllerTypeLogin];
 }
 
 

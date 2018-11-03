@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate+STDemoListen.h"
+#import "STDemoAppDelegateListenLogic.h"
 #import "AppDelegate+STDemoView_New.h"
 
 @interface AppDelegate () <STDemoAppListenDelegate> {

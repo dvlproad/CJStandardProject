@@ -9,6 +9,8 @@
 #import "STDemoServiceUserManager.h"
 #import "STDemoServiceUserManager+Network.h"
 
+static NSString * const kSTDemoNotificationUserLoginState = @"STDemoNotificationUserLoginState";
+
 @implementation STDemoServiceUserManager
 
 + (STDemoServiceUserManager *)sharedInstance {
@@ -25,19 +27,37 @@
 }
 
 /**
- *  更新登录状态（登录成功，退出的时候都需要调用）
+ *  更新并发送登录状态（登录成功，退出的时候都需要调用）
  *
  *  @param isLogin 是否登录(YES:登录，NO:登出)
  */
-+ (void)updateLoginState:(BOOL)isLogin {
+- (void)pushNotificationForUserLoginState:(BOOL)isLogin {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setValue:@(isLogin) forKey:@"cj_autoLogin"];
     [userDefaults synchronize];
     
-    //NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    //[notificationCenter postNotificationName:kDemoNetworkSessionLoginStateDidChange object:@(isLogin)];
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    [notificationCenter postNotificationName:kSTDemoNotificationUserLoginState object:@(isLogin)];
 }
 
+/// 添加监听登录状态
+- (id)addNotificationForUserLoginStateWithUsingBlock:(void (^)(BOOL isLogin))block {
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationChange:) name:kSTDemoNotificationUserLoginState object:nil];
+    id loginStateObserver = [[NSNotificationCenter defaultCenter] addObserverForName:kSTDemoNotificationUserLoginState object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        id object = [note object];
+        BOOL isLogin = [object boolValue];
+        if (block) {
+            block(isLogin);
+        }
+    }];
+    return loginStateObserver;
+}
+
+/// 移除监听登录状态
+- (void)removeNotificationForUserLoginState:(id)observer {
+    [[NSNotificationCenter defaultCenter] removeObserver:observer];
+    observer = nil;
+}
 
 
 @end

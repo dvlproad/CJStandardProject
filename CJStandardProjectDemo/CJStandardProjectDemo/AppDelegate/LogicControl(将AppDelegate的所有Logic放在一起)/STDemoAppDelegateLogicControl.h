@@ -35,7 +35,7 @@
 
 
 
-@protocol STDemoAppListenDelegate <NSObject>
+@protocol STDemoAppLogicListenDelegate <NSObject>
 
 @optional
 
@@ -52,7 +52,7 @@
     
 }
 @property (nonatomic, weak) id<STDemoAppDidFinishLaunchingDelegate> didFinishLaunchingDelegate;
-@property (nonatomic, weak) id<STDemoAppListenDelegate> listenDelegate;
+@property (nonatomic, weak) id<STDemoAppLogicListenDelegate> listenDelegate;
 
 ///开启监听
 - (void)startListen;

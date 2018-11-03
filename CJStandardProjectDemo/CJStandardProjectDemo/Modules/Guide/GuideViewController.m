@@ -7,6 +7,7 @@
 //
 
 #import "GuideViewController.h"
+#import <CJBaseUtil/CJAppLastUtil.h>
 
 @interface GuideViewController ()
 
@@ -50,6 +51,8 @@
 
 
 - (void)readOverGuide:(UIButton *)button {
+    [CJAppLastUtil readOverGuide];
+    
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(guideViewControllerReadOver:)]) {

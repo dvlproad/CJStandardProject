@@ -17,9 +17,9 @@
 
 @optional
 
-- (void)amapLocationManagerDidChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+- (void)listen_amapLocationManagerDidChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 
-- (void)appUserManagerDidUpdateLoginState:(BOOL)loginState;
+- (void)listen_appUserManagerDidUpdateLoginState:(BOOL)loginState;
 
 @end
 

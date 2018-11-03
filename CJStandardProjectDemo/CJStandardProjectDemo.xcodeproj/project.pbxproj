@@ -29,7 +29,7 @@
 		7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA332148A6D100FAFD93 /* FindPasdPopupView.xib */; };
 		7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */; };
 		781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */; };
-		781BCDA1218D3C6E009E730C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 781BCDA0218D3C6E009E730C /* README.md */; };
+		781BCDB3218D65F9009E730C /* user:login in Resources */ = {isa = PBXBuildFile; fileRef = 781BCDB2218D65F9009E730C /* user:login */; };
 		783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */; };
 		784410532186B84100D746A7 /* STDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410522186B84100D746A7 /* STDemoStartUp.m */; };
 		784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */; };
@@ -132,7 +132,9 @@
 		7809CA342148A6D100FAFD93 /* FindPasdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindPasdViewController.xib; sourceTree = "<group>"; };
 		781495EC21414ACD00D0F2BC /* STDemoServiceOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoServiceOrderManager.h; sourceTree = "<group>"; };
 		781495EF21414ACD00D0F2BC /* STDemoServiceOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoServiceOrderManager.m; sourceTree = "<group>"; };
-		781BCDA0218D3C6E009E730C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		781BCDA7218D47E0009E730C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		781BCDA8218D47E0009E730C /* READMEOld.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = READMEOld.md; path = ../READMEOld.md; sourceTree = "<group>"; };
+		781BCDB2218D65F9009E730C /* user:login */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "user:login"; sourceTree = "<group>"; };
 		783C42082148AC6A005B4349 /* DemoFMDBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFMDBFileManager.h; sourceTree = "<group>"; };
 		783C42092148AC6A005B4349 /* DemoFMDBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFMDBFileManager.m; sourceTree = "<group>"; };
 		784410512186B84100D746A7 /* STDemoStartUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoStartUp.h; sourceTree = "<group>"; };
@@ -446,6 +448,54 @@
 			path = "未添加设计模式";
 			sourceTree = "<group>";
 		};
+		781BCDA3218D478B009E730C /* SimulateApiJSON */ = {
+			isa = PBXGroup;
+			children = (
+				781BCDB2218D65F9009E730C /* user:login */,
+			);
+			path = SimulateApiJSON;
+			sourceTree = "<group>";
+		};
+		781BCDA5218D4798009E730C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78A6220721367D42004DA046 /* Assets.xcassets */,
+				78A6220C21367D42004DA046 /* Info.plist */,
+				78A6220D21367D42004DA046 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		781BCDA6218D47CD009E730C /* README */ = {
+			isa = PBXGroup;
+			children = (
+				781BCDA7218D47E0009E730C /* README.md */,
+				781BCDA8218D47E0009E730C /* READMEOld.md */,
+			);
+			name = README;
+			sourceTree = "<group>";
+		};
+		781BCDAE218D4D11009E730C /* LogicControl(将AppDelegate的所有Logic放在一起) */ = {
+			isa = PBXGroup;
+			children = (
+				7844106B218749F100D746A7 /* STDemoRootViewControllerEnum.h */,
+				788D41A621846F44002BEED4 /* STDemoAppDelegateLogicControl.h */,
+				788D41A521846F44002BEED4 /* STDemoAppDelegateLogicControl.m */,
+			);
+			path = "LogicControl(将AppDelegate的所有Logic放在一起)";
+			sourceTree = "<group>";
+		};
+		781BCDAF218D4D34009E730C /* LogicControl(将AppDelegate的Logic各自分开) */ = {
+			isa = PBXGroup;
+			children = (
+				7844105E2187407D00D746A7 /* STDemoAppDelegateListenLogic.h */,
+				7844105D2187407D00D746A7 /* STDemoAppDelegateListenLogic.m */,
+				7844105F2187407D00D746A7 /* STDemoAppDelegateViewLogic.h */,
+				7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */,
+			);
+			path = "LogicControl(将AppDelegate的Logic各自分开)";
+			sourceTree = "<group>";
+		};
 		783C42072148AC6A005B4349 /* Databases */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,15 +530,6 @@
 			);
 			name = buildscript;
 			path = ../buildscript;
-			sourceTree = "<group>";
-		};
-		7844106C21874BCC00D746A7 /* README */ = {
-			isa = PBXGroup;
-			children = (
-				781BCDA0218D3C6E009E730C /* README.md */,
-			);
-			name = README;
-			path = ../README;
 			sourceTree = "<group>";
 		};
 		7880E6BE21385817009C9BCF /* Order */ = {
@@ -593,23 +634,10 @@
 				784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */,
 				784410622187453100D746A7 /* AppDelegate+STDemoStartUp.h */,
 				784410632187453100D746A7 /* AppDelegate+STDemoStartUp.m */,
-				788D41A421846F44002BEED4 /* LogicControl */,
+				781BCDAE218D4D11009E730C /* LogicControl(将AppDelegate的所有Logic放在一起) */,
+				781BCDAF218D4D34009E730C /* LogicControl(将AppDelegate的Logic各自分开) */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		788D41A421846F44002BEED4 /* LogicControl */ = {
-			isa = PBXGroup;
-			children = (
-				788D41A621846F44002BEED4 /* STDemoAppDelegateLogicControl.h */,
-				788D41A521846F44002BEED4 /* STDemoAppDelegateLogicControl.m */,
-				7844105E2187407D00D746A7 /* STDemoAppDelegateListenLogic.h */,
-				7844105D2187407D00D746A7 /* STDemoAppDelegateListenLogic.m */,
-				7844105F2187407D00D746A7 /* STDemoAppDelegateViewLogic.h */,
-				7844105C2187407D00D746A7 /* STDemoAppDelegateViewLogic.m */,
-				7844106B218749F100D746A7 /* STDemoRootViewControllerEnum.h */,
-			);
-			path = LogicControl;
 			sourceTree = "<group>";
 		};
 		788D41AC21847075002BEED4 /* Location */ = {
@@ -729,7 +757,7 @@
 		78A621F221367D40004DA046 = {
 			isa = PBXGroup;
 			children = (
-				7844106C21874BCC00D746A7 /* README */,
+				781BCDA6218D47CD009E730C /* README */,
 				784410552186D88900D746A7 /* buildscript */,
 				78A621FD21367D40004DA046 /* CJStandardProjectDemo */,
 				78A6221621367D42004DA046 /* CJStandardProjectDemoTests */,
@@ -760,9 +788,8 @@
 				78A62251213683AC004DA046 /* Utils */,
 				78A6223F213682B5004DA046 /* Modules */,
 				78A6225E2137B881004DA046 /* Resources */,
-				78A6220721367D42004DA046 /* Assets.xcassets */,
-				78A6220C21367D42004DA046 /* Info.plist */,
-				78A6220D21367D42004DA046 /* main.m */,
+				781BCDA3218D478B009E730C /* SimulateApiJSON */,
+				781BCDA5218D4798009E730C /* Supporting Files */,
 			);
 			path = CJStandardProjectDemo;
 			sourceTree = "<group>";
@@ -998,9 +1025,9 @@
 			files = (
 				7809CA352148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets in Resources */,
 				7809CA392148A6D100FAFD93 /* RegisterViewController.xib in Resources */,
-				781BCDA1218D3C6E009E730C /* README.md in Resources */,
 				7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */,
 				7809CA3A2148A6D100FAFD93 /* Login2.storyboard in Resources */,
+				781BCDB3218D65F9009E730C /* user:login in Resources */,
 				7809CA372148A6D100FAFD93 /* GuidePageView.xib in Resources */,
 				78A6220821367D42004DA046 /* Assets.xcassets in Resources */,
 				7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */,
@@ -1338,7 +1365,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1359,7 +1386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJStandardProjectDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

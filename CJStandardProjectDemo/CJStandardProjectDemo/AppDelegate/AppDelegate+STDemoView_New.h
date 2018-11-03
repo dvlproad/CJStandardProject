@@ -12,4 +12,6 @@
 
 - (void)viewDidFinishLaunching;
 
+- (void)viewWillEnterForeground;
+
 @end

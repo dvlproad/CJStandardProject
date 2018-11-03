@@ -21,10 +21,16 @@
 @property (nonatomic, assign, readonly) BOOL hasLogin;
 
 /**
- *  更新登录状态（登录成功，退出的时候都需要调用）
+ *  更新并发送登录状态（登录成功，退出的时候都需要调用）
  *
  *  @param isLogin 是否登录(YES:登录，NO:登出)
  */
-+ (void)updateLoginState:(BOOL)isLogin;
+- (void)pushNotificationForUserLoginState:(BOOL)isLogin;
+
+/// 添加监听登录状态
+- (id)addNotificationForUserLoginStateWithUsingBlock:(void (^)(BOOL isLogin))block;
+
+/// 移除监听登录状态
+- (void)removeNotificationForUserLoginState:(id)observer;
 
 @end
