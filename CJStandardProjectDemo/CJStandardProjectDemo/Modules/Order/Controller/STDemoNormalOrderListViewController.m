@@ -38,29 +38,6 @@
     [self.tableView.mj_header beginRefreshing];
 }
 
-- (void)setupViews {
-    
-}
-
-#pragma mark - Event
-- (void)headerRefreshAction {
-    __weak typeof(self)weakSelf = self;
-    [self.orderListlogicControl headerRefreshRequestWithCompleteBlock:^{
-        [weakSelf.tableView.mj_header endRefreshing];
-        [weakSelf.tableView reloadData];
-    }];
-
-}
-
-- (void)footerRefreshAction {
-    __weak typeof(self)weakSelf = self;
-    [self.orderListlogicControl footerRefreshRequestWithCompleteBlock:^{
-        [weakSelf.tableView.mj_footer endRefreshing];
-        [weakSelf.tableView reloadData];
-    }];
-  
-}
-
 #pragma mark - UITableViewDataSource && UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -96,12 +73,18 @@
         __weak typeof(self) weakSelf = self;
         _tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
             __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf headerRefreshAction];
+            [strongSelf.orderListlogicControl headerRefreshRequestWithCompleteBlock:^{
+                [weakSelf.tableView.mj_header endRefreshing];
+                [weakSelf.tableView reloadData];
+            }];
         }];
         
         _tableView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
             __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf footerRefreshAction];
+            [strongSelf.orderListlogicControl footerRefreshRequestWithCompleteBlock:^{
+                [weakSelf.tableView.mj_footer endRefreshing];
+                [weakSelf.tableView reloadData];
+            }];
         }];
     }
     
