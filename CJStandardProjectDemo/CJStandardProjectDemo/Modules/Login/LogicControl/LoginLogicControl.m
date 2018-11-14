@@ -14,8 +14,8 @@
 @interface LoginLogicControl () {
     
 }
-@property (nonatomic, copy) NSString *userName;
-@property (nonatomic, copy) NSString *password;
+@property (nonatomic, copy, readonly) NSString *userName;
+@property (nonatomic, copy, readonly) NSString *password;
 
 @end
 

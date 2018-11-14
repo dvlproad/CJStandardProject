@@ -70,6 +70,12 @@
 		788D41E8218499F2002BEED4 /* DemoMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41E7218499F2002BEED4 /* DemoMineViewController.m */; };
 		788D41EB21849A0C002BEED4 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41EA21849A0C002BEED4 /* MessageViewController.m */; };
 		788D41EE21849AF1002BEED4 /* STDemoOrderHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */; };
+		7895E6762192D915006C5C81 /* STDemoUITestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895E6752192D915006C5C81 /* STDemoUITestCase.m */; };
+		7895E6782192D938006C5C81 /* STDemoOrderListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7895E6772192D938006C5C81 /* STDemoOrderListTests.m */; };
+		78982B0C2191431300D9F4A3 /* STDemoTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B0B2191431300D9F4A3 /* STDemoTestCase.m */; };
+		78982B122191449100D9F4A3 /* STDemoLoginLogicModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B112191449100D9F4A3 /* STDemoLoginLogicModelTests.m */; };
+		78982B14219144A300D9F4A3 /* STDemoLoginViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B13219144A300D9F4A3 /* STDemoLoginViewModelTests.m */; };
+		78982B1721915D9100D9F4A3 /* NSString+STDemoValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B1621915D9100D9F4A3 /* NSString+STDemoValidate.m */; };
 		78A6220821367D42004DA046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220721367D42004DA046 /* Assets.xcassets */; };
 		78A6220E21367D42004DA046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6220D21367D42004DA046 /* main.m */; };
 		78A6221821367D42004DA046 /* CJStandardProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6221721367D42004DA046 /* CJStandardProjectDemoTests.m */; };
@@ -222,6 +228,15 @@
 		788D41EA21849A0C002BEED4 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		788D41EC21849AF1002BEED4 /* STDemoOrderHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoOrderHomeViewController.h; sourceTree = "<group>"; };
 		788D41ED21849AF1002BEED4 /* STDemoOrderHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderHomeViewController.m; sourceTree = "<group>"; };
+		7895E6742192D915006C5C81 /* STDemoUITestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoUITestCase.h; sourceTree = "<group>"; };
+		7895E6752192D915006C5C81 /* STDemoUITestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoUITestCase.m; sourceTree = "<group>"; };
+		7895E6772192D938006C5C81 /* STDemoOrderListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoOrderListTests.m; sourceTree = "<group>"; };
+		78982B0A2191431300D9F4A3 /* STDemoTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoTestCase.h; sourceTree = "<group>"; };
+		78982B0B2191431300D9F4A3 /* STDemoTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoTestCase.m; sourceTree = "<group>"; };
+		78982B112191449100D9F4A3 /* STDemoLoginLogicModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoLoginLogicModelTests.m; sourceTree = "<group>"; };
+		78982B13219144A300D9F4A3 /* STDemoLoginViewModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDemoLoginViewModelTests.m; sourceTree = "<group>"; };
+		78982B1521915D9100D9F4A3 /* NSString+STDemoValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+STDemoValidate.h"; sourceTree = "<group>"; };
+		78982B1621915D9100D9F4A3 /* NSString+STDemoValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+STDemoValidate.m"; sourceTree = "<group>"; };
 		78A621FB21367D40004DA046 /* CJStandardProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJStandardProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A6220721367D42004DA046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A6220C21367D42004DA046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -841,6 +856,10 @@
 			isa = PBXGroup;
 			children = (
 				78A6221721367D42004DA046 /* CJStandardProjectDemoTests.m */,
+				78982B0A2191431300D9F4A3 /* STDemoTestCase.h */,
+				78982B0B2191431300D9F4A3 /* STDemoTestCase.m */,
+				78982B112191449100D9F4A3 /* STDemoLoginLogicModelTests.m */,
+				78982B13219144A300D9F4A3 /* STDemoLoginViewModelTests.m */,
 				78A6221921367D42004DA046 /* Info.plist */,
 			);
 			path = CJStandardProjectDemoTests;
@@ -850,6 +869,9 @@
 			isa = PBXGroup;
 			children = (
 				78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */,
+				7895E6742192D915006C5C81 /* STDemoUITestCase.h */,
+				7895E6752192D915006C5C81 /* STDemoUITestCase.m */,
+				7895E6772192D938006C5C81 /* STDemoOrderListTests.m */,
 				78A6222421367D42004DA046 /* Info.plist */,
 			);
 			path = CJStandardProjectDemoUITests;
@@ -881,6 +903,8 @@
 		78A62251213683AC004DA046 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				78982B1521915D9100D9F4A3 /* NSString+STDemoValidate.h */,
+				78982B1621915D9100D9F4A3 /* NSString+STDemoValidate.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1207,6 +1231,7 @@
 				7809CA242148A67F00FAFD93 /* RegisterLogicControl.m in Sources */,
 				788D41AF2184708C002BEED4 /* STDemoServiceLocationManager.m in Sources */,
 				788D41BE21847B38002BEED4 /* STDemoAlert.m in Sources */,
+				78982B1721915D9100D9F4A3 /* NSString+STDemoValidate.m in Sources */,
 				788D41B521847695002BEED4 /* STDemoLocation.m in Sources */,
 				783C420E2148AC6A005B4349 /* DemoFMDBFileManager.m in Sources */,
 				781BCDBD218D8063009E730C /* STDemoSliderVCElementFactory.m in Sources */,
@@ -1262,6 +1287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A6221821367D42004DA046 /* CJStandardProjectDemoTests.m in Sources */,
+				78982B0C2191431300D9F4A3 /* STDemoTestCase.m in Sources */,
+				78982B14219144A300D9F4A3 /* STDemoLoginViewModelTests.m in Sources */,
+				78982B122191449100D9F4A3 /* STDemoLoginLogicModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1270,6 +1298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A6222321367D42004DA046 /* CJStandardProjectDemoUITests.m in Sources */,
+				7895E6762192D915006C5C81 /* STDemoUITestCase.m in Sources */,
+				7895E6782192D938006C5C81 /* STDemoOrderListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,7 +32,7 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         sleep(2);
         NSMutableArray *orders =[NSMutableArray array];
-        for (NSInteger i=0; i<16; i++) {
+        for (NSInteger i=0; i<0; i++) {
             NSInteger x = arc4random() % 100;
             NSString *string = [NSString stringWithFormat:@"(random%ld)",x];
             STDemoOrderModel *orderModel=[[STDemoOrderModel alloc] init];
@@ -58,7 +58,7 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         sleep(2);
         NSMutableArray *orders = [NSMutableArray array];
-        for (NSInteger i=0; i<16; i++) {
+        for (NSInteger i=0; i<0; i++) {
             NSInteger x = arc4random() % 100;
             NSString *string=[NSString stringWithFormat:@"(random%ld)",x];
             STDemoOrderModel *orderModel = [[STDemoOrderModel alloc] init];

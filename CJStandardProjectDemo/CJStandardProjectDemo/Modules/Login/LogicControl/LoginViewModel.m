@@ -14,23 +14,29 @@
 @interface LoginViewModel () {
     
 }
-@property (nonatomic, copy) NSString *userName;
-@property (nonatomic, copy) NSString *password;
 
 @end
 
 
 @implementation LoginViewModel
 
-//- (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password {
-//    self = [super init];
-//    if (self) {
-//        CJAppLastUser *lastUser = [CJAppLastUtil getLastLoginUser];
-//        self.userName = lastUser.lastLoginUserName;
-//        self.password = @"";
-//    }
-//    return self;
-//}
+- (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password {
+    self = [super init];
+    if (self) {
+        _userName = userName;
+        _password = password;
+    }
+    return self;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _userName = [self getDefaultLoginAccount];
+        _password = [self getDefaultPasswordForUserName:_userName];
+    }
+    return self;
+}
 
 #pragma mark - Get Default
 - (NSString *)getDefaultLoginAccount {
@@ -69,40 +75,11 @@
 }
 
 #pragma mark - Do
-///执行登录
-- (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
-                 loginStart:(void (^)(NSString *startMessage))loginStartBlock
-               loginSuccess:(void (^)(NSString *successMessage))loginSuccess
-               loginFailure:(void (^)(NSString *errorMessage))loginFailure
-{
+/// 检查是否可登录
+- (NSString *)checkLoginCondition {
     NSString *account = self.userName;
     NSString *password = self.password;
     
-    NSString *tryFailureMessage = [self checkLoginConditionByAccount:account password:password];
-    if (tryFailureMessage && tryFailureBlock) {
-        tryFailureBlock(tryFailureMessage);
-        return;
-    }
-    
-    NSString *startMessage = NSLocalizedString(@"正在登录", nil);
-    if (loginStartBlock) {
-        loginStartBlock(startMessage);
-    }
-    
-    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(STDemoUser *user) {
-        NSString *successMessage = NSLocalizedString(@"登录成功", nil);
-        if (loginSuccess) {
-            loginSuccess(successMessage);
-        }
-    } failure:^(NSString *errorMessage) {
-        if (loginFailure) {
-            loginFailure(errorMessage);
-        }
-    }];
-}
-
-- (NSString *)checkLoginConditionByAccount:(NSString *)account
-                                  password:(NSString *)password {
     BOOL loginUserNameEnable = account.length >= 4;
     BOOL loginPasswordEnable = password.length >= 4;
     
@@ -112,6 +89,24 @@
     }
     
     return nil;
+}
+/// 执行登录
+- (void)loginWitLoginSuccess:(void (^)(NSString *successMessage))loginSuccess
+                loginFailure:(void (^)(NSString *errorMessage))loginFailure
+{
+    NSString *userName = self.userName;
+    NSString *password = self.password;
+    
+    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:userName password:password success:^(STDemoUser *user) {
+        NSString *successMessage = NSLocalizedString(@"登录成功", nil);
+        if (loginSuccess) {
+            loginSuccess(successMessage);
+        }
+    } failure:^(NSString *errorMessage) {
+        if (loginFailure) {
+            loginFailure(errorMessage);
+        }
+    }];
 }
 
 
