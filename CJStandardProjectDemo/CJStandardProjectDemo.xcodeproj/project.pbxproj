@@ -1434,9 +1434,10 @@
 			baseConfigurationReference = C26CB6AD08CE875050CF9F25 /* Pods-CJStandardProjectDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = FZ5YDHE5JZ;
+				DEVELOPMENT_TEAM = D225N2EYEE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = CJStandardProjectDemo/Info.plist;
@@ -1456,8 +1457,9 @@
 			baseConfigurationReference = BE6F6B7728008CA1D8B7AFF7 /* Pods-CJStandardProjectDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FZ5YDHE5JZ;
+				DEVELOPMENT_TEAM = D225N2EYEE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CJStandardProjectDemo/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = CJStandardProjectDemo/Info.plist;

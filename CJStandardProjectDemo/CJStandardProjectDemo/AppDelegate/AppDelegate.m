@@ -23,11 +23,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    /*
+    NSLog(@"bounds = %@", NSStringFromCGRect([UIScreen mainScreen].bounds));
     
-//    UIViewController *viewController = [[UIViewController alloc] init];
-//    viewController.view.backgroundColor = [UIColor yellowColor];
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-//    self.window.rootViewController = navigationController;
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.title = NSLocalizedString(@"测试页面大小", nil);
+    viewController.view.backgroundColor = [UIColor yellowColor];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
+    */
     [STDemoStartUp startUp];
 
     [self old_viewDidFinishLaunching];
