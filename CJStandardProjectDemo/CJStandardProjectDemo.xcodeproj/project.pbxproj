@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3392FCD9CDA93380C77CDB1B /* libPods-CJStandardProjectDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1699A340532DB2035AD523DD /* libPods-CJStandardProjectDemoTests.a */; };
 		71A321527419DA7F980B79FA /* libPods-CJStandardProjectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DB0CB9120A31DF091AB88C /* libPods-CJStandardProjectDemo.a */; };
-		7809CA202148A67E00FAFD93 /* LoginViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA032148A67E00FAFD93 /* LoginViewControl.m */; };
 		7809CA212148A67E00FAFD93 /* FindPasswordLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA052148A67E00FAFD93 /* FindPasswordLogicControl.m */; };
 		7809CA222148A67E00FAFD93 /* LoginLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA062148A67E00FAFD93 /* LoginLogicControl.m */; };
 		7809CA232148A67F00FAFD93 /* LogoutLogicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7809CA092148A67E00FAFD93 /* LogoutLogicControl.m */; };
@@ -42,8 +41,10 @@
 		784410642187453100D746A7 /* AppDelegate+STDemoStartUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410632187453100D746A7 /* AppDelegate+STDemoStartUp.m */; };
 		78441067218746B000D746A7 /* AppDelegate+STDemoView_New.m in Sources */ = {isa = PBXBuildFile; fileRef = 78441066218746B000D746A7 /* AppDelegate+STDemoView_New.m */; };
 		7844106A2187474A00D746A7 /* AppDelegate+STDemoListen.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */; };
-		784410702187519C00D746A7 /* LoginLogicControl_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */; };
-		784410732187571C00D746A7 /* LVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784410712187571C00D746A7 /* LVLoginViewController.m */; };
+		7868267A21AE420800FCCDE5 /* OrderAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868267721AE420800FCCDE5 /* OrderAssets.xcassets */; };
+		7868267B21AE420800FCCDE5 /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868267821AE420800FCCDE5 /* LoginAssets.xcassets */; };
+		7868267C21AE420800FCCDE5 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868267921AE420800FCCDE5 /* AppAssets.xcassets */; };
+		7868276621AE94B300FCCDE5 /* STDemoTextFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868276421AE94B300FCCDE5 /* STDemoTextFieldFactory.m */; };
 		7880E6D021385817009C9BCF /* OrderListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */; };
 		7880E6D121385817009C9BCF /* OrderListTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C321385817009C9BCF /* OrderListTableViewDelegate.m */; };
 		7880E6D221385817009C9BCF /* OrderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7880E6C521385817009C9BCF /* OrderListViewModel.m */; };
@@ -76,12 +77,10 @@
 		78982B122191449100D9F4A3 /* STDemoLoginLogicModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B112191449100D9F4A3 /* STDemoLoginLogicModelTests.m */; };
 		78982B14219144A300D9F4A3 /* STDemoLoginViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B13219144A300D9F4A3 /* STDemoLoginViewModelTests.m */; };
 		78982B1721915D9100D9F4A3 /* NSString+STDemoValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78982B1621915D9100D9F4A3 /* NSString+STDemoValidate.m */; };
-		78A6220821367D42004DA046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6220721367D42004DA046 /* Assets.xcassets */; };
 		78A6220E21367D42004DA046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6220D21367D42004DA046 /* main.m */; };
 		78A6221821367D42004DA046 /* CJStandardProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6221721367D42004DA046 /* CJStandardProjectDemoTests.m */; };
 		78A6222321367D42004DA046 /* CJStandardProjectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */; };
 		78B90E3F2188512E00776584 /* VMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E3E2188512E00776584 /* VMLoginViewController.m */; };
-		78B90E422188516B00776584 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E412188516B00776584 /* LoginViewModel.m */; };
 		78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E442188579000776584 /* CTMediator+STDemoLogin.m */; };
 		78B90E4B2188626100776584 /* Target_STDemoLoginVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */; };
 		78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD02141AB33001F35E2 /* FriendCircleManager.m */; };
@@ -109,8 +108,6 @@
 /* Begin PBXFileReference section */
 		1699A340532DB2035AD523DD /* libPods-CJStandardProjectDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJStandardProjectDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E62B45B788FE6BA495BF021 /* Pods-CJStandardProjectDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJStandardProjectDemoTests/Pods-CJStandardProjectDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		7809CA012148A67E00FAFD93 /* LoginViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControl.h; sourceTree = "<group>"; };
-		7809CA032148A67E00FAFD93 /* LoginViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControl.m; sourceTree = "<group>"; };
 		7809CA052148A67E00FAFD93 /* FindPasswordLogicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordLogicControl.m; sourceTree = "<group>"; };
 		7809CA062148A67E00FAFD93 /* LoginLogicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginLogicControl.m; sourceTree = "<group>"; };
 		7809CA072148A67E00FAFD93 /* LogoutLogicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutLogicControl.h; sourceTree = "<group>"; };
@@ -173,10 +170,11 @@
 		784410682187474A00D746A7 /* AppDelegate+STDemoListen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+STDemoListen.h"; sourceTree = "<group>"; };
 		784410692187474A00D746A7 /* AppDelegate+STDemoListen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+STDemoListen.m"; sourceTree = "<group>"; };
 		7844106B218749F100D746A7 /* STDemoRootViewControllerEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDemoRootViewControllerEnum.h; sourceTree = "<group>"; };
-		7844106E2187519B00D746A7 /* LoginLogicControl_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginLogicControl_Old.h; sourceTree = "<group>"; };
-		7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginLogicControl_Old.m; sourceTree = "<group>"; };
-		784410712187571C00D746A7 /* LVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLoginViewController.m; sourceTree = "<group>"; };
-		784410722187571C00D746A7 /* LVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLoginViewController.h; sourceTree = "<group>"; };
+		7868267721AE420800FCCDE5 /* OrderAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = OrderAssets.xcassets; sourceTree = "<group>"; };
+		7868267821AE420800FCCDE5 /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
+		7868267921AE420800FCCDE5 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
+		7868276421AE94B300FCCDE5 /* STDemoTextFieldFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDemoTextFieldFactory.m; sourceTree = "<group>"; };
+		7868276521AE94B300FCCDE5 /* STDemoTextFieldFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoTextFieldFactory.h; sourceTree = "<group>"; };
 		7880E6C021385817009C9BCF /* OrderListTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewDelegate.h; sourceTree = "<group>"; };
 		7880E6C121385817009C9BCF /* OrderListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListTableViewDataSource.h; sourceTree = "<group>"; };
 		7880E6C221385817009C9BCF /* OrderListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListTableViewDataSource.m; sourceTree = "<group>"; };
@@ -238,7 +236,6 @@
 		78982B1521915D9100D9F4A3 /* NSString+STDemoValidate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+STDemoValidate.h"; sourceTree = "<group>"; };
 		78982B1621915D9100D9F4A3 /* NSString+STDemoValidate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+STDemoValidate.m"; sourceTree = "<group>"; };
 		78A621FB21367D40004DA046 /* CJStandardProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJStandardProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		78A6220721367D42004DA046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A6220C21367D42004DA046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78A6220D21367D42004DA046 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78A6221321367D42004DA046 /* CJStandardProjectDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJStandardProjectDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,8 +247,6 @@
 		78A622642137BEC4004DA046 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		78B90E3D2188512E00776584 /* VMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMLoginViewController.h; sourceTree = "<group>"; };
 		78B90E3E2188512E00776584 /* VMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMLoginViewController.m; sourceTree = "<group>"; };
-		78B90E402188516B00776584 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
-		78B90E412188516B00776584 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		78B90E432188579000776584 /* CTMediator+STDemoLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+STDemoLogin.h"; sourceTree = "<group>"; };
 		78B90E442188579000776584 /* CTMediator+STDemoLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+STDemoLogin.m"; sourceTree = "<group>"; };
 		78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_STDemoLoginVCFactory.m; sourceTree = "<group>"; };
@@ -313,18 +308,8 @@
 				7809CA042148A67E00FAFD93 /* LogicControl */,
 				7809CA102148A67E00FAFD93 /* NDM */,
 				7809CA1E2148A67E00FAFD93 /* View */,
-				7809C9FF2148A67E00FAFD93 /* ViewControl(演示用,后期会废弃掉) */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		7809C9FF2148A67E00FAFD93 /* ViewControl(演示用,后期会废弃掉) */ = {
-			isa = PBXGroup;
-			children = (
-				7809CA012148A67E00FAFD93 /* LoginViewControl.h */,
-				7809CA032148A67E00FAFD93 /* LoginViewControl.m */,
-			);
-			path = "ViewControl(演示用,后期会废弃掉)";
 			sourceTree = "<group>";
 		};
 		7809CA042148A67E00FAFD93 /* LogicControl */ = {
@@ -332,10 +317,6 @@
 			children = (
 				7809CA0A2148A67E00FAFD93 /* LoginLogicControl.h */,
 				7809CA062148A67E00FAFD93 /* LoginLogicControl.m */,
-				7844106E2187519B00D746A7 /* LoginLogicControl_Old.h */,
-				7844106F2187519C00D746A7 /* LoginLogicControl_Old.m */,
-				78B90E402188516B00776584 /* LoginViewModel.h */,
-				78B90E412188516B00776584 /* LoginViewModel.m */,
 				7809CA0B2148A67E00FAFD93 /* FindPasswordLogicControl.h */,
 				7809CA052148A67E00FAFD93 /* FindPasswordLogicControl.m */,
 				7809CA072148A67E00FAFD93 /* LogoutLogicControl.h */,
@@ -350,7 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				781BCDA2218D406D009E730C /* 未添加设计模式 */,
-				781BCD9F218D3C03009E730C /* LogicControl+ViewControl设计模式 */,
 				781BCD9D218D3BCF009E730C /* LogicModel设计模式 */,
 				781BCD9E218D3BEE009E730C /* ViewModel设计模式 */,
 			);
@@ -453,15 +433,6 @@
 			path = "ViewModel设计模式";
 			sourceTree = "<group>";
 		};
-		781BCD9F218D3C03009E730C /* LogicControl+ViewControl设计模式 */ = {
-			isa = PBXGroup;
-			children = (
-				784410722187571C00D746A7 /* LVLoginViewController.h */,
-				784410712187571C00D746A7 /* LVLoginViewController.m */,
-			);
-			path = "LogicControl+ViewControl设计模式";
-			sourceTree = "<group>";
-		};
 		781BCDA2218D406D009E730C /* 未添加设计模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,7 +457,6 @@
 		781BCDA5218D4798009E730C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				78A6220721367D42004DA046 /* Assets.xcassets */,
 				78A6220C21367D42004DA046 /* Info.plist */,
 				78A6220D21367D42004DA046 /* main.m */,
 			);
@@ -584,6 +554,15 @@
 			);
 			name = buildscript;
 			path = ../buildscript;
+			sourceTree = "<group>";
+		};
+		7868276321AE94B300FCCDE5 /* STDemoTextFieldFactory */ = {
+			isa = PBXGroup;
+			children = (
+				7868276521AE94B300FCCDE5 /* STDemoTextFieldFactory.h */,
+				7868276421AE94B300FCCDE5 /* STDemoTextFieldFactory.m */,
+			);
+			path = STDemoTextFieldFactory;
 			sourceTree = "<group>";
 		};
 		7880E6BE21385817009C9BCF /* Order */ = {
@@ -721,6 +700,7 @@
 		788D41BA21847A97002BEED4 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				7868276321AE94B300FCCDE5 /* STDemoTextFieldFactory */,
 				781BCDC5218D9527009E730C /* STDemoBarButtonItemFactory */,
 				781BCDBA218D8053009E730C /* STDemoSliderVCElementFactory */,
 				788D41BF21847B44002BEED4 /* Base */,
@@ -912,6 +892,9 @@
 		78A6225E2137B881004DA046 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7868267921AE420800FCCDE5 /* AppAssets.xcassets */,
+				7868267821AE420800FCCDE5 /* LoginAssets.xcassets */,
+				7868267721AE420800FCCDE5 /* OrderAssets.xcassets */,
 				7809CA2B2148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets */,
 				7809CA2C2148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.h */,
 				7809CA2D2148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m */,
@@ -1086,10 +1069,12 @@
 				7809CA352148A6D100FAFD93 /* CJDemoModuleLoginAsset.xcassets in Resources */,
 				7809CA392148A6D100FAFD93 /* RegisterViewController.xib in Resources */,
 				7809CA3B2148A6D100FAFD93 /* FindPasdPopupView.xib in Resources */,
+				7868267A21AE420800FCCDE5 /* OrderAssets.xcassets in Resources */,
+				7868267C21AE420800FCCDE5 /* AppAssets.xcassets in Resources */,
 				7809CA3A2148A6D100FAFD93 /* Login2.storyboard in Resources */,
 				781BCDB3218D65F9009E730C /* user:login in Resources */,
+				7868267B21AE420800FCCDE5 /* LoginAssets.xcassets in Resources */,
 				7809CA372148A6D100FAFD93 /* GuidePageView.xib in Resources */,
-				78A6220821367D42004DA046 /* Assets.xcassets in Resources */,
 				7809CA3C2148A6D100FAFD93 /* FindPasdViewController.xib in Resources */,
 				788D41D421848F5C002BEED4 /* DemoMainAssets.xcassets in Resources */,
 				7809CA382148A6D100FAFD93 /* GuideMainViewController.xib in Resources */,
@@ -1224,7 +1209,6 @@
 				781BCDB9218D7ECE009E730C /* STDemoNormalOrderListViewController.m in Sources */,
 				788D41B421847695002BEED4 /* STDemoLocationCityModel.m in Sources */,
 				784410602187407D00D746A7 /* STDemoAppDelegateViewLogic.m in Sources */,
-				784410702187519C00D746A7 /* LoginLogicControl_Old.m in Sources */,
 				781BCDC4218D8C2A009E730C /* OrderListLogicControl.m in Sources */,
 				781BCDB8218D7ECE009E730C /* STDemoDDOrderListViewController.m in Sources */,
 				788D41AB21846F44002BEED4 /* AppDelegate.m in Sources */,
@@ -1246,10 +1230,8 @@
 				7809CA232148A67F00FAFD93 /* LogoutLogicControl.m in Sources */,
 				788D41D121848F1F002BEED4 /* STDemoLoginRouter.m in Sources */,
 				7880E6D521385817009C9BCF /* OrderCell.m in Sources */,
-				7809CA202148A67E00FAFD93 /* LoginViewControl.m in Sources */,
 				781495F221414ACD00D0F2BC /* STDemoServiceOrderManager.m in Sources */,
 				7809CA362148A6D100FAFD93 /* CJDemoModuleLoginResourceUtil.m in Sources */,
-				78B90E422188516B00776584 /* LoginViewModel.m in Sources */,
 				7880E6D221385817009C9BCF /* OrderListViewModel.m in Sources */,
 				7809CA252148A67F00FAFD93 /* LMLoginViewController.m in Sources */,
 				78A6220E21367D42004DA046 /* main.m in Sources */,
@@ -1266,12 +1248,12 @@
 				788D41E8218499F2002BEED4 /* DemoMineViewController.m in Sources */,
 				788D41AA21846F44002BEED4 /* STDemoAppDelegateLogicControl.m in Sources */,
 				788D41EB21849A0C002BEED4 /* MessageViewController.m in Sources */,
+				7868276621AE94B300FCCDE5 /* STDemoTextFieldFactory.m in Sources */,
 				7809CA282148A67F00FAFD93 /* STDemoUsePermissionModel.m in Sources */,
 				78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */,
 				788D41C621847BD1002BEED4 /* STDemoButtonFactory.m in Sources */,
 				788D41B9218479A9002BEED4 /* GuideViewController.m in Sources */,
 				788D41A921846F44002BEED4 /* AppDelegate+STDemoView_Old.m in Sources */,
-				784410732187571C00D746A7 /* LVLoginViewController.m in Sources */,
 				7809CA222148A67E00FAFD93 /* LoginLogicControl.m in Sources */,
 				78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */,
 				788D41D721848F64002BEED4 /* DemoMainViewController.m in Sources */,

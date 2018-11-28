@@ -13,20 +13,20 @@
 @protocol FindPasswordLogicControlDelegate <NSObject>
 
 ///找回密码按钮的enable发生变化需要更新按钮显示
-- (void)logic_findPasswordButtonEnableChange:(BOOL)enable;
+- (void)vm_findPasswordButtonEnableChange:(BOOL)enable;
 
 ///尝试请求找回密码时候，未满足条件时候
-- (void)logic_tryFindPasswordFailureWithMessage:(NSString *)message;
+- (void)vm_tryFindPasswordFailureWithMessage:(NSString *)message;
 
 ///开始请求找回密码时候更新视图显示提示信息
-- (void)logic_startFindPasswordWithMessage:(NSString *)message;
+- (void)vm_startFindPasswordWithMessage:(NSString *)message;
 
 ///请求找回密码成功
-- (void)logic_findPasswordSuccessWithMessage:(NSString *)message;
+- (void)vm_findPasswordSuccessWithMessage:(NSString *)message;
 
 
 ///请求找回密码失败更新视图显示提示信息
-- (void)logic_findPasswordFailureWithMessage:(NSString *)message;
+- (void)vm_findPasswordFailureWithMessage:(NSString *)message;
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  STDemoLoginViewModelTests.m
+//  STDemoLoginBlockViewModelTests.m
 //  CJStandardProjectDemoTests
 //
 //  Created by ciyouzen on 2018/8/29.
@@ -7,34 +7,34 @@
 //
 
 #import "STDemoTestCase.h"
-#import "LoginViewModel.h"
+#import "LoginBlockViewModel.h"
 #import "NSString+STDemoValidate.h"
 #import "STDemoServiceUserManager+Network.h"
 
-@interface STDemoLoginViewModelTests : STDemoTestCase {
+@interface STDemoLoginBlockViewModelTests : STDemoTestCase {
     
 }
-@property (nonatomic, strong) LoginViewModel *viewModel;
+@property (nonatomic, strong) LoginBlockViewModel *viewControl;
 
 @end
 
-@implementation STDemoLoginViewModelTests
+@implementation STDemoLoginBlockViewModelTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    LoginViewModel *viewModel = [[LoginViewModel alloc] init];
-    NSString *tryFailureMessage = [viewModel checkLoginCondition];
+    LoginBlockViewModel *viewControl = [[LoginBlockViewModel alloc] init];
+    NSString *tryFailureMessage = [viewControl checkLoginCondition];
     if (tryFailureMessage) {
         return;
     }
     
-    [viewModel loginWitLoginSuccess:^(NSString *successMessage) {
+    [viewControl loginWitLoginSuccess:^(NSString *successMessage) {
         NOTIFY
     } loginFailure:^(NSString *errorMessage) {
         NOTIFY
     }];
     
-    self.viewModel = viewModel;
+    self.viewControl = viewControl;
 }
 
 - (void)testCheckUserName {
@@ -55,8 +55,8 @@
 }
 
 - (void)testCheckLoginCondition {
-    LoginViewModel *viewModel = [[LoginViewModel alloc] initWithUserName:@"Beyond" password:@"Luckin1234"];
-    NSString *tryFailureMessage = [viewModel checkLoginCondition];
+    LoginBlockViewModel *viewControl = [[LoginBlockViewModel alloc] initWithUserName:@"Beyond" password:@"Luckin1234"];
+    NSString *tryFailureMessage = [viewControl checkLoginCondition];
     XCTAssertFalse(tryFailureMessage);
 }
 
@@ -73,11 +73,11 @@
 }
 
 - (void)testLoginLogic {
-    LoginViewModel *viewModel = [[LoginViewModel alloc] init];
-    [viewModel updateUserName:@"Beyond"];
-    [viewModel updatePassword:@"Luckin1234"];
+    LoginBlockViewModel *viewControl = [[LoginBlockViewModel alloc] init];
+    [viewControl updateUserName:@"Beyond"];
+    [viewControl updatePassword:@"Luckin1234"];
     
-    [viewModel loginWitLoginSuccess:^(NSString *successMessage) {
+    [viewControl loginWitLoginSuccess:^(NSString *successMessage) {
         NOTIFY
     } loginFailure:^(NSString *errorMessage) {
         NOTIFY

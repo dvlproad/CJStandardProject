@@ -12,8 +12,14 @@
 
 @protocol LoginLogicControlDelegate <NSObject>
 
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable;
+/// userName 的有效性发生变化
+- (void)vm_checkUserNameWithValid:(BOOL)valid;
+
+/// password 的有效性发生变化
+- (void)vm_checkPasswordWithValid:(BOOL)valid;
+
+/// 登录按钮 的有效性发生变化
+- (void)vm_checkLoginWithValid:(BOOL)valid;
 
 @end
 

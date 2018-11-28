@@ -13,19 +13,19 @@
 @protocol RegisterLogicControlDelegate <NSObject>
 
 ///注册按钮的enable发生变化需要更新按钮显示
-- (void)logic_registerButtonEnableChange:(BOOL)enable;
+- (void)vm_registerButtonEnableChange:(BOOL)enable;
 
 ///尝试登录时候，未满足条件时候
-- (void)logic_tryRegisterFailureWithMessage:(NSString *)message;
+- (void)vm_tryRegisterFailureWithMessage:(NSString *)message;
 
 ///开始注册时候更新视图显示提示信息
-- (void)logic_startRegisterWithMessage:(NSString *)message;
+- (void)vm_startRegisterWithMessage:(NSString *)message;
 
 ///注册成功回到登录页
-- (void)logic_registerSuccessWithMessage:(NSString *)message;
+- (void)vm_registerSuccessWithMessage:(NSString *)message;
 
 ///注册失败更新视图显示提示信息
-- (void)logic_registerFailureWithMessage:(NSString *)message;
+- (void)vm_registerFailureWithMessage:(NSString *)message;
 
 @end
 

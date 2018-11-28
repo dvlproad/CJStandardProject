@@ -63,8 +63,8 @@
 
     BOOL allowClickLoginButton = loginUserNameEnable && loginPasswordEnable;
     //NSLog(@"allowClickLoginButton = %@, %@, %@", allowClickLoginButton ? @"YES" : @"NO", self.userName, self.password);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_loginButtonEnableChange:)]) {
-        [self.delegate logic_loginButtonEnableChange:allowClickLoginButton];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_checkLoginWithValid:)]) {
+        [self.delegate vm_checkLoginWithValid:allowClickLoginButton];
     }
 }
 

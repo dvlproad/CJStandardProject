@@ -51,8 +51,8 @@
 
     BOOL allowClickLoginButton = registerUserNameEnable && registerPasswordEnable && registerEmailEnable;
     //NSLog(@"allowClickLoginButton = %@, %@, %@", allowClickLoginButton ? @"YES" : @"NO", self.userName, self.password);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_registerButtonEnableChange:)]) {
-        [self.delegate logic_registerButtonEnableChange:allowClickLoginButton];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_registerButtonEnableChange:)]) {
+        [self.delegate vm_registerButtonEnableChange:allowClickLoginButton];
     }
 }
 
@@ -66,16 +66,16 @@
     
     NSString *failureMessage = [self checkRegisterConditionByAccount:account password:password email:email];
     if (failureMessage) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_tryRegisterFailureWithMessage:)]) {
-            [self.delegate logic_tryRegisterFailureWithMessage:failureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_tryRegisterFailureWithMessage:)]) {
+            [self.delegate vm_tryRegisterFailureWithMessage:failureMessage];
         }
         
         return;
     }
     
     NSString *loginingText = NSLocalizedString(@"正在注册", nil);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_startRegisterWithMessage:)]) {
-        [self.delegate logic_startRegisterWithMessage:loginingText];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_startRegisterWithMessage:)]) {
+        [self.delegate vm_startRegisterWithMessage:loginingText];
     }
     
     
@@ -84,8 +84,8 @@
         NSInteger status = [responseObject[@"status"] integerValue];
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"注册失败", nil);
-            if (self.delegate && [self.delegate respondsToSelector:@selector(logic_registerFailureWithMessage:)]) {
-                [self.delegate logic_registerFailureWithMessage:loginFailureMessage];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(vm_registerFailureWithMessage:)]) {
+                [self.delegate vm_registerFailureWithMessage:loginFailureMessage];
             }
             return;
         }
@@ -102,14 +102,14 @@
 //        [CJAppLastUtil saveAccount:account withPassword:password];
         
         NSString *loginSuccessMessage = NSLocalizedString(@"注册成功", nil);
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_registerSuccessWithMessage:)]) {
-            [self.delegate logic_registerSuccessWithMessage:loginSuccessMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_registerSuccessWithMessage:)]) {
+            [self.delegate vm_registerSuccessWithMessage:loginSuccessMessage];
         }
         
     } failure:^(NSString *errorMessage) {
         NSString *registerFailureMessage = NSLocalizedString(@"注册失败", nil);
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_registerFailureWithMessage:)]) {
-            [self.delegate logic_registerFailureWithMessage:registerFailureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_registerFailureWithMessage:)]) {
+            [self.delegate vm_registerFailureWithMessage:registerFailureMessage];
         }
     }];
 }

@@ -13,19 +13,19 @@
 @protocol LogoutLogicControlDelegate <NSObject>
 
 ///退出按钮的enable发生变化需要更新按钮显示
-- (void)logic_LogoutButtonEnableChange:(BOOL)enable;
+- (void)vm_LogoutButtonEnableChange:(BOOL)enable;
 
 ///尝试退出时候，未满足条件时候
-- (void)logic_tryLogoutFailureWithMessage:(NSString *)message;
+- (void)vm_tryLogoutFailureWithMessage:(NSString *)message;
 
 ///开始退出时候更新视图显示提示信息
-- (void)logic_startLogoutWithMessage:(NSString *)message;
+- (void)vm_startLogoutWithMessage:(NSString *)message;
 
 ///退出成功
-- (void)logic_logoutSuccessWithMessage:(NSString *)message;
+- (void)vm_logoutSuccessWithMessage:(NSString *)message;
 
 ///退出失败更新视图显示提示信息
-- (void)logic_logoutFailureWithMessage:(NSString *)message;
+- (void)vm_logoutFailureWithMessage:(NSString *)message;
 
 @end
 

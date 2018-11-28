@@ -42,8 +42,8 @@
     BOOL emailValidate = [self.email cj_validateEmail];
 
     BOOL allowClickFindPasswordButton = emailValidate;
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordButtonEnableChange:)]) {
-        [self.delegate logic_findPasswordButtonEnableChange:allowClickFindPasswordButton];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_findPasswordButtonEnableChange:)]) {
+        [self.delegate vm_findPasswordButtonEnableChange:allowClickFindPasswordButton];
     }
 }
 
@@ -55,16 +55,16 @@
     
     NSString *failureMessage = [self checkFindPasswordConditionByEmail:email];
     if (failureMessage) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_tryFindPasswordFailureWithMessage:)]) {
-            [self.delegate logic_tryFindPasswordFailureWithMessage:failureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_tryFindPasswordFailureWithMessage:)]) {
+            [self.delegate vm_tryFindPasswordFailureWithMessage:failureMessage];
         }
         
         return;
     }
     
     NSString *loginingText = NSLocalizedString(@"正在发送", nil);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_startFindPasswordWithMessage:)]) {
-        [self.delegate logic_startFindPasswordWithMessage:loginingText];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_startFindPasswordWithMessage:)]) {
+        [self.delegate vm_startFindPasswordWithMessage:loginingText];
     }
     
 
@@ -74,8 +74,8 @@
         NSInteger status = responseModel.status;
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"邮件发送失败", nil);
-            if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordFailureWithMessage:)]) {
-                [self.delegate logic_findPasswordFailureWithMessage:loginFailureMessage];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(vm_findPasswordFailureWithMessage:)]) {
+                [self.delegate vm_findPasswordFailureWithMessage:loginFailureMessage];
             }
             return;
         }
@@ -84,14 +84,14 @@
         //NSDictionary *result = responseObject[@"result"];
         NSString *findFailureMessage = NSLocalizedString(@"邮件发送成功", nil);
     
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordSuccessWithMessage:)]) {
-            [self.delegate logic_findPasswordSuccessWithMessage:findFailureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_findPasswordSuccessWithMessage:)]) {
+            [self.delegate vm_findPasswordSuccessWithMessage:findFailureMessage];
         }
         
     } failure:^(NSString *errorMessage) {
         NSString *findFailureMessage = NSLocalizedString(@"邮件发送失败", nil);
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_findPasswordFailureWithMessage:)]) {
-            [self.delegate logic_findPasswordFailureWithMessage:findFailureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_findPasswordFailureWithMessage:)]) {
+            [self.delegate vm_findPasswordFailureWithMessage:findFailureMessage];
         }
     }];
 }

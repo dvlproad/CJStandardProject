@@ -11,7 +11,7 @@
 @implementation NSString (STDemoValidate)
 
 - (BOOL)stdemo_checkUserName {
-    return self.length > 0;
+    return self.length > 2;
 }
 
 - (BOOL)stdemo_checkPassword {

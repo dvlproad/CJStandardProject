@@ -52,7 +52,7 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-//    [self.viewModel startEndEditing];
+//    [self.viewControl startEndEditing];
     [self.view endEditing:YES];
 }
 
@@ -63,16 +63,16 @@
     
     [self setupViews];
     
-//    //viewModel
-//    LoginViewControl *viewModel = [[LoginViewControl alloc] init];
-//    viewModel.view = self.view;
-//    viewModel.userNameTextField = self.userNameTextField;
-//    viewModel.passwordTextField = self.passwordTextField;
-//    viewModel.loginButton = self.loginButton;
-//    viewModel.findPasswordButton = self.findPasswordButton;
-//    viewModel.registerButton = self.registerButton;
-//    viewModel.delegate = self;
-//    self.viewModel = viewModel;
+//    //viewControl
+//    LoginViewControl *viewControl = [[LoginViewControl alloc] init];
+//    viewControl.view = self.view;
+//    viewControl.userNameTextField = self.userNameTextField;
+//    viewControl.passwordTextField = self.passwordTextField;
+//    viewControl.loginButton = self.loginButton;
+//    viewControl.findPasswordButton = self.findPasswordButton;
+//    viewControl.registerButton = self.registerButton;
+//    viewControl.delegate = self;
+//    self.viewControl = viewControl;
     self.userNameTextField.delegate = self;
     self.passwordTextField.delegate = self;
     self.loginButton.enabled = NO;
@@ -153,11 +153,11 @@
 }
 
 - (void)findPasswordButtonAction {
-//    [self.viewModel goFindPasswordViewController];
+//    [self.viewControl goFindPasswordViewController];
 }
 
 - (void)registerButtonAction {
-//    [self.viewModel goRegisterViewController];
+//    [self.viewControl goRegisterViewController];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -224,10 +224,21 @@
 
 
 #pragma mark - LoginLogicControlDelegate
+/// userName 的有效性发生变化
+- (void)vm_checkUserNameWithValid:(BOOL)valid {
+    self.userNameTextField.leftButtonSelected = valid;
+}
+
+/// password 的有效性发生变化
+- (void)vm_checkPasswordWithValid:(BOOL)valid {
+    self.passwordTextField.leftButtonSelected = valid;
+}
+
 ///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable {
+- (void)vm_checkLoginWithValid:(BOOL)enable {
     self.loginButton.enabled = enable;
 }
+
 
 #pragma mark - Touch
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

@@ -34,16 +34,16 @@
     
     NSString *failureMessage = [self checkLogoutConditionByUid:uid];
     if (failureMessage) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_tryLogoutFailureWithMessage:)]) {
-            [self.delegate logic_tryLogoutFailureWithMessage:failureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_tryLogoutFailureWithMessage:)]) {
+            [self.delegate vm_tryLogoutFailureWithMessage:failureMessage];
         }
         
         return;
     }
     
     NSString *loginingText = NSLocalizedString(@"正在退出", nil);
-    if (self.delegate && [self.delegate respondsToSelector:@selector(logic_startLogoutWithMessage:)]) {
-        [self.delegate logic_startLogoutWithMessage:loginingText];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_startLogoutWithMessage:)]) {
+        [self.delegate vm_startLogoutWithMessage:loginingText];
     }
     
     
@@ -51,8 +51,8 @@
         NSInteger status = responseModel.status;
         if (status != 0) {
             NSString *loginFailureMessage = NSLocalizedString(@"退出失败", nil);
-            if (self.delegate && [self.delegate respondsToSelector:@selector(logic_logoutFailureWithMessage:)]) {
-                [self.delegate logic_logoutFailureWithMessage:loginFailureMessage];
+            if (self.delegate && [self.delegate respondsToSelector:@selector(vm_logoutFailureWithMessage:)]) {
+                [self.delegate vm_logoutFailureWithMessage:loginFailureMessage];
             }
             return;
         }
@@ -65,14 +65,14 @@
         [CJAppLastUtil deleteAccountFromKeychain:uid];
         
         NSString *logoutSuccessMessage = NSLocalizedString(@"退出成功", nil);
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_logoutSuccessWithMessage:)]) {
-            [self.delegate logic_logoutSuccessWithMessage:logoutSuccessMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_logoutSuccessWithMessage:)]) {
+            [self.delegate vm_logoutSuccessWithMessage:logoutSuccessMessage];
         }
         
     } failure:^(NSString *errorMessage) {
         NSString *logoutFailureMessage = NSLocalizedString(@"退出失败", nil);
-        if (self.delegate && [self.delegate respondsToSelector:@selector(logic_logoutFailureWithMessage:)]) {
-            [self.delegate logic_logoutFailureWithMessage:logoutFailureMessage];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_logoutFailureWithMessage:)]) {
+            [self.delegate vm_logoutFailureWithMessage:logoutFailureMessage];
         }
     }];
 }

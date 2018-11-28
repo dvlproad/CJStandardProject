@@ -39,8 +39,14 @@
 ```objective-c
 @protocol LoginLogicControlDelegate <NSObject>
 
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable;
+/// userName 的有效性发生变化
+- (void)vm_checkUserNameWithValid:(BOOL)valid;
+
+/// password 的有效性发生变化
+- (void)vm_checkPasswordWithValid:(BOOL)valid;
+
+/// 登录按钮 的有效性发生变化
+- (void)vm_checkLoginWithValid:(BOOL)valid;
 
 @end
 
@@ -188,7 +194,7 @@ self.viewLogic.loginButtonEnableChange = ^(BOOL enable) {
  #pragma mark - LoginLogicControlDelegate
  
  ///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable {
+- (void)vm_checkLoginWithValid:(BOOL)enable {
 
 }
 ```
@@ -200,14 +206,20 @@ self.viewLogic.loginButtonEnableChange = ^(BOOL enable) {
 ```objective-c
 @protocol LoginLogicControlDelegate <NSObject>
 
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable;
+/// userName 的有效性发生变化
+- (void)vm_checkUserNameWithValid:(BOOL)valid;
+
+/// password 的有效性发生变化
+- (void)vm_checkPasswordWithValid:(BOOL)valid;
+
+/// 登录按钮 的有效性发生变化
+- (void)vm_checkLoginWithValid:(BOOL)valid;
 
 ///尝试登录时候，未满足条件时候
-- (void)logic_tryLoginFailureWithMessage:(NSString *)message;
+- (void)vm_tryLoginFailureWithMessage:(NSString *)message;
 
 ///开始登录时候更新视图显示提示信息
-- (void)logic_startLoginWithMessage:(NSString *)message;
+- (void)vm_startLoginWithMessage:(NSString *)message;
 
 @end
 
@@ -261,16 +273,16 @@ self.viewLogic.loginButtonEnableChange = ^(BOOL enable) {
 @protocol LoginLogicControlDelegate <NSObject>
 
 ///尝试登录时候，未满足条件时候
-- (void)logic_tryLoginFailureWithMessage:(NSString *)message;
+- (void)vm_tryLoginFailureWithMessage:(NSString *)message;
 
 ///开始登录时候更新视图显示提示信息
-- (void)logic_startLoginWithMessage:(NSString *)message;
+- (void)vm_startLoginWithMessage:(NSString *)message;
 
 ///登录成功更新视图显示提示信息
-- (void)logic_loginSuccessWithMessage:(NSString *)message;
+- (void)vm_loginSuccessWithMessage:(NSString *)message;
 
 ///登录失败更新视图显示提示信息
-- (void)logic_loginFailureWithMessage:(NSString *)message;
+- (void)vm_loginFailureWithMessage:(NSString *)message;
 
 @end
 
@@ -303,34 +315,40 @@ self.viewLogic.loginButtonEnableChange = ^(BOOL enable) {
 ```
 
 #### 5、业务逻辑LogicControl改造前后区别（以`LoginLogicControl.h`举例）
-改造前的`LoginLogicControl_Old.h`
+改造前的`LoginDelegateViewModel.h`
 
 ```objective-c
-@protocol LoginLogicControl_OldDelegate <NSObject>
+@protocol LoginDelegateViewModelDelegate <NSObject>
 
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable;
+/// userName 的有效性发生变化
+- (void)vm_checkUserNameWithValid:(BOOL)valid;
+
+/// password 的有效性发生变化
+- (void)vm_checkPasswordWithValid:(BOOL)valid;
+
+/// 登录按钮 的有效性发生变化
+- (void)vm_checkLoginWithValid:(BOOL)valid;
 
 ///尝试登录时候，未满足条件时候
-- (void)logic_tryLoginFailureWithMessage:(NSString *)message;
+- (void)vm_tryLoginFailureWithMessage:(NSString *)message;
 
 ///开始登录时候更新视图显示提示信息
-- (void)logic_startLoginWithMessage:(NSString *)message;
+- (void)vm_startLoginWithMessage:(NSString *)message;
 
 ///登录成功更新视图显示提示信息
-- (void)logic_loginSuccessWithMessage:(NSString *)message;
+- (void)vm_loginSuccessWithMessage:(NSString *)message;
 
 ///登录失败更新视图显示提示信息
-- (void)logic_loginFailureWithMessage:(NSString *)message;
+- (void)vm_loginFailureWithMessage:(NSString *)message;
 
 @end
 
 
 
-@interface LoginLogicControl_Old : NSObject {
+@interface LoginDelegateViewModel : NSObject {
     
 }
-@property (nonatomic, weak) id<LoginLogicControl_OldDelegate> delegate;
+@property (nonatomic, weak) id<LoginDelegateViewModelDelegate> delegate;
 
 #pragma mark - Get Default
 - (NSString *)getDefaultLoginAccount;
@@ -352,8 +370,14 @@ self.viewLogic.loginButtonEnableChange = ^(BOOL enable) {
 ```objective-c
 @protocol LoginLogicControlDelegate <NSObject>
 
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)logic_loginButtonEnableChange:(BOOL)enable;
+/// userName 的有效性发生变化
+- (void)vm_checkUserNameWithValid:(BOOL)valid;
+
+/// password 的有效性发生变化
+- (void)vm_checkPasswordWithValid:(BOOL)valid;
+
+/// 登录按钮 的有效性发生变化
+- (void)vm_checkLoginWithValid:(BOOL)valid;
 
 @end
 

@@ -8,11 +8,7 @@
 
 #import "STDemoServiceUserManager.h"
 
-#ifndef UseLibrary
-#import <STDemoDatabase/DemoFMDBFileManager.h>
-#else
 #import "DemoFMDBFileManager.h"
-#endif
 
 #import "STDemoUser.h"
 
