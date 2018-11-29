@@ -12,7 +12,7 @@
 #import "DelegateLoginViewController.h"
 #import "KVOLoginViewController.h"
 #import "RACLoginViewController.h"
-
+#import "BindHomeViewController.h"
 
 @implementation AppDelegate (WindowRootViewController)
 
@@ -26,6 +26,14 @@
     ②设置图片tabBarItem.image：会默认去掉图片的颜色，如果要看到原图片，需要设置图片的渲染模式为UIImageRenderingModeAlwaysOriginal
     ③设置角标tabBarItem.badgeValue：如果没有设置图片，角标默认显示在左上角，设置了图片就会在图片的右上角显示
     */
+    BindHomeViewController *bindHomeViewController = [[BindHomeViewController alloc] init];
+    bindHomeViewController.navigationItem.title = NSLocalizedString(@"Bind首页", nil);
+    bindHomeViewController.tabBarItem.title = NSLocalizedString(@"Bind", nil);
+    bindHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //homeViewController. = @"10";
+    UINavigationController *bindHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:bindHomeViewController];
+    [tabBarController addChildViewController:bindHomeNavigationController];
+    
     BlockLoginViewController *homeViewController = [[BlockLoginViewController alloc] init];
     homeViewController.navigationItem.title = NSLocalizedString(@"Block首页", nil);
     homeViewController.tabBarItem.title = NSLocalizedString(@"Block", nil);

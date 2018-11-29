@@ -65,29 +65,29 @@
     //结束视图的editing
     [self.view endEditing:YES];
     
-//    [self.viewModel loginWithTryFailure:^(NSString *tryFailureMessage) {
-//        //"尝试登录失败(未满足条件)时候"，更新视图
-//        [CJToast shortShowMessage:tryFailureMessage];
-//        
-//    } loginStart:^(NSString *startMessage) {
-//        //开始登录时候更新视图显示提示信息
-//        if (self.loginStateHUD == nil) {
-//            self.loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:startMessage toView:nil];
-//        } else {
-//            self.loginStateHUD.label.text = startMessage;
-//        }
-//        
-//    } loginSuccess:^(NSString *successMessage) {
-//        //登录成功需要进入/回到主页
-//        [self.loginStateHUD hideAnimated:YES afterDelay:0];
-//        [CJToast shortShowMessage:successMessage];
-//        
-//    } loginFailure:^(NSString *errorMessage) {
-//        //登录失败更新视图显示提示信息
-//        self.loginStateHUD.label.text = errorMessage;
-//        self.loginStateHUD.mode = MBProgressHUDModeText;
-//        [self.loginStateHUD hideAnimated:YES afterDelay:1];
-//    }];
+    [self.viewModel loginWithTryFailure:^(NSString *tryFailureMessage) {
+        //"尝试登录失败(未满足条件)时候"，更新视图
+        [CJToast shortShowMessage:tryFailureMessage];
+        
+    } loginStart:^(NSString *startMessage) {
+        //开始登录时候更新视图显示提示信息
+        if (self.loginStateHUD == nil) {
+            self.loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:startMessage toView:nil];
+        } else {
+            self.loginStateHUD.label.text = startMessage;
+        }
+        
+    } loginSuccess:^(NSString *successMessage) {
+        //登录成功需要进入/回到主页
+        [self.loginStateHUD hideAnimated:YES afterDelay:0];
+        [CJToast shortShowMessage:successMessage];
+        
+    } loginFailure:^(NSString *errorMessage) {
+        //登录失败更新视图显示提示信息
+        self.loginStateHUD.label.text = errorMessage;
+        self.loginStateHUD.mode = MBProgressHUDModeText;
+        [self.loginStateHUD hideAnimated:YES afterDelay:1];
+    }];
 }
 
 

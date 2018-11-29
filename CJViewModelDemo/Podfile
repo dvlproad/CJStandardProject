@@ -45,6 +45,8 @@ target 'CJViewModelDemo' do
 
    pod 'OpenUDID'
    pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
+   
+   pod 'IQKeyboardManager'
 end
 
 target 'CJViewModelDemoTests' do

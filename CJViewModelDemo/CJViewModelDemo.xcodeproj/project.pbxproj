@@ -39,8 +39,10 @@
 		7868276221AE939A00FCCDE5 /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868276121AE939900FCCDE5 /* LoginAssets.xcassets */; };
 		7868276A21AE955400FCCDE5 /* STDemoTextFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868276821AE955400FCCDE5 /* STDemoTextFieldFactory.m */; };
 		7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868276E21AE9DF400FCCDE5 /* LVLoginViewController.m */; };
-		7868277521AE9F0200FCCDE5 /* LoginRACViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868277121AE9F0100FCCDE5 /* LoginRACViewModel.m */; };
 		7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868277421AE9F0100FCCDE5 /* LoginViewControl.m */; };
+		788A55F021AF8CB40011F993 /* RACTextFieldBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55EF21AF8CB40011F993 /* RACTextFieldBindViewController.m */; };
+		788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */; };
+		788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F521AF90F20011F993 /* BindHomeViewController.m */; };
 		F62B567A6336AC760793D524 /* libPods-CJViewModelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -127,10 +129,14 @@
 		7868276921AE955400FCCDE5 /* STDemoTextFieldFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoTextFieldFactory.h; sourceTree = "<group>"; };
 		7868276D21AE9DF400FCCDE5 /* LVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVLoginViewController.h; sourceTree = "<group>"; };
 		7868276E21AE9DF400FCCDE5 /* LVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLoginViewController.m; sourceTree = "<group>"; };
-		7868277121AE9F0100FCCDE5 /* LoginRACViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRACViewModel.m; sourceTree = "<group>"; };
 		7868277221AE9F0100FCCDE5 /* LoginViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControl.h; sourceTree = "<group>"; };
-		7868277321AE9F0100FCCDE5 /* LoginRACViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRACViewModel.h; sourceTree = "<group>"; };
 		7868277421AE9F0100FCCDE5 /* LoginViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControl.m; sourceTree = "<group>"; };
+		788A55EE21AF8CB40011F993 /* RACTextFieldBindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTextFieldBindViewController.h; sourceTree = "<group>"; };
+		788A55EF21AF8CB40011F993 /* RACTextFieldBindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewController.m; sourceTree = "<group>"; };
+		788A55F121AF8D020011F993 /* RACTextFieldBindViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTextFieldBindViewModel.h; sourceTree = "<group>"; };
+		788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewModel.m; sourceTree = "<group>"; };
+		788A55F421AF90F20011F993 /* BindHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindHomeViewController.h; sourceTree = "<group>"; };
+		788A55F521AF90F20011F993 /* BindHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindHomeViewController.m; sourceTree = "<group>"; };
 		A2BF77EF0932160C5E5AD33C /* Pods-CJViewModelDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D234E35815A97942A404D110 /* Pods-CJViewModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEE4D2634A9833EC3FF1AEB /* Pods-CJViewModelDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,8 +264,7 @@
 		7868270221AE78EE00FCCDE5 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				7868275921AE82C500FCCDE5 /* CommonLoginViewController.h */,
-				7868275821AE82C500FCCDE5 /* CommonLoginViewController.m */,
+				788A55ED21AF895C0011F993 /* BindDemo(数据绑定) */,
 				7868277721AE9F6500FCCDE5 /* ViewModelDemos */,
 				7868276C21AE9DF300FCCDE5 /* LogicControl+ViewControl设计模式 */,
 				7868271721AE7C3F00FCCDE5 /* NDM */,
@@ -303,8 +308,6 @@
 		7868270621AE79F000FCCDE5 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
-				7868277321AE9F0100FCCDE5 /* LoginRACViewModel.h */,
-				7868277121AE9F0100FCCDE5 /* LoginRACViewModel.m */,
 				7868274C21AE80B800FCCDE5 /* RACLoginViewController.h */,
 				7868274D21AE80B800FCCDE5 /* RACLoginViewController.m */,
 				7868270B21AE7BCA00FCCDE5 /* RACLoginViewModel.h */,
@@ -433,6 +436,8 @@
 		7868277721AE9F6500FCCDE5 /* ViewModelDemos */ = {
 			isa = PBXGroup;
 			children = (
+				7868275921AE82C500FCCDE5 /* CommonLoginViewController.h */,
+				7868275821AE82C500FCCDE5 /* CommonLoginViewController.m */,
 				7868270721AE79F500FCCDE5 /* Best */,
 				7868270321AE79DC00FCCDE5 /* Block */,
 				7868270421AE79E300FCCDE5 /* Delegate */,
@@ -440,6 +445,19 @@
 				7868270621AE79F000FCCDE5 /* RAC */,
 			);
 			path = ViewModelDemos;
+			sourceTree = "<group>";
+		};
+		788A55ED21AF895C0011F993 /* BindDemo(数据绑定) */ = {
+			isa = PBXGroup;
+			children = (
+				788A55F421AF90F20011F993 /* BindHomeViewController.h */,
+				788A55F521AF90F20011F993 /* BindHomeViewController.m */,
+				788A55EE21AF8CB40011F993 /* RACTextFieldBindViewController.h */,
+				788A55EF21AF8CB40011F993 /* RACTextFieldBindViewController.m */,
+				788A55F121AF8D020011F993 /* RACTextFieldBindViewModel.h */,
+				788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */,
+			);
+			path = "BindDemo(数据绑定)";
 			sourceTree = "<group>";
 		};
 		8211B86BC4BD21FBEA556948 /* Frameworks */ = {
@@ -624,6 +642,7 @@
 				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
 				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
 				"${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
@@ -637,6 +656,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/demofmdb.db",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
@@ -673,6 +693,7 @@
 			files = (
 				7868276A21AE955400FCCDE5 /* STDemoTextFieldFactory.m in Sources */,
 				7868273E21AE7CB900FCCDE5 /* STDemoServiceUserManager.m in Sources */,
+				788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */,
 				7868275A21AE82C500FCCDE5 /* CommonLoginViewController.m in Sources */,
 				7868270D21AE7BCA00FCCDE5 /* RACLoginViewModel.m in Sources */,
 				7868274B21AE7D9900FCCDE5 /* DemoFMDBFileManager.m in Sources */,
@@ -680,18 +701,19 @@
 				7868269421AE74A100FCCDE5 /* ViewController.m in Sources */,
 				7868275E21AE851F00FCCDE5 /* STDemoButtonFactory.m in Sources */,
 				7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */,
+				788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */,
 				7868271621AE7BE000FCCDE5 /* BlockLoginViewModel.m in Sources */,
 				786826FE21AE77DA00FCCDE5 /* CJUIKitBaseViewController.m in Sources */,
 				7868275421AE80C800FCCDE5 /* DelegateLoginViewController.m in Sources */,
 				7868273F21AE7CB900FCCDE5 /* STDemoUser.m in Sources */,
 				7868271F21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m in Sources */,
 				7868273D21AE7CB900FCCDE5 /* STDemoUsePermissionModel.m in Sources */,
+				788A55F021AF8CB40011F993 /* RACTextFieldBindViewController.m in Sources */,
 				7868274E21AE80B800FCCDE5 /* RACLoginViewController.m in Sources */,
 				7868274721AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.m in Sources */,
 				7868271021AE7BD100FCCDE5 /* KVOLoginViewModel.m in Sources */,
 				7868269F21AE74A300FCCDE5 /* main.m in Sources */,
 				7868270121AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m in Sources */,
-				7868277521AE9F0200FCCDE5 /* LoginRACViewModel.m in Sources */,
 				786826FD21AE77DA00FCCDE5 /* CJUIKitBaseHomeViewController.m in Sources */,
 				7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */,
 				7868275721AE80CF00FCCDE5 /* BlockLoginViewController.m in Sources */,
@@ -874,10 +896,7 @@
 				GCC_PREFIX_HEADER = CJViewModelDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CJViewModelDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -894,10 +913,7 @@
 				GCC_PREFIX_HEADER = CJViewModelDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CJViewModelDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -911,11 +927,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -930,11 +942,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -947,11 +955,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -964,11 +968,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

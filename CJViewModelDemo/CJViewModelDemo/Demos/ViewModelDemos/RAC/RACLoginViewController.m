@@ -23,6 +23,35 @@
     NSString *userName = [CJAppLastUtil getLastLoginUser].lastLoginUserName;
     NSString *password = @"";
     RACLoginViewModel *viewModel = [[RACLoginViewModel alloc] initWithUserName:userName password:password];
+    [viewModel.userNameValidObject subscribeNext:^(id  _Nullable x) {
+        BOOL userNameValid = [x boolValue];
+        self.userNameTextField.leftButtonSelected = userNameValid;
+    }];
+    [viewModel.passwordValidObject subscribeNext:^(id  _Nullable x) {
+        BOOL passwordValid = [x boolValue];
+        self.passwordTextField.leftButtonSelected = passwordValid;
+    }];
+    [viewModel.loginValidObject subscribeNext:^(id  _Nullable x) {
+        BOOL loginVaild = [x boolValue];
+        self.loginButton.enabled = loginVaild;
+    }];
+    [viewModel.tryFailureObject subscribeNext:^(id  _Nullable x) {
+        NSString *message = (NSString *)x;
+        [CJToast shortShowMessage:message];
+    }];
+    [viewModel.startObject subscribeNext:^(id  _Nullable x) {
+        NSString *message = (NSString *)x;
+        [CJToast shortShowMessage:message];
+    }];
+    [viewModel.successObject subscribeNext:^(id  _Nullable x) {
+        NSString *message = (NSString *)x;
+        [CJToast shortShowMessage:message];
+    }];
+    [viewModel.failureObject subscribeNext:^(id  _Nullable x) {
+        NSString *message = (NSString *)x;
+        [CJToast shortShowMessage:message];
+    }];
+    
     self.viewModel = viewModel;
 }
 
@@ -57,40 +86,9 @@
 - (void)loginButtonAction {
     //结束视图的editing
     [self.view endEditing:YES];
-    
-//    [self.logicControl loginWithTryFailure:^(NSString *tryFailureMessage) {
-//        //"尝试登录失败(未满足条件)时候"，更新视图
-//        [CJToast shortShowMessage:tryFailureMessage];
-//
-//    } loginStart:^(NSString *startMessage) {
-//        //开始登录时候更新视图显示提示信息
-//        if (self.loginStateHUD == nil) {
-//            self.loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:startMessage toView:nil];
-//        } else {
-//            self.loginStateHUD.label.text = startMessage;
-//        }
-//
-//    } loginSuccess:^(NSString *successMessage) {
-//        //登录成功需要进入/回到主页
-//        [self.loginStateHUD hideAnimated:YES afterDelay:0];
-//        [CJToast shortShowMessage:successMessage];
-//
-//    } loginFailure:^(NSString *errorMessage) {
-//        //登录失败更新视图显示提示信息
-//        self.loginStateHUD.label.text = errorMessage;
-//        self.loginStateHUD.mode = MBProgressHUDModeText;
-//        [self.loginStateHUD hideAnimated:YES afterDelay:1];
-//    }];
+    [self.viewModel login];
 }
 
-
-
-
-#pragma mark - RACLoginViewModelDelegate
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)vm_checkLoginWithValid:(BOOL)enable {
-    self.loginButton.enabled = enable;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

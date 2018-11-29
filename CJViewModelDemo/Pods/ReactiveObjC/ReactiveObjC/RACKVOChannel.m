@@ -63,7 +63,7 @@ static NSString * const RACKVOChannelDataDictionaryKey = @"RACKVOChannelKey";
 	for (RACKVOChannelData *data in dataArray) {
 		if (data.owner == (__bridge void *)self) return data;
 	}
-
+UIControlEventEditingChanged
 	return nil;
 }
 

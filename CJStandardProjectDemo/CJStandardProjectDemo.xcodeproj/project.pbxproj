@@ -80,7 +80,6 @@
 		78A6220E21367D42004DA046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6220D21367D42004DA046 /* main.m */; };
 		78A6221821367D42004DA046 /* CJStandardProjectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6221721367D42004DA046 /* CJStandardProjectDemoTests.m */; };
 		78A6222321367D42004DA046 /* CJStandardProjectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */; };
-		78B90E3F2188512E00776584 /* VMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E3E2188512E00776584 /* VMLoginViewController.m */; };
 		78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E442188579000776584 /* CTMediator+STDemoLogin.m */; };
 		78B90E4B2188626100776584 /* Target_STDemoLoginVCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */; };
 		78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38DD02141AB33001F35E2 /* FriendCircleManager.m */; };
@@ -245,8 +244,6 @@
 		78A6222221367D42004DA046 /* CJStandardProjectDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJStandardProjectDemoUITests.m; sourceTree = "<group>"; };
 		78A6222421367D42004DA046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78A622642137BEC4004DA046 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		78B90E3D2188512E00776584 /* VMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMLoginViewController.h; sourceTree = "<group>"; };
-		78B90E3E2188512E00776584 /* VMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMLoginViewController.m; sourceTree = "<group>"; };
 		78B90E432188579000776584 /* CTMediator+STDemoLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+STDemoLogin.h"; sourceTree = "<group>"; };
 		78B90E442188579000776584 /* CTMediator+STDemoLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+STDemoLogin.m"; sourceTree = "<group>"; };
 		78B90E492188626100776584 /* Target_STDemoLoginVCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_STDemoLoginVCFactory.m; sourceTree = "<group>"; };
@@ -330,9 +327,14 @@
 		7809CA0D2148A67E00FAFD93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				781BCDA2218D406D009E730C /* 未添加设计模式 */,
-				781BCD9D218D3BCF009E730C /* LogicModel设计模式 */,
-				781BCD9E218D3BEE009E730C /* ViewModel设计模式 */,
+				788D41DB218490F9002BEED4 /* FindPasswordViewController.h */,
+				788D41DC218490F9002BEED4 /* FindPasswordViewController.m */,
+				788D41DE2184913E002BEED4 /* ChangePasswordViewController.h */,
+				788D41DF2184913E002BEED4 /* ChangePasswordViewController.m */,
+				788D41E12184915E002BEED4 /* RegisterViewController.h */,
+				788D41E22184915E002BEED4 /* RegisterViewController.m */,
+				7809CA0F2148A67E00FAFD93 /* LMLoginViewController.h */,
+				7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,37 +415,6 @@
 				78C38DE02141AC42001F35E2 /* STDemoServiceOrderManager+OrderList.m */,
 			);
 			path = NDM;
-			sourceTree = "<group>";
-		};
-		781BCD9D218D3BCF009E730C /* LogicModel设计模式 */ = {
-			isa = PBXGroup;
-			children = (
-				7809CA0F2148A67E00FAFD93 /* LMLoginViewController.h */,
-				7809CA0E2148A67E00FAFD93 /* LMLoginViewController.m */,
-			);
-			path = "LogicModel设计模式";
-			sourceTree = "<group>";
-		};
-		781BCD9E218D3BEE009E730C /* ViewModel设计模式 */ = {
-			isa = PBXGroup;
-			children = (
-				78B90E3D2188512E00776584 /* VMLoginViewController.h */,
-				78B90E3E2188512E00776584 /* VMLoginViewController.m */,
-			);
-			path = "ViewModel设计模式";
-			sourceTree = "<group>";
-		};
-		781BCDA2218D406D009E730C /* 未添加设计模式 */ = {
-			isa = PBXGroup;
-			children = (
-				788D41DB218490F9002BEED4 /* FindPasswordViewController.h */,
-				788D41DC218490F9002BEED4 /* FindPasswordViewController.m */,
-				788D41DE2184913E002BEED4 /* ChangePasswordViewController.h */,
-				788D41DF2184913E002BEED4 /* ChangePasswordViewController.m */,
-				788D41E12184915E002BEED4 /* RegisterViewController.h */,
-				788D41E22184915E002BEED4 /* RegisterViewController.m */,
-			);
-			path = "未添加设计模式";
 			sourceTree = "<group>";
 		};
 		781BCDA3218D478B009E730C /* SimulateApiJSON */ = {
@@ -700,12 +671,12 @@
 		788D41BA21847A97002BEED4 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
-				7868276321AE94B300FCCDE5 /* STDemoTextFieldFactory */,
-				781BCDC5218D9527009E730C /* STDemoBarButtonItemFactory */,
-				781BCDBA218D8053009E730C /* STDemoSliderVCElementFactory */,
 				788D41BF21847B44002BEED4 /* Base */,
 				788D41BB21847A9F002BEED4 /* STDemoAlert */,
+				781BCDC5218D9527009E730C /* STDemoBarButtonItemFactory */,
 				788D41C321847BD1002BEED4 /* STDemoButtonFactory */,
+				781BCDBA218D8053009E730C /* STDemoSliderVCElementFactory */,
+				7868276321AE94B300FCCDE5 /* STDemoTextFieldFactory */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -1257,7 +1228,6 @@
 				7809CA222148A67E00FAFD93 /* LoginLogicControl.m in Sources */,
 				78B90E452188579000776584 /* CTMediator+STDemoLogin.m in Sources */,
 				788D41D721848F64002BEED4 /* DemoMainViewController.m in Sources */,
-				78B90E3F2188512E00776584 /* VMLoginViewController.m in Sources */,
 				784410532186B84100D746A7 /* STDemoStartUp.m in Sources */,
 				78C38DD52141AB79001F35E2 /* STDemoOrderModel.m in Sources */,
 				7809CA292148A67F00FAFD93 /* STDemoUser.m in Sources */,

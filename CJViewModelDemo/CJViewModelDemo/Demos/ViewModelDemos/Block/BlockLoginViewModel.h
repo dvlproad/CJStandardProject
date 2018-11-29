@@ -26,7 +26,9 @@
 - (void)updatePassword:(NSString *)password withCompleteBlock:(void (^)(BOOL passwordValid, BOOL loginValid))completeBlock;
 
 #pragma mark - Do
-- (void)loginWitLoginSuccess:(void (^)(NSString *successMessage))loginSuccess
-                loginFailure:(void (^)(NSString *errorMessage))loginFailure;
+- (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
+                 loginStart:(void (^)(NSString *startMessage))loginStartBlock
+               loginSuccess:(void (^)(NSString *successMessage))loginSuccess
+               loginFailure:(void (^)(NSString *errorMessage))loginFailure;
 
 @end

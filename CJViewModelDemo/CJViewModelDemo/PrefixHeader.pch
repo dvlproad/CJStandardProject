@@ -22,7 +22,7 @@
 #import <CJFoundation/NSString+CJTextSize.h>
 
 //#import "STDemoAlert.h"
-//#import "STDemoButtonFactory.h"
+#import "STDemoButtonFactory.h"
 //#import "STDemoBarButtonItemFactory.h"
 
 #endif /* PrefixHeader_pch */

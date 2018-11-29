@@ -1,5 +1,5 @@
 //
-//  VMLoginViewController.h
+//  LMLoginViewController.h
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
@@ -11,8 +11,7 @@
 #import <CJBaseUIKit/CJTextField.h>
 #import <CJBaseUIKit/UIColor+CJHex.h>
 
-
-@interface VMLoginViewController : UIViewController {
+@interface LMLoginViewController : UIViewController {
     
 }
 @property (nonatomic, strong) UIImageView *portraitBackgroundImageView; /**< 头像背景 */

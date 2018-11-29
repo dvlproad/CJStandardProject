@@ -2,8 +2,8 @@
 //  RACLoginViewModel.m
 //  STDemoModuleLoginDemo
 //
-//  Created by ciyouzen on 2018/9/4.
-//  Copyright © 2018年 dvlproad. All rights reserved.
+//  Created by ciyouzen on 2017/3/30.
+//  Copyright © 2017年 dvlproad. All rights reserved.
 //
 
 #import "RACLoginViewModel.h"
@@ -18,6 +18,10 @@
 @property (nonatomic, assign, readonly) BOOL passwordValid;
 @property (nonatomic, assign, readonly) BOOL loginValid;
 
+//@property (nonatomic, strong) RACSignal *userNameSignal;
+//@property (nonatomic, strong) RACSignal *passwordSignal;
+//@property (nonatomic, strong) NSArray *requestData;
+
 @end
 
 
@@ -28,53 +32,74 @@
     if (self) {
         _userName = userName;
         _password = password;
+        
+        _userNameValidObject = [RACSubject subject];
+        _passwordValidObject = [RACSubject subject];
+        _loginValidObject = [RACSubject subject];
+        
+        _tryFailureObject = [RACSubject subject];
+        _startObject = [RACSubject subject];
+        _successObject = [RACSubject subject];
+        _failureObject = [RACSubject subject];
+        //_errorObject = [RACSubject subject];
+        
+//        _userNameSignal = RACObserve(self, userName);
+//        _passwordSignal = RACObserve(self, password);
     }
     return self;
 }
+
+////合并两个输入框信号，并返回按钮bool类型的值
+//- (id)loginButtonIsValid {
+//    RACSignal *isValid = [RACSignal combineLatest:@[_userNameSignal, _passwordSignal] reduce:^id(NSString *userName, NSString *password){
+//        return @(userName.length >= 4 && password.length >= 4);
+//    }];
+//
+//    return isValid;
+//}
 
 #pragma mark - Update
 - (void)updateUserName:(NSString *)userName {
     _userName = userName;
     _userNameValid = [self.userName stdemo_checkUserName];
     _loginValid = self.userNameValid && self.passwordValid;
+    
+    [self.userNameValidObject sendNext:@(self.userNameValid)];
+    [self.loginValidObject sendNext:@(self.loginValid)];
 }
 
 - (void)updatePassword:(NSString *)password {
     _password = password;
     _passwordValid = [self.password stdemo_checkPassword];
     _loginValid = self.userNameValid && self.passwordValid;
+    
+    [self.passwordValidObject sendNext:@(self.passwordValid)];
+    [self.loginValidObject sendNext:@(self.loginValid)];
 }
 
 #pragma mark - Do
 - (void)login
 {
-//    if (!self.loginValid) {
-//        NSString *tryFailureMessage = NSLocalizedString(@"请完善登录信息", nil);
-//        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_tryLoginFailureWithMessage:)]) {
-//            [self.delegate vm_tryLoginFailureWithMessage:tryFailureMessage];
-//        }
-//        
-//        return;
-//    }
-//    
-//    NSString *startMessage = NSLocalizedString(@"正在登录", nil);
-//    if (self.delegate && [self.delegate respondsToSelector:@selector(vm_startLoginWithMessage:)]) {
-//        [self.delegate vm_startLoginWithMessage:startMessage];
-//    }
-//    
-//    NSString *account = self.userName;
-//    NSString *password = self.password;
-//    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(STDemoUser *user) {
-//        NSString *loginSuccessMessage = NSLocalizedString(@"登录成功", nil);
-//        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_loginSuccessWithMessage:)]) {
-//            [self.delegate vm_loginSuccessWithMessage:loginSuccessMessage];
-//        }
-//        
-//    } failure:^(NSString *errorMessage) {
-//        if (self.delegate && [self.delegate respondsToSelector:@selector(vm_loginFailureWithMessage:)]) {
-//            [self.delegate vm_loginFailureWithMessage:errorMessage];
-//        }
-//    }];
+    if (!self.loginValid) {
+        NSString *tryFailureMessage = NSLocalizedString(@"请完善登录信息", nil);
+        [self.tryFailureObject sendNext:tryFailureMessage];
+        
+        return;
+    }
+    
+    NSString *startMessage = NSLocalizedString(@"正在登录", nil);
+    [self.startObject sendNext:startMessage];
+    
+    NSString *account = self.userName;
+    NSString *password = self.password;
+    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(STDemoUser *user) {
+        NSString *loginSuccessMessage = NSLocalizedString(@"登录成功", nil);
+        //成功发送成功的信号
+        [self.successObject sendNext:loginSuccessMessage];
+        
+    } failure:^(NSString *errorMessage) {
+        [self.failureObject sendNext:errorMessage];
+    }];
 }
 
 

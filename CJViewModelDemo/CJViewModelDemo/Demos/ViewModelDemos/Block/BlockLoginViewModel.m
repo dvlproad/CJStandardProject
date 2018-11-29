@@ -58,13 +58,27 @@
 
 
 /// 执行登录
-- (void)loginWitLoginSuccess:(void (^)(NSString *successMessage))loginSuccess
-                loginFailure:(void (^)(NSString *errorMessage))loginFailure
+- (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
+                 loginStart:(void (^)(NSString *startMessage))loginStartBlock
+               loginSuccess:(void (^)(NSString *successMessage))loginSuccess
+               loginFailure:(void (^)(NSString *errorMessage))loginFailure
 {
-    NSString *userName = self.userName;
-    NSString *password = self.password;
+    if (!self.loginValid) {
+        NSString *tryFailureMessage = NSLocalizedString(@"请完善登录信息", nil);
+        if (tryFailureBlock) {
+            tryFailureBlock(tryFailureMessage);
+        }
+        return;
+    }
     
-    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:userName password:password success:^(STDemoUser *user) {
+    NSString *startMessage = NSLocalizedString(@"正在登录", nil);
+    if (loginStartBlock) {
+        loginStartBlock(startMessage);
+    }
+    
+    NSString *account = self.userName;
+    NSString *password = self.password;
+    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:account password:password success:^(STDemoUser *user) {
         NSString *successMessage = NSLocalizedString(@"登录成功", nil);
         if (loginSuccess) {
             loginSuccess(successMessage);

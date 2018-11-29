@@ -23,7 +23,7 @@
 
 - (FBKVOController *)kvoController {
     if (_kvoController == nil) {
-        _kvoController = [[FBKVOController alloc] initWithObserver:self];
+        _kvoController = [FBKVOController controllerWithObserver:self];
     }
     return _kvoController;
 }
@@ -36,8 +36,32 @@
     [self.kvoController observe:viewModel keyPath:@"userNameValid" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         NSString *oldValue = change[NSKeyValueChangeOldKey];
         NSString *newValue = change[NSKeyValueChangeNewKey];
-        NSLog(@"旧值是:%@", oldValue);
-        NSLog(@"新值是:%@", newValue);
+        NSLog(@"userNameValid旧值是:%@", oldValue);
+        NSLog(@"userNameValid新值是:%@", newValue);
+        
+        BOOL userNameValid = [change[NSKeyValueChangeNewKey] boolValue];
+        self.userNameTextField.leftButtonSelected = userNameValid;
+    }];
+    
+    [self.kvoController observe:viewModel keyPath:@"passwordValid" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+        NSString *oldValue = change[NSKeyValueChangeOldKey];
+        NSString *newValue = change[NSKeyValueChangeNewKey];
+        NSLog(@"passwordValid旧值是:%@", oldValue);
+        NSLog(@"passwordValid新值是:%@", newValue);
+        
+        BOOL passwordValid = [change[NSKeyValueChangeNewKey] boolValue];
+        self.passwordTextField.leftButtonSelected = passwordValid;
+    }];
+    
+    [self.kvoController observe:viewModel keyPath:@"loginValid" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+        NSString *oldValue = change[NSKeyValueChangeOldKey];
+        NSString *newValue = change[NSKeyValueChangeNewKey];
+        NSLog(@"loginValid旧值是:%@", oldValue);
+        NSLog(@"loginValid新值是:%@", newValue);
+        
+        
+        BOOL loginVaild = [change[NSKeyValueChangeNewKey] boolValue];
+        self.loginButton.enabled = loginVaild;
     }];
     
     /*

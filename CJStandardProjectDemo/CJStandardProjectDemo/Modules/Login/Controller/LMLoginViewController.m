@@ -1,23 +1,24 @@
 //
-//  VMLoginViewController.m
+//  LMLoginViewController.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import "VMLoginViewController.h"
+#import "LMLoginViewController.h"
 #import <CJBaseUIKit/UINavigationBar+CJChangeBG.h>
 #import "LoginLogicControl.h"
+#import "CTMediator+STDemoLogin.h"
 
-@interface VMLoginViewController () <UITextFieldDelegate, LoginLogicControlDelegate> {
+@interface LMLoginViewController () <UITextFieldDelegate, LoginLogicControlDelegate> {
     
 }
 @property (nonatomic, strong) LoginLogicControl *logicControl;
 
 @end
 
-@implementation VMLoginViewController
+@implementation LMLoginViewController
 
 #pragma mark - LifeCycle
 - (void)dealloc {
@@ -49,7 +50,7 @@
     [self.logicControl updatePassword:password];
 }
 
-- (void)viewDidAppear:(BOOL)animated{
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
 //    [self.viewControl startEndEditing];
@@ -63,16 +64,6 @@
     
     [self setupViews];
     
-//    //viewControl
-//    LoginViewControl *viewControl = [[LoginViewControl alloc] init];
-//    viewControl.view = self.view;
-//    viewControl.userNameTextField = self.userNameTextField;
-//    viewControl.passwordTextField = self.passwordTextField;
-//    viewControl.loginButton = self.loginButton;
-//    viewControl.findPasswordButton = self.findPasswordButton;
-//    viewControl.registerButton = self.registerButton;
-//    viewControl.delegate = self;
-//    self.viewControl = viewControl;
     self.userNameTextField.delegate = self;
     self.passwordTextField.delegate = self;
     self.loginButton.enabled = NO;
@@ -154,10 +145,14 @@
 
 - (void)findPasswordButtonAction {
 //    [self.viewControl goFindPasswordViewController];
+    UIViewController *viewController = [[CTMediator sharedInstance] CTMediator_STDemo_forgetPasswordViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)registerButtonAction {
 //    [self.viewControl goRegisterViewController];
+    UIViewController *viewController = [[CTMediator sharedInstance] CTMediator_STDemo_registerViewController];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -238,7 +233,6 @@
 - (void)vm_checkLoginWithValid:(BOOL)enable {
     self.loginButton.enabled = enable;
 }
-
 
 #pragma mark - Touch
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
