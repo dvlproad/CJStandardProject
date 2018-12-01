@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		51CEA1C56F4EA04B963712B0 /* libPods-CJViewModelDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7456BB3E7079616BFE3A0FDF /* libPods-CJViewModelDemo.a */; };
+		7819F25B21B2870F0072E8A6 /* RACBindNorTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7819F25921B2870F0072E8A6 /* RACBindNorTextFieldViewController.m */; };
+		7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7819F25D21B28F540072E8A6 /* RACBindTextFieldViewController.m */; };
+		7842EE1521B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7842EE1421B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m */; };
 		7868269121AE74A100FCCDE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868269021AE74A100FCCDE5 /* AppDelegate.m */; };
 		7868269421AE74A100FCCDE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868269321AE74A100FCCDE5 /* ViewController.m */; };
 		7868269721AE74A100FCCDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7868269521AE74A100FCCDE5 /* Main.storyboard */; };
@@ -40,7 +43,7 @@
 		7868276A21AE955400FCCDE5 /* STDemoTextFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868276821AE955400FCCDE5 /* STDemoTextFieldFactory.m */; };
 		7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868276E21AE9DF400FCCDE5 /* LVLoginViewController.m */; };
 		7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868277421AE9F0100FCCDE5 /* LoginViewControl.m */; };
-		788A55F021AF8CB40011F993 /* RACTextFieldBindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55EF21AF8CB40011F993 /* RACTextFieldBindViewController.m */; };
+		788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */; };
 		788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */; };
 		788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F521AF90F20011F993 /* BindHomeViewController.m */; };
 		F62B567A6336AC760793D524 /* libPods-CJViewModelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */; };
@@ -67,6 +70,12 @@
 		440846A330020D7E525307D9 /* Pods-CJViewModelDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo.release.xcconfig"; sourceTree = "<group>"; };
 		54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJViewModelDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7456BB3E7079616BFE3A0FDF /* libPods-CJViewModelDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJViewModelDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7819F25921B2870F0072E8A6 /* RACBindNorTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACBindNorTextFieldViewController.m; sourceTree = "<group>"; };
+		7819F25A21B2870F0072E8A6 /* RACBindNorTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACBindNorTextFieldViewController.h; sourceTree = "<group>"; };
+		7819F25C21B28F540072E8A6 /* RACBindTextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBindTextFieldViewController.h; sourceTree = "<group>"; };
+		7819F25D21B28F540072E8A6 /* RACBindTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBindTextFieldViewController.m; sourceTree = "<group>"; };
+		7842EE1321B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTextFieldBindTableViewCell.h; sourceTree = "<group>"; };
+		7842EE1421B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindTableViewCell.m; sourceTree = "<group>"; };
 		7868268C21AE74A100FCCDE5 /* CJViewModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJViewModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7868268F21AE74A100FCCDE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7868269021AE74A100FCCDE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,8 +140,8 @@
 		7868276E21AE9DF400FCCDE5 /* LVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVLoginViewController.m; sourceTree = "<group>"; };
 		7868277221AE9F0100FCCDE5 /* LoginViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewControl.h; sourceTree = "<group>"; };
 		7868277421AE9F0100FCCDE5 /* LoginViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewControl.m; sourceTree = "<group>"; };
-		788A55EE21AF8CB40011F993 /* RACTextFieldBindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTextFieldBindViewController.h; sourceTree = "<group>"; };
-		788A55EF21AF8CB40011F993 /* RACTextFieldBindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewController.m; sourceTree = "<group>"; };
+		788A55EE21AF8CB40011F993 /* RACBindTvTextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACBindTvTextFieldViewController.h; sourceTree = "<group>"; };
+		788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBindTvTextFieldViewController.m; sourceTree = "<group>"; };
 		788A55F121AF8D020011F993 /* RACTextFieldBindViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTextFieldBindViewModel.h; sourceTree = "<group>"; };
 		788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewModel.m; sourceTree = "<group>"; };
 		788A55F421AF90F20011F993 /* BindHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindHomeViewController.h; sourceTree = "<group>"; };
@@ -452,8 +461,14 @@
 			children = (
 				788A55F421AF90F20011F993 /* BindHomeViewController.h */,
 				788A55F521AF90F20011F993 /* BindHomeViewController.m */,
-				788A55EE21AF8CB40011F993 /* RACTextFieldBindViewController.h */,
-				788A55EF21AF8CB40011F993 /* RACTextFieldBindViewController.m */,
+				7819F25C21B28F540072E8A6 /* RACBindTextFieldViewController.h */,
+				7819F25D21B28F540072E8A6 /* RACBindTextFieldViewController.m */,
+				7819F25A21B2870F0072E8A6 /* RACBindNorTextFieldViewController.h */,
+				7819F25921B2870F0072E8A6 /* RACBindNorTextFieldViewController.m */,
+				788A55EE21AF8CB40011F993 /* RACBindTvTextFieldViewController.h */,
+				788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */,
+				7842EE1321B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.h */,
+				7842EE1421B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m */,
 				788A55F121AF8D020011F993 /* RACTextFieldBindViewModel.h */,
 				788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */,
 			);
@@ -699,6 +714,7 @@
 				7868274B21AE7D9900FCCDE5 /* DemoFMDBFileManager.m in Sources */,
 				7868275121AE80BF00FCCDE5 /* KVOLoginViewController.m in Sources */,
 				7868269421AE74A100FCCDE5 /* ViewController.m in Sources */,
+				7819F25B21B2870F0072E8A6 /* RACBindNorTextFieldViewController.m in Sources */,
 				7868275E21AE851F00FCCDE5 /* STDemoButtonFactory.m in Sources */,
 				7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */,
 				788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */,
@@ -708,14 +724,16 @@
 				7868273F21AE7CB900FCCDE5 /* STDemoUser.m in Sources */,
 				7868271F21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m in Sources */,
 				7868273D21AE7CB900FCCDE5 /* STDemoUsePermissionModel.m in Sources */,
-				788A55F021AF8CB40011F993 /* RACTextFieldBindViewController.m in Sources */,
+				788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */,
 				7868274E21AE80B800FCCDE5 /* RACLoginViewController.m in Sources */,
 				7868274721AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.m in Sources */,
 				7868271021AE7BD100FCCDE5 /* KVOLoginViewModel.m in Sources */,
 				7868269F21AE74A300FCCDE5 /* main.m in Sources */,
 				7868270121AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m in Sources */,
 				786826FD21AE77DA00FCCDE5 /* CJUIKitBaseHomeViewController.m in Sources */,
+				7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */,
 				7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */,
+				7842EE1521B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m in Sources */,
 				7868275721AE80CF00FCCDE5 /* BlockLoginViewController.m in Sources */,
 				7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */,
 				7868271321AE7BD900FCCDE5 /* DelegateLoginViewModel.m in Sources */,
@@ -896,7 +914,10 @@
 				GCC_PREFIX_HEADER = CJViewModelDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CJViewModelDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -913,7 +934,10 @@
 				GCC_PREFIX_HEADER = CJViewModelDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CJViewModelDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -927,7 +951,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -942,7 +970,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -955,7 +987,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -968,7 +1004,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJViewModelDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dvlproad.CJViewModelDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

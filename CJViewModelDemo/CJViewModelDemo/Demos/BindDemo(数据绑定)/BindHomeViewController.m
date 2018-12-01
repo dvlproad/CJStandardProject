@@ -2,12 +2,14 @@
 //  BindHomeViewController.m
 //  CJViewModelDemo
 //
-//  Created by 李超前 on 11/29/18.
+//  Created by ciyouzen on 11/29/18.
 //  Copyright © 2018 dvlproad. All rights reserved.
 //
 
 #import "BindHomeViewController.h"
-#import "RACTextFieldBindViewController.h"
+
+#import "RACBindNorTextFieldViewController.h"
+#import "RACBindTvTextFieldViewController.h"
 
 @interface BindHomeViewController ()
 
@@ -26,8 +28,14 @@
         sectionDataModel.theme = @"Bind(数据绑定)";
         {
             CJModuleModel *bindModule = [[CJModuleModel alloc] init];
-            bindModule.title = @"RACTextFieldBind";
-            bindModule.classEntry = [RACTextFieldBindViewController class];
+            bindModule.title = @"RAC Bind Normal TextField";
+            bindModule.classEntry = [RACBindNorTextFieldViewController class];
+            [sectionDataModel.values addObject:bindModule];
+        }
+        {
+            CJModuleModel *bindModule = [[CJModuleModel alloc] init];
+            bindModule.title = @"RAC Bind TableView TextField";
+            bindModule.classEntry = [RACBindTvTextFieldViewController class];
             [sectionDataModel.values addObject:bindModule];
         }
         [sectionDataModels addObject:sectionDataModel];

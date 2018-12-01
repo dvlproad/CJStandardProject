@@ -2,7 +2,7 @@
 //  RACTextFieldBindViewModel.h
 //  CJViewModelDemo
 //
-//  Created by 李超前 on 11/29/18.
+//  Created by ciyouzen on 11/29/18.
 //  Copyright © 2018 dvlproad. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *text1;
 @property (nonatomic, copy) NSString *text2;
 @property (nonatomic, copy) NSString *text3;
+@property (nonatomic, copy) NSString *text4;
 
 @end
 

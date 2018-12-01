@@ -42,7 +42,8 @@
 
     leftLabel.frame = CGRectMake(0, 0, lableWidth, 44);
     //leftLabel.backgroundColor = [UIColor greenColor];
-    leftLabel.textAlignment = NSTextAlignmentLeft;leftLabel.textColor = CJColorFromHexString(@"#333333");
+    leftLabel.textAlignment = NSTextAlignmentLeft;
+    leftLabel.textColor = CJColorFromHexString(@"#333333");
     leftLabel.font = [UIFont systemFontOfSize:fontSize];
     leftLabel.text = leftLabelText;
     
