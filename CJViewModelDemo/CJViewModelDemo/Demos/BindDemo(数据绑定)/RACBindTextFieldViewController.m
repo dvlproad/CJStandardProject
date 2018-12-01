@@ -32,7 +32,6 @@
     
     // textField1
     RACChannelTo(self.viewModel, text1) = RACChannelTo(self.textField1, text);
-    [self.textField1.rac_textSignal subscribe:RACChannelTo(self.textField1, text)];
     
     // textField2
     RACChannelTo(self.viewModel, text2) = RACChannelTo(self.textField2, text);
