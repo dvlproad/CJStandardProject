@@ -1,28 +1,34 @@
 //
-//  RACLoginViewController.m
+//  LowRACLoginViewController.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import "RACLoginViewController.h"
-#import "RACLoginViewModel.h"
+#import "LowRACLoginViewController.h"
+#import "LowRACLoginViewModel.h"
 //#import "CTMediator+STDemoLogin.h"
 
-@interface RACLoginViewController () {
+@interface LowRACLoginViewController () {
     
 }
-@property (nonatomic, strong) RACLoginViewModel *viewModel;
+@property (nonatomic, strong) LowRACLoginViewModel *viewModel;
 
 @end
 
-@implementation RACLoginViewController
+@implementation LowRACLoginViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"RAC ViewModel(Low)", nil);
+}
 
 - (void)bindViewModel {
     NSString *userName = [CJAppLastUtil getLastLoginUser].lastLoginUserName;
     NSString *password = @"";
-    RACLoginViewModel *viewModel = [[RACLoginViewModel alloc] initWithUserName:userName password:password];
+    LowRACLoginViewModel *viewModel = [[LowRACLoginViewModel alloc] initWithUserName:userName password:password];
     [viewModel.userNameValidObject subscribeNext:^(id  _Nullable x) {
         BOOL userNameValid = [x boolValue];
         self.userNameTextField.leftButtonSelected = userNameValid;

@@ -19,6 +19,12 @@
 
 @implementation DelegateLoginViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"Delegate ViewModel", nil);
+}
+
 - (void)bindViewModel {
     NSString *userName = [CJAppLastUtil getLastLoginUser].lastLoginUserName;
     NSString *password = @"";
@@ -60,7 +66,7 @@
     [self.view endEditing:YES];
 }
 
-#pragma mark - RACLoginViewModelDelegate
+#pragma mark - DelegateLoginViewModelDelegate
 /// userName 的有效性发生变化
 - (void)vm_checkUserNameWithValid:(BOOL)valid {
     self.userNameTextField.leftButtonSelected = valid;

@@ -183,7 +183,7 @@
     [listenButtons mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(changeViewModelTextButton.mas_bottom).mas_offset(10);
         make.height.mas_equalTo(44);
-        make.bottom.mas_equalTo(parentView).mas_offset(-10);//使得cell自动计算高度
+        make.bottom.mas_equalTo(parentView).mas_offset(-10);//使得cell自动计算高度，有此代码时候，外部不用实现heightForRowAtIndexPath
     }];
 }
 

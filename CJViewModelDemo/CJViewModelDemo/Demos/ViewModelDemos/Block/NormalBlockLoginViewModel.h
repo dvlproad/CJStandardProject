@@ -1,5 +1,5 @@
 //
-//  BlockLoginViewModel.h
+//  NormalBlockLoginViewModel.h
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "STDemoServiceUserManager.h"
 
-@interface BlockLoginViewModel : NSObject {
+@interface NormalBlockLoginViewModel : NSObject {
     
 }
 @property (nonatomic, copy, readonly) NSString *userName;

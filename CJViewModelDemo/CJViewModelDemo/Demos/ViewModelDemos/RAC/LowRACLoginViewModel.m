@@ -1,17 +1,17 @@
 //
-//  RACLoginViewModel.m
+//  LowRACLoginViewModel.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2017/3/30.
 //  Copyright © 2017年 dvlproad. All rights reserved.
 //
 
-#import "RACLoginViewModel.h"
+#import "LowRACLoginViewModel.h"
 #import "NSString+STDemoValidate.h"
 #import "STDemoServiceUserManager+Network.h"
 #import "STDemoServiceUserManager+UserTable.h"
 
-@interface RACLoginViewModel () {
+@interface LowRACLoginViewModel () {
     
 }
 @property (nonatomic, assign, readonly) BOOL userNameValid;
@@ -25,7 +25,7 @@
 @end
 
 
-@implementation RACLoginViewModel
+@implementation LowRACLoginViewModel
 
 - (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password {
     self = [super init];
@@ -42,21 +42,9 @@
         _successObject = [RACSubject subject];
         _failureObject = [RACSubject subject];
         //_errorObject = [RACSubject subject];
-        
-//        _userNameSignal = RACObserve(self, userName);
-//        _passwordSignal = RACObserve(self, password);
     }
     return self;
 }
-
-////合并两个输入框信号，并返回按钮bool类型的值
-//- (id)loginButtonIsValid {
-//    RACSignal *isValid = [RACSignal combineLatest:@[_userNameSignal, _passwordSignal] reduce:^id(NSString *userName, NSString *password){
-//        return @(userName.length >= 4 && password.length >= 4);
-//    }];
-//
-//    return isValid;
-//}
 
 #pragma mark - Update
 - (void)updateUserName:(NSString *)userName {

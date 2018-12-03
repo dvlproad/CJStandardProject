@@ -22,28 +22,69 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"RAC Bind Normal TextField", nil);
+    [self setupViews];
+    
+    [self bindViewModel];
+}
+
+- (BOOL)automaticallyAdjustsScrollViewInsets {
+    return NO;
 }
 
 - (void)setupViews {
-    RACTextFieldBindTableViewCell *staticFlawCell = [[RACTextFieldBindTableViewCell alloc] initWithFrame:CGRectZero];
-    [self.view addSubview:staticFlawCell];
-    [staticFlawCell mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view).mas_offset(100);
-        make.centerX.mas_equalTo(self.view);
-        make.left.mas_equalTo(self.view).mas_offset(10);
-        make.height.mas_equalTo(320);
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+    scrollView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:scrollView];
+    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.bottom.mas_equalTo(self.view);
     }];
-    [self implementFlawExampleInCell:staticFlawCell];
+    
+    UIView *containerView = [[UIView alloc] init];
+    containerView.backgroundColor = [UIColor greenColor];
+    [scrollView addSubview:containerView];
+    
+    
+    
+    UIView *parentView = containerView;
+    
+    RACTextFieldBindTableViewCell *staticFlawKeyCell = [[RACTextFieldBindTableViewCell alloc] initWithFrame:CGRectZero];
+    [parentView addSubview:staticFlawKeyCell];
+    [staticFlawKeyCell mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(parentView).mas_offset(100);
+        make.centerX.mas_equalTo(parentView);
+        make.left.mas_equalTo(parentView).mas_offset(10);
+        //make.height.mas_equalTo(320);
+    }];
+    [self implementFlawKeyExampleInCell:staticFlawKeyCell];
+    
+    RACTextFieldBindTableViewCell *staticFlawCodeCell = [[RACTextFieldBindTableViewCell alloc] initWithFrame:CGRectZero];
+    [parentView addSubview:staticFlawCodeCell];
+    [staticFlawCodeCell mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(staticFlawKeyCell.mas_bottom).mas_offset(40);
+        make.centerX.mas_equalTo(parentView);
+        make.left.mas_equalTo(parentView).mas_offset(10);
+        //make.height.mas_equalTo(320);
+    }];
+    [self implementFlawCodeExampleInCell:staticFlawCodeCell];
+    
     
     RACTextFieldBindTableViewCell *staticOKCell = [[RACTextFieldBindTableViewCell alloc] initWithFrame:CGRectZero];
-    [self.view addSubview:staticOKCell];
+    [parentView addSubview:staticOKCell];
     [staticOKCell mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(staticFlawCell.mas_bottom).mas_offset(40);
-        make.centerX.mas_equalTo(self.view);
-        make.left.mas_equalTo(self.view).mas_offset(10);
-        make.height.mas_equalTo(320);
+        make.top.mas_equalTo(staticFlawCodeCell.mas_bottom).mas_offset(40);
+        make.centerX.mas_equalTo(parentView);
+        make.left.mas_equalTo(parentView).mas_offset(10);
+        //make.height.mas_equalTo(320);
     }];
     [self implementOKExampleInCell:staticOKCell];
+    
+    
+    [containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(scrollView);
+        make.top.bottom.mas_equalTo(scrollView);
+        make.width.mas_equalTo(scrollView.mas_width);
+        make.bottom.mas_equalTo(staticOKCell).mas_offset(1);
+    }];
 }
 
 

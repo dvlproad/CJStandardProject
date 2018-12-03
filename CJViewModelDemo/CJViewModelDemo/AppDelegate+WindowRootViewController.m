@@ -8,11 +8,9 @@
 
 #import "AppDelegate+WindowRootViewController.h"
 
-#import "BlockLoginViewController.h"
-#import "DelegateLoginViewController.h"
-#import "KVOLoginViewController.h"
-#import "RACLoginViewController.h"
+
 #import "BindHomeViewController.h"
+#import "ViewModelHomeViewController.h"
 
 @implementation AppDelegate (WindowRootViewController)
 
@@ -34,35 +32,36 @@
     UINavigationController *bindHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:bindHomeViewController];
     [tabBarController addChildViewController:bindHomeNavigationController];
     
-    BlockLoginViewController *homeViewController = [[BlockLoginViewController alloc] init];
-    homeViewController.navigationItem.title = NSLocalizedString(@"Block首页", nil);
-    homeViewController.tabBarItem.title = NSLocalizedString(@"Block", nil);
+    ViewModelHomeViewController *homeViewController = [[ViewModelHomeViewController alloc] init];
+    homeViewController.navigationItem.title = NSLocalizedString(@"ViewModel首页", nil);
+    homeViewController.tabBarItem.title = NSLocalizedString(@"ViewModel", nil);
     homeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //homeViewController. = @"10";
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     [tabBarController addChildViewController:homeNavigationController];
     
     
-    DelegateLoginViewController *scrollViewHomeViewController = [[DelegateLoginViewController alloc] init];
-    scrollViewHomeViewController.navigationItem.title = NSLocalizedString(@"Delegate首页", nil);
-    scrollViewHomeViewController.tabBarItem.title = NSLocalizedString(@"Delegate", nil);
+    UIViewController *scrollViewHomeViewController = [[UIViewController alloc] init];
+    scrollViewHomeViewController.view.backgroundColor = [UIColor whiteColor];
+    scrollViewHomeViewController.navigationItem.title = NSLocalizedString(@"XXX首页", nil);
+    scrollViewHomeViewController.tabBarItem.title = NSLocalizedString(@"XXX", nil);
     scrollViewHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-calendar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *scrollViewHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:scrollViewHomeViewController];
     [tabBarController addChildViewController:scrollViewHomeNavigationController];
     
     
-    KVOLoginViewController *viewController4 = [[KVOLoginViewController alloc] init];
+    UIViewController *viewController4 = [[UIViewController alloc] init];
     viewController4.view.backgroundColor = [UIColor whiteColor];
-    viewController4.navigationItem.title = NSLocalizedString(@"KVO首页", nil);
-    viewController4.tabBarItem.title = NSLocalizedString(@"KVO", nil);
+    viewController4.navigationItem.title = NSLocalizedString(@"XXX首页", nil);
+    viewController4.tabBarItem.title = NSLocalizedString(@"XXX", nil);
     viewController4.tabBarItem.image = [[UIImage imageNamed:@"icons8-settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navigationController4 = [[UINavigationController alloc] initWithRootViewController:viewController4];
     [tabBarController addChildViewController:navigationController4];
     
-    RACLoginViewController *viewController5 = [[RACLoginViewController alloc] init];
+    UIViewController *viewController5 = [[UIViewController alloc] init];
     viewController5.view.backgroundColor = [UIColor whiteColor];
-    viewController5.navigationItem.title = NSLocalizedString(@"RAC首页", nil);
-    viewController5.tabBarItem.title = NSLocalizedString(@"RAC", nil);
+    viewController5.navigationItem.title = NSLocalizedString(@"XXX首页", nil);
+    viewController5.tabBarItem.title = NSLocalizedString(@"XXX", nil);
     viewController5.tabBarItem.image = [[UIImage imageNamed:@"icons8-settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *navigationController5 = [[UINavigationController alloc] initWithRootViewController:viewController5];
     [tabBarController addChildViewController:navigationController5];

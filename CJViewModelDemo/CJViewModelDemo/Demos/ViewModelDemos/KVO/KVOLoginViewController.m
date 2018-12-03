@@ -21,6 +21,12 @@
 
 @implementation KVOLoginViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"KVO ViewModel", nil);
+}
+
 - (FBKVOController *)kvoController {
     if (_kvoController == nil) {
         _kvoController = [FBKVOController controllerWithObserver:self];
@@ -143,15 +149,6 @@
 //        self.loginStateHUD.mode = MBProgressHUDModeText;
 //        [self.loginStateHUD hideAnimated:YES afterDelay:1];
 //    }];
-}
-
-
-
-
-#pragma mark - RACLoginViewModelDelegate
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)vm_checkLoginWithValid:(BOOL)enable {
-    self.loginButton.enabled = enable;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,5 +1,5 @@
 //
-//  BlockLoginViewController.h
+//  LowRACLoginViewController.h
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
@@ -8,7 +8,7 @@
 
 #import "CommonLoginViewController.h"
 
-@interface BlockLoginViewController : CommonLoginViewController {
+@interface LowRACLoginViewController : CommonLoginViewController {
     
 }
 

@@ -1,5 +1,5 @@
 //
-//  RACLoginViewController.h
+//  BestBlockLoginViewController.h
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
@@ -8,7 +8,7 @@
 
 #import "CommonLoginViewController.h"
 
-@interface RACLoginViewController : CommonLoginViewController {
+@interface BestBlockLoginViewController : CommonLoginViewController {
     
 }
 

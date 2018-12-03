@@ -1,16 +1,16 @@
 //
-//  RACLoginViewModel.h
+//  LowRACLoginViewModel.h
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2017/3/30.
 //  Copyright © 2017年 dvlproad. All rights reserved.
 //
-//  RACLoginViewModel处理逻辑
+//  LowRACLoginViewModel处理逻辑
 
 #import <Foundation/Foundation.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
-@interface RACLoginViewModel : NSObject {
+@interface LowRACLoginViewModel : NSObject {
     
 }
 @property (nonatomic, copy, readonly) NSString *userName;
@@ -35,7 +35,6 @@
 - (void)updatePassword:(NSString *)password;
 
 #pragma mark - Do
-//- (id)loginButtonIsValid;
 - (void)login;
 
 @end

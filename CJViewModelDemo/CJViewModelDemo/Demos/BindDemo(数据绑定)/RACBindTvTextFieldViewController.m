@@ -23,6 +23,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = NSLocalizedString(@"RAC Bind TableView TextField", nil);
+    
+    [self setupViews];
+    //[self bindViewModel]; //textField未获取，无法进行绑定
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //[self bindViewModel]; //textField未获取，无法进行绑定
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self bindViewModel];   //tableView中的textField绑定的正确时机
 }
 
 - (void)setupViews {
@@ -46,7 +59,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -58,12 +71,12 @@
     return nil;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0 || indexPath.section == 1) {
-        return 320;
-    }
-    return 44;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.section == 0 || indexPath.section == 1) {
+//        return 320;
+//    }
+//    return 44;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
@@ -71,9 +84,10 @@
         cell.backgroundColor = [UIColor greenColor];
         
         if (indexPath.row == 0) {
-            [self implementFlawExampleInCell:cell];
-            
+            [self implementFlawKeyExampleInCell:cell];
         } else if (indexPath.row == 1) {
+            [self implementFlawCodeExampleInCell:cell];
+        } else if (indexPath.row == 2) {
             [self implementOKExampleInCell:cell];
         }
         return cell;
@@ -82,52 +96,6 @@
         RACTextFieldBindTableViewCell *cell = (RACTextFieldBindTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"RACTextFieldBindTableViewCell" forIndexPath:indexPath];
         cell.backgroundColor = [UIColor redColor];
         
-        if (indexPath.row == 0) {
-            self.textField3 = cell.textField;
-            
-            NSString *codeString = @"\
-            RACChannelTo(self.viewModel, text1) = RACChannelTo(self.textField1, text);";
-            cell.codeLabelText = codeString;
-            
-            NSString *codeResultString = @"会出现通过键盘给文本框赋值(文本框没收回来)时候，model的值没改变";
-            cell.codeResultLabelText = codeResultString;
-            
-            [cell setupChangeTextFieldTextBlock:^{
-                self.textField3.text = [NSString stringWithFormat:@"%d", rand()%100];
-                
-            } changeViewModelTextBlock:^{
-                self.viewModel.text3 = [NSString stringWithFormat:@"%d", rand()%100];
-                
-            } printTextBlock:^{
-                NSString *message1 = [NSString stringWithFormat:@"3.viewModel:%@, textField:%@", self.viewModel.text3, self.textField3.text];
-                NSString *allMessage = [NSString stringWithFormat:@"\n----------------------------\n%@\n----------------------------", message1];
-                NSLog(@"%@", allMessage);
-            }];
-            
-        } else if (indexPath.row == 1) {
-            self.textField4 = cell.textField;
-            
-            NSString *codeString = @"\
-            RACChannelTo(self.viewModel, text2) = RACChannelTo(self.textField2, text);\
-            \n\
-            [self.textField2.rac_textSignal subscribe:RACChannelTo(self.textField2, text)];";
-            cell.codeLabelText = codeString;
-            
-            NSString *codeResultString = @"会出现通过键盘给文本框赋值(文本框没收回来)时候，model的值没改变";
-            cell.codeResultLabelText = codeResultString;
-            
-            [cell setupChangeTextFieldTextBlock:^{
-                self.textField4.text = [NSString stringWithFormat:@"%d", rand()%100];
-                
-            } changeViewModelTextBlock:^{
-                self.viewModel.text4 = [NSString stringWithFormat:@"%d", rand()%100];
-                
-            } printTextBlock:^{
-                NSString *message1 = [NSString stringWithFormat:@"4.viewModel:%@, textField:%@", self.viewModel.text4, self.textField4.text];
-                NSString *allMessage = [NSString stringWithFormat:@"\n----------------------------\n%@\n----------------------------", message1];
-                NSLog(@"%@", allMessage);
-            }];
-        }
         return cell;
         
     } else {

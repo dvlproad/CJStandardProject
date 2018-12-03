@@ -15,17 +15,19 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RACBindTextFieldViewController : CJUIKitBaseViewController {
     
 }
-@property (nonatomic, strong) UITextField *textField1;
-@property (nonatomic, strong) UITextField *textField2;
-
-@property (nonatomic, strong) UITextField *textField3;
-@property (nonatomic, strong) UITextField *textField4;
+@property (nonatomic, strong) UITextField *textField1;  /**< 有键盘修改问题的textField */
+@property (nonatomic, strong) UITextField *textField2;  /**< 有代码修改问题的textField */
+@property (nonatomic, strong) UITextField *textField3;  /**< 键盘和代码修改都没问题的textField */
 
 @property (nonatomic, strong) RACTextFieldBindViewModel *viewModel;
 
-- (void)setupViews;
+- (void)bindViewModel;
 
-- (void)implementFlawExampleInCell:(RACTextFieldBindTableViewCell *)cell;
+/// 键盘修改textField有问题的例子
+- (void)implementFlawKeyExampleInCell:(RACTextFieldBindTableViewCell *)cell;
+/// 代码修改textField有问题的例子
+- (void)implementFlawCodeExampleInCell:(RACTextFieldBindTableViewCell *)cell;
+/// 键盘和代码修改textField都没问题的例子
 - (void)implementOKExampleInCell:(RACTextFieldBindTableViewCell *)cell;
 
 @end

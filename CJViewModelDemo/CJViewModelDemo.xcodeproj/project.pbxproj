@@ -22,10 +22,10 @@
 		786826FE21AE77DA00FCCDE5 /* CJUIKitBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 786826FC21AE77D900FCCDE5 /* CJUIKitBaseViewController.m */; };
 		7868270121AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868270021AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m */; };
 		7868270A21AE7AA700FCCDE5 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868270921AE7AA700FCCDE5 /* AppAssets.xcassets */; };
-		7868270D21AE7BCA00FCCDE5 /* RACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868270C21AE7BCA00FCCDE5 /* RACLoginViewModel.m */; };
+		7868270D21AE7BCA00FCCDE5 /* LowRACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868270C21AE7BCA00FCCDE5 /* LowRACLoginViewModel.m */; };
 		7868271021AE7BD100FCCDE5 /* KVOLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868270F21AE7BD100FCCDE5 /* KVOLoginViewModel.m */; };
 		7868271321AE7BD900FCCDE5 /* DelegateLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868271221AE7BD900FCCDE5 /* DelegateLoginViewModel.m */; };
-		7868271621AE7BE000FCCDE5 /* BlockLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868271421AE7BE000FCCDE5 /* BlockLoginViewModel.m */; };
+		7868271621AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868271421AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m */; };
 		7868271F21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868271C21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m */; };
 		7868273D21AE7CB900FCCDE5 /* STDemoUsePermissionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868273421AE7CB800FCCDE5 /* STDemoUsePermissionModel.m */; };
 		7868273E21AE7CB900FCCDE5 /* STDemoServiceUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868273521AE7CB800FCCDE5 /* STDemoServiceUserManager.m */; };
@@ -33,10 +33,10 @@
 		7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868274221AE7D1700FCCDE5 /* NSString+STDemoValidate.m */; };
 		7868274721AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868274521AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.m */; };
 		7868274B21AE7D9900FCCDE5 /* DemoFMDBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868274A21AE7D9900FCCDE5 /* DemoFMDBFileManager.m */; };
-		7868274E21AE80B800FCCDE5 /* RACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868274D21AE80B800FCCDE5 /* RACLoginViewController.m */; };
+		7868274E21AE80B800FCCDE5 /* LowRACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868274D21AE80B800FCCDE5 /* LowRACLoginViewController.m */; };
 		7868275121AE80BF00FCCDE5 /* KVOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868275021AE80BF00FCCDE5 /* KVOLoginViewController.m */; };
 		7868275421AE80C800FCCDE5 /* DelegateLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868275221AE80C800FCCDE5 /* DelegateLoginViewController.m */; };
-		7868275721AE80CF00FCCDE5 /* BlockLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868275621AE80CF00FCCDE5 /* BlockLoginViewController.m */; };
+		7868275721AE80CF00FCCDE5 /* NormalBlockLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868275621AE80CF00FCCDE5 /* NormalBlockLoginViewController.m */; };
 		7868275A21AE82C500FCCDE5 /* CommonLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868275821AE82C500FCCDE5 /* CommonLoginViewController.m */; };
 		7868275E21AE851F00FCCDE5 /* STDemoButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868275D21AE851F00FCCDE5 /* STDemoButtonFactory.m */; };
 		7868276221AE939A00FCCDE5 /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868276121AE939900FCCDE5 /* LoginAssets.xcassets */; };
@@ -46,6 +46,11 @@
 		788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */; };
 		788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */; };
 		788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F521AF90F20011F993 /* BindHomeViewController.m */; };
+		78AB836721B4FFFF00853E21 /* HighRACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836521B4FFFE00853E21 /* HighRACLoginViewModel.m */; };
+		78AB836A21B5009200853E21 /* HighRACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836921B5009200853E21 /* HighRACLoginViewController.m */; };
+		78AB836D21B5017500853E21 /* ViewModelHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836B21B5017500853E21 /* ViewModelHomeViewController.m */; };
+		78AB837221B50AF700853E21 /* BestBlockLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836F21B50AF600853E21 /* BestBlockLoginViewController.m */; };
+		78AB837321B50AF700853E21 /* BestBlockLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837121B50AF700853E21 /* BestBlockLoginViewModel.m */; };
 		F62B567A6336AC760793D524 /* libPods-CJViewModelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -99,14 +104,14 @@
 		786826FF21AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+WindowRootViewController.h"; sourceTree = "<group>"; };
 		7868270021AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+WindowRootViewController.m"; sourceTree = "<group>"; };
 		7868270921AE7AA700FCCDE5 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
-		7868270B21AE7BCA00FCCDE5 /* RACLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACLoginViewModel.h; sourceTree = "<group>"; };
-		7868270C21AE7BCA00FCCDE5 /* RACLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACLoginViewModel.m; sourceTree = "<group>"; };
+		7868270B21AE7BCA00FCCDE5 /* LowRACLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowRACLoginViewModel.h; sourceTree = "<group>"; };
+		7868270C21AE7BCA00FCCDE5 /* LowRACLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowRACLoginViewModel.m; sourceTree = "<group>"; };
 		7868270E21AE7BD100FCCDE5 /* KVOLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOLoginViewModel.h; sourceTree = "<group>"; };
 		7868270F21AE7BD100FCCDE5 /* KVOLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOLoginViewModel.m; sourceTree = "<group>"; };
 		7868271121AE7BD900FCCDE5 /* DelegateLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateLoginViewModel.h; sourceTree = "<group>"; };
 		7868271221AE7BD900FCCDE5 /* DelegateLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateLoginViewModel.m; sourceTree = "<group>"; };
-		7868271421AE7BE000FCCDE5 /* BlockLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLoginViewModel.m; sourceTree = "<group>"; };
-		7868271521AE7BE000FCCDE5 /* BlockLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLoginViewModel.h; sourceTree = "<group>"; };
+		7868271421AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalBlockLoginViewModel.m; sourceTree = "<group>"; };
+		7868271521AE7BE000FCCDE5 /* NormalBlockLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalBlockLoginViewModel.h; sourceTree = "<group>"; };
 		7868271C21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STDemoServiceUserManager+Network.m"; sourceTree = "<group>"; };
 		7868271D21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDemoServiceUserManager+Network.h"; sourceTree = "<group>"; };
 		7868273121AE7CB800FCCDE5 /* STDemoUsePermissionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoUsePermissionModel.h; sourceTree = "<group>"; };
@@ -121,14 +126,14 @@
 		7868274621AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "STDemoServiceUserManager+UserTable.h"; sourceTree = "<group>"; };
 		7868274921AE7D9900FCCDE5 /* DemoFMDBFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFMDBFileManager.h; sourceTree = "<group>"; };
 		7868274A21AE7D9900FCCDE5 /* DemoFMDBFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFMDBFileManager.m; sourceTree = "<group>"; };
-		7868274C21AE80B800FCCDE5 /* RACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACLoginViewController.h; sourceTree = "<group>"; };
-		7868274D21AE80B800FCCDE5 /* RACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACLoginViewController.m; sourceTree = "<group>"; };
+		7868274C21AE80B800FCCDE5 /* LowRACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowRACLoginViewController.h; sourceTree = "<group>"; };
+		7868274D21AE80B800FCCDE5 /* LowRACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowRACLoginViewController.m; sourceTree = "<group>"; };
 		7868274F21AE80BF00FCCDE5 /* KVOLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOLoginViewController.h; sourceTree = "<group>"; };
 		7868275021AE80BF00FCCDE5 /* KVOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOLoginViewController.m; sourceTree = "<group>"; };
 		7868275221AE80C800FCCDE5 /* DelegateLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateLoginViewController.m; sourceTree = "<group>"; };
 		7868275321AE80C800FCCDE5 /* DelegateLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateLoginViewController.h; sourceTree = "<group>"; };
-		7868275521AE80CF00FCCDE5 /* BlockLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockLoginViewController.h; sourceTree = "<group>"; };
-		7868275621AE80CF00FCCDE5 /* BlockLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockLoginViewController.m; sourceTree = "<group>"; };
+		7868275521AE80CF00FCCDE5 /* NormalBlockLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalBlockLoginViewController.h; sourceTree = "<group>"; };
+		7868275621AE80CF00FCCDE5 /* NormalBlockLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalBlockLoginViewController.m; sourceTree = "<group>"; };
 		7868275821AE82C500FCCDE5 /* CommonLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLoginViewController.m; sourceTree = "<group>"; };
 		7868275921AE82C500FCCDE5 /* CommonLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonLoginViewController.h; sourceTree = "<group>"; };
 		7868275C21AE851F00FCCDE5 /* STDemoButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDemoButtonFactory.h; sourceTree = "<group>"; };
@@ -146,6 +151,16 @@
 		788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewModel.m; sourceTree = "<group>"; };
 		788A55F421AF90F20011F993 /* BindHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindHomeViewController.h; sourceTree = "<group>"; };
 		788A55F521AF90F20011F993 /* BindHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindHomeViewController.m; sourceTree = "<group>"; };
+		78AB836521B4FFFE00853E21 /* HighRACLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighRACLoginViewModel.m; sourceTree = "<group>"; };
+		78AB836621B4FFFE00853E21 /* HighRACLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighRACLoginViewModel.h; sourceTree = "<group>"; };
+		78AB836821B5009100853E21 /* HighRACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighRACLoginViewController.h; sourceTree = "<group>"; };
+		78AB836921B5009200853E21 /* HighRACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighRACLoginViewController.m; sourceTree = "<group>"; };
+		78AB836B21B5017500853E21 /* ViewModelHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelHomeViewController.m; sourceTree = "<group>"; };
+		78AB836C21B5017500853E21 /* ViewModelHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelHomeViewController.h; sourceTree = "<group>"; };
+		78AB836E21B50AF600853E21 /* BestBlockLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestBlockLoginViewController.h; sourceTree = "<group>"; };
+		78AB836F21B50AF600853E21 /* BestBlockLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestBlockLoginViewController.m; sourceTree = "<group>"; };
+		78AB837021B50AF700853E21 /* BestBlockLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestBlockLoginViewModel.h; sourceTree = "<group>"; };
+		78AB837121B50AF700853E21 /* BestBlockLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestBlockLoginViewModel.m; sourceTree = "<group>"; };
 		A2BF77EF0932160C5E5AD33C /* Pods-CJViewModelDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D234E35815A97942A404D110 /* Pods-CJViewModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEE4D2634A9833EC3FF1AEB /* Pods-CJViewModelDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,10 +299,14 @@
 		7868270321AE79DC00FCCDE5 /* Block */ = {
 			isa = PBXGroup;
 			children = (
-				7868275521AE80CF00FCCDE5 /* BlockLoginViewController.h */,
-				7868275621AE80CF00FCCDE5 /* BlockLoginViewController.m */,
-				7868271521AE7BE000FCCDE5 /* BlockLoginViewModel.h */,
-				7868271421AE7BE000FCCDE5 /* BlockLoginViewModel.m */,
+				7868275521AE80CF00FCCDE5 /* NormalBlockLoginViewController.h */,
+				7868275621AE80CF00FCCDE5 /* NormalBlockLoginViewController.m */,
+				7868271521AE7BE000FCCDE5 /* NormalBlockLoginViewModel.h */,
+				7868271421AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m */,
+				78AB836E21B50AF600853E21 /* BestBlockLoginViewController.h */,
+				78AB836F21B50AF600853E21 /* BestBlockLoginViewController.m */,
+				78AB837021B50AF700853E21 /* BestBlockLoginViewModel.h */,
+				78AB837121B50AF700853E21 /* BestBlockLoginViewModel.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -317,10 +336,14 @@
 		7868270621AE79F000FCCDE5 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
-				7868274C21AE80B800FCCDE5 /* RACLoginViewController.h */,
-				7868274D21AE80B800FCCDE5 /* RACLoginViewController.m */,
-				7868270B21AE7BCA00FCCDE5 /* RACLoginViewModel.h */,
-				7868270C21AE7BCA00FCCDE5 /* RACLoginViewModel.m */,
+				7868274C21AE80B800FCCDE5 /* LowRACLoginViewController.h */,
+				7868274D21AE80B800FCCDE5 /* LowRACLoginViewController.m */,
+				7868270B21AE7BCA00FCCDE5 /* LowRACLoginViewModel.h */,
+				7868270C21AE7BCA00FCCDE5 /* LowRACLoginViewModel.m */,
+				78AB836821B5009100853E21 /* HighRACLoginViewController.h */,
+				78AB836921B5009200853E21 /* HighRACLoginViewController.m */,
+				78AB836621B4FFFE00853E21 /* HighRACLoginViewModel.h */,
+				78AB836521B4FFFE00853E21 /* HighRACLoginViewModel.m */,
 			);
 			path = RAC;
 			sourceTree = "<group>";
@@ -445,6 +468,8 @@
 		7868277721AE9F6500FCCDE5 /* ViewModelDemos */ = {
 			isa = PBXGroup;
 			children = (
+				78AB836C21B5017500853E21 /* ViewModelHomeViewController.h */,
+				78AB836B21B5017500853E21 /* ViewModelHomeViewController.m */,
 				7868275921AE82C500FCCDE5 /* CommonLoginViewController.h */,
 				7868275821AE82C500FCCDE5 /* CommonLoginViewController.m */,
 				7868270721AE79F500FCCDE5 /* Best */,
@@ -710,22 +735,27 @@
 				7868273E21AE7CB900FCCDE5 /* STDemoServiceUserManager.m in Sources */,
 				788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */,
 				7868275A21AE82C500FCCDE5 /* CommonLoginViewController.m in Sources */,
-				7868270D21AE7BCA00FCCDE5 /* RACLoginViewModel.m in Sources */,
+				7868270D21AE7BCA00FCCDE5 /* LowRACLoginViewModel.m in Sources */,
 				7868274B21AE7D9900FCCDE5 /* DemoFMDBFileManager.m in Sources */,
 				7868275121AE80BF00FCCDE5 /* KVOLoginViewController.m in Sources */,
+				78AB836D21B5017500853E21 /* ViewModelHomeViewController.m in Sources */,
 				7868269421AE74A100FCCDE5 /* ViewController.m in Sources */,
+				78AB836721B4FFFF00853E21 /* HighRACLoginViewModel.m in Sources */,
+				78AB836A21B5009200853E21 /* HighRACLoginViewController.m in Sources */,
 				7819F25B21B2870F0072E8A6 /* RACBindNorTextFieldViewController.m in Sources */,
 				7868275E21AE851F00FCCDE5 /* STDemoButtonFactory.m in Sources */,
+				78AB837321B50AF700853E21 /* BestBlockLoginViewModel.m in Sources */,
 				7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */,
+				78AB837221B50AF700853E21 /* BestBlockLoginViewController.m in Sources */,
 				788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */,
-				7868271621AE7BE000FCCDE5 /* BlockLoginViewModel.m in Sources */,
+				7868271621AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m in Sources */,
 				786826FE21AE77DA00FCCDE5 /* CJUIKitBaseViewController.m in Sources */,
 				7868275421AE80C800FCCDE5 /* DelegateLoginViewController.m in Sources */,
 				7868273F21AE7CB900FCCDE5 /* STDemoUser.m in Sources */,
 				7868271F21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m in Sources */,
 				7868273D21AE7CB900FCCDE5 /* STDemoUsePermissionModel.m in Sources */,
 				788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */,
-				7868274E21AE80B800FCCDE5 /* RACLoginViewController.m in Sources */,
+				7868274E21AE80B800FCCDE5 /* LowRACLoginViewController.m in Sources */,
 				7868274721AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.m in Sources */,
 				7868271021AE7BD100FCCDE5 /* KVOLoginViewModel.m in Sources */,
 				7868269F21AE74A300FCCDE5 /* main.m in Sources */,
@@ -734,7 +764,7 @@
 				7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */,
 				7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */,
 				7842EE1521B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m in Sources */,
-				7868275721AE80CF00FCCDE5 /* BlockLoginViewController.m in Sources */,
+				7868275721AE80CF00FCCDE5 /* NormalBlockLoginViewController.m in Sources */,
 				7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */,
 				7868271321AE7BD900FCCDE5 /* DelegateLoginViewModel.m in Sources */,
 				7868269121AE74A100FCCDE5 /* AppDelegate.m in Sources */,

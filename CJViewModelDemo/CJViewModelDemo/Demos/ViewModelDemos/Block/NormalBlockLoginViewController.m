@@ -1,28 +1,34 @@
 //
-//  BlockLoginViewController.m
+//  NormalBlockLoginViewController.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import "BlockLoginViewController.h"
-#import "BlockLoginViewModel.h"
+#import "NormalBlockLoginViewController.h"
+#import "NormalBlockLoginViewModel.h"
 //#import "CTMediator+STDemoLogin.h"
 
-@interface BlockLoginViewController ()  {
+@interface NormalBlockLoginViewController ()  {
     
 }
-@property (nonatomic, strong) BlockLoginViewModel *viewModel;
+@property (nonatomic, strong) NormalBlockLoginViewModel *viewModel;
 
 @end
 
-@implementation BlockLoginViewController
+@implementation NormalBlockLoginViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.title = NSLocalizedString(@"Block ViewModel(Normal)", nil);
+}
 
 - (void)bindViewModel {
     NSString *userName = [CJAppLastUtil getLastLoginUser].lastLoginUserName;
     NSString *password = @"";
-    BlockLoginViewModel *viewModel = [[BlockLoginViewModel alloc] initWithUserName:userName password:password];
+    NormalBlockLoginViewModel *viewModel = [[NormalBlockLoginViewModel alloc] initWithUserName:userName password:password];
     self.viewModel = viewModel;
 }
 
@@ -90,14 +96,6 @@
     }];
 }
 
-
-
-
-#pragma mark - RACLoginViewModelDelegate
-///登录按钮的enable发生变化需要更新按钮显示
-- (void)vm_checkLoginWithValid:(BOOL)enable {
-    self.loginButton.enabled = enable;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

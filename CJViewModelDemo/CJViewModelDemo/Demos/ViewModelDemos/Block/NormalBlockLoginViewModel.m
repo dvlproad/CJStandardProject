@@ -1,17 +1,17 @@
 //
-//  BlockLoginViewModel.m
+//  NormalBlockLoginViewModel.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2018/9/4.
 //  Copyright © 2018年 dvlproad. All rights reserved.
 //
 
-#import "BlockLoginViewModel.h"
+#import "NormalBlockLoginViewModel.h"
 #import "NSString+STDemoValidate.h"
 #import "STDemoServiceUserManager+Network.h"
 #import "STDemoServiceUserManager+UserTable.h"
 
-@interface BlockLoginViewModel () {
+@interface NormalBlockLoginViewModel () {
     
 }
 @property (nonatomic, assign, readonly) BOOL userNameValid;
@@ -21,7 +21,7 @@
 @end
 
 
-@implementation BlockLoginViewModel
+@implementation NormalBlockLoginViewModel
 
 - (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password {
     self = [super init];
@@ -56,7 +56,7 @@
     }
 }
 
-
+#pragma mark - Do
 /// 执行登录
 - (void)loginWithTryFailure:(void (^)(NSString *tryFailureMessage))tryFailureBlock
                  loginStart:(void (^)(NSString *startMessage))loginStartBlock
