@@ -57,6 +57,12 @@
 		78AB838021B61F0C00853E21 /* RACBindTvPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837B21B61F0C00853E21 /* RACBindTvPropertyViewController.m */; };
 		78AB838521B651C300853E21 /* MidRACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838121B651C100853E21 /* MidRACLoginViewModel.m */; };
 		78AB838621B651C300853E21 /* MidRACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838221B651C200853E21 /* MidRACLoginViewController.m */; };
+		78AB838E21B65C6E00853E21 /* ListenSelectedHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838921B65C6D00853E21 /* ListenSelectedHomeViewController.m */; };
+		78AB838F21B65C6E00853E21 /* RACListenSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838A21B65C6D00853E21 /* RACListenSelectedViewController.m */; };
+		78AB839021B65C6E00853E21 /* ListenSelectedSubjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838C21B65C6E00853E21 /* ListenSelectedSubjectViewModel.m */; };
+		78AB839521B6614D00853E21 /* ListenSelectedSignalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839221B6614C00853E21 /* ListenSelectedSignalViewModel.m */; };
+		78AB839621B6614D00853E21 /* ListenSelectedObserveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839321B6614D00853E21 /* ListenSelectedObserveViewModel.m */; };
+		78AB839921B66A0A00853E21 /* ListenSelectedPropertyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839821B66A0900853E21 /* ListenSelectedPropertyViewModel.m */; };
 		F62B567A6336AC760793D524 /* libPods-CJViewModelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +185,18 @@
 		78AB838221B651C200853E21 /* MidRACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidRACLoginViewController.m; sourceTree = "<group>"; };
 		78AB838321B651C200853E21 /* MidRACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidRACLoginViewController.h; sourceTree = "<group>"; };
 		78AB838421B651C200853E21 /* MidRACLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidRACLoginViewModel.h; sourceTree = "<group>"; };
+		78AB838821B65C6D00853E21 /* RACListenSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACListenSelectedViewController.h; sourceTree = "<group>"; };
+		78AB838921B65C6D00853E21 /* ListenSelectedHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenSelectedHomeViewController.m; sourceTree = "<group>"; };
+		78AB838A21B65C6D00853E21 /* RACListenSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACListenSelectedViewController.m; sourceTree = "<group>"; };
+		78AB838B21B65C6D00853E21 /* ListenSelectedSubjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedSubjectViewModel.h; sourceTree = "<group>"; };
+		78AB838C21B65C6E00853E21 /* ListenSelectedSubjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenSelectedSubjectViewModel.m; sourceTree = "<group>"; };
+		78AB838D21B65C6E00853E21 /* ListenSelectedHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedHomeViewController.h; sourceTree = "<group>"; };
+		78AB839121B6614C00853E21 /* ListenSelectedSignalViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedSignalViewModel.h; sourceTree = "<group>"; };
+		78AB839221B6614C00853E21 /* ListenSelectedSignalViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenSelectedSignalViewModel.m; sourceTree = "<group>"; };
+		78AB839321B6614D00853E21 /* ListenSelectedObserveViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenSelectedObserveViewModel.m; sourceTree = "<group>"; };
+		78AB839421B6614D00853E21 /* ListenSelectedObserveViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedObserveViewModel.h; sourceTree = "<group>"; };
+		78AB839721B66A0900853E21 /* ListenSelectedPropertyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedPropertyViewModel.h; sourceTree = "<group>"; };
+		78AB839821B66A0900853E21 /* ListenSelectedPropertyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenSelectedPropertyViewModel.m; sourceTree = "<group>"; };
 		A2BF77EF0932160C5E5AD33C /* Pods-CJViewModelDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D234E35815A97942A404D110 /* Pods-CJViewModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEE4D2634A9833EC3FF1AEB /* Pods-CJViewModelDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -306,6 +324,7 @@
 		7868270221AE78EE00FCCDE5 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				78AB838721B65B8E00853E21 /* ListenSelectedDemo */,
 				78AB837421B61A7E00853E21 /* BindPropertyDemo(监听属性的时机) */,
 				788A55ED21AF895C0011F993 /* BindTextFieldDemo(文本框绑定) */,
 				7868277721AE9F6500FCCDE5 /* ViewModelDemos */,
@@ -536,6 +555,25 @@
 				78AB837A21B61F0C00853E21 /* RACPropertyBindViewModel.m */,
 			);
 			path = "BindPropertyDemo(监听属性的时机)";
+			sourceTree = "<group>";
+		};
+		78AB838721B65B8E00853E21 /* ListenSelectedDemo */ = {
+			isa = PBXGroup;
+			children = (
+				78AB838D21B65C6E00853E21 /* ListenSelectedHomeViewController.h */,
+				78AB838921B65C6D00853E21 /* ListenSelectedHomeViewController.m */,
+				78AB838821B65C6D00853E21 /* RACListenSelectedViewController.h */,
+				78AB838A21B65C6D00853E21 /* RACListenSelectedViewController.m */,
+				78AB838B21B65C6D00853E21 /* ListenSelectedSubjectViewModel.h */,
+				78AB838C21B65C6E00853E21 /* ListenSelectedSubjectViewModel.m */,
+				78AB839421B6614D00853E21 /* ListenSelectedObserveViewModel.h */,
+				78AB839321B6614D00853E21 /* ListenSelectedObserveViewModel.m */,
+				78AB839121B6614C00853E21 /* ListenSelectedSignalViewModel.h */,
+				78AB839221B6614C00853E21 /* ListenSelectedSignalViewModel.m */,
+				78AB839721B66A0900853E21 /* ListenSelectedPropertyViewModel.h */,
+				78AB839821B66A0900853E21 /* ListenSelectedPropertyViewModel.m */,
+			);
+			path = ListenSelectedDemo;
 			sourceTree = "<group>";
 		};
 		8211B86BC4BD21FBEA556948 /* Frameworks */ = {
@@ -784,13 +822,17 @@
 				7819F25B21B2870F0072E8A6 /* RACBindNorTextFieldViewController.m in Sources */,
 				78AB838621B651C300853E21 /* MidRACLoginViewController.m in Sources */,
 				7868275E21AE851F00FCCDE5 /* STDemoButtonFactory.m in Sources */,
+				78AB838F21B65C6E00853E21 /* RACListenSelectedViewController.m in Sources */,
+				78AB839921B66A0A00853E21 /* ListenSelectedPropertyViewModel.m in Sources */,
 				78AB837F21B61F0C00853E21 /* RACPropertyBindViewModel.m in Sources */,
 				78AB837321B50AF700853E21 /* BestBlockLoginViewModel.m in Sources */,
 				7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */,
 				78AB837221B50AF700853E21 /* BestBlockLoginViewController.m in Sources */,
 				788A55F621AF90F20011F993 /* BindTextFieldHomeViewController.m in Sources */,
+				78AB839521B6614D00853E21 /* ListenSelectedSignalViewModel.m in Sources */,
 				7868271621AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m in Sources */,
 				786826FE21AE77DA00FCCDE5 /* CJUIKitBaseViewController.m in Sources */,
+				78AB839021B65C6E00853E21 /* ListenSelectedSubjectViewModel.m in Sources */,
 				7868275421AE80C800FCCDE5 /* DelegateLoginViewController.m in Sources */,
 				78AB838521B651C300853E21 /* MidRACLoginViewModel.m in Sources */,
 				7868273F21AE7CB900FCCDE5 /* STDemoUser.m in Sources */,
@@ -803,6 +845,7 @@
 				7868269F21AE74A300FCCDE5 /* main.m in Sources */,
 				7868270121AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m in Sources */,
 				786826FD21AE77DA00FCCDE5 /* CJUIKitBaseHomeViewController.m in Sources */,
+				78AB839621B6614D00853E21 /* ListenSelectedObserveViewModel.m in Sources */,
 				7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */,
 				7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */,
 				78AB838021B61F0C00853E21 /* RACBindTvPropertyViewController.m in Sources */,
@@ -811,6 +854,7 @@
 				7868275721AE80CF00FCCDE5 /* NormalBlockLoginViewController.m in Sources */,
 				7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */,
 				7868271321AE7BD900FCCDE5 /* DelegateLoginViewModel.m in Sources */,
+				78AB838E21B65C6E00853E21 /* ListenSelectedHomeViewController.m in Sources */,
 				7868269121AE74A100FCCDE5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

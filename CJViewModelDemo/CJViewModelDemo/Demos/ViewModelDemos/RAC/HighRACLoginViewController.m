@@ -41,12 +41,12 @@
 //        BOOL loginVaild = [x boolValue];
 //        self.loginButton.enabled = loginVaild;
 //    }];
-    RAC(self.userNameTextField, leftButtonSelected) = RACObserve(viewModel, userNameValid);
-    RAC(self.passwordTextField, leftButtonSelected) = RACObserve(viewModel, passwordValid);
-    RAC(self.loginButton, enabled) = RACObserve(viewModel, loginValid);
-//    RAC(self.loginButton, enabled) = [RACSignal combineLatest:@[RACObserve(viewModel, userNameValid), RACObserve(viewModel, passwordValid)] reduce:^id(id nUserNameValid, id nPasswordValid){
-//        return @([nUserNameValid boolValue] && [nPasswordValid boolValue]);
-//    }];
+//    RAC(self.userNameTextField, leftButtonSelected) = RACObserve(viewModel, userNameValid);
+//    RAC(self.passwordTextField, leftButtonSelected) = RACObserve(viewModel, passwordValid);
+//    RAC(self.loginButton, enabled) = RACObserve(viewModel, loginValid);
+    RAC(self.userNameTextField, leftButtonSelected) = viewModel.userNameValidSignal;
+    RAC(self.passwordTextField, leftButtonSelected) = viewModel.passwordValidSignal;
+    RAC(self.loginButton, enabled) = viewModel.loginValidSignal;
     
     [viewModel.tryFailureObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;

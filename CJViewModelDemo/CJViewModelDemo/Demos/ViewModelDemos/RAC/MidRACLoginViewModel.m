@@ -30,18 +30,6 @@
 //        _passwordValidObject = [RACSubject subject];
 //        _loginValidObject = [RACSubject subject];
         
-//        _userNameValidSignal = RACObserve(self, userNameValid);
-//        _passwordValidSignal = RACObserve(self, passwordValid);
-//        _loginValidSignal = [RACSignal combineLatest:@[self.userNameValidSignal, self.passwordValidSignal] reduce:^id(id nUserNameValid, id nPasswordValid){
-//            return @([nUserNameValid boolValue] && [nPasswordValid boolValue]);
-//        }];//合并两个输入框信号，并返回按钮bool类型的值
-        
-//        _userNameValidSignal = RACObserve(self, userName);
-//        _passwordValidSignal = RACObserve(self, password);
-//        _loginValidSignal = [RACSignal combineLatest:@[_userNameValidSignal, _passwordValidSignal] reduce:^id(NSString *userName, NSString *password){
-//            return @([userName stdemo_checkUserName] && [password stdemo_checkPassword]);
-//        }];//合并两个输入框信号，并返回按钮bool类型的值
-        
         _tryFailureObject = [RACSubject subject];
         _startObject = [RACSubject subject];
         _successObject = [RACSubject subject];
@@ -51,27 +39,11 @@
     return self;
 }
 
-//- (RACSignal *)loginValidSignal {
-//    return [RACObserve(self, userName) map:^id _Nullable(NSString  * _Nullable value) {
-//        return @(value.length > 2);
-//    }];
-//
-//    return RACObserve(self, userNameValid);
-//    return [RACSignal
-//            combineLatest:@[RACObserve(self, userNameValid), RACObserve(self, passwordValidSignal)]
-//            reduce:^id(id nUserNameValid, id nPasswordValid){
-//                return @([nUserNameValid boolValue] && [nPasswordValid boolValue]);
-//            }];
-//    return [RACSignal
-//            combineLatest:@[RACObserve(self, userName), RACObserve(self, password)]
-//            reduce:^id(NSString *userName, NSString *password){
-//                return @([userName stdemo_checkUserName] && [password stdemo_checkPassword]);
-//            }];
-//}
-
 #pragma mark - Update
 - (void)updateUserName:(NSString *)userName {
     _userName = userName;
+    
+    //必须用self.xxx = value; 否则因为无法执行setter，而无法成功监听属性；
     self.userNameValid = [self.userName stdemo_checkUserName];
     self.loginValid = self.userNameValid && self.passwordValid;
     
@@ -81,6 +53,8 @@
 
 - (void)updatePassword:(NSString *)password {
     _password = password;
+    
+    //必须用self.xxx = value; 否则因为无法执行setter，而无法成功监听属性；
     self.passwordValid = [self.password stdemo_checkPassword];
     self.loginValid = self.userNameValid && self.passwordValid;
     

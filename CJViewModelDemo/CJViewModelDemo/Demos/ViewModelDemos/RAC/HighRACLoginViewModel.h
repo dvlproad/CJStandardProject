@@ -13,16 +13,13 @@
 @interface HighRACLoginViewModel : NSObject {
     
 }
-@property (nonatomic, copy, readonly) NSString *userName;
-@property (nonatomic, copy, readonly) NSString *password;
+@property (nonatomic, copy) NSString *userName;
+@property (nonatomic, copy) NSString *password;
 
 // 属性要用来监听的话，要确保其setter会被调用
-@property (nonatomic, assign) BOOL userNameValid;
-@property (nonatomic, assign) BOOL passwordValid;
-@property (nonatomic, assign) BOOL loginValid;
-//@property (nonatomic, strong) RACSubject *userNameValidObject;
-//@property (nonatomic, strong) RACSubject *passwordValidObject;
-//@property (nonatomic, strong) RACSubject *loginValidObject;
+@property (nonatomic, strong) RACSignal *userNameValidSignal;
+@property (nonatomic, strong) RACSignal *passwordValidSignal;
+@property (nonatomic, strong) RACSignal *loginValidSignal;
 
 @property (nonatomic, strong) RACSubject *tryFailureObject;
 @property (nonatomic, strong) RACSubject *startObject;

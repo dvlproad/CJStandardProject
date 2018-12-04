@@ -35,9 +35,17 @@
         
 //        _userNameValidSignal = RACObserve(self, userNameValid);
 //        _passwordValidSignal = RACObserve(self, passwordValid);
-//        _loginValidSignal = [RACSignal combineLatest:@[self.userNameValidSignal, self.passwordValidSignal] reduce:^id(id nUserNameValid, id nPasswordValid){
-//            return @([nUserNameValid boolValue] && [nPasswordValid boolValue]);
-//        }];//合并两个输入框信号，并返回按钮bool类型的值
+        _userNameValidSignal = [RACObserve(self, userName) map:^id _Nullable(id  _Nullable value) {
+            NSString *userName = (NSString *)value;
+            return userName.length > 2 ? @(YES) : @(NO);
+        }];
+        _passwordValidSignal = [RACObserve(self, password) map:^id _Nullable(id  _Nullable value) {
+            NSString *password = (NSString *)value;
+            return password.length > 2 ? @(YES) : @(NO);
+        }];
+        _loginValidSignal = [RACSignal combineLatest:@[self.userNameValidSignal, self.passwordValidSignal] reduce:^id(id nUserNameValid, id nPasswordValid){
+            return @([nUserNameValid boolValue] && [nPasswordValid boolValue]);
+        }];//合并两个输入框信号，并返回按钮bool类型的值
         
 //        _userNameValidSignal = RACObserve(self, userName);
 //        _passwordValidSignal = RACObserve(self, password);
@@ -74,18 +82,18 @@
 
 #pragma mark - Update
 - (void)updateUserName:(NSString *)userName {
-    _userName = userName;
-    self.userNameValid = [self.userName stdemo_checkUserName];
-    self.loginValid = self.userNameValid && self.passwordValid;
+    self.userName = userName;
+//    self.userNameValid = [self.userName stdemo_checkUserName];
+//    self.loginValid = self.userNameValid && self.passwordValid;
     
 //    [self.userNameValidObject sendNext:@(self.userNameValid)];
 //    [self.loginValidObject sendNext:@(self.loginValid)];
 }
 
 - (void)updatePassword:(NSString *)password {
-    _password = password;
-    self.passwordValid = [self.password stdemo_checkPassword];
-    self.loginValid = self.userNameValid && self.passwordValid;
+    self.password = password;
+//    self.passwordValid = [self.password stdemo_checkPassword];
+//    self.loginValid = self.userNameValid && self.passwordValid;
     
 //    [self.passwordValidObject sendNext:@(self.passwordValid)];
 //    [self.loginValidObject sendNext:@(self.loginValid)];
@@ -94,12 +102,13 @@
 #pragma mark - Do
 - (void)login
 {
-    if (!self.loginValid) {
-        NSString *tryFailureMessage = NSLocalizedString(@"请完善登录信息", nil);
-        [self.tryFailureObject sendNext:tryFailureMessage];
-        
-        return;
-    }
+    ///FIXME:这边怎么写？
+//    if (!self.loginValid) {
+//        NSString *tryFailureMessage = NSLocalizedString(@"请完善登录信息", nil);
+//        [self.tryFailureObject sendNext:tryFailureMessage];
+//        
+//        return;
+//    }
     
     NSString *startMessage = NSLocalizedString(@"正在登录", nil);
     [self.startObject sendNext:startMessage];

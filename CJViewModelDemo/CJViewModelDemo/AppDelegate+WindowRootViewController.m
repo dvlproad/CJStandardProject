@@ -11,6 +11,8 @@
 
 #import "BindTextFieldHomeViewController.h"
 #import "BindPropertyHomeViewController.h"
+#import "ListenSelectedHomeViewController.h"
+
 #import "ViewModelHomeViewController.h"
 
 @implementation AppDelegate (WindowRootViewController)
@@ -41,6 +43,14 @@
     UINavigationController *bindTextFieldHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:bindTextFieldHomeViewController];
     [tabBarController addChildViewController:bindTextFieldHomeNavigationController];
     
+    ListenSelectedHomeViewController *listenSelectedViewController = [[ListenSelectedHomeViewController alloc] init];
+    listenSelectedViewController.view.backgroundColor = [UIColor whiteColor];
+    listenSelectedViewController.navigationItem.title = NSLocalizedString(@"Listen Selected首页", nil);
+    listenSelectedViewController.tabBarItem.title = NSLocalizedString(@"Listen Selected", nil);
+    listenSelectedViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *listenSelectedNavigationController = [[UINavigationController alloc] initWithRootViewController:listenSelectedViewController];
+    [tabBarController addChildViewController:listenSelectedNavigationController];
+    
     ViewModelHomeViewController *homeViewController = [[ViewModelHomeViewController alloc] init];
     homeViewController.navigationItem.title = NSLocalizedString(@"ViewModel首页", nil);
     homeViewController.tabBarItem.title = NSLocalizedString(@"ViewModel", nil);
@@ -48,14 +58,6 @@
     //homeViewController. = @"10";
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     [tabBarController addChildViewController:homeNavigationController];
-    
-    UIViewController *viewController4 = [[UIViewController alloc] init];
-    viewController4.view.backgroundColor = [UIColor whiteColor];
-    viewController4.navigationItem.title = NSLocalizedString(@"XXX首页", nil);
-    viewController4.tabBarItem.title = NSLocalizedString(@"XXX", nil);
-    viewController4.tabBarItem.image = [[UIImage imageNamed:@"icons8-settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UINavigationController *navigationController4 = [[UINavigationController alloc] initWithRootViewController:viewController4];
-    [tabBarController addChildViewController:navigationController4];
     
     UIViewController *viewController5 = [[UIViewController alloc] init];
     viewController5.view.backgroundColor = [UIColor whiteColor];

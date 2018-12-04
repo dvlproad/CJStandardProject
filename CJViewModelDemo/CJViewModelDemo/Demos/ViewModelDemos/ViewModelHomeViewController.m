@@ -94,7 +94,7 @@
         }
         {
             CJModuleModel *viewModelModule = [[CJModuleModel alloc] init];
-            viewModelModule.title = @"RAC ViewModel(High)(未完善)";
+            viewModelModule.title = @"RAC ViewModel(High)";
             viewModelModule.classEntry = [HighRACLoginViewController class];
             [sectionDataModel.values addObject:viewModelModule];
         }
