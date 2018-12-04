@@ -1,5 +1,5 @@
 //
-//  BindHomeViewController.h
+//  BindPropertyHomeViewController.h
 //  CJViewModelDemo
 //
 //  Created by ciyouzen on 11/29/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BindHomeViewController : CJUIKitBaseHomeViewController
+@interface BindPropertyHomeViewController : CJUIKitBaseHomeViewController
 
 @end
 

@@ -9,7 +9,8 @@
 #import "AppDelegate+WindowRootViewController.h"
 
 
-#import "BindHomeViewController.h"
+#import "BindTextFieldHomeViewController.h"
+#import "BindPropertyHomeViewController.h"
 #import "ViewModelHomeViewController.h"
 
 @implementation AppDelegate (WindowRootViewController)
@@ -24,13 +25,21 @@
     ②设置图片tabBarItem.image：会默认去掉图片的颜色，如果要看到原图片，需要设置图片的渲染模式为UIImageRenderingModeAlwaysOriginal
     ③设置角标tabBarItem.badgeValue：如果没有设置图片，角标默认显示在左上角，设置了图片就会在图片的右上角显示
     */
-    BindHomeViewController *bindHomeViewController = [[BindHomeViewController alloc] init];
-    bindHomeViewController.navigationItem.title = NSLocalizedString(@"Bind首页", nil);
-    bindHomeViewController.tabBarItem.title = NSLocalizedString(@"Bind", nil);
-    bindHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    BindPropertyHomeViewController *bindPropertyHomeViewController = [[BindPropertyHomeViewController alloc] init];
+    bindPropertyHomeViewController.view.backgroundColor = [UIColor whiteColor];
+    bindPropertyHomeViewController.navigationItem.title = NSLocalizedString(@"Bind Property首页", nil);
+    bindPropertyHomeViewController.tabBarItem.title = NSLocalizedString(@"Bind Property", nil);
+    bindPropertyHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-calendar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *bindPropertyHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:bindPropertyHomeViewController];
+    [tabBarController addChildViewController:bindPropertyHomeNavigationController];
+    
+    BindTextFieldHomeViewController *bindTextFieldHomeViewController = [[BindTextFieldHomeViewController alloc] init];
+    bindTextFieldHomeViewController.navigationItem.title = NSLocalizedString(@"Bind TextField首页", nil);
+    bindTextFieldHomeViewController.tabBarItem.title = NSLocalizedString(@"Bind TextField", nil);
+    bindTextFieldHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //homeViewController. = @"10";
-    UINavigationController *bindHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:bindHomeViewController];
-    [tabBarController addChildViewController:bindHomeNavigationController];
+    UINavigationController *bindTextFieldHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:bindTextFieldHomeViewController];
+    [tabBarController addChildViewController:bindTextFieldHomeNavigationController];
     
     ViewModelHomeViewController *homeViewController = [[ViewModelHomeViewController alloc] init];
     homeViewController.navigationItem.title = NSLocalizedString(@"ViewModel首页", nil);
@@ -39,16 +48,6 @@
     //homeViewController. = @"10";
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     [tabBarController addChildViewController:homeNavigationController];
-    
-    
-    UIViewController *scrollViewHomeViewController = [[UIViewController alloc] init];
-    scrollViewHomeViewController.view.backgroundColor = [UIColor whiteColor];
-    scrollViewHomeViewController.navigationItem.title = NSLocalizedString(@"XXX首页", nil);
-    scrollViewHomeViewController.tabBarItem.title = NSLocalizedString(@"XXX", nil);
-    scrollViewHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-calendar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UINavigationController *scrollViewHomeNavigationController = [[UINavigationController alloc] initWithRootViewController:scrollViewHomeViewController];
-    [tabBarController addChildViewController:scrollViewHomeNavigationController];
-    
     
     UIViewController *viewController4 = [[UIViewController alloc] init];
     viewController4.view.backgroundColor = [UIColor whiteColor];

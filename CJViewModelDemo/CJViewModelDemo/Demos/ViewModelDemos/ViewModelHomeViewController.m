@@ -16,6 +16,7 @@
 #import "KVOLoginViewController.h"
 
 #import "LowRACLoginViewController.h"
+#import "MidRACLoginViewController.h"
 #import "HighRACLoginViewController.h"
 
 @interface ViewModelHomeViewController ()
@@ -83,6 +84,12 @@
             CJModuleModel *viewModelModule = [[CJModuleModel alloc] init];
             viewModelModule.title = @"RAC ViewModel(Low)";
             viewModelModule.classEntry = [LowRACLoginViewController class];
+            [sectionDataModel.values addObject:viewModelModule];
+        }
+        {
+            CJModuleModel *viewModelModule = [[CJModuleModel alloc] init];
+            viewModelModule.title = @"RAC ViewModel(Mid)";
+            viewModelModule.classEntry = [MidRACLoginViewController class];
             [sectionDataModel.values addObject:viewModelModule];
         }
         {

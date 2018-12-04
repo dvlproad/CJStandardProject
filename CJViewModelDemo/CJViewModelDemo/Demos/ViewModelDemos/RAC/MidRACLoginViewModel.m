@@ -1,27 +1,24 @@
 //
-//  HighRACLoginViewModel.m
+//  MidRACLoginViewModel.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2017/3/30.
 //  Copyright © 2017年 dvlproad. All rights reserved.
 //
 
-#import "HighRACLoginViewModel.h"
+#import "MidRACLoginViewModel.h"
 #import "NSString+STDemoValidate.h"
 #import "STDemoServiceUserManager+Network.h"
 #import "STDemoServiceUserManager+UserTable.h"
 
-@interface HighRACLoginViewModel () {
+@interface MidRACLoginViewModel () {
     
 }
-//@property (nonatomic, strong) RACSignal *userNameSignal;
-//@property (nonatomic, strong) RACSignal *passwordSignal;
-//@property (nonatomic, strong) NSArray *requestData;
 
 @end
 
 
-@implementation HighRACLoginViewModel
+@implementation MidRACLoginViewModel
 
 - (instancetype)initWithUserName:(NSString *)userName password:(NSString *)password {
     self = [super init];

@@ -45,12 +45,18 @@
 		7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7868277421AE9F0100FCCDE5 /* LoginViewControl.m */; };
 		788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */; };
 		788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */; };
-		788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F521AF90F20011F993 /* BindHomeViewController.m */; };
+		788A55F621AF90F20011F993 /* BindTextFieldHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F521AF90F20011F993 /* BindTextFieldHomeViewController.m */; };
 		78AB836721B4FFFF00853E21 /* HighRACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836521B4FFFE00853E21 /* HighRACLoginViewModel.m */; };
 		78AB836A21B5009200853E21 /* HighRACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836921B5009200853E21 /* HighRACLoginViewController.m */; };
 		78AB836D21B5017500853E21 /* ViewModelHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836B21B5017500853E21 /* ViewModelHomeViewController.m */; };
 		78AB837221B50AF700853E21 /* BestBlockLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836F21B50AF600853E21 /* BestBlockLoginViewController.m */; };
 		78AB837321B50AF700853E21 /* BestBlockLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837121B50AF700853E21 /* BestBlockLoginViewModel.m */; };
+		78AB837721B61B7900853E21 /* BindPropertyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837621B61B7900853E21 /* BindPropertyHomeViewController.m */; };
+		78AB837E21B61F0C00853E21 /* RACPropertyBindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837921B61F0B00853E21 /* RACPropertyBindTableViewCell.m */; };
+		78AB837F21B61F0C00853E21 /* RACPropertyBindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837A21B61F0C00853E21 /* RACPropertyBindViewModel.m */; };
+		78AB838021B61F0C00853E21 /* RACBindTvPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB837B21B61F0C00853E21 /* RACBindTvPropertyViewController.m */; };
+		78AB838521B651C300853E21 /* MidRACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838121B651C100853E21 /* MidRACLoginViewModel.m */; };
+		78AB838621B651C300853E21 /* MidRACLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB838221B651C200853E21 /* MidRACLoginViewController.m */; };
 		F62B567A6336AC760793D524 /* libPods-CJViewModelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -149,8 +155,8 @@
 		788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACBindTvTextFieldViewController.m; sourceTree = "<group>"; };
 		788A55F121AF8D020011F993 /* RACTextFieldBindViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTextFieldBindViewModel.h; sourceTree = "<group>"; };
 		788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewModel.m; sourceTree = "<group>"; };
-		788A55F421AF90F20011F993 /* BindHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindHomeViewController.h; sourceTree = "<group>"; };
-		788A55F521AF90F20011F993 /* BindHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindHomeViewController.m; sourceTree = "<group>"; };
+		788A55F421AF90F20011F993 /* BindTextFieldHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindTextFieldHomeViewController.h; sourceTree = "<group>"; };
+		788A55F521AF90F20011F993 /* BindTextFieldHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindTextFieldHomeViewController.m; sourceTree = "<group>"; };
 		78AB836521B4FFFE00853E21 /* HighRACLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighRACLoginViewModel.m; sourceTree = "<group>"; };
 		78AB836621B4FFFE00853E21 /* HighRACLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighRACLoginViewModel.h; sourceTree = "<group>"; };
 		78AB836821B5009100853E21 /* HighRACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighRACLoginViewController.h; sourceTree = "<group>"; };
@@ -161,6 +167,18 @@
 		78AB836F21B50AF600853E21 /* BestBlockLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestBlockLoginViewController.m; sourceTree = "<group>"; };
 		78AB837021B50AF700853E21 /* BestBlockLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestBlockLoginViewModel.h; sourceTree = "<group>"; };
 		78AB837121B50AF700853E21 /* BestBlockLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestBlockLoginViewModel.m; sourceTree = "<group>"; };
+		78AB837521B61B7900853E21 /* BindPropertyHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindPropertyHomeViewController.h; sourceTree = "<group>"; };
+		78AB837621B61B7900853E21 /* BindPropertyHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BindPropertyHomeViewController.m; sourceTree = "<group>"; };
+		78AB837821B61F0B00853E21 /* RACPropertyBindTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACPropertyBindTableViewCell.h; sourceTree = "<group>"; };
+		78AB837921B61F0B00853E21 /* RACPropertyBindTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACPropertyBindTableViewCell.m; sourceTree = "<group>"; };
+		78AB837A21B61F0C00853E21 /* RACPropertyBindViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACPropertyBindViewModel.m; sourceTree = "<group>"; };
+		78AB837B21B61F0C00853E21 /* RACBindTvPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACBindTvPropertyViewController.m; sourceTree = "<group>"; };
+		78AB837C21B61F0C00853E21 /* RACBindTvPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACBindTvPropertyViewController.h; sourceTree = "<group>"; };
+		78AB837D21B61F0C00853E21 /* RACPropertyBindViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACPropertyBindViewModel.h; sourceTree = "<group>"; };
+		78AB838121B651C100853E21 /* MidRACLoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidRACLoginViewModel.m; sourceTree = "<group>"; };
+		78AB838221B651C200853E21 /* MidRACLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidRACLoginViewController.m; sourceTree = "<group>"; };
+		78AB838321B651C200853E21 /* MidRACLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidRACLoginViewController.h; sourceTree = "<group>"; };
+		78AB838421B651C200853E21 /* MidRACLoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidRACLoginViewModel.h; sourceTree = "<group>"; };
 		A2BF77EF0932160C5E5AD33C /* Pods-CJViewModelDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D234E35815A97942A404D110 /* Pods-CJViewModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEE4D2634A9833EC3FF1AEB /* Pods-CJViewModelDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -288,7 +306,8 @@
 		7868270221AE78EE00FCCDE5 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				788A55ED21AF895C0011F993 /* BindDemo(数据绑定) */,
+				78AB837421B61A7E00853E21 /* BindPropertyDemo(监听属性的时机) */,
+				788A55ED21AF895C0011F993 /* BindTextFieldDemo(文本框绑定) */,
 				7868277721AE9F6500FCCDE5 /* ViewModelDemos */,
 				7868276C21AE9DF300FCCDE5 /* LogicControl+ViewControl设计模式 */,
 				7868271721AE7C3F00FCCDE5 /* NDM */,
@@ -340,6 +359,10 @@
 				7868274D21AE80B800FCCDE5 /* LowRACLoginViewController.m */,
 				7868270B21AE7BCA00FCCDE5 /* LowRACLoginViewModel.h */,
 				7868270C21AE7BCA00FCCDE5 /* LowRACLoginViewModel.m */,
+				78AB838321B651C200853E21 /* MidRACLoginViewController.h */,
+				78AB838221B651C200853E21 /* MidRACLoginViewController.m */,
+				78AB838421B651C200853E21 /* MidRACLoginViewModel.h */,
+				78AB838121B651C100853E21 /* MidRACLoginViewModel.m */,
 				78AB836821B5009100853E21 /* HighRACLoginViewController.h */,
 				78AB836921B5009200853E21 /* HighRACLoginViewController.m */,
 				78AB836621B4FFFE00853E21 /* HighRACLoginViewModel.h */,
@@ -481,11 +504,11 @@
 			path = ViewModelDemos;
 			sourceTree = "<group>";
 		};
-		788A55ED21AF895C0011F993 /* BindDemo(数据绑定) */ = {
+		788A55ED21AF895C0011F993 /* BindTextFieldDemo(文本框绑定) */ = {
 			isa = PBXGroup;
 			children = (
-				788A55F421AF90F20011F993 /* BindHomeViewController.h */,
-				788A55F521AF90F20011F993 /* BindHomeViewController.m */,
+				788A55F421AF90F20011F993 /* BindTextFieldHomeViewController.h */,
+				788A55F521AF90F20011F993 /* BindTextFieldHomeViewController.m */,
 				7819F25C21B28F540072E8A6 /* RACBindTextFieldViewController.h */,
 				7819F25D21B28F540072E8A6 /* RACBindTextFieldViewController.m */,
 				7819F25A21B2870F0072E8A6 /* RACBindNorTextFieldViewController.h */,
@@ -497,7 +520,22 @@
 				788A55F121AF8D020011F993 /* RACTextFieldBindViewModel.h */,
 				788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */,
 			);
-			path = "BindDemo(数据绑定)";
+			path = "BindTextFieldDemo(文本框绑定)";
+			sourceTree = "<group>";
+		};
+		78AB837421B61A7E00853E21 /* BindPropertyDemo(监听属性的时机) */ = {
+			isa = PBXGroup;
+			children = (
+				78AB837521B61B7900853E21 /* BindPropertyHomeViewController.h */,
+				78AB837621B61B7900853E21 /* BindPropertyHomeViewController.m */,
+				78AB837C21B61F0C00853E21 /* RACBindTvPropertyViewController.h */,
+				78AB837B21B61F0C00853E21 /* RACBindTvPropertyViewController.m */,
+				78AB837821B61F0B00853E21 /* RACPropertyBindTableViewCell.h */,
+				78AB837921B61F0B00853E21 /* RACPropertyBindTableViewCell.m */,
+				78AB837D21B61F0C00853E21 /* RACPropertyBindViewModel.h */,
+				78AB837A21B61F0C00853E21 /* RACPropertyBindViewModel.m */,
+			);
+			path = "BindPropertyDemo(监听属性的时机)";
 			sourceTree = "<group>";
 		};
 		8211B86BC4BD21FBEA556948 /* Frameworks */ = {
@@ -741,16 +779,20 @@
 				78AB836D21B5017500853E21 /* ViewModelHomeViewController.m in Sources */,
 				7868269421AE74A100FCCDE5 /* ViewController.m in Sources */,
 				78AB836721B4FFFF00853E21 /* HighRACLoginViewModel.m in Sources */,
+				78AB837E21B61F0C00853E21 /* RACPropertyBindTableViewCell.m in Sources */,
 				78AB836A21B5009200853E21 /* HighRACLoginViewController.m in Sources */,
 				7819F25B21B2870F0072E8A6 /* RACBindNorTextFieldViewController.m in Sources */,
+				78AB838621B651C300853E21 /* MidRACLoginViewController.m in Sources */,
 				7868275E21AE851F00FCCDE5 /* STDemoButtonFactory.m in Sources */,
+				78AB837F21B61F0C00853E21 /* RACPropertyBindViewModel.m in Sources */,
 				78AB837321B50AF700853E21 /* BestBlockLoginViewModel.m in Sources */,
 				7868277621AE9F0200FCCDE5 /* LoginViewControl.m in Sources */,
 				78AB837221B50AF700853E21 /* BestBlockLoginViewController.m in Sources */,
-				788A55F621AF90F20011F993 /* BindHomeViewController.m in Sources */,
+				788A55F621AF90F20011F993 /* BindTextFieldHomeViewController.m in Sources */,
 				7868271621AE7BE000FCCDE5 /* NormalBlockLoginViewModel.m in Sources */,
 				786826FE21AE77DA00FCCDE5 /* CJUIKitBaseViewController.m in Sources */,
 				7868275421AE80C800FCCDE5 /* DelegateLoginViewController.m in Sources */,
+				78AB838521B651C300853E21 /* MidRACLoginViewModel.m in Sources */,
 				7868273F21AE7CB900FCCDE5 /* STDemoUser.m in Sources */,
 				7868271F21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m in Sources */,
 				7868273D21AE7CB900FCCDE5 /* STDemoUsePermissionModel.m in Sources */,
@@ -763,6 +805,8 @@
 				786826FD21AE77DA00FCCDE5 /* CJUIKitBaseHomeViewController.m in Sources */,
 				7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */,
 				7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */,
+				78AB838021B61F0C00853E21 /* RACBindTvPropertyViewController.m in Sources */,
+				78AB837721B61B7900853E21 /* BindPropertyHomeViewController.m in Sources */,
 				7842EE1521B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m in Sources */,
 				7868275721AE80CF00FCCDE5 /* NormalBlockLoginViewController.m in Sources */,
 				7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */,

@@ -1,16 +1,16 @@
 //
-//  HighRACLoginViewModel.h
+//  MidRACLoginViewModel.h
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 2017/3/30.
 //  Copyright © 2017年 dvlproad. All rights reserved.
 //
-//  HighRACLoginViewModel处理逻辑
+//  MidRACLoginViewModel处理逻辑
 
 #import <Foundation/Foundation.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
-@interface HighRACLoginViewModel : NSObject {
+@interface MidRACLoginViewModel : NSObject {
     
 }
 @property (nonatomic, copy, readonly) NSString *userName;

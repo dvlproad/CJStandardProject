@@ -1,23 +1,23 @@
 //
-//  HighRACLoginViewController.m
+//  MidRACLoginViewController.m
 //  STDemoModuleLoginDemo
 //
 //  Created by ciyouzen on 6/25/15.
 //  Copyright (c) 2015 dvlproad. All rights reserved.
 //
 
-#import "HighRACLoginViewController.h"
-#import "HighRACLoginViewModel.h"
+#import "MidRACLoginViewController.h"
+#import "MidRACLoginViewModel.h"
 //#import "CTMediator+STDemoLogin.h"
 
-@interface HighRACLoginViewController () {
+@interface MidRACLoginViewController () {
     
 }
-@property (nonatomic, strong) HighRACLoginViewModel *viewModel;
+@property (nonatomic, strong) MidRACLoginViewModel *viewModel;
 
 @end
 
-@implementation HighRACLoginViewController
+@implementation MidRACLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,7 +28,7 @@
 - (void)bindViewModel {
     NSString *userName = [CJAppLastUtil getLastLoginUser].lastLoginUserName;
     NSString *password = @"";
-    HighRACLoginViewModel *viewModel = [[HighRACLoginViewModel alloc] initWithUserName:userName password:password];
+    MidRACLoginViewModel *viewModel = [[MidRACLoginViewModel alloc] initWithUserName:userName password:password];
 //    [viewModel.userNameValidObject subscribeNext:^(id  _Nullable x) {
 //        BOOL userNameValid = [x boolValue];
 //        self.userNameTextField.leftButtonSelected = userNameValid;

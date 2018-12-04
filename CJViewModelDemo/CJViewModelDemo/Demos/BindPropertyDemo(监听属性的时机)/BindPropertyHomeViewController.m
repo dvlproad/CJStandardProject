@@ -1,42 +1,35 @@
 //
-//  BindHomeViewController.m
+//  BindPropertyHomeViewController.m
 //  CJViewModelDemo
 //
 //  Created by ciyouzen on 11/29/18.
 //  Copyright © 2018 dvlproad. All rights reserved.
 //
 
-#import "BindHomeViewController.h"
+#import "BindPropertyHomeViewController.h"
 
-#import "RACBindNorTextFieldViewController.h"
-#import "RACBindTvTextFieldViewController.h"
+#import "RACBindTvPropertyViewController.h"
 
-@interface BindHomeViewController ()
+@interface BindPropertyHomeViewController ()
 
 @end
 
-@implementation BindHomeViewController
+@implementation BindPropertyHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = NSLocalizedString(@"Bind首页", nil);
+    self.navigationItem.title = NSLocalizedString(@"Bind Control Property", nil);
     
     NSMutableArray *sectionDataModels = [[NSMutableArray alloc] init];
     //UIView
     {
         CJSectionDataModel *sectionDataModel = [[CJSectionDataModel alloc] init];
-        sectionDataModel.theme = @"Bind(数据绑定)";
+        sectionDataModel.theme = @"Bind Control Property(绑定属性)";
         {
             CJModuleModel *bindModule = [[CJModuleModel alloc] init];
-            bindModule.title = @"RAC Bind Normal TextField";
-            bindModule.classEntry = [RACBindNorTextFieldViewController class];
-            [sectionDataModel.values addObject:bindModule];
-        }
-        {
-            CJModuleModel *bindModule = [[CJModuleModel alloc] init];
-            bindModule.title = @"RAC Bind TableView TextField";
-            bindModule.classEntry = [RACBindTvTextFieldViewController class];
+            bindModule.title = @"RAC Bind Control Property";
+            bindModule.classEntry = [RACBindTvPropertyViewController class];
             [sectionDataModel.values addObject:bindModule];
         }
         [sectionDataModels addObject:sectionDataModel];
