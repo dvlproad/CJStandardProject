@@ -3,10 +3,12 @@
 ### 前言：RAC学习起来的特点
 
 - 学习起来比较难
-
 - 团队开发的时候需要谨慎使用
-
 - 团队代码需要不断的评审,保证团队中所有人代码的风格一致!避免阅读代码的困难
+
+
+
+[TOC]
 
 
 ## 一、RAC双向绑定UITextField的正确姿势
@@ -153,3 +155,96 @@
 
 遗留问题1：为什么只有键盘没回收时候的修改文本框值才有问题，而键盘回收时候不会也存在问题？
 
+
+
+
+
+## 二、RAC监听的属性如何正确改变值(KVO的坑)
+
+假设有如下需求，根据viewModel中的`@property (nonatomic, assign) BOOL textFieldValid;`值修改UIViewController中textField的自定义属性`leftButtonSelected`的值，怎么做？？？
+
+答：`RAC(self.textField, leftButtonSelected) = RACObserve(viewModel, textFieldValid);`
+
+问题是：**是不是只要实现了这行代码就没什么问题了？或者说在实现这行代码前，你有什么需要注意的？如果你不知道，你不搞清楚原因，那么有一天RAC让你怎么死的，你都不知道。**
+
+
+
+#### 1、下面将常见的你修改属性时候使用的代码及其效果，列举如下：
+
+| 修改属性时候使用的代码                                       | 代码位置           | 效果 |
+| ------------------------------------------------------------ | ------------------ | ---- |
+| `self.inTextFieldValid1 = inTextFieldValid1;`                | viewModel中        | 正确 |
+| ~~_inTextFieldValid2 = inTextFieldValid2;~~                  | viewModel中        | 错误 |
+| `[self setValue:@(inTextFieldValid3) forKey:@"inTextFieldValid3"];` | viewModel中        | 正确 |
+| ~~[self setValue:@(inTextFieldValid4) forKey:@"_inTextFieldValid4"];~~ | viewModel中        | 错误 |
+| `self.viewModel.outTextFieldValid1 = outTextFieldValid1;`    | UIViewController中 | 正确 |
+| `[self.viewModel setValue:@(outTextFieldValid2) forKey:@"outTextFieldValid2"];` | UIViewController中 | 正确 |
+| ~~[self.viewModel setValue:@(outTextFieldValid3) forKey:@"_outTextFieldValid3"];~~ | UIViewController中 | 错误 |
+
+上面正确与否的判断标准是什么？
+
+其实如果熟悉KVO机制的你，应该知道**KVO的本质是通过`isa-swizzling`新建了一个子类，并且重写了属性的`setter`方法，在`setter`方法的头和尾分别执行了`willChangeValueForKey:`和`didChangevlueForKey:`两个方法来实现监听的。**
+
+所以，如果你修改属性时候使用的代码不会走setter方法，那么也就无法触发监听了。因而也就出现了你明明监听了属性，却无法正确运行的情况。
+
+如上表格中的错误方法皆是不会走setter的。
+
+下面是一张别人的图：
+
+![img](./Screenshots/RAC/KVO机制.png)
+
+
+
+#### 2、有无规避方法
+
+问：*通过如上解析，我们知道问题的根源是没调用setter，那我们可否通过编译器提示不能使用`_xxx`来规避？？？*
+
+
+
+在这里我们补充讲下`@synthesize`
+
+|          | 写法1                          | 写法2                           |
+| -------- | ------------------------------ | ------------------------------- |
+| 源代码   | @synthesize student;           | @synthesize student = _student; |
+| 等价代码 | @synthesize student = student; | ----同上----                    |
+
+synthesize的作用就是让student = ？中的后者这个变量来“代替”属性，从而可以通过操作变量来进行属性的操作。但是有一点最关键的是，使用变量进行操作，属性本身的引用计数是不会增加的，因为没有经过调用setter方法或者是getter方法。但是如果使用self.student这种操作方式的话，实质上是通过setter或者是getter方法进行操作，引用计数会随着不同的操作而改变，了解了这点后就能够更好的避免内存泄露问题。
+
+
+
+## 三、RAC监听数组的变化(KVO的坑)
+
+iOS默认不支持KVO的形式来监听数组的变化，数组改变的时候，只是数组里面的值变化，但数组的地址没有变化，KVO监听的对象地址的变化。
+
+由于不支持KVO来监听数组变化，就无法使用RAC来监听数组。
+
+######  1、传统方式(我们不需要监听时候常使用的代码)：
+
+```objective-c
+	// 只是修改数组，无法触发监听
+	if (self.flawArray.count) {
+    	[self.flawArray removeLastObject];
+    }
+```
+
+###### 2、需要使用监听时候的数组修改
+
+```objective-c
+    // 修改数组时候同时能确保触发KVO的操作
+	if (self.okArray.count) {
+        NSMutableArray *kvo_okArray = [self mutableArrayValueForKey:@"okArray"];
+        [kvo_okArray removeLastObject];
+    }
+```
+
+
+
+## 四、RAC中监听通知的坑
+
+请查看：[RAC中监听通知的坑！](https://blog.csdn.net/qinqi376990311/article/details/79031581)
+
+
+
+## 五、结束语
+
+暂时到此！感谢查阅！

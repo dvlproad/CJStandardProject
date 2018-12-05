@@ -12,6 +12,7 @@
 #import "BindTextFieldHomeViewController.h"
 #import "BindPropertyHomeViewController.h"
 #import "ListenSelectedHomeViewController.h"
+#import "ListenArrayHomeViewController.h"
 
 #import "ViewModelHomeViewController.h"
 
@@ -51,6 +52,13 @@
     UINavigationController *listenSelectedNavigationController = [[UINavigationController alloc] initWithRootViewController:listenSelectedViewController];
     [tabBarController addChildViewController:listenSelectedNavigationController];
     
+    ListenArrayHomeViewController *listenArrayHomeViewController = [[ListenArrayHomeViewController alloc] init];
+    listenArrayHomeViewController.navigationItem.title = NSLocalizedString(@"Listen Array首页", nil);
+    listenArrayHomeViewController.tabBarItem.title = NSLocalizedString(@"Listen Array", nil);
+    listenArrayHomeViewController.tabBarItem.image = [[UIImage imageNamed:@"icons8-settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UINavigationController *listenArrayNavigationController = [[UINavigationController alloc] initWithRootViewController:listenArrayHomeViewController];
+    [tabBarController addChildViewController:listenArrayNavigationController];
+    
     ViewModelHomeViewController *homeViewController = [[ViewModelHomeViewController alloc] init];
     homeViewController.navigationItem.title = NSLocalizedString(@"ViewModel首页", nil);
     homeViewController.tabBarItem.title = NSLocalizedString(@"ViewModel", nil);
@@ -58,14 +66,6 @@
     //homeViewController. = @"10";
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     [tabBarController addChildViewController:homeNavigationController];
-    
-    UIViewController *viewController5 = [[UIViewController alloc] init];
-    viewController5.view.backgroundColor = [UIColor whiteColor];
-    viewController5.navigationItem.title = NSLocalizedString(@"XXX首页", nil);
-    viewController5.tabBarItem.title = NSLocalizedString(@"XXX", nil);
-    viewController5.tabBarItem.image = [[UIImage imageNamed:@"icons8-settings"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UINavigationController *navigationController5 = [[UINavigationController alloc] initWithRootViewController:viewController5];
-    [tabBarController addChildViewController:navigationController5];
     
 //    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController, navigationController3, navigationController4] animated:YES];
     

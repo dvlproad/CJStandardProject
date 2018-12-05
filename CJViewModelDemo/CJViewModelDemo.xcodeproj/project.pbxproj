@@ -63,6 +63,9 @@
 		78AB839521B6614D00853E21 /* ListenSelectedSignalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839221B6614C00853E21 /* ListenSelectedSignalViewModel.m */; };
 		78AB839621B6614D00853E21 /* ListenSelectedObserveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839321B6614D00853E21 /* ListenSelectedObserveViewModel.m */; };
 		78AB839921B66A0A00853E21 /* ListenSelectedPropertyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839821B66A0900853E21 /* ListenSelectedPropertyViewModel.m */; };
+		78AB839F21B68E9C00853E21 /* ListenArrayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839B21B68E9C00853E21 /* ListenArrayHomeViewController.m */; };
+		78AB83A021B68E9C00853E21 /* RACListenArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB839C21B68E9C00853E21 /* RACListenArrayViewController.m */; };
+		78AB83A321B76B0900853E21 /* ListenArrayViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB83A221B76B0900853E21 /* ListenArrayViewModel.m */; };
 		F62B567A6336AC760793D524 /* libPods-CJViewModelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F732878D26876AE2C04340 /* libPods-CJViewModelDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -197,6 +200,12 @@
 		78AB839421B6614D00853E21 /* ListenSelectedObserveViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedObserveViewModel.h; sourceTree = "<group>"; };
 		78AB839721B66A0900853E21 /* ListenSelectedPropertyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenSelectedPropertyViewModel.h; sourceTree = "<group>"; };
 		78AB839821B66A0900853E21 /* ListenSelectedPropertyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenSelectedPropertyViewModel.m; sourceTree = "<group>"; };
+		78AB839B21B68E9C00853E21 /* ListenArrayHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenArrayHomeViewController.m; sourceTree = "<group>"; };
+		78AB839C21B68E9C00853E21 /* RACListenArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACListenArrayViewController.m; sourceTree = "<group>"; };
+		78AB839D21B68E9C00853E21 /* ListenArrayHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenArrayHomeViewController.h; sourceTree = "<group>"; };
+		78AB839E21B68E9C00853E21 /* RACListenArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACListenArrayViewController.h; sourceTree = "<group>"; };
+		78AB83A121B76B0900853E21 /* ListenArrayViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListenArrayViewModel.h; sourceTree = "<group>"; };
+		78AB83A221B76B0900853E21 /* ListenArrayViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListenArrayViewModel.m; sourceTree = "<group>"; };
 		A2BF77EF0932160C5E5AD33C /* Pods-CJViewModelDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D234E35815A97942A404D110 /* Pods-CJViewModelDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEE4D2634A9833EC3FF1AEB /* Pods-CJViewModelDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJViewModelDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJViewModelDemoTests/Pods-CJViewModelDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +333,7 @@
 		7868270221AE78EE00FCCDE5 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				78AB839A21B68E9C00853E21 /* ListenArrayDemo(监听数组) */,
 				78AB838721B65B8E00853E21 /* ListenSelectedDemo */,
 				78AB837421B61A7E00853E21 /* BindPropertyDemo(监听属性的时机) */,
 				788A55ED21AF895C0011F993 /* BindTextFieldDemo(文本框绑定) */,
@@ -574,6 +584,19 @@
 				78AB839821B66A0900853E21 /* ListenSelectedPropertyViewModel.m */,
 			);
 			path = ListenSelectedDemo;
+			sourceTree = "<group>";
+		};
+		78AB839A21B68E9C00853E21 /* ListenArrayDemo(监听数组) */ = {
+			isa = PBXGroup;
+			children = (
+				78AB839D21B68E9C00853E21 /* ListenArrayHomeViewController.h */,
+				78AB839B21B68E9C00853E21 /* ListenArrayHomeViewController.m */,
+				78AB839E21B68E9C00853E21 /* RACListenArrayViewController.h */,
+				78AB839C21B68E9C00853E21 /* RACListenArrayViewController.m */,
+				78AB83A121B76B0900853E21 /* ListenArrayViewModel.h */,
+				78AB83A221B76B0900853E21 /* ListenArrayViewModel.m */,
+			);
+			path = "ListenArrayDemo(监听数组)";
 			sourceTree = "<group>";
 		};
 		8211B86BC4BD21FBEA556948 /* Frameworks */ = {
@@ -838,16 +861,19 @@
 				7868273F21AE7CB900FCCDE5 /* STDemoUser.m in Sources */,
 				7868271F21AE7C3F00FCCDE5 /* STDemoServiceUserManager+Network.m in Sources */,
 				7868273D21AE7CB900FCCDE5 /* STDemoUsePermissionModel.m in Sources */,
+				78AB839F21B68E9C00853E21 /* ListenArrayHomeViewController.m in Sources */,
 				788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */,
 				7868274E21AE80B800FCCDE5 /* LowRACLoginViewController.m in Sources */,
 				7868274721AE7D7A00FCCDE5 /* STDemoServiceUserManager+UserTable.m in Sources */,
 				7868271021AE7BD100FCCDE5 /* KVOLoginViewModel.m in Sources */,
 				7868269F21AE74A300FCCDE5 /* main.m in Sources */,
+				78AB83A021B68E9C00853E21 /* RACListenArrayViewController.m in Sources */,
 				7868270121AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m in Sources */,
 				786826FD21AE77DA00FCCDE5 /* CJUIKitBaseHomeViewController.m in Sources */,
 				78AB839621B6614D00853E21 /* ListenSelectedObserveViewModel.m in Sources */,
 				7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */,
 				7868274321AE7D1700FCCDE5 /* NSString+STDemoValidate.m in Sources */,
+				78AB83A321B76B0900853E21 /* ListenArrayViewModel.m in Sources */,
 				78AB838021B61F0C00853E21 /* RACBindTvPropertyViewController.m in Sources */,
 				78AB837721B61B7900853E21 /* BindPropertyHomeViewController.m in Sources */,
 				7842EE1521B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m in Sources */,
