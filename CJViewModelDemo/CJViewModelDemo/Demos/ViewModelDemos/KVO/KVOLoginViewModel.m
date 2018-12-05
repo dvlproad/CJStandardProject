@@ -32,15 +32,25 @@
 
 #pragma mark - Update
 - (void)updateUserName:(NSString *)userName {
-    _userName = userName;
-    _userNameValid = [self.userName stdemo_checkUserName];
-    _loginValid = self.userNameValid && self.passwordValid;
+//    _userName = userName;
+//    _userNameValid = [self.userName stdemo_checkUserName];
+//    _loginValid = self.userNameValid && self.passwordValid;
+    
+    // 要供外部监听，则属性的改变应该确保能够调用setter方法，所以不应该使用_xxx，而应该self.xxx
+    self.userName = userName;
+    self.userNameValid = [self.userName stdemo_checkUserName];
+    self.loginValid = self.userNameValid && self.passwordValid;
 }
 
 - (void)updatePassword:(NSString *)password {
     _password = password;
     _passwordValid = [self.password stdemo_checkPassword];
     _loginValid = self.userNameValid && self.passwordValid;
+    
+    // 要供外部监听，则属性的改变应该确保能够调用setter方法，所以不应该使用_xxx，而应该self.xxx
+    self.password = password;
+    self.passwordValid = [self.password stdemo_checkPassword];
+    self.loginValid = self.userNameValid && self.passwordValid;
 }
 
 

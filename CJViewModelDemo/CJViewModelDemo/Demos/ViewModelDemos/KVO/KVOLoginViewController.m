@@ -39,11 +39,11 @@
     NSString *password = @"";
     KVOLoginViewModel *viewModel = [[KVOLoginViewModel alloc] initWithUserName:userName password:password];
     
+    // 要监听属性，则属性的改变应该确保能够调用setter方法，所以不应该使用_xxx，而应该self.xxx
     [self.kvoController observe:viewModel keyPath:@"userNameValid" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         NSString *oldValue = change[NSKeyValueChangeOldKey];
         NSString *newValue = change[NSKeyValueChangeNewKey];
-        NSLog(@"userNameValid旧值是:%@", oldValue);
-        NSLog(@"userNameValid新值是:%@", newValue);
+        NSLog(@"userNameValid新值是:%@, 旧值是:%@", newValue, oldValue);
         
         BOOL userNameValid = [change[NSKeyValueChangeNewKey] boolValue];
         self.userNameTextField.leftButtonSelected = userNameValid;
@@ -52,8 +52,7 @@
     [self.kvoController observe:viewModel keyPath:@"passwordValid" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         NSString *oldValue = change[NSKeyValueChangeOldKey];
         NSString *newValue = change[NSKeyValueChangeNewKey];
-        NSLog(@"passwordValid旧值是:%@", oldValue);
-        NSLog(@"passwordValid新值是:%@", newValue);
+        NSLog(@"passwordValid新值是:%@, 旧值是:%@", newValue, oldValue);
         
         BOOL passwordValid = [change[NSKeyValueChangeNewKey] boolValue];
         self.passwordTextField.leftButtonSelected = passwordValid;
@@ -62,9 +61,7 @@
     [self.kvoController observe:viewModel keyPath:@"loginValid" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
         NSString *oldValue = change[NSKeyValueChangeOldKey];
         NSString *newValue = change[NSKeyValueChangeNewKey];
-        NSLog(@"loginValid旧值是:%@", oldValue);
-        NSLog(@"loginValid新值是:%@", newValue);
-        
+        NSLog(@"loginValid新值是:%@, 旧值是:%@", newValue, oldValue);
         
         BOOL loginVaild = [change[NSKeyValueChangeNewKey] boolValue];
         self.loginButton.enabled = loginVaild;

@@ -69,7 +69,7 @@
         sectionDataModel.theme = @"KVO ViewModel";
         {
             CJModuleModel *viewModelModule = [[CJModuleModel alloc] init];
-            viewModelModule.title = @"KVO ViewModel(未完善)";
+            viewModelModule.title = @"KVO ViewModel";
             viewModelModule.classEntry = [KVOLoginViewController class];
             [sectionDataModel.values addObject:viewModelModule];
         }
