@@ -1,0 +1,46 @@
+PODS:
+  - CJBaseUIKit/CJAlert (0.2.3):
+    - CJBaseUIKit/UIView/CJPopupAction
+    - Masonry
+  - CJBaseUIKit/CJToast (0.2.3):
+    - MBProgressHUD
+  - CJBaseUIKit/UIButton (0.2.3)
+  - CJBaseUIKit/UIColor (0.2.3)
+  - CJBaseUIKit/UITextField (0.2.3)
+  - CJBaseUIKit/UIView/CJDragAction (0.2.3)
+  - CJBaseUIKit/UIView/CJPopupAction (0.2.3)
+  - CJBaseUtil/CJLog (0.3.1):
+    - CJBaseUIKit/UIView/CJDragAction
+    - Masonry
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - ReactiveObjC (3.1.0)
+
+DEPENDENCIES:
+  - CJBaseUIKit/CJAlert
+  - CJBaseUIKit/CJToast
+  - CJBaseUIKit/UIButton
+  - CJBaseUIKit/UIColor
+  - CJBaseUIKit/UITextField
+  - CJBaseUtil/CJLog
+  - Masonry
+  - ReactiveObjC (~> 3.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CJBaseUIKit
+    - CJBaseUtil
+    - Masonry
+    - MBProgressHUD
+    - ReactiveObjC
+
+SPEC CHECKSUMS:
+  CJBaseUIKit: f3ca009175d9f997a438d00d550ebec6b73c89c7
+  CJBaseUtil: f9c6a248b8322b7faa1b93767b344539d973c939
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+
+PODFILE CHECKSUM: 6dc21abdedccbc6f990a56a0fd426e9fc43ff231
+
+COCOAPODS: 1.5.3

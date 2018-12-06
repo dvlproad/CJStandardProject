@@ -1,0 +1,21 @@
+platform :ios, '8.0'
+#use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitee.com/dvlproad/dvlproadSpecs'
+
+inhibit_all_warnings!
+
+target 'CJSafeAppDemo' do
+    pod 'Masonry'
+    
+    pod 'ReactiveObjC', '~> 3.1.0'
+    
+    pod 'CJBaseUIKit', :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert']
+    pod 'CJBaseUtil', :subspecs => ['CJLog']
+    
+end
+
+target 'CJSafeAppDemoTests' do
+   
+end
