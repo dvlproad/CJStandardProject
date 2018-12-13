@@ -6,6 +6,7 @@ cjcof_method2
 
 cjcof_payResultBlock
 cjcof_weChatOauthResultBlock
+cjcof_sharedInstance
 s2
 bindViewModel
 

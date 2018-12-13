@@ -41,4 +41,19 @@
 
 
 
+## 五、UITextField的坑
+#### 1、无法弹出第三方键盘
+
+可能原因分析：
+
+* APP内部被全局禁止了第三方键盘
+* APP使用了自定义的键盘
+* 设置了**UITextField的secureTextEntry属性**
+
+可参考文章：
+
+> [iOS开发禁用第三方键盘，强制使用系统键盘](https://www.jianshu.com/p/35219655d187)
+
+
+
 ## 五、结束语

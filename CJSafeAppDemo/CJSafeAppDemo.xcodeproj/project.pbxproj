@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78AB83B821B918A400853E21 /* TestCodeObfuscationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB83B621B918A400853E21 /* TestCodeObfuscationViewModel.m */; };
+		78AB83BB21B918CE00853E21 /* TestCodeObfuscationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB83B921B918CE00853E21 /* TestCodeObfuscationManager.m */; };
 		78C38D8C2141A718001F35E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38D8B2141A718001F35E2 /* AppDelegate.m */; };
 		78C38D8F2141A718001F35E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C38D8E2141A718001F35E2 /* ViewController.m */; };
 		78C38D922141A718001F35E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C38D902141A718001F35E2 /* Main.storyboard */; };
@@ -43,6 +45,10 @@
 		1C31F4BE25B2B946A970E29A /* Pods-CJSafeAppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJSafeAppDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJSafeAppDemoTests/Pods-CJSafeAppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		574E1D5EE713A44452C74F3E /* Pods-CJSafeAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJSafeAppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJSafeAppDemo/Pods-CJSafeAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7240D9170AB465E1C2067DDA /* Pods-CJSafeAppDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJSafeAppDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJSafeAppDemoTests/Pods-CJSafeAppDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		78AB83B621B918A400853E21 /* TestCodeObfuscationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCodeObfuscationViewModel.m; sourceTree = "<group>"; };
+		78AB83B721B918A400853E21 /* TestCodeObfuscationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCodeObfuscationViewModel.h; sourceTree = "<group>"; };
+		78AB83B921B918CE00853E21 /* TestCodeObfuscationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCodeObfuscationManager.m; sourceTree = "<group>"; };
+		78AB83BA21B918CE00853E21 /* TestCodeObfuscationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCodeObfuscationManager.h; sourceTree = "<group>"; };
 		78C38D872141A718001F35E2 /* CJSafeAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJSafeAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C38D8A2141A718001F35E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78C38D8B2141A718001F35E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -169,11 +175,15 @@
 		78C38DBE2141A816001F35E2 /* TestCodeObfuscation */ = {
 			isa = PBXGroup;
 			children = (
-				78C38DBF2141A816001F35E2 /* TestCodeObfuscationViewController.h */,
+				78AB83B721B918A400853E21 /* TestCodeObfuscationViewModel.h */,
+				78AB83B621B918A400853E21 /* TestCodeObfuscationViewModel.m */,
+				78AB83BA21B918CE00853E21 /* TestCodeObfuscationManager.h */,
+				78AB83B921B918CE00853E21 /* TestCodeObfuscationManager.m */,
 				78C38DC02141A816001F35E2 /* TestCodeObfuscationModel.h */,
+				78C38DC32141A816001F35E2 /* TestCodeObfuscationModel.m */,
+				78C38DBF2141A816001F35E2 /* TestCodeObfuscationViewController.h */,
 				78C38DC12141A816001F35E2 /* TestCodeObfuscationViewController.m */,
 				78C38DC22141A816001F35E2 /* TestCodeObfuscationViewController.xib */,
-				78C38DC32141A816001F35E2 /* TestCodeObfuscationModel.m */,
 			);
 			path = TestCodeObfuscation;
 			sourceTree = "<group>";
@@ -426,7 +436,9 @@
 			files = (
 				78C38D8F2141A718001F35E2 /* ViewController.m in Sources */,
 				78C38DCB2141A817001F35E2 /* TestCodeObfuscationModel.m in Sources */,
+				78AB83BB21B918CE00853E21 /* TestCodeObfuscationManager.m in Sources */,
 				78C38DC92141A817001F35E2 /* TestCodeObfuscationViewController.m in Sources */,
+				78AB83B821B918A400853E21 /* TestCodeObfuscationViewModel.m in Sources */,
 				78C38D9A2141A71A001F35E2 /* main.m in Sources */,
 				78C38D8C2141A718001F35E2 /* AppDelegate.m in Sources */,
 			);
