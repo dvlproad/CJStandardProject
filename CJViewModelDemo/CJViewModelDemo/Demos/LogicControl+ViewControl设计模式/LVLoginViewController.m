@@ -22,7 +22,7 @@
 //#import "CJDemoModuleLoginResourceUtil.h"
 
 
-@interface LVLoginViewController () <UITextFieldDelegate, LoginViewControlDelegate, DelegateLoginViewModelDelegate> {
+@interface LVLoginViewController () <UITextFieldDelegate, LoginViewControlDelegate> {
     
 }
 @property (nonatomic, strong) LoginViewControl *viewControl;
