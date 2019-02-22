@@ -31,7 +31,7 @@
         return STDemoRootViewControllerTypeGuide;
         
     } else {
-        if ([STDemoServiceUserManager sharedInstance].hasLogin) {
+        if ([CJDemoServiceUserManager sharedInstance].serviceUser) {
             return STDemoRootViewControllerTypeMain;
             
         } else {
@@ -70,7 +70,7 @@
             break;
         }
         case kCLAuthorizationStatusDenied: {
-            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![STDemoServiceUserManager sharedInstance].hasLogin) {
+            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![CJDemoServiceUserManager sharedInstance].serviceUser) {
                 return; //首次打开拒绝了定位不处理,没登录不处理
             }
             ///弹窗提示没有打开GPS，无法接单。
@@ -80,7 +80,7 @@
             break;
         }
         case kCLAuthorizationStatusRestricted: {
-            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![STDemoServiceUserManager sharedInstance].hasLogin) {
+            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![CJDemoServiceUserManager sharedInstance].serviceUser) {
                 return;//首次打开拒绝了定位不处理，,没登录不处理
             }
             if ([self.viewLogicDelegate respondsToSelector:@selector(showLocationAbnormalAlert)]) {

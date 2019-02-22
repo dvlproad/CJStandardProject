@@ -15,15 +15,13 @@
 //#import "codeObfuscation.h"
 
 #import <Masonry/Masonry.h>
-#import <CJBaseUIKit/CJToast.h>
 #import <CJBaseUIKit/UIColor+CJHex.h>
-#import <CJBaseUtil/CJLogUtil.h>
 #import <CJBaseHelper/NSObjectCJHelper.h>
 #import <CJFoundation/NSString+CJTextSize.h>
-
-#import "STDemoAlert.h"
-#import "STDemoButtonFactory.h"
-#import "STDemoBarButtonItemFactory.h"
+#import <CJDemoCommon/DemoToast.h>
+#import <CJDemoCommon/DemoAlert.h>
+#import <CJDemoCommon/DemoProgressHUD.h>
+#import <CJDemoCommon/DemoBarButtonItemFactory.h>
 
 #define CJTestLoginDealloc              //测试LMLoginViewController的销毁/内存泄漏
 #define CJUseSimulatorServiceUserData //使用模拟网络请求数据

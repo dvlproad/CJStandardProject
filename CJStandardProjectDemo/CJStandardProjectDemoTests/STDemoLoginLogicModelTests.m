@@ -9,7 +9,7 @@
 #import "STDemoTestCase.h"
 #import "LoginLogicControl.h"
 #import "NSString+STDemoValidate.h"
-#import "STDemoServiceUserManager+Network.h"
+#import "CJDemoServiceUserManager+Network.h"
 
 @interface STDemoLoginLogicModelTests : STDemoTestCase {
     
@@ -63,7 +63,7 @@
 - (void)testLoginRequest {
     NSString *userName = @"Beyond";
     NSString *password = @"Luckin1234";
-    [[STDemoServiceUserManager sharedInstance] requestLoginWithAccount:userName password:password success:^(STDemoUser *user) {
+    [[CJDemoServiceUserManager sharedInstance] requestLoginWithAccount:userName password:password success:^(DemoUser *user) {
         XCTAssertNotNil(user, @"user不能为空");
         NOTIFY
     } failure:^(NSString *errorMessage) {

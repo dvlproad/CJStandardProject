@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <CJNetwork/CJNetworkClient.h>
+
 #import "CJDemoNetworkEnvironmentModel.h"
 
 //@"develop";
@@ -21,12 +23,6 @@
 @property (nonatomic, strong) NSMutableDictionary *specificCommonParams;           /**< 设置每个请求都会有的公共参数(项目里已添加了其他一些公共参数) */
 
 + (CJDemoNetworkEnvironmentManager *)sharedInstance;
-
-#pragma mark - Url
-- (NSString *)completeUrlWithApiSuffix:(NSString *)apiSuffix;
-
-#pragma mark - Params
-- (NSDictionary *)completeParamsWithCustomParams:(NSDictionary *)customParams;
 
 
 

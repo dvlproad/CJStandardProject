@@ -7,6 +7,7 @@
 //
 
 #import "OrderListTableViewDelegate.h"
+#import <CJDemoCommon/DemoToast.h>
 
 @implementation OrderListTableViewDelegate
 
@@ -14,7 +15,7 @@
 {
     if (self.orders.count > 0) {
         STDemoOrderModel *orderModel = [self.orders objectAtIndex:indexPath.row];
-        [CJToast shortShowMessage:orderModel.title];
+        [DemoToast showMessage:orderModel.title];
     }    
 }
 @end

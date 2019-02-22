@@ -44,4 +44,10 @@
     return manager;
 }
 
+
+#pragma mark - CJNetworkCryptHTTPSessionManagerProtocol
+- (void)setupSecretKey:(NSString *)secretKey {
+    //[CJDemoCrypt sharedInstance].secretKey = secretKey;
+}
+
 @end

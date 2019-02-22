@@ -1,1 +1,1 @@
-../../../CJNetwork/CJNetwork/CJNetworkBase/CJResponseModel/CJResponseModel.h
+../../../CJNetwork/CJNetwork/CJNetworkClient/CJResponseModel/CJResponseModel.h

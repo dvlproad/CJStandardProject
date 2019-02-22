@@ -8,7 +8,6 @@
 
 #import "STDemoServiceUserManager.h"
 #import <CJBaseUtil/CJAppLastUtil.h>
-#import "STDemoServiceUserManager+Network.h"
 
 static NSString * const kSTDemoNotificationUserLoginState = @"STDemoNotificationUserLoginState";
 
@@ -28,13 +27,13 @@ static NSString * const kSTDemoNotificationUserLoginState = @"STDemoNotification
     if (self) {
         CJAppLastUser *user = [CJAppLastUtil getLastLoginUser];
         if (user && !isEmptyObjectCJHelper(user.lastLoginAccessToken) ) {
-            _serviceUser = [[STDemoUser alloc] init];
-            _serviceUser.userName = user.lastLoginUserName;
+            _serviceUser = [[DemoUser alloc] init];
+            _serviceUser.name = user.lastLoginUserName;
             _serviceUser.userToken = user.lastLoginAccessToken;
             ///FIXME:获取上次的信息
 //            NSData *data = [[NSUserDefaults standardUserDefaults] dataForKey:@"user_archive"];
 //            if (data) {
-//                STDemoUser *user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+//                DemoUser *user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 //                if (user) {
 //                    [_serviceUser updateIvarsWithModel:user];
 //                }

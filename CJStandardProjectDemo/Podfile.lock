@@ -15,33 +15,64 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Bugly (2.5.0)
-  - CJBaseHelper/DeviceCJHelper (0.0.8)
-  - CJBaseHelper/NSObjectCJHelper (0.0.8)
-  - CJBaseUIKit/CJAlert (0.3.0):
+  - CJBaseHelper/AuthorizationCJHelper (0.1.3)
+  - CJBaseHelper/DeviceCJHelper (0.1.3)
+  - CJBaseHelper/NSObjectCJHelper (0.1.3)
+  - CJBaseUIKit/CJAlert (0.4.0):
     - CJBaseUIKit/UIView/CJPopupAction
     - Masonry
-  - CJBaseUIKit/CJToast (0.3.0):
+  - CJBaseUIKit/CJTextView (0.4.0)
+  - CJBaseUIKit/CJToast (0.4.0):
     - MBProgressHUD
-  - CJBaseUIKit/UIButton (0.3.0)
-  - CJBaseUIKit/UIColor (0.3.0)
-  - CJBaseUIKit/UINavigationBar (0.3.0)
-  - CJBaseUIKit/UITextField (0.3.0)
-  - CJBaseUIKit/UIView/CJDragAction (0.3.0)
-  - CJBaseUIKit/UIView/CJPopupAction (0.3.0)
-  - CJBaseUIKit/UIViewController (0.3.0)
-  - CJBaseUtil/CJAppLastUtil (0.4.4):
+  - CJBaseUIKit/UIButton (0.4.0)
+  - CJBaseUIKit/UIColor (0.4.0)
+  - CJBaseUIKit/UIImage (0.4.0)
+  - CJBaseUIKit/UINavigationBar (0.4.0)
+  - CJBaseUIKit/UITextField (0.4.0)
+  - CJBaseUIKit/UIToolbar (0.4.0)
+  - CJBaseUIKit/UIView/CJPopupAction (0.4.0)
+  - CJBaseUIKit/UIViewController (0.4.0)
+  - CJBaseUtil/CJAppLastUtil (0.4.5):
     - SAMKeychain
-  - CJBaseUtil/CJLog (0.4.4):
-    - CJBaseUIKit/UIView/CJDragAction
+  - CJBaseUtil/CJDataUtil (0.4.5)
+  - CJDemoCommon (0.0.2):
+    - CJDemoCommon/CommonOther (= 0.0.2)
+    - CJDemoCommon/CommonUI (= 0.0.2)
+    - CJDemoCommon/UIBuilder (= 0.0.2)
+  - CJDemoCommon/CommonOther (0.0.2):
+    - MJExtension
+  - CJDemoCommon/CommonUI (0.0.2):
+    - CJBaseHelper/AuthorizationCJHelper
+    - CJBaseHelper/NSObjectCJHelper
+    - CJBaseUIKit/CJAlert
+    - CJBaseUIKit/CJTextView
+    - CJBaseUIKit/CJToast
+    - CJBaseUIKit/UIButton
+    - CJBaseUIKit/UIColor
+    - CJBaseUIKit/UIImage
+    - CJBaseUIKit/UINavigationBar
+    - CJBaseUIKit/UITextField
+    - CJBaseUIKit/UIToolbar
+    - CJBaseUIKit/UIView/CJPopupAction
+    - CJBaseUtil/CJDataUtil
+    - CJFoundation/NSString
     - Masonry
+    - MBProgressHUD
+    - ReactiveObjC
+    - SVProgressHUD
+  - CJDemoCommon/UIBuilder (0.0.2):
+    - CJBaseUIKit/UIToolbar
+    - CJPicker
   - CJDemoCryptSDK (0.0.1)
+  - CJDemoDatabase (0.0.1):
+    - CJFile/CJFMDBFileManager
   - CJDemoModuleMain/CJDemoModuleMain_Category (0.0.1):
     - CTMediator
-  - CJDemoNetwork (0.1.0):
+  - CJDemoNetwork (0.0.2):
     - CJBaseHelper/DeviceCJHelper
     - CJBaseHelper/NSObjectCJHelper
     - CJDemoCryptSDK
-    - CJNetwork/AFNetworkingBaseComponent
+    - CJNetwork/CJNetworkClient (~> 0.6.6)
     - OpenUDID
   - CJFile/CJFileManager (0.0.9)
   - CJFile/CJFileModel (0.0.9)
@@ -49,10 +80,15 @@ PODS:
     - CJFile/CJFileManager
     - FMDB
   - CJFoundation/NSString (0.1.2)
-  - CJNetwork/AFNetworkingBaseComponent (0.5.0):
+  - CJNetwork/AFNetworkingSerializerEncrypt (0.6.6):
+    - CJNetwork/CJNetworkCommon
+  - CJNetwork/CJNetworkClient (0.6.6):
+    - CJNetwork/AFNetworkingSerializerEncrypt
+  - CJNetwork/CJNetworkCommon (0.6.6):
     - AFNetworking
-    - CJNetwork/CJNetworkBase
-  - CJNetwork/CJNetworkBase (0.5.0)
+    - MJExtension
+    - YYCache
+  - CJPicker (1.3.2)
   - CJRadio (1.3.0):
     - CJRadio/CJCycleComposeView (= 1.3.0)
     - CJRadio/CJRadioButtonCycleComposeView (= 1.3.0)
@@ -64,6 +100,9 @@ PODS:
   - CJRadio/CJRadioButtons (1.3.0)
   - CocoaAsyncSocket (7.6.3)
   - CTMediator (25)
+  - EAIntroView (2.12.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -71,47 +110,40 @@ PODS:
   - LGSideMenuController (2.1.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
   - OpenUDID (1.0.0)
   - ReactiveObjC (3.1.0)
   - SAMKeychain (1.5.3)
   - SVProgressHUD (2.2.5)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - Bugly
-  - CJBaseHelper/DeviceCJHelper
-  - CJBaseHelper/NSObjectCJHelper
-  - CJBaseUIKit/CJAlert
-  - CJBaseUIKit/CJToast
-  - CJBaseUIKit/UIButton
-  - CJBaseUIKit/UIColor
-  - CJBaseUIKit/UINavigationBar
-  - CJBaseUIKit/UITextField
   - CJBaseUIKit/UIViewController
   - CJBaseUtil/CJAppLastUtil
-  - CJBaseUtil/CJLog
+  - CJDemoCommon (~> 0.0.2)
+  - CJDemoDatabase
   - CJDemoModuleMain/CJDemoModuleMain_Category
   - CJDemoNetwork
   - CJFile/CJFileManager
   - CJFile/CJFileModel
   - CJFile/CJFMDBFileManager
-  - CJFoundation/NSString
-  - CJNetwork/AFNetworkingBaseComponent
   - CJRadio
   - CocoaAsyncSocket
   - CTMediator
+  - EAIntroView
   - KVOController (~> 1.2.0)
   - LGSideMenuController
-  - Masonry
-  - MBProgressHUD
   - MJRefresh
   - OpenUDID
   - ReactiveObjC (~> 3.1.0)
-  - SVProgressHUD
 
 SPEC REPOS:
   https://gitee.com/dvlproad/dvlproadSpecs:
+    - CJDemoCommon
     - CJDemoCryptSDK
+    - CJDemoDatabase
     - CJDemoModuleMain
     - CJDemoNetwork
   https://github.com/cocoapods/specs.git:
@@ -123,46 +155,58 @@ SPEC REPOS:
     - CJFile
     - CJFoundation
     - CJNetwork
+    - CJPicker
     - CJRadio
     - CocoaAsyncSocket
     - CTMediator
+    - EAIntroView
+    - EARestrictedScrollView
     - FMDB
     - KVOController
     - LGSideMenuController
     - Masonry
     - MBProgressHUD
+    - MJExtension
     - MJRefresh
     - OpenUDID
     - ReactiveObjC
     - SAMKeychain
     - SVProgressHUD
+    - YYCache
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
-  CJBaseHelper: f39e78d52837f3d325170f1e4660f7e9e5a183cb
-  CJBaseUIKit: 6706574187fb6beb8adcc5c72d70f1815ec232cc
-  CJBaseUtil: 842f44965ee18787f17199677bfb78d2bf6d15df
-  CJDemoCryptSDK: 22c5a26ad2937b69429306e10311f517b0d664cb
+  CJBaseHelper: 5c01e2bfb8e3a4d98bc02ea4f94df6c62068e1af
+  CJBaseUIKit: 32c49aa29441caa2d0248c1689b1bc72117c276b
+  CJBaseUtil: 91723cabc776ae2e4f1d91595775798202636d42
+  CJDemoCommon: d2765c4923ee6128e7027027796c5aa28a996806
+  CJDemoCryptSDK: 89c7bd56bbcd56a48093d27f45a2b64a8b10604e
+  CJDemoDatabase: d3add9d681a2b7b8570c39ef4a508299518f3fc4
   CJDemoModuleMain: 188a70ed84939aded55df7515260e66affee42a5
-  CJDemoNetwork: eec26986df31d8fd88711d4583febc8a12c07633
+  CJDemoNetwork: e96d62f45efe277135e284163621ec1dc7b20186
   CJFile: 6c1e6d55b3b94e8afbaa9f413f131301d15fdc48
   CJFoundation: 2c27b7ad85ec0cc5ac24aa112867971e01ae3ea3
-  CJNetwork: a75f849e5c6ec8fc85ca7aa5027f73d6c48a4af1
+  CJNetwork: 5916c2692df3cf3dbf5be7dfde50fce2dcd1ff9c
+  CJPicker: c33099d47323271b91c2ce112976d1bee19a70ce
   CJRadio: 327a49306e49ef9877a3a39c630e49ccb6c9580a
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  EAIntroView: 249559079ddfdbe80e5bcb755c04c3b964b2ac27
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: b69f2de55216b43bd3bdfa292a8b9dbd92473bba
+PODFILE CHECKSUM: 178f130fd6133e45d4071580e59fa505ff139df7
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

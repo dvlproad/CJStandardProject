@@ -8,7 +8,7 @@
 
 #import "STDemoAppDelegateListenLogic.h"
 #import <CJBaseUtil/CJAppLastUtil.h>
-#import "STDemoServiceUserManager.h"
+#import "CJDemoServiceUserManager.h"
 
 @interface STDemoAppDelegateListenLogic ()
 
@@ -29,7 +29,7 @@
 - (void)startListen {
     //监听User
     __weak typeof(self)weakSelf = self;
-    [[STDemoServiceUserManager sharedInstance] addNotificationForUserLoginStateWithUsingBlock:^(BOOL isLogin) {
+    [[CJDemoServiceUserManager sharedInstance] addNotificationForUserLoginStateWithUsingBlock:^(BOOL isLogin) {
         if ([weakSelf.listenDelegate respondsToSelector:@selector(listen_appUserManagerDidUpdateLoginState:)]) {
             [weakSelf.listenDelegate listen_appUserManagerDidUpdateLoginState:isLogin];
         }

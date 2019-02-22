@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import "STDemoServiceUserManager.h"
+#import "CJDemoServiceUserManager.h"
 #import "STDemoServiceLocationManager.h"
 
 #import "STDemoRootViewControllerEnum.h" //启动页类型

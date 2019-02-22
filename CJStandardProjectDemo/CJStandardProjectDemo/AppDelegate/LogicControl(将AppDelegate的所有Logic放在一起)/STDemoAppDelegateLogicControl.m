@@ -28,7 +28,7 @@
 - (void)startListen {
     //监听User
     __weak typeof(self)weakSelf = self;
-    [[STDemoServiceUserManager sharedInstance] addNotificationForUserLoginStateWithUsingBlock:^(BOOL isLogin) {
+    [[CJDemoServiceUserManager sharedInstance] addNotificationForUserLoginStateWithUsingBlock:^(BOOL isLogin) {
         [weakSelf dealRootViewControllerWithLoginState:isLogin];
         if ([weakSelf.listenDelegate respondsToSelector:@selector(appUserManagerDidUpdateLoginState:)]) {
             [weakSelf.listenDelegate appUserManagerDidUpdateLoginState:isLogin];
@@ -45,7 +45,7 @@
         return STDemoRootViewControllerTypeGuide;
         
     } else {
-        if ([STDemoServiceUserManager sharedInstance].hasLogin) {
+        if ([CJDemoServiceUserManager sharedInstance].serviceUser) {
             return STDemoRootViewControllerTypeMain;
             
         } else {
@@ -84,7 +84,7 @@
             break;
         }
         case kCLAuthorizationStatusDenied: {
-            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![STDemoServiceUserManager sharedInstance].hasLogin) {
+            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![CJDemoServiceUserManager sharedInstance].serviceUser) {
                 return; //首次打开拒绝了定位不处理,没登录不处理
             }
             ///弹窗提示没有打开GPS，无法接单。
@@ -94,7 +94,7 @@
             break;
         }
         case kCLAuthorizationStatusRestricted: {
-            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![STDemoServiceUserManager sharedInstance].hasLogin) {
+            if (![CJAppLastUtil isReadOverGuideWithDistinctAppVersion:NO] || ![CJDemoServiceUserManager sharedInstance].serviceUser) {
                 return;//首次打开拒绝了定位不处理，,没登录不处理
             }
             if ([self.didFinishLaunchingDelegate respondsToSelector:@selector(showLocationAbnormalAlert)]) {
@@ -124,9 +124,9 @@
 }
 
 
-#pragma mark - STDemoServiceUserManagerListener
+#pragma mark - CJDemoServiceUserManagerListener
 
-//- (void)driverUserManager:(STDemoServiceUserManager *)driverUserManager didUpdateLoginState:(BOOL)loginState {
+//- (void)driverUserManager:(CJDemoServiceUserManager *)driverUserManager didUpdateLoginState:(BOOL)loginState {
 //    [self dealRootViewControllerWithLoginState:loginState];
 //
 //    if ([self.listenDelegate respondsToSelector:@selector(appUserManagerDidUpdateLoginState:)]) {

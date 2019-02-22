@@ -1,0 +1,16 @@
+{
+"status": 1,
+"message": "恭喜您登录成功",
+"result": {
+    "uid": "9f3256a5638d9de91470833076419",
+    "userName": "dvlproad",
+    "userToken": "123456",
+    "email": "dvlproad@163.com",
+    "auths": ["1000", "10001"],
+    "sexType": 0,
+    "birthday": "1989-12-27",
+
+    "imName": " imName",
+    "imPassword": "imPassword"
+    }
+}

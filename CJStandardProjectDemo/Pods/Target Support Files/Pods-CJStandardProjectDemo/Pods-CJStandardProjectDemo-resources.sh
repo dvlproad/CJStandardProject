@@ -3,10 +3,15 @@ set -e
 set -u
 set -o pipefail
 
+function on_error {
+  echo "$(realpath -mq "${0}"):$1: error: Unexpected failure"
+}
+trap 'on_error $LINENO' ERR
+
 if [ -z ${UNLOCALIZED_RESOURCES_FOLDER_PATH+x} ]; then
-    # If UNLOCALIZED_RESOURCES_FOLDER_PATH is not set, then there's nowhere for us to copy
-    # resources to, so exit 0 (signalling the script phase was successful).
-    exit 0
+  # If UNLOCALIZED_RESOURCES_FOLDER_PATH is not set, then there's nowhere for us to copy
+  # resources to, so exit 0 (signalling the script phase was successful).
+  exit 0
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
@@ -99,6 +104,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png"
   install_resource "${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png"
   install_resource "${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/area.plist"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/city.plist"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar.png"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar@2x.png"
   install_resource "${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowDown_dark.png"
   install_resource "${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_gray@2x.png"
   install_resource "${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_red@2x.png"
@@ -117,6 +126,10 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png"
   install_resource "${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png"
   install_resource "${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/area.plist"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/city.plist"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar.png"
+  install_resource "${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar@2x.png"
   install_resource "${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowDown_dark.png"
   install_resource "${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_gray@2x.png"
   install_resource "${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_red@2x.png"

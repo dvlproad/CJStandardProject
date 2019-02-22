@@ -27,38 +27,29 @@ post_install do |installer|
 end
 
 target 'CJStandardProjectDemo' do
-   pod 'Masonry'
-   pod 'MBProgressHUD'
-   pod 'SVProgressHUD'
-   pod 'MJRefresh'
-   pod 'CocoaAsyncSocket'
-
-   pod 'ReactiveObjC', '~> 3.1.0'
-   pod 'KVOController', '~> 1.2.0'
-
-   pod 'CJBaseUIKit',  :subspecs => ['UIColor', 'UIButton', 'UITextField', 'CJToast', 'CJAlert', 'UINavigationBar', 'UIViewController']
-   pod 'CJBaseUtil',   :subspecs => ['CJLog', 'CJAppLastUtil']
-   pod 'CJBaseHelper', :subspecs => ['NSObjectCJHelper', 'DeviceCJHelper']
-   pod 'CJFoundation', :subspecs => ['NSString']
-   pod 'CJNetwork',    :subspecs => ['AFNetworkingBaseComponent']
-   pod 'CJDemoNetwork'
-
-   pod 'OpenUDID'
-   pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
-
-   pod 'LGSideMenuController'
-   pod 'CJRadio'
-   pod 'SVProgressHUD'
-
-   # 模块化需要依赖的库
-   pod 'CTMediator'
-
-
-   pod 'CJDemoModuleMain/CJDemoModuleMain_Category'
-
-   pod 'Bugly'
+  pod 'CJDemoCommon', '~> 0.0.2'
+  
+  pod 'MJRefresh'
+  pod 'CJBaseUIKit',      :subspecs => ['UIViewController']
+  pod 'CJBaseUtil',       :subspecs => ['CJAppLastUtil']
+  pod 'CocoaAsyncSocket'
+  pod 'ReactiveObjC', '~> 3.1.0'
+  pod 'KVOController', '~> 1.2.0'
+  pod 'OpenUDID'
+  pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
+  pod 'LGSideMenuController'
+  pod 'CJRadio'
+  pod 'EAIntroView'
+  # 模块化需要依赖的库
+  pod 'CTMediator'
+  
+  pod 'CJDemoNetwork'
+  pod 'CJDemoDatabase'
+  pod 'CJDemoModuleMain/CJDemoModuleMain_Category'
+  
+  pod 'Bugly'
 end
 
 target 'CJStandardProjectDemoTests' do
-   
+  
 end

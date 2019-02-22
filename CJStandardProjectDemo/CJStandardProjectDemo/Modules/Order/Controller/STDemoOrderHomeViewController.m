@@ -10,7 +10,7 @@
 #import <CJRadio/CJRadioButtons.h>
 #import <CJBaseUIKit/UIViewController+CJSystemComposeView.h>
 #import "STDemoSliderVCElementFactory.h"
-#import "STDemoServiceUserManager.h"
+#import "CJDemoServiceUserManager+Login.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface STDemoOrderHomeViewController () <CJRadioButtonsDataSource, CJRadioButtonsDelegate> {
@@ -79,7 +79,10 @@
 
 - (void)logout {
     [SVProgressHUD show];
-    [[STDemoServiceUserManager sharedInstance] logoutWithCompleteBlock:^{
+    
+    [[CJDemoServiceUserManager sharedInstance] logoutWithSuccess:^(NSDictionary *responseDict) {
+        [SVProgressHUD dismiss];
+    } failure:^(NSError *error) {
         [SVProgressHUD dismiss];
     }];
 }

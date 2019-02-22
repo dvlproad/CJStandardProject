@@ -9,13 +9,14 @@
 #import "AppDelegate+STDemoView_Old.h"
 
 #import "STDemoMainVCFactory.h"
-#import "STDemoLoginVCFactory.h"
+//#import "STDemoLoginVCFactory.h"
+#import "CTMediator+CJDemoModuleLogin.h"
 #import "GuideViewController.h"
 
-#import "STDemoServiceUserManager.h"
+#import "CJDemoServiceUserManager.h"
 #import "STDemoServiceLocationManager.h"
 
-@interface AppDelegate () <STDemoAppDidFinishLaunchingDelegate, STDemoAppLogicListenDelegate, GuideViewControllerDelegate> {
+@interface AppDelegate () <STDemoAppDidFinishLaunchingDelegate, STDemoAppLogicListenDelegate> {
     
 }
 
@@ -49,7 +50,7 @@
     
     if (rootViewControllerType == STDemoRootViewControllerTypeGuide) {
         GuideViewController *guideViewController = [[GuideViewController alloc] init];
-        guideViewController.delegate = self;
+        //guideViewController.delegate = self;
         self.window.rootViewController = guideViewController;
         
     } else if (rootViewControllerType == STDemoRootViewControllerTypeMain) {
@@ -57,7 +58,7 @@
         self.window.rootViewController = mainViewController;
         
     } else {
-        UIViewController *loginNavigationController = [STDemoLoginVCFactory loginViewController];
+        UIViewController *loginNavigationController = [[CTMediator sharedInstance] cjDemo_loginViewControllerWithParams:nil];
         self.window.rootViewController = loginNavigationController;
     }
 }
@@ -68,16 +69,16 @@
 }
 
 - (void)showLocationNoOpenAlert {
-    [STDemoAlert showLocationNoOpenAlert:YES];
+    [DemoAlert showLocationNoOpenAlert:YES];
 }
 
 - (void)showLocationAbnormalAlert {
-    [STDemoAlert showLocationAbnormalAlert:YES];
+    [DemoAlert showLocationAbnormalAlert:YES];
 }
 
 - (void)dismissLocationAllAlert {
-    [STDemoAlert showLocationNoOpenAlert:NO];
-    [STDemoAlert showLocationAbnormalAlert:NO];
+    [DemoAlert showLocationNoOpenAlert:NO];
+    [DemoAlert showLocationAbnormalAlert:NO];
 }
 
 

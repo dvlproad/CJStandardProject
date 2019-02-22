@@ -10,7 +10,7 @@
 
 @interface CJDemoResponseModel : NSObject
 
-@property (nonatomic, assign) NSInteger status;
+@property (nonatomic, assign) NSInteger statusCode;
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, strong) id result;
 

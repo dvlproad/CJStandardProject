@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "STDemoUser.h"
+#import "DemoUser.h"
 
 @interface STDemoServiceUserManager : NSObject {
     
@@ -17,7 +17,7 @@
 + (STDemoServiceUserManager *)sharedInstance;
 
 #pragma mark - Session
-@property (nonatomic, strong) STDemoUser *serviceUser;    /**< 服务的用户 */
+@property (nonatomic, strong) DemoUser *serviceUser;    /**< 服务的用户 */
 @property (nonatomic, assign, readonly) BOOL hasLogin;
 
 /// 退出登录

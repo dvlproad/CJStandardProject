@@ -59,7 +59,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     STDemoOrderModel *orderModel = [self.orderListlogicControl getOrderModelForRowAtIndexPath:indexPath];
-    [CJToast shortShowMessage:orderModel.title];
+    [DemoToast showMessage:orderModel.title];
 }
 
 
