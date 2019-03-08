@@ -1,7 +1,7 @@
-# CJDemoService
+# AppServiceCollect
 
 #### Description
-CJDemo Service
+Collect各个app的Service
 
 #### Software Architecture
 Software architecture description

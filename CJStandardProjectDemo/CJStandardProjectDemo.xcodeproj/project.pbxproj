@@ -55,7 +55,6 @@
 		78E52A2722206139005FA5B5 /* LoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529EC22206138005FA5B5 /* LoginRouter.m */; };
 		78E52A2822206139005FA5B5 /* CJDemoLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529F022206138005FA5B5 /* CJDemoLoginRequest.m */; };
 		78E52A2922206139005FA5B5 /* CJDemoServiceUserManager+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529F222206138005FA5B5 /* CJDemoServiceUserManager+Login.m */; };
-		78E52A2A22206139005FA5B5 /* CJDemoBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529F322206138005FA5B5 /* CJDemoBaseRequest.m */; };
 		78E52A2B22206139005FA5B5 /* RegisterPerfectViewController+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529F622206138005FA5B5 /* RegisterPerfectViewController+Event.m */; };
 		78E52A2C22206139005FA5B5 /* FindPasdViewController+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529FB22206138005FA5B5 /* FindPasdViewController+Event.m */; };
 		78E52A2D22206139005FA5B5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E529FC22206138005FA5B5 /* LoginViewController.m */; };
@@ -205,9 +204,7 @@
 		78E529ED22206138005FA5B5 /* Target_CJDemoModuleLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_CJDemoModuleLogin.h; sourceTree = "<group>"; };
 		78E529EF22206138005FA5B5 /* CJDemoServiceUserManager+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJDemoServiceUserManager+Login.h"; sourceTree = "<group>"; };
 		78E529F022206138005FA5B5 /* CJDemoLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoLoginRequest.m; sourceTree = "<group>"; };
-		78E529F122206138005FA5B5 /* CJDemoBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoBaseRequest.h; sourceTree = "<group>"; };
 		78E529F222206138005FA5B5 /* CJDemoServiceUserManager+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJDemoServiceUserManager+Login.m"; sourceTree = "<group>"; };
-		78E529F322206138005FA5B5 /* CJDemoBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJDemoBaseRequest.m; sourceTree = "<group>"; };
 		78E529F422206138005FA5B5 /* CJDemoLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJDemoLoginRequest.h; sourceTree = "<group>"; };
 		78E529F622206138005FA5B5 /* RegisterPerfectViewController+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegisterPerfectViewController+Event.m"; sourceTree = "<group>"; };
 		78E529F722206138005FA5B5 /* GuideMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideMainViewController.h; sourceTree = "<group>"; };
@@ -769,12 +766,10 @@
 		78E529EE22206138005FA5B5 /* NDM */ = {
 			isa = PBXGroup;
 			children = (
-				78E529EF22206138005FA5B5 /* CJDemoServiceUserManager+Login.h */,
-				78E529F022206138005FA5B5 /* CJDemoLoginRequest.m */,
-				78E529F122206138005FA5B5 /* CJDemoBaseRequest.h */,
-				78E529F222206138005FA5B5 /* CJDemoServiceUserManager+Login.m */,
-				78E529F322206138005FA5B5 /* CJDemoBaseRequest.m */,
 				78E529F422206138005FA5B5 /* CJDemoLoginRequest.h */,
+				78E529F022206138005FA5B5 /* CJDemoLoginRequest.m */,
+				78E529EF22206138005FA5B5 /* CJDemoServiceUserManager+Login.h */,
+				78E529F222206138005FA5B5 /* CJDemoServiceUserManager+Login.m */,
 			);
 			path = NDM;
 			sourceTree = "<group>";
@@ -945,7 +940,7 @@
 				78A621F821367D40004DA046 /* Frameworks */,
 				78A621F921367D40004DA046 /* Resources */,
 				784410542186D86400D746A7 /* Auto Increase Version Script */,
-				E84E214C3DBD163276C812CA /* [CP] Copy Pods Resources */,
+				599790406F837A501CD462ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1091,6 +1086,68 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		599790406F837A501CD462ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo-resources.sh",
+				"${PODS_ROOT}/CJBaseEffectKit/CJBaseEffectKit/CJMJRefreshComponent/Resources/cjRefreshArrowDown@2x.png",
+				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error.png",
+				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@2x.png",
+				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@3x.png",
+				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success.png",
+				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
+				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
+				"${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/area.plist",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/city.plist",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar.png",
+				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowDown_dark.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_gray@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_red@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_gray@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_red@2x.png",
+				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowUp_white@2x.png",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjRefreshArrowDown@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/demofmdb.db",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/area.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/city.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line_gray_pickerToolbar.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line_gray_pickerToolbar@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowDown_dark.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_gray@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_red@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_gray@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_red@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowUp_white@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		784410542186D86400D746A7 /* Auto Increase Version Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1121,62 +1178,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E84E214C3DBD163276C812CA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo-resources.sh",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@3x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
-				"${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/area.plist",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/city.plist",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar.png",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowDown_dark.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_gray@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_red@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_gray@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_red@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowUp_white@2x.png",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/demofmdb.db",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/area.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/city.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line_gray_pickerToolbar.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line_gray_pickerToolbar@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowDown_dark.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_gray@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_red@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_gray@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_red@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowUp_white@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJStandardProjectDemo/Pods-CJStandardProjectDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1241,7 +1242,6 @@
 				788D41EB21849A0C002BEED4 /* MessageViewController.m in Sources */,
 				78C38DD12141AB33001F35E2 /* FriendCircleManager.m in Sources */,
 				78E52A3522206139005FA5B5 /* LogoutLogicControl.m in Sources */,
-				78E52A2A22206139005FA5B5 /* CJDemoBaseRequest.m in Sources */,
 				788D41A921846F44002BEED4 /* AppDelegate+STDemoView_Old.m in Sources */,
 				788D41D721848F64002BEED4 /* DemoMainViewController.m in Sources */,
 				784410532186B84100D746A7 /* STDemoStartUp.m in Sources */,

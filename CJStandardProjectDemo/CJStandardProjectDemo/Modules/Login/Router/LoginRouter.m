@@ -8,7 +8,7 @@
 
 #import "LoginRouter.h"
 #import "Target_CJDemoModuleLogin.h"
-#import <CJDemoModuleMain/CTMediator+CJDemoModuleMain.h>
+#import <CJDemoModuleMainMediator/CTMediator+CJDemoModuleMain.h>
 
 @implementation LoginRouter
 

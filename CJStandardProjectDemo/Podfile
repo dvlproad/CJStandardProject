@@ -27,15 +27,13 @@ post_install do |installer|
 end
 
 target 'CJStandardProjectDemo' do
-  pod 'CJDemoCommon', '~> 0.0.2'
+  pod 'CJDemoCommon'
+  pod 'CJDemoNetwork'
+  pod 'CJDemoDatabase'
+  pod 'CJDemoModuleMainMediator'
   
-  pod 'MJRefresh'
   pod 'CJBaseUIKit',      :subspecs => ['UIViewController']
   pod 'CJBaseUtil',       :subspecs => ['CJAppLastUtil']
-  pod 'CocoaAsyncSocket'
-  pod 'ReactiveObjC', '~> 3.1.0'
-  pod 'KVOController', '~> 1.2.0'
-  pod 'OpenUDID'
   pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
   pod 'LGSideMenuController'
   pod 'CJRadio'
@@ -43,9 +41,7 @@ target 'CJStandardProjectDemo' do
   # 模块化需要依赖的库
   pod 'CTMediator'
   
-  pod 'CJDemoNetwork'
-  pod 'CJDemoDatabase'
-  pod 'CJDemoModuleMain/CJDemoModuleMain_Category'
+  
   
   pod 'Bugly'
 end
