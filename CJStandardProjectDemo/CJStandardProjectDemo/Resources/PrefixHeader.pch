@@ -23,6 +23,7 @@
 #import <CJDemoCommon/DemoProgressHUD.h>
 #import <CJDemoCommon/DemoBarButtonItemFactory.h>
 
+#define CJDemoModuleLoginInMain
 #define CJTestLoginDealloc              //测试LMLoginViewController的销毁/内存泄漏
 #define CJUseSimulatorServiceUserData //使用模拟网络请求数据
 

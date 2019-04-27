@@ -800,14 +800,14 @@
 		78E52A0622206138005FA5B5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				78E52A0722206138005FA5B5 /* FindPasswordLogicControl.m */,
-				78E52A0822206138005FA5B5 /* LogoutLogicControl.h */,
-				78E52A0922206138005FA5B5 /* LoginViewModel.h */,
-				78E52A0A22206138005FA5B5 /* RegisterViewModel.m */,
-				78E52A0B22206138005FA5B5 /* LogoutLogicControl.m */,
 				78E52A0C22206138005FA5B5 /* FindPasswordLogicControl.h */,
+				78E52A0722206138005FA5B5 /* FindPasswordLogicControl.m */,
+				78E52A0922206138005FA5B5 /* LoginViewModel.h */,
 				78E52A0D22206138005FA5B5 /* LoginViewModel.m */,
+				78E52A0822206138005FA5B5 /* LogoutLogicControl.h */,
+				78E52A0B22206138005FA5B5 /* LogoutLogicControl.m */,
 				78E52A0E22206138005FA5B5 /* RegisterViewModel.h */,
+				78E52A0A22206138005FA5B5 /* RegisterViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
