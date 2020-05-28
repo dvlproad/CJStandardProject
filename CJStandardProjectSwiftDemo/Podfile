@@ -1,0 +1,51 @@
+platform :ios, '8.0'
+#use_frameworks!
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitee.com/dvlproad/dvlproadSpecs'
+
+inhibit_all_warnings!
+
+post_install do |installer|
+   
+   puts 'Determining pod project minimal deployment target'
+   
+   pods_project = installer.pods_project
+   deployment_target_key = 'IPHONEOS_DEPLOYMENT_TARGET'
+   deployment_targets = pods_project.build_configurations.map{ |config| config.build_settings[deployment_target_key] }
+   minimal_deployment_target = deployment_targets.min_by{ |version| Gem::Version.new(version) }
+   
+   puts 'Minimal deployment target is ' + minimal_deployment_target
+   puts 'Setting each pod deployment target to ' + minimal_deployment_target
+   
+   installer.pods_project.targets.each do |target|
+       target.build_configurations.each do |config|
+           config.build_settings[deployment_target_key] = minimal_deployment_target
+       end
+   end
+end
+
+target 'CJStandardProjectSwiftDemo' do
+  pod 'CJDemoCommon'
+  pod 'CJDemoNetwork'
+  pod 'CJDemoDatabase'
+  pod 'CJDemoModuleMainMediator'
+  
+  pod 'CJBaseUIKit',      :subspecs => ['UIViewController']
+  pod 'CJBaseUtil',       :subspecs => ['CJAppLastUtil']
+  pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
+  pod 'LGSideMenuController'
+  pod 'CJRadio'
+  pod 'EAIntroView'
+  # 模块化需要依赖的库
+  pod 'CTMediator'
+  
+  
+  
+  pod 'Bugly'
+end
+
+target 'CJStandardProjectSwiftDemoTests' do
+  
+end
