@@ -29,7 +29,8 @@ end
 target 'CJStandardProjectSwiftDemo' do
   pod 'SnapKit'
   pod 'Masonry'
-  pod 'CQDemoKit-Swift',      :path => '../’
+  pod 'CQDemoKit-Swift',      :path => '../',   :subspecs => ['BaseVC']
+  pod 'CQDemoKit',            '~> 0.5.4',       :subspecs => ['BaseUtil']
 end
 
 target 'CJStandardProjectSwiftDemoTests' do
