@@ -1,0 +1,6 @@
+module Pods_CJStandardProjectSwiftDemo {
+  umbrella header "Pods-CJStandardProjectSwiftDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

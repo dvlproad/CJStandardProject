@@ -7,6 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7845418F2549722F0070452E /* UISwitch+CQTSMoreProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845415B2549722F0070452E /* UISwitch+CQTSMoreProperty.m */; };
+		784541902549722F0070452E /* UIButton+CQTSMoreProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845415D2549722F0070452E /* UIButton+CQTSMoreProperty.m */; };
+		784541912549722F0070452E /* CQTSSwitchViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845415E2549722F0070452E /* CQTSSwitchViewFactory.m */; };
+		784541922549722F0070452E /* CQTSContainerViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845415F2549722F0070452E /* CQTSContainerViewFactory.m */; };
+		784541932549722F0070452E /* CQTSBorderStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541602549722F0070452E /* CQTSBorderStateButton.m */; };
+		784541942549722F0070452E /* CQTSButtonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541622549722F0070452E /* CQTSButtonFactory.m */; };
+		784541952549722F0070452E /* CJUIKitAlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541662549722F0070452E /* CJUIKitAlertUtil.m */; };
+		784541962549722F0070452E /* CJUIKitToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541672549722F0070452E /* CJUIKitToastUtil.m */; };
+		784541972549722F0070452E /* CQTSNetImageDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845416D2549722F0070452E /* CQTSNetImageDataModel.m */; };
+		784541982549722F0070452E /* CQTSNetImagesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7845416E2549722F0070452E /* CQTSNetImagesUtil.m */; };
+		784541992549722F0070452E /* CQTSIconsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541702549722F0070452E /* CQTSIconsUtil.m */; };
+		7845419A2549722F0070452E /* CQTSIconDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541712549722F0070452E /* CQTSIconDataModel.m */; };
+		7845419B2549722F0070452E /* CQTSLocImageDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541752549722F0070452E /* CQTSLocImageDataModel.m */; };
+		7845419C2549722F0070452E /* cqts_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541772549722F0070452E /* cqts_8.jpg */; };
+		7845419D2549722F0070452E /* cqts_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541782549722F0070452E /* cqts_9.jpg */; };
+		7845419E2549722F0070452E /* cqts_placeholder01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541792549722F0070452E /* cqts_placeholder01.jpg */; };
+		7845419F2549722F0070452E /* cqts_bgCar@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7845417A2549722F0070452E /* cqts_bgCar@2x.jpg */; };
+		784541A02549722F0070452E /* cqts_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7845417B2549722F0070452E /* cqts_1.jpg */; };
+		784541A12549722F0070452E /* cqts_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7845417C2549722F0070452E /* cqts_10.jpg */; };
+		784541A22549722F0070452E /* cqts_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7845417D2549722F0070452E /* cqts_2.jpg */; };
+		784541A32549722F0070452E /* cqts_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7845417E2549722F0070452E /* cqts_3.jpg */; };
+		784541A42549722F0070452E /* cqts_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7845417F2549722F0070452E /* cqts_7.jpg */; };
+		784541A52549722F0070452E /* cqts_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541802549722F0070452E /* cqts_6.jpg */; };
+		784541A62549722F0070452E /* cqts_bgSky@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541812549722F0070452E /* cqts_bgSky@2x.jpg */; };
+		784541A72549722F0070452E /* cqts_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541822549722F0070452E /* cqts_4.jpg */; };
+		784541A82549722F0070452E /* cqts_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 784541832549722F0070452E /* cqts_5.jpg */; };
+		784541A92549722F0070452E /* CQTSLocImagesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 784541862549722F0070452E /* CQTSLocImagesUtil.m */; };
+		784541CD254977580070452E /* CJUIKitBaseCollectionHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541C4254977580070452E /* CJUIKitBaseCollectionHomeViewController.swift */; };
+		784541CE254977580070452E /* UIWindow+RootSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541C5254977580070452E /* UIWindow+RootSetting.swift */; };
+		784541CF254977580070452E /* CJUIKitBaseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541C6254977580070452E /* CJUIKitBaseHomeViewController.swift */; };
+		784541D0254977580070452E /* CJUIKitBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541C7254977580070452E /* CJUIKitBaseViewController.swift */; };
+		784541D1254977580070452E /* CJUIKitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541C9254977580070452E /* CJUIKitCollectionViewCell.swift */; };
+		784541D2254977580070452E /* CQDMSectionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541CA254977580070452E /* CQDMSectionDataModel.swift */; };
+		784541D3254977580070452E /* CQDMModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541CB254977580070452E /* CQDMModuleModel.swift */; };
+		784541D4254977580070452E /* CJUIKitBaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784541CC254977580070452E /* CJUIKitBaseScrollViewController.swift */; };
 		786BCEE72274549C0085F619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BCEE62274549C0085F619 /* AppDelegate.swift */; };
 		786BCEE92274549C0085F619 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786BCEE82274549C0085F619 /* ViewController.swift */; };
 		786BCEEC2274549C0085F619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786BCEEA2274549C0085F619 /* Main.storyboard */; };
@@ -39,6 +74,55 @@
 		0ABD07D495757B9A80D1507D /* Pods-CJStandardProjectSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectSwiftDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-CJStandardProjectSwiftDemoTests/Pods-CJStandardProjectSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3082D59E93FADF91823D356E /* Pods-CJStandardProjectSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-CJStandardProjectSwiftDemo/Pods-CJStandardProjectSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4C7B78585050D5559051292C /* Pods-CJStandardProjectSwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJStandardProjectSwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-CJStandardProjectSwiftDemoTests/Pods-CJStandardProjectSwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		784541582549722F0070452E /* CQTSContainerViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSContainerViewFactory.h; sourceTree = "<group>"; };
+		784541592549722F0070452E /* CQTSSwitchViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSSwitchViewFactory.h; sourceTree = "<group>"; };
+		7845415A2549722F0070452E /* CQTSBorderStateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSBorderStateButton.h; sourceTree = "<group>"; };
+		7845415B2549722F0070452E /* UISwitch+CQTSMoreProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+CQTSMoreProperty.m"; sourceTree = "<group>"; };
+		7845415C2549722F0070452E /* CQTSButtonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSButtonFactory.h; sourceTree = "<group>"; };
+		7845415D2549722F0070452E /* UIButton+CQTSMoreProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CQTSMoreProperty.m"; sourceTree = "<group>"; };
+		7845415E2549722F0070452E /* CQTSSwitchViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSSwitchViewFactory.m; sourceTree = "<group>"; };
+		7845415F2549722F0070452E /* CQTSContainerViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSContainerViewFactory.m; sourceTree = "<group>"; };
+		784541602549722F0070452E /* CQTSBorderStateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSBorderStateButton.m; sourceTree = "<group>"; };
+		784541612549722F0070452E /* UIButton+CQTSMoreProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CQTSMoreProperty.h"; sourceTree = "<group>"; };
+		784541622549722F0070452E /* CQTSButtonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSButtonFactory.m; sourceTree = "<group>"; };
+		784541632549722F0070452E /* UISwitch+CQTSMoreProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+CQTSMoreProperty.h"; sourceTree = "<group>"; };
+		784541652549722F0070452E /* CJUIKitToastUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUIKitToastUtil.h; sourceTree = "<group>"; };
+		784541662549722F0070452E /* CJUIKitAlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUIKitAlertUtil.m; sourceTree = "<group>"; };
+		784541672549722F0070452E /* CJUIKitToastUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUIKitToastUtil.m; sourceTree = "<group>"; };
+		784541682549722F0070452E /* CJUIKitAlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUIKitAlertUtil.h; sourceTree = "<group>"; };
+		7845416B2549722F0070452E /* CQTSNetImageDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSNetImageDataModel.h; sourceTree = "<group>"; };
+		7845416C2549722F0070452E /* CQTSNetImagesUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSNetImagesUtil.h; sourceTree = "<group>"; };
+		7845416D2549722F0070452E /* CQTSNetImageDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSNetImageDataModel.m; sourceTree = "<group>"; };
+		7845416E2549722F0070452E /* CQTSNetImagesUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSNetImagesUtil.m; sourceTree = "<group>"; };
+		784541702549722F0070452E /* CQTSIconsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSIconsUtil.m; sourceTree = "<group>"; };
+		784541712549722F0070452E /* CQTSIconDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSIconDataModel.m; sourceTree = "<group>"; };
+		784541722549722F0070452E /* CQTSIconsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSIconsUtil.h; sourceTree = "<group>"; };
+		784541732549722F0070452E /* CQTSIconDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSIconDataModel.h; sourceTree = "<group>"; };
+		784541752549722F0070452E /* CQTSLocImageDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSLocImageDataModel.m; sourceTree = "<group>"; };
+		784541772549722F0070452E /* cqts_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_8.jpg; sourceTree = "<group>"; };
+		784541782549722F0070452E /* cqts_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_9.jpg; sourceTree = "<group>"; };
+		784541792549722F0070452E /* cqts_placeholder01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_placeholder01.jpg; sourceTree = "<group>"; };
+		7845417A2549722F0070452E /* cqts_bgCar@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cqts_bgCar@2x.jpg"; sourceTree = "<group>"; };
+		7845417B2549722F0070452E /* cqts_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_1.jpg; sourceTree = "<group>"; };
+		7845417C2549722F0070452E /* cqts_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_10.jpg; sourceTree = "<group>"; };
+		7845417D2549722F0070452E /* cqts_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_2.jpg; sourceTree = "<group>"; };
+		7845417E2549722F0070452E /* cqts_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_3.jpg; sourceTree = "<group>"; };
+		7845417F2549722F0070452E /* cqts_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_7.jpg; sourceTree = "<group>"; };
+		784541802549722F0070452E /* cqts_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_6.jpg; sourceTree = "<group>"; };
+		784541812549722F0070452E /* cqts_bgSky@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cqts_bgSky@2x.jpg"; sourceTree = "<group>"; };
+		784541822549722F0070452E /* cqts_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_4.jpg; sourceTree = "<group>"; };
+		784541832549722F0070452E /* cqts_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cqts_5.jpg; sourceTree = "<group>"; };
+		784541842549722F0070452E /* CQTSLocImagesUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSLocImagesUtil.h; sourceTree = "<group>"; };
+		784541852549722F0070452E /* CQTSLocImageDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQTSLocImageDataModel.h; sourceTree = "<group>"; };
+		784541862549722F0070452E /* CQTSLocImagesUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQTSLocImagesUtil.m; sourceTree = "<group>"; };
+		784541C4254977580070452E /* CJUIKitBaseCollectionHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJUIKitBaseCollectionHomeViewController.swift; sourceTree = "<group>"; };
+		784541C5254977580070452E /* UIWindow+RootSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+RootSetting.swift"; sourceTree = "<group>"; };
+		784541C6254977580070452E /* CJUIKitBaseHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJUIKitBaseHomeViewController.swift; sourceTree = "<group>"; };
+		784541C7254977580070452E /* CJUIKitBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJUIKitBaseViewController.swift; sourceTree = "<group>"; };
+		784541C9254977580070452E /* CJUIKitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJUIKitCollectionViewCell.swift; sourceTree = "<group>"; };
+		784541CA254977580070452E /* CQDMSectionDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CQDMSectionDataModel.swift; sourceTree = "<group>"; };
+		784541CB254977580070452E /* CQDMModuleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CQDMModuleModel.swift; sourceTree = "<group>"; };
+		784541CC254977580070452E /* CJUIKitBaseScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CJUIKitBaseScrollViewController.swift; sourceTree = "<group>"; };
 		786BCEE32274549C0085F619 /* CJStandardProjectSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJStandardProjectSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786BCEE62274549C0085F619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786BCEE82274549C0085F619 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +177,134 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		784541492549722F0070452E /* CQDemoKit-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				784541C3254977580070452E /* BaseVC */,
+				784541572549722F0070452E /* BaseUIKit */,
+				784541642549722F0070452E /* BaseUtil */,
+				784541692549722F0070452E /* Demo_Resource */,
+			);
+			path = "CQDemoKit-Swift";
+			sourceTree = "<group>";
+		};
+		784541572549722F0070452E /* BaseUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				784541582549722F0070452E /* CQTSContainerViewFactory.h */,
+				784541592549722F0070452E /* CQTSSwitchViewFactory.h */,
+				7845415A2549722F0070452E /* CQTSBorderStateButton.h */,
+				7845415B2549722F0070452E /* UISwitch+CQTSMoreProperty.m */,
+				7845415C2549722F0070452E /* CQTSButtonFactory.h */,
+				7845415D2549722F0070452E /* UIButton+CQTSMoreProperty.m */,
+				7845415E2549722F0070452E /* CQTSSwitchViewFactory.m */,
+				7845415F2549722F0070452E /* CQTSContainerViewFactory.m */,
+				784541602549722F0070452E /* CQTSBorderStateButton.m */,
+				784541612549722F0070452E /* UIButton+CQTSMoreProperty.h */,
+				784541622549722F0070452E /* CQTSButtonFactory.m */,
+				784541632549722F0070452E /* UISwitch+CQTSMoreProperty.h */,
+			);
+			path = BaseUIKit;
+			sourceTree = "<group>";
+		};
+		784541642549722F0070452E /* BaseUtil */ = {
+			isa = PBXGroup;
+			children = (
+				784541652549722F0070452E /* CJUIKitToastUtil.h */,
+				784541662549722F0070452E /* CJUIKitAlertUtil.m */,
+				784541672549722F0070452E /* CJUIKitToastUtil.m */,
+				784541682549722F0070452E /* CJUIKitAlertUtil.h */,
+			);
+			path = BaseUtil;
+			sourceTree = "<group>";
+		};
+		784541692549722F0070452E /* Demo_Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7845416A2549722F0070452E /* NetDataModel */,
+				7845416F2549722F0070452E /* IconDataModel */,
+				784541742549722F0070452E /* LocDataModel */,
+			);
+			path = Demo_Resource;
+			sourceTree = "<group>";
+		};
+		7845416A2549722F0070452E /* NetDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				7845416B2549722F0070452E /* CQTSNetImageDataModel.h */,
+				7845416C2549722F0070452E /* CQTSNetImagesUtil.h */,
+				7845416D2549722F0070452E /* CQTSNetImageDataModel.m */,
+				7845416E2549722F0070452E /* CQTSNetImagesUtil.m */,
+			);
+			path = NetDataModel;
+			sourceTree = "<group>";
+		};
+		7845416F2549722F0070452E /* IconDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				784541702549722F0070452E /* CQTSIconsUtil.m */,
+				784541712549722F0070452E /* CQTSIconDataModel.m */,
+				784541722549722F0070452E /* CQTSIconsUtil.h */,
+				784541732549722F0070452E /* CQTSIconDataModel.h */,
+			);
+			path = IconDataModel;
+			sourceTree = "<group>";
+		};
+		784541742549722F0070452E /* LocDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				784541752549722F0070452E /* CQTSLocImageDataModel.m */,
+				784541762549722F0070452E /* Resources */,
+				784541842549722F0070452E /* CQTSLocImagesUtil.h */,
+				784541852549722F0070452E /* CQTSLocImageDataModel.h */,
+				784541862549722F0070452E /* CQTSLocImagesUtil.m */,
+			);
+			path = LocDataModel;
+			sourceTree = "<group>";
+		};
+		784541762549722F0070452E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				784541772549722F0070452E /* cqts_8.jpg */,
+				784541782549722F0070452E /* cqts_9.jpg */,
+				784541792549722F0070452E /* cqts_placeholder01.jpg */,
+				7845417A2549722F0070452E /* cqts_bgCar@2x.jpg */,
+				7845417B2549722F0070452E /* cqts_1.jpg */,
+				7845417C2549722F0070452E /* cqts_10.jpg */,
+				7845417D2549722F0070452E /* cqts_2.jpg */,
+				7845417E2549722F0070452E /* cqts_3.jpg */,
+				7845417F2549722F0070452E /* cqts_7.jpg */,
+				784541802549722F0070452E /* cqts_6.jpg */,
+				784541812549722F0070452E /* cqts_bgSky@2x.jpg */,
+				784541822549722F0070452E /* cqts_4.jpg */,
+				784541832549722F0070452E /* cqts_5.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		784541C3254977580070452E /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				784541C4254977580070452E /* CJUIKitBaseCollectionHomeViewController.swift */,
+				784541C5254977580070452E /* UIWindow+RootSetting.swift */,
+				784541C6254977580070452E /* CJUIKitBaseHomeViewController.swift */,
+				784541C7254977580070452E /* CJUIKitBaseViewController.swift */,
+				784541C8254977580070452E /* Other */,
+				784541CC254977580070452E /* CJUIKitBaseScrollViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		784541C8254977580070452E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				784541C9254977580070452E /* CJUIKitCollectionViewCell.swift */,
+				784541CA254977580070452E /* CQDMSectionDataModel.swift */,
+				784541CB254977580070452E /* CQDMModuleModel.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		786BCEDA2274549C0085F619 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +332,7 @@
 			children = (
 				786BCEE62274549C0085F619 /* AppDelegate.swift */,
 				786BCEE82274549C0085F619 /* ViewController.swift */,
+				784541492549722F0070452E /* CQDemoKit-Swift */,
 				786BCEEA2274549C0085F619 /* Main.storyboard */,
 				786BCEED2274549D0085F619 /* Assets.xcassets */,
 				786BCEEF2274549D0085F619 /* LaunchScreen.storyboard */,
@@ -154,7 +367,6 @@
 				0ABD07D495757B9A80D1507D /* Pods-CJStandardProjectSwiftDemoTests.debug.xcconfig */,
 				4C7B78585050D5559051292C /* Pods-CJStandardProjectSwiftDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -169,7 +381,6 @@
 				786BCEDF2274549C0085F619 /* Sources */,
 				786BCEE02274549C0085F619 /* Frameworks */,
 				786BCEE12274549C0085F619 /* Resources */,
-				62ECCDF515B6FBC36F6607E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,9 +476,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784541A62549722F0070452E /* cqts_bgSky@2x.jpg in Resources */,
+				784541A32549722F0070452E /* cqts_3.jpg in Resources */,
 				786BCEF12274549D0085F619 /* LaunchScreen.storyboard in Resources */,
+				784541A22549722F0070452E /* cqts_2.jpg in Resources */,
+				7845419F2549722F0070452E /* cqts_bgCar@2x.jpg in Resources */,
+				7845419D2549722F0070452E /* cqts_9.jpg in Resources */,
+				784541A72549722F0070452E /* cqts_4.jpg in Resources */,
 				786BCEEE2274549D0085F619 /* Assets.xcassets in Resources */,
+				784541A82549722F0070452E /* cqts_5.jpg in Resources */,
+				784541A42549722F0070452E /* cqts_7.jpg in Resources */,
+				784541A02549722F0070452E /* cqts_1.jpg in Resources */,
 				786BCEEC2274549C0085F619 /* Main.storyboard in Resources */,
+				784541A52549722F0070452E /* cqts_6.jpg in Resources */,
+				7845419C2549722F0070452E /* cqts_8.jpg in Resources */,
+				784541A12549722F0070452E /* cqts_10.jpg in Resources */,
+				7845419E2549722F0070452E /* cqts_placeholder01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,70 +534,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62ECCDF515B6FBC36F6607E6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CJStandardProjectSwiftDemo/Pods-CJStandardProjectSwiftDemo-resources.sh",
-				"${PODS_ROOT}/CJBaseEffectKit/CJBaseEffectKit/CJMJRefreshComponent/Resources/cjRefreshArrowDown@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@3x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/UIViewController/Resources/cjBackBarButtonItem@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/UIViewController/Resources/cjBackBarButtonItem@3x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/UIViewController/Resources/cjBackBarButtonItemGray@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/UIViewController/Resources/cjBackBarButtonItemGray@3x.png",
-				"${PODS_CONFIGURATION_BUILD_DIR}/CJDemoCommon/CommonPicker.bundle",
-				"${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowDown_dark.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_gray@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowLeft_red@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_gray@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowRight_red@2x.png",
-				"${PODS_ROOT}/CJRadio/CJRadio/CJRadioButtons/Resources/arrowUp_white@2x.png",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjRefreshArrowDown@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjBackBarButtonItem@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjBackBarButtonItem@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjBackBarButtonItemGray@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjBackBarButtonItemGray@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CommonPicker.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/demofmdb.db",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowDown_dark.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_gray@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowLeft_red@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_gray@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowRight_red@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/arrowUp_white@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CJStandardProjectSwiftDemo/Pods-CJStandardProjectSwiftDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BE48534ED38FEFA18C923B4F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,8 +563,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7845419B2549722F0070452E /* CQTSLocImageDataModel.m in Sources */,
+				784541D1254977580070452E /* CJUIKitCollectionViewCell.swift in Sources */,
+				7845418F2549722F0070452E /* UISwitch+CQTSMoreProperty.m in Sources */,
+				784541922549722F0070452E /* CQTSContainerViewFactory.m in Sources */,
+				784541D4254977580070452E /* CJUIKitBaseScrollViewController.swift in Sources */,
+				784541962549722F0070452E /* CJUIKitToastUtil.m in Sources */,
+				784541902549722F0070452E /* UIButton+CQTSMoreProperty.m in Sources */,
+				784541952549722F0070452E /* CJUIKitAlertUtil.m in Sources */,
+				784541CD254977580070452E /* CJUIKitBaseCollectionHomeViewController.swift in Sources */,
+				784541D0254977580070452E /* CJUIKitBaseViewController.swift in Sources */,
+				784541CF254977580070452E /* CJUIKitBaseHomeViewController.swift in Sources */,
+				784541D2254977580070452E /* CQDMSectionDataModel.swift in Sources */,
+				784541912549722F0070452E /* CQTSSwitchViewFactory.m in Sources */,
+				784541972549722F0070452E /* CQTSNetImageDataModel.m in Sources */,
+				784541932549722F0070452E /* CQTSBorderStateButton.m in Sources */,
+				7845419A2549722F0070452E /* CQTSIconDataModel.m in Sources */,
+				784541982549722F0070452E /* CQTSNetImagesUtil.m in Sources */,
+				784541CE254977580070452E /* UIWindow+RootSetting.swift in Sources */,
+				784541A92549722F0070452E /* CQTSLocImagesUtil.m in Sources */,
+				784541942549722F0070452E /* CQTSButtonFactory.m in Sources */,
 				786BCEE92274549C0085F619 /* ViewController.swift in Sources */,
+				784541992549722F0070452E /* CQTSIconsUtil.m in Sources */,
 				786BCEE72274549C0085F619 /* AppDelegate.swift in Sources */,
+				784541D3254977580070452E /* CQDMModuleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

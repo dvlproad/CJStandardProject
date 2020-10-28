@@ -27,23 +27,8 @@ post_install do |installer|
 end
 
 target 'CJStandardProjectSwiftDemo' do
-  pod 'CJDemoCommon'
-  pod 'CJDemoNetwork'
-  pod 'CJDemoDatabase'
-  pod 'CJDemoModuleMainMediator'
-  
-  pod 'CJBaseUIKit',      :subspecs => ['UIViewController']
-  pod 'CJBaseUtil',       :subspecs => ['CJAppLastUtil']
-  pod 'CJFile',       :subspecs => ['CJFileModel', 'CJFileManager', 'CJFMDBFileManager']
-  pod 'LGSideMenuController'
-  pod 'CJRadio'
-  pod 'EAIntroView'
-  # 模块化需要依赖的库
-  pod 'CTMediator'
-  
-  
-  
-  pod 'Bugly'
+  pod 'SnapKit'
+  pod 'Masonry'
 end
 
 target 'CJStandardProjectSwiftDemoTests' do

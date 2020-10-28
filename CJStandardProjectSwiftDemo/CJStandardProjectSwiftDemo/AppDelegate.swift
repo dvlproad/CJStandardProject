@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CJStandardProjectSwiftDemo
 //
-//  Created by 李超前 on 2019/4/27.
+//  Created by ciyouzen on 2019/4/27.
 //  Copyright © 2019 dvlproad. All rights reserved.
 //
 
@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13.0, *) {
+            
+        } else {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.settingRoot()
+            
+        }
+//        if #available(iOS 13.0, *) {
+//            let windowScene = scene as? UIWindowScene;
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//            self.window?.windowScene = windowScene
+//            self.window?.settingRoot()
+//        }
+        
         return true
     }
 
