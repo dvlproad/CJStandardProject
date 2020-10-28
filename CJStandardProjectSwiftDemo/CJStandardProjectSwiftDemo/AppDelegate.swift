@@ -16,13 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if #available(iOS 13.0, *) {
-            
-        } else {
+//        if #available(iOS 13.0, *) {
+//            
+//        } else {
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.settingRoot()
             
-        }
+//        }
 //        if #available(iOS 13.0, *) {
 //            let windowScene = scene as? UIWindowScene;
 //            self.window = UIWindow(frame: UIScreen.main.bounds)

@@ -29,6 +29,7 @@ end
 target 'CJStandardProjectSwiftDemo' do
   pod 'SnapKit'
   pod 'Masonry'
+  pod 'CQDemoKit-Swift',      :path => '../’
 end
 
 target 'CJStandardProjectSwiftDemoTests' do

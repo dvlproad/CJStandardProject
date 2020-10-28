@@ -1,8 +1,13 @@
 PODS:
+  - CQDemoKit-Swift (0.1.0):
+    - CQDemoKit-Swift/BaseVC (= 0.1.0)
+  - CQDemoKit-Swift/BaseVC (0.1.0):
+    - SnapKit
   - Masonry (1.1.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - CQDemoKit-Swift (from `../`)
   - Masonry
   - SnapKit
 
@@ -11,10 +16,15 @@ SPEC REPOS:
     - Masonry
     - SnapKit
 
+EXTERNAL SOURCES:
+  CQDemoKit-Swift:
+    :path: "../"
+
 SPEC CHECKSUMS:
+  CQDemoKit-Swift: 83def0394494bad2cdd490c8d83b12e9ac1fe591
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 2ba1e5d09a96680d0e3558414a31a02db8beb2f1
+PODFILE CHECKSUM: 514a6a6bc46e3bc55fe5d0be8231dd17b7b728a8
 
 COCOAPODS: 1.9.3
