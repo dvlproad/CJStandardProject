@@ -20,8 +20,13 @@
 @property (nonatomic, strong) DemoUser *serviceUser;    /**< 服务的用户 */
 @property (nonatomic, assign, readonly) BOOL hasLogin;
 
-/// 退出登录
-- (void)logoutWithCompleteBlock:(void(^)(void))completeBlock;
+
+/**
+ *  更新登录状态（登录成功，退出的时候都需要调用）
+ *
+ *  @param isLogin 是否登录(YES:登录，NO:登出)
+ */
+- (void)updateLoginState:(BOOL)isLogin;
 
 /**
  *  更新并发送登录状态（登录成功，退出的时候都需要调用）

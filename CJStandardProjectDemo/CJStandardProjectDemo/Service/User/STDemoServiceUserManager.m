@@ -6,8 +6,9 @@
 //  Copyright © 2018年 dvlproad. All rights reserved.
 //
 
-#import "STDemoServiceUserManager.h"
-#import <CJBaseUtil/CJAppLastUtil.h>
+#import "CJDemoServiceUserManager.h"
+#import "CJDemoDatabase+User.h"
+#import "DemoSession.h"
 
 static NSString * const kSTDemoNotificationUserLoginState = @"STDemoNotificationUserLoginState";
 
@@ -22,44 +23,32 @@ static NSString * const kSTDemoNotificationUserLoginState = @"STDemoNotification
     return _sharedInstance;
 }
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        CJAppLastUser *user = [CJAppLastUtil getLastLoginUser];
-        if (user && !isEmptyObjectCJHelper(user.lastLoginAccessToken) ) {
-            _serviceUser = [[DemoUser alloc] init];
-            _serviceUser.name = user.lastLoginUserName;
-            _serviceUser.userToken = user.lastLoginAccessToken;
-            ///FIXME:获取上次的信息
-//            NSData *data = [[NSUserDefaults standardUserDefaults] dataForKey:@"user_archive"];
-//            if (data) {
-//                DemoUser *user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-//                if (user) {
-//                    [_serviceUser updateIvarsWithModel:user];
-//                }
-//            }
-        }
+#pragma mark - Session
+- (void)setServiceUser:(DemoUser *)serviceUser {
+    _serviceUser = serviceUser;
+    
+    if (serviceUser) {
+        [[CJDemoServiceUserManager sharedInstance] updateLoginState:YES];
+    } else {
+        [[CJDemoServiceUserManager sharedInstance] updateLoginState:NO];
     }
-    return self;
 }
 
-- (BOOL)hasLogin {
-    return self.serviceUser.userToken ? YES : NO;
+/**
+ *  更新登录状态（登录成功，退出的时候都需要调用）
+ *
+ *  @param isLogin 是否登录(YES:登录，NO:登出)
+ */
+- (void)updateLoginState:(BOOL)isLogin {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:@(isLogin) forKey:@"cj_autoLogin"];
+    [userDefaults synchronize];
+    
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+//    [notificationCenter postNotificationName:kDemoUserNetworkSessionLoginStateDidChange object:@(isLogin)];
+    [self pushNotificationForUserLoginState:isLogin];
 }
 
-/// 退出登录
-- (void)logoutWithCompleteBlock:(void(^)(void))completeBlock {
-    // 模拟退出登录清楚
-    __weak typeof(self)weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        weakSelf.serviceUser = nil;
-        [weakSelf pushNotificationForUserLoginState:NO];
-        
-        if (completeBlock) {
-            completeBlock();
-        }
-    });
-}
 
 /**
  *  更新并发送登录状态（登录成功，退出的时候都需要调用）
@@ -93,6 +82,7 @@ static NSString * const kSTDemoNotificationUserLoginState = @"STDemoNotification
     [[NSNotificationCenter defaultCenter] removeObserver:observer];
     observer = nil;
 }
+
 
 
 @end
