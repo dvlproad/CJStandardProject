@@ -20,4 +20,17 @@ ViewModel设计的了解，请进入项目：《[DvlproadDesignPatternCollect](h
 
 
 
-## 四、结束语
+## 版本介绍/更新记录
+
+* 2024-11-10
+
+> 1. 添加小组件示例（涉及 Widget Extension Target、Framework Target、App Group） 
+>
+>    [小组件教程](./小组件示例/小组件教程.md)
+
+
+
+## 结束语
+
+今天，先到这，有很多东西后面再完善补充。
+
